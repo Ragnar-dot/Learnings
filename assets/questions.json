@@ -1,0 +1,4469 @@
+{
+  "categories": {
+    "Softwareentwicklung": {
+      "description": "Grundlagen der OOP, Design Patterns, Clean Code",
+      "questions": [
+        {
+          "id": 1,
+          "difficulty": "leicht",
+          "question": "Was ist der Unterschied zwischen einer Klasse und einem Objekt?",
+          "options": [
+            "Es gibt keinen Unterschied",
+            "Eine Klasse ist die Vorlage, ein Objekt ist eine konkrete Instanz der Klasse",
+            "Klassen sind nur in Java, Objekte nur in Python",
+            "Objekte sind veraltet, Klassen modern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "difficulty": "mittel",
+          "question": "Was bedeutet das SOLID-Prinzip 'Single Responsibility'?",
+          "options": [
+            "Eine Klasse darf nur eine Methode haben",
+            "Eine Klasse sollte nur einen Grund haben, sich zu ändern",
+            "Ein Programm darf nur eine Funktion haben",
+            "Eine Methode darf nur eine Zeile Code haben"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Kompilierung und Interpretation?",
+          "options": [
+            "Es gibt keinen Unterschied",
+            "Kompilierung ist schneller, aber plattformabhängig, Interpretation ist langsamer, aber plattformunabhängig",
+            "Interpretation ist schneller und plattformabhängig",
+            "Kompilierung ist langsamer und plattformunabhängig"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "difficulty": "mittel",
+          "question": "Was ist das MVC-Pattern?",
+          "options": [
+            "Multiple Version Control",
+            "Model View Controller - ein Architekturmuster zur Trennung von Daten, Darstellung und Logik",
+            "Main Variable Container",
+            "Memory Virtual Cache"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 14,
+          "difficulty": "leicht",
+          "question": "Was ist der Unterschied zwischen Vererbung und Komposition?",
+          "options": [
+            "Keiner, beides sind Synonyme",
+            "Vererbung ist 'ist ein', Komposition ist 'hat ein'",
+            "Vererbung ist nur in Java möglich, Komposition in allen Sprachen",
+            "Vererbung ist modern, Komposition veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 23,
+          "difficulty": "schwer",
+          "question": "Was sind die SOLID-Prinzipien?",
+          "options": [
+            "Regeln für Datenbanken",
+            "Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
+            "Regeln für HTML",
+            "Prinzipien für Netzwerke"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 24,
+          "difficulty": "mittel",
+          "question": "Was ist das Singleton Pattern und wofür wird es verwendet?",
+          "options": [
+            "Ein Pattern für Datenbanken",
+            "Ein Pattern, das sicherstellt, dass eine Klasse nur eine Instanz hat und globalen Zugriffspunkt bietet",
+            "Ein Pattern für Arrays",
+            "Ein Pattern für Webseiten"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 25,
+          "difficulty": "schwer",
+          "question": "Was ist die Zeitkomplexität von QuickSort im durchschnittlichen Fall?",
+          "options": [
+            "O(n)",
+            "O(n log n)",
+            "O(n²)",
+            "O(2^n)"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 26,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Polymorphismus und Vererbung?",
+          "options": [
+            "Sind das Gleiche",
+            "Polymorphismus erlaubt verschiedene Implementierungen gleicher Methoden, Vererbung überträgt Eigenschaften",
+            "Nur in Java verfügbar",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 27,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Aggregation und Komposition in der OOP?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Aggregation ist eine lose Beziehung ('hat ein'), Komposition ist eine starke Beziehung ('ist Teil von')",
+            "Nur für Java relevant",
+            "Nur theoretische Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 28,
+          "difficulty": "schwer",
+          "question": "Was ist Clean Architecture?",
+          "options": [
+            "Code-Formatierung",
+            "Eine Architektur mit Fokus auf Geschäftsregeln und Unabhängigkeit von Frameworks",
+            "Ein Code-Generator",
+            "Ein Build-System"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 29,
+          "difficulty": "mittel",
+          "question": "Was ist das Repository Pattern?",
+          "options": [
+            "Ein Versionskontrollsystem",
+            "Ein Muster zur Abstraktion der Datenzugriffslogik von der Geschäftslogik",
+            "Eine Datenbank",
+            "Ein Deployment-Tool"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 30,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Continuous Integration und Continuous Deployment?",
+          "options": [
+            "Sind das Gleiche",
+            "CI integriert Code automatisch, CD stellt automatisch in Produktion bereit",
+            "Nur für große Teams",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 31,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Dependency Injection und Service Locator Pattern?",
+          "options": [
+            "Sind das Gleiche",
+            "DI injiziert Abhängigkeiten von außen, Service Locator verwaltet zentral Abhängigkeiten",
+            "DI ist nur für Java",
+            "Service Locator ist veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 32,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Array und einer verketteten Liste?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Arrays haben feste Größe und direkten Zugriff, Listen sind dynamisch mit sequenziellem Zugriff",
+            "Arrays sind nur für Zahlen, Listen nur für Text",
+            "Arrays sind modern, Listen veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 33,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Web Workers in JavaScript?",
+          "options": [
+            "Normale Funktionen",
+            "Scripts die im Hintergrund parallel zum Hauptthread laufen",
+            "CSS-Styles",
+            "HTML-Tags"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 34,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen nativen und hybriden Apps?",
+          "options": [
+            "Kein Unterschied",
+            "Native Apps sind speziell für eine Plattform entwickelt, hybride Apps nutzen Webtechnologien",
+            "Native Apps sind Webseiten",
+            "Hybride Apps sind schneller"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 35,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen überwachtem und unüberwachtem Lernen?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Überwachtes Lernen nutzt gelabelte Daten, unüberwachtes Lernen findet selbst Muster",
+            "Überwachtes Lernen ist schneller",
+            "Unüberwachtes Lernen ist immer besser"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 36,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Scrum und Kanban?",
+          "options": [
+            "Sind das Gleiche",
+            "Scrum arbeitet in Sprints mit festen Rollen, Kanban ist flexibler mit kontinuierlichem Flow",
+            "Scrum ist nur für große Teams",
+            "Kanban ist nur für kleine Projekte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 37,
+          "difficulty": "mittel",
+          "question": "Was ist eine n-Tier Architektur?",
+          "options": [
+            "Ein Netzwerkprotokoll",
+            "Eine mehrschichtige Anwendungsarchitektur (z.B. Präsentation, Logik, Daten)",
+            "Ein Programmierparadigma",
+            "Ein Betriebssystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 38,
+          "difficulty": "schwer",
+          "question": "Was ist ein Enterprise Service Bus (ESB)?",
+          "options": [
+            "Ein Firmenbus",
+            "Eine Middleware zur Integration verschiedener Anwendungen und Services",
+            "Ein Netzwerkkabel",
+            "Ein Datenbanksystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 39,
+          "difficulty": "mittel",
+          "question": "Was ist BPMN?",
+          "options": [
+            "Ein Programmiersprache",
+            "Business Process Model and Notation - Standard zur Geschäftsprozessmodellierung",
+            "Ein Betriebssystem",
+            "Ein Netzwerkprotokoll"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 40,
+          "difficulty": "schwer",
+          "question": "Was sind die Kernprozesse von ITIL?",
+          "options": [
+            "Nur Incident Management",
+            "Service Strategy, Service Design, Service Transition, Service Operation, Continual Service Improvement",
+            "Nur Problem Management",
+            "Nur Change Management"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 41,
+          "difficulty": "mittel",
+          "question": "Was ist ROI?",
+          "options": [
+            "Eine Programmiersprache",
+            "Return on Investment - Verhältnis zwischen Gewinn und investiertem Kapital",
+            "Ein Netzwerkprotokoll",
+            "Ein Betriebssystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 42,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Materialized View und einer normalen View?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Materialized Views speichern Daten physisch, normale Views berechnen bei jedem Aufruf neu",
+            "Materialized Views sind nur für Oracle",
+            "Normale Views sind schneller"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 43,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Verschlüsselung und Hashing?",
+          "options": [
+            "Sind das Gleiche",
+            "Verschlüsselung ist reversibel, Hashing ist nicht reversibel",
+            "Verschlüsselung ist nur für Dateien",
+            "Hashing ist veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 44,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen LEFT JOIN und RIGHT JOIN?",
+          "options": [
+            "Keine Unterschied",
+            "LEFT JOIN behält alle Datensätze der linken Tabelle, RIGHT JOIN der rechten Tabelle",
+            "LEFT JOIN ist schneller",
+            "RIGHT JOIN ist moderner"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 45,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen IPv4 und IPv6?",
+          "options": [
+            "Nur die Version",
+            "IPv6 hat längere Adressen, mehr Adressen verfügbar, bessere Sicherheit integriert",
+            "IPv6 ist langsamer",
+            "IPv4 ist sicherer"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 46,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen horizontaler und vertikaler Skalierung?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Horizontal fügt mehr Instanzen hinzu, vertikal erhöht Ressourcen einer Instanz",
+            "Horizontal ist teurer",
+            "Vertikal ist immer besser"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 47,
+          "difficulty": "mittel",
+          "question": "Was ist der kritische Pfad in der Projektplanung?",
+          "options": [
+            "Der kürzeste Weg",
+            "Die Abfolge von Aktivitäten, die die Gesamtprojektdauer bestimmen",
+            "Der teuerste Weg",
+            "Die riskantesten Aufgaben"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 48,
+          "difficulty": "schwer",
+          "question": "Was sind die Vor- und Nachteile einer Event-Driven Architecture?",
+          "options": [
+            "Hat nur Vorteile",
+            "Vorteile: lose Kopplung, Skalierbarkeit; Nachteile: Komplexität, schwierige Fehlersuche",
+            "Ist veraltet",
+            "Nur für kleine Systeme"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 49,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Black-Box und White-Box Tests?",
+          "options": [
+            "Die Farbe",
+            "Black-Box testet ohne Kenntnisse der Implementierung, White-Box mit Kenntnis des Codes",
+            "Black-Box ist veraltet",
+            "White-Box ist nur für Backend"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 50,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen CAPEX und OPEX?",
+          "options": [
+            "Sind das Gleiche",
+            "CAPEX sind Investitionsausgaben, OPEX sind laufende Betriebskosten",
+            "Nur für Großunternehmen relevant",
+            "Nur für Hardware relevant"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 51,
+          "difficulty": "mittel",
+          "question": "Was ist Privacy by Design?",
+          "options": [
+            "Ein Design-Pattern",
+            "Datenschutz von Anfang an in Entwicklung und Prozesse integrieren",
+            "Ein UI-Konzept",
+            "Eine Software"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 52,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Stakeholder und einem Shareholder?",
+          "options": [
+            "Sind identisch",
+            "Stakeholder hat Interesse am Projekt, Shareholder besitzt Unternehmensanteile",
+            "Nur andere Schreibweise",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 53,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Loose Coupling und Tight Coupling?",
+          "options": [
+            "Keine Unterschiede",
+            "Loose Coupling minimiert Abhängigkeiten, Tight Coupling hat starke Abhängigkeiten",
+            "Nur theoretische Konzepte",
+            "Veraltete Ansätze"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 54,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Fehler, Defekt und Versagen?",
+          "options": [
+            "Alles das Gleiche",
+            "Fehler im Code, Defekt im Programm, Versagen im Betrieb",
+            "Nur verschiedene Namen",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 55,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen TCO und ROI?",
+          "options": [
+            "Sind gleich",
+            "TCO betrachtet Gesamtkosten, ROI betrachtet Rendite",
+            "Nur Marketing-Begriffe",
+            "Veraltete Kennzahlen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 56,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Datenschutzbeauftragten und einem Informationssicherheitsbeauftragten?",
+          "options": [
+            "Sind identisch",
+            "Datenschutzbeauftragter für personenbezogene Daten, Informationssicherheitsbeauftragter für allgemeine IT-Sicherheit",
+            "Nur unterschiedliche Titel",
+            "Veraltete Positionen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 57,
+          "difficulty": "mittel",
+          "question": "Was ist das Observer Pattern?",
+          "options": [
+            "Ein Überwachungssystem",
+            "Ein Muster zur Benachrichtigung abhängiger Objekte bei Zustandsänderungen",
+            "Ein Logging-System",
+            "Ein Security Pattern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 58,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Adapter und Bridge Pattern?",
+          "options": [
+            "Sind identisch",
+            "Adapter macht inkompatible Schnittstellen kompatibel, Bridge entkoppelt Abstraktion von Implementierung",
+            "Nur die Namen",
+            "Unterschiedliche Anwendungsfälle"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 59,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Fehler, Defekt und Versagen?",
+          "options": [
+            "Alles das Gleiche",
+            "Fehler im Code, Defekt im Programm, Versagen im Betrieb",
+            "Nur verschiedene Namen",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 60,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Verification und Validation?",
+          "options": [
+            "Keine Unterschied",
+            "Verification prüft Spezifikationstreue, Validation prüft Kundennutzen",
+            "Nur für große Projekte",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 61,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen linearer und binärer Suche?",
+          "options": [
+            "Kein Unterschied",
+            "Lineare Suche prüft jeden Eintrag, binäre Suche halbiert den Suchbereich (erfordert sortierte Daten)",
+            "Nur die Geschwindigkeit",
+            "Nur der Name"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 62,
+          "difficulty": "mittel",
+          "question": "Was bedeutet der Begriff 'Normalisierung' in Datenbanken?",
+          "options": [
+            "Daten komprimieren",
+            "Strukturierung von Daten zur Vermeidung von Redundanz und Anomalien",
+            "Daten verschlüsseln",
+            "Daten sortieren"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 63,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Penetration Testing und Vulnerability Scanning?",
+          "options": [
+            "Sind identisch",
+            "Pen-Testing ist aktiver Angriffsversuch, Vulnerability Scanning ist automatisierte Schwachstellensuche",
+            "Nur für Webseiten relevant",
+            "Veraltete Methoden"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 64,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Hub und einem Switch?",
+          "options": [
+            "Keine Unterschiede",
+            "Hub sendet an alle Ports, Switch nur an den Zielport",
+            "Hub ist neuer",
+            "Switch ist günstiger"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 65,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Public, Private und Hybrid Cloud?",
+          "options": [
+            "Nur Marketing-Begriffe",
+            "Public ist öffentlich zugänglich, Private firmenintern, Hybrid ist eine Kombination",
+            "Unterschiedliche Anbieter",
+            "Unterschiedliche Technologien"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 66,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Meilenstein und Deliverable?",
+          "options": [
+            "Sind das Gleiche",
+            "Meilenstein ist ein Zeitpunkt/Ereignis, Deliverable ist ein konkretes Ergebnis",
+            "Nur für große Projekte relevant",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 67,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen synchroner und asynchroner Kommunikation?",
+          "options": [
+            "Kein Unterschied",
+            "Synchron wartet auf Antwort, Asynchron arbeitet weiter ohne zu warten",
+            "Nur für Webservices relevant",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 68,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Alpha- und Beta-Testing?",
+          "options": [
+            "Keine Unterschiede",
+            "Alpha intern durch Entwickler, Beta extern durch echte Nutzer",
+            "Unterschiedliche Tools",
+            "Unterschiedliche Programmiersprachen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 69,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Break-Even-Point und ROI?",
+          "options": [
+            "Sind identisch",
+            "Break-Even zeigt Gewinnschelle, ROI zeigt Rendite des eingesetzten Kapitals",
+            "Nur für Großprojekte relevant",
+            "Veraltete Kennzahlen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 70,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Auftragsverarbeiter und einem Verantwortlichen nach DSGVO?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Verantwortlicher bestimmt Zwecke der Verarbeitung, Auftragsverarbeiter verarbeitet im Auftrag",
+            "Nur für große Unternehmen relevant",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 71,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Continuous Integration und Continuous Deployment?",
+          "options": [
+            "Sind das Gleiche",
+            "CI integriert Code automatisch, CD stellt automatisch in Produktion bereit",
+            "Nur für große Teams",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 72,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einer Transaktion und einem Savepoint?",
+          "options": [
+            "Keine Unterschiede",
+            "Transaktion ist eine komplette Einheit, Savepoint ermöglicht teilweises Rollback",
+            "Nur in Oracle verfügbar",
+            "Veraltete Funktionen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 73,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Virus und einem Wurm?",
+          "options": [
+            "Sind das Gleiche",
+            "Virus benötigt Wirtsprogramm, Wurm verbreitet sich selbstständig",
+            "Nur Namensunterschiede",
+            "Unterschiedliche Programmiersprachen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 74,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Gateway und einem Router?",
+          "options": [
+            "Keine Unterschiede",
+            "Gateway verbindet unterschiedliche Netzwerktypen, Router verbindet gleiche Netzwerke",
+            "Nur die Größe",
+            "Nur der Preis"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 75,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Layer 2 und Layer 3 Switch?",
+          "options": [
+            "Nur Marketing",
+            "L2 arbeitet mit MAC-Adressen, L3 kann auch IP-Routing durchführen",
+            "Die Größe",
+            "Der Preis"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 76,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen linearer und binärer Suche?",
+          "options": [
+            "Kein Unterschied",
+            "Lineare Suche prüft jeden Eintrag, binäre Suche halbiert den Suchbereich (erfordert sortierte Daten)",
+            "Nur die Geschwindigkeit",
+            "Nur der Name"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 77,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Bubble Sort und Selection Sort?",
+          "options": [
+            "Keine Unterschiede",
+            "Bubble Sort vertauscht Nachbarn, Selection Sort sucht das Minimum und tauscht einmal pro Durchlauf",
+            "Nur die Namen",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 78,
+          "difficulty": "mittel",
+          "question": "Was ist Rekursion und wann ist sie sinnvoll?",
+          "options": [
+            "Eine Art Schleife",
+            "Selbstaufruf einer Funktion, sinnvoll bei sich wiederholenden Teilproblemen gleicher Struktur",
+            "Ein Sortieralgorithmus",
+            "Eine Datenstruktur"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 79,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einer Schleife und Rekursion?",
+          "options": [
+            "Kein Unterschied",
+            "Schleife wiederholt Code iterativ, Rekursion durch Selbstaufrufe mit Abbruchbedingung",
+            "Nur die Syntax",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 80,
+          "difficulty": "mittel",
+          "question": "Was ist eine Endrekursion (tail recursion)?",
+          "options": [
+            "Eine endlose Rekursion",
+            "Eine Rekursion, bei der der rekursive Aufruf die letzte Operation ist",
+            "Ein Fehler im Code",
+            "Eine spezielle Schleife"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 81,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einer for- und einer while-Schleife?",
+          "options": [
+            "Kein Unterschied",
+            "for-Schleife für bekannte Anzahl Durchläufe, while für unbekannte Anzahl mit Bedingung",
+            "Nur die Syntax",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 82,
+          "difficulty": "mittel",
+          "question": "Was ist ein Pseudocode?",
+          "options": [
+            "Fehlerhafter Code",
+            "Eine programmiersprachenunabhängige Beschreibung eines Algorithmus",
+            "Eine Programmiersprache",
+            "Ein Compiler"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 83,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Algorithmus und einem Programm?",
+          "options": [
+            "Sind das Gleiche",
+            "Algorithmus ist die abstrakte Lösungsbeschreibung, Programm die konkrete Implementation",
+            "Nur die Sprache",
+            "Nur die Ausführbarkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 84,
+          "difficulty": "mittel",
+          "question": "Was ist eine Verzweigung (if-then-else)?",
+          "options": [
+            "Eine Schleife",
+            "Eine Kontrollstruktur zur bedingten Ausführung von Code",
+            "Ein Fehler",
+            "Eine Variable"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 85,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen break und continue in Schleifen?",
+          "options": [
+            "Kein Unterschied",
+            "break beendet die Schleife, continue springt zum nächsten Durchlauf",
+            "Nur die Namen",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 86,
+          "difficulty": "mittel",
+          "question": "Welche Schichten hat das OSI-Modell?",
+          "options": [
+            "3 Schichten",
+            "7 Schichten: Physikalisch, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung",
+            "5 Schichten",
+            "10 Schichten"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 87,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Layer 2 und Layer 3 im OSI-Modell?",
+          "options": [
+            "Keine Unterschiede",
+            "Layer 2 arbeitet mit MAC-Adressen (Sicherungsschicht), Layer 3 mit IP-Adressen (Vermittlungsschicht)",
+            "Nur die Nummer",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 88,
+          "difficulty": "mittel",
+          "question": "Welche Protokolle arbeiten auf der Anwendungsschicht (Layer 7)?",
+          "options": [
+            "TCP und UDP",
+            "HTTP, FTP, SMTP, DNS",
+            "IP und ICMP",
+            "Ethernet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 89,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen der Transport- und der Vermittlungsschicht?",
+          "options": [
+            "Kein Unterschied",
+            "Transportschicht (L4) für Ende-zu-Ende-Verbindungen, Vermittlungsschicht (L3) für Routing",
+            "Nur die Position",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 90,
+          "difficulty": "mittel",
+          "question": "Welche Aufgabe hat die Sitzungsschicht (Layer 5)?",
+          "options": [
+            "Physische Übertragung",
+            "Aufbau, Verwaltung und Abbau von Sitzungen zwischen Anwendungen",
+            "Routing von Paketen",
+            "Fehlererkennung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 91,
+          "difficulty": "schwer",
+          "question": "Was ist die Aufgabe der Darstellungsschicht (Layer 6)?",
+          "options": [
+            "Routing",
+            "Datenkodierung, Kompression und Verschlüsselung",
+            "Physische Übertragung",
+            "Verbindungsaufbau"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 92,
+          "difficulty": "mittel",
+          "question": "Welche Aufgabe hat die physikalische Schicht (Layer 1)?",
+          "options": [
+            "Routing",
+            "Übertragung von Bits über ein physikalisches Medium",
+            "Verschlüsselung",
+            "Anwendungsprotokolle"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 93,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen dem OSI-Modell und dem TCP/IP-Modell?",
+          "options": [
+            "Sind identisch",
+            "OSI hat 7 Schichten und ist theoretisch, TCP/IP hat 4 Schichten und ist praktisch implementiert",
+            "Nur die Namen",
+            "Nur die Verwendung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 94,
+          "difficulty": "mittel",
+          "question": "Welche Geräte arbeiten auf welcher OSI-Schicht?",
+          "options": [
+            "Alle auf allen Schichten",
+            "Hub (L1), Switch (L2), Router (L3), Firewall (L3-L7)",
+            "Nur Router auf allen Schichten",
+            "Zufällig verteilt"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 95,
+          "difficulty": "schwer",
+          "question": "Was ist Kapselung (Encapsulation) im OSI-Modell?",
+          "options": [
+            "Eine Verschlüsselungsmethode",
+            "Das Hinzufügen von Header-Informationen jeder Schicht zu den Daten",
+            "Ein Routing-Protokoll",
+            "Eine Fehlerkorrektur"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 96,
+          "difficulty": "mittel",
+          "question": "Was ist die korrekte Reihenfolge der OSI-Schichten von unten nach oben?",
+          "options": [
+            "Anwendung, Transport, Vermittlung, Sicherung, Physikalisch",
+            "Physikalisch, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung",
+            "Transport, Netzwerk, Sicherung, Physikalisch, Anwendung",
+            "Anwendung, Physikalisch, Transport, Vermittlung, Sicherung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 97,
+          "difficulty": "schwer",
+          "question": "Welche Dateneinheiten werden in welcher OSI-Schicht verwendet?",
+          "options": [
+            "Alle Schichten verwenden Pakete",
+            "L1: Bits, L2: Frames, L3: Pakete, L4: Segmente, L5-7: Daten",
+            "Nur Bits in allen Schichten",
+            "Jede Schicht hat eigene Formate"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 98,
+          "difficulty": "mittel",
+          "question": "Welche Adressierung wird in welcher OSI-Schicht verwendet?",
+          "options": [
+            "Alle Schichten verwenden IP-Adressen",
+            "L2: MAC-Adressen, L3: IP-Adressen, L4: Ports",
+            "Nur IP-Adressen sind wichtig",
+            "Adressierung ist nicht schichtabhängig"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 99,
+          "difficulty": "schwer",
+          "question": "Wie werden Daten durch die OSI-Schichten transportiert?",
+          "options": [
+            "Direkt von Anwendung zu Anwendung",
+            "Von oben nach unten mit Kapselung, von unten nach oben mit Entkapselung",
+            "Immer nur horizontal",
+            "Zufällige Reihenfolge"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 100,
+          "difficulty": "mittel",
+          "question": "Welche Protokolle arbeiten auf der Transportschicht (Layer 4)?",
+          "options": [
+            "HTTP und FTP",
+            "TCP und UDP",
+            "IP und ICMP",
+            "Ethernet und WLAN"
+          ],
+          "correctAnswer": 1
+        }
+      ]
+    },
+    "Algorithmen": {
+      "description": "Sortierung, Suche, Kontrollstrukturen",
+      "questions": [
+        {
+          "id": 1,
+          "difficulty": "leicht",
+          "question": "Was ist der Unterschied zwischen einer Klasse und einem Objekt?",
+          "options": [
+            "Es gibt keinen Unterschied",
+            "Eine Klasse ist die Vorlage, ein Objekt ist eine konkrete Instanz der Klasse",
+            "Klassen sind nur in Java, Objekte nur in Python",
+            "Objekte sind veraltet, Klassen modern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "difficulty": "mittel",
+          "question": "Was bedeutet das SOLID-Prinzip 'Single Responsibility'?",
+          "options": [
+            "Eine Klasse darf nur eine Methode haben",
+            "Eine Klasse sollte nur einen Grund haben, sich zu ändern",
+            "Ein Programm darf nur eine Funktion haben",
+            "Eine Methode darf nur eine Zeile Code haben"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Kompilierung und Interpretation?",
+          "options": [
+            "Es gibt keinen Unterschied",
+            "Kompilierung ist schneller, aber plattformabhängig, Interpretation ist langsamer, aber plattformunabhängig",
+            "Interpretation ist schneller und plattformabhängig",
+            "Kompilierung ist langsamer und plattformunabhängig"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "difficulty": "mittel",
+          "question": "Was ist das MVC-Pattern?",
+          "options": [
+            "Multiple Version Control",
+            "Model View Controller - ein Architekturmuster zur Trennung von Daten, Darstellung und Logik",
+            "Main Variable Container",
+            "Memory Virtual Cache"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 14,
+          "difficulty": "leicht",
+          "question": "Was ist der Unterschied zwischen Vererbung und Komposition?",
+          "options": [
+            "Keiner, beides sind Synonyme",
+            "Vererbung ist 'ist ein', Komposition ist 'hat ein'",
+            "Vererbung ist nur in Java möglich, Komposition in allen Sprachen",
+            "Vererbung ist modern, Komposition veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 23,
+          "difficulty": "schwer",
+          "question": "Was sind die SOLID-Prinzipien?",
+          "options": [
+            "Regeln für Datenbanken",
+            "Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
+            "Regeln für HTML",
+            "Prinzipien für Netzwerke"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 24,
+          "difficulty": "mittel",
+          "question": "Was ist das Singleton Pattern und wofür wird es verwendet?",
+          "options": [
+            "Ein Pattern für Datenbanken",
+            "Ein Pattern, das sicherstellt, dass eine Klasse nur eine Instanz hat und globalen Zugriffspunkt bietet",
+            "Ein Pattern für Arrays",
+            "Ein Pattern für Webseiten"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 25,
+          "difficulty": "schwer",
+          "question": "Was ist die Zeitkomplexität von QuickSort im durchschnittlichen Fall?",
+          "options": [
+            "O(n)",
+            "O(n log n)",
+            "O(n²)",
+            "O(2^n)"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 26,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Polymorphismus und Vererbung?",
+          "options": [
+            "Sind das Gleiche",
+            "Polymorphismus erlaubt verschiedene Implementierungen gleicher Methoden, Vererbung überträgt Eigenschaften",
+            "Nur in Java verfügbar",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 27,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Aggregation und Komposition in der OOP?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Aggregation ist eine lose Beziehung ('hat ein'), Komposition ist eine starke Beziehung ('ist Teil von')",
+            "Nur für Java relevant",
+            "Nur theoretische Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 28,
+          "difficulty": "schwer",
+          "question": "Was ist Clean Architecture?",
+          "options": [
+            "Code-Formatierung",
+            "Eine Architektur mit Fokus auf Geschäftsregeln und Unabhängigkeit von Frameworks",
+            "Ein Code-Generator",
+            "Ein Build-System"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 29,
+          "difficulty": "mittel",
+          "question": "Was ist das Repository Pattern?",
+          "options": [
+            "Ein Versionskontrollsystem",
+            "Ein Muster zur Abstraktion der Datenzugriffslogik von der Geschäftslogik",
+            "Eine Datenbank",
+            "Ein Deployment-Tool"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 30,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Continuous Integration und Continuous Deployment?",
+          "options": [
+            "Sind das Gleiche",
+            "CI integriert Code automatisch, CD stellt automatisch in Produktion bereit",
+            "Nur für große Teams",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 31,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Dependency Injection und Service Locator Pattern?",
+          "options": [
+            "Sind das Gleiche",
+            "DI injiziert Abhängigkeiten von außen, Service Locator verwaltet zentral Abhängigkeiten",
+            "DI ist nur für Java",
+            "Service Locator ist veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 32,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Array und einer verketteten Liste?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Arrays haben feste Größe und direkten Zugriff, Listen sind dynamisch mit sequenziellem Zugriff",
+            "Arrays sind nur für Zahlen, Listen nur für Text",
+            "Arrays sind modern, Listen veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 33,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Web Workers in JavaScript?",
+          "options": [
+            "Normale Funktionen",
+            "Scripts die im Hintergrund parallel zum Hauptthread laufen",
+            "CSS-Styles",
+            "HTML-Tags"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 34,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen nativen und hybriden Apps?",
+          "options": [
+            "Kein Unterschied",
+            "Native Apps sind speziell für eine Plattform entwickelt, hybride Apps nutzen Webtechnologien",
+            "Native Apps sind Webseiten",
+            "Hybride Apps sind schneller"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 35,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen überwachtem und unüberwachtem Lernen?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Überwachtes Lernen nutzt gelabelte Daten, unüberwachtes Lernen findet selbst Muster",
+            "Überwachtes Lernen ist schneller",
+            "Unüberwachtes Lernen ist immer besser"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 36,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Scrum und Kanban?",
+          "options": [
+            "Sind das Gleiche",
+            "Scrum arbeitet in Sprints mit festen Rollen, Kanban ist flexibler mit kontinuierlichem Flow",
+            "Scrum ist nur für große Teams",
+            "Kanban ist nur für kleine Projekte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 37,
+          "difficulty": "mittel",
+          "question": "Was ist eine n-Tier Architektur?",
+          "options": [
+            "Ein Netzwerkprotokoll",
+            "Eine mehrschichtige Anwendungsarchitektur (z.B. Präsentation, Logik, Daten)",
+            "Ein Programmierparadigma",
+            "Ein Betriebssystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 38,
+          "difficulty": "schwer",
+          "question": "Was ist ein Enterprise Service Bus (ESB)?",
+          "options": [
+            "Ein Firmenbus",
+            "Eine Middleware zur Integration verschiedener Anwendungen und Services",
+            "Ein Netzwerkkabel",
+            "Ein Datenbanksystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 39,
+          "difficulty": "mittel",
+          "question": "Was ist BPMN?",
+          "options": [
+            "Ein Programmiersprache",
+            "Business Process Model and Notation - Standard zur Geschäftsprozessmodellierung",
+            "Ein Betriebssystem",
+            "Ein Netzwerkprotokoll"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 40,
+          "difficulty": "schwer",
+          "question": "Was sind die Kernprozesse von ITIL?",
+          "options": [
+            "Nur Incident Management",
+            "Service Strategy, Service Design, Service Transition, Service Operation, Continual Service Improvement",
+            "Nur Problem Management",
+            "Nur Change Management"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 41,
+          "difficulty": "mittel",
+          "question": "Was ist ROI?",
+          "options": [
+            "Eine Programmiersprache",
+            "Return on Investment - Verhältnis zwischen Gewinn und investiertem Kapital",
+            "Ein Netzwerkprotokoll",
+            "Ein Betriebssystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 42,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Materialized View und einer normalen View?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Materialized Views speichern Daten physisch, normale Views berechnen bei jedem Aufruf neu",
+            "Materialized Views sind nur für Oracle",
+            "Normale Views sind schneller"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 43,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Verschlüsselung und Hashing?",
+          "options": [
+            "Sind das Gleiche",
+            "Verschlüsselung ist reversibel, Hashing ist nicht reversibel",
+            "Verschlüsselung ist nur für Dateien",
+            "Hashing ist veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 44,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen LEFT JOIN und RIGHT JOIN?",
+          "options": [
+            "Keine Unterschied",
+            "LEFT JOIN behält alle Datensätze der linken Tabelle, RIGHT JOIN der rechten Tabelle",
+            "LEFT JOIN ist schneller",
+            "RIGHT JOIN ist moderner"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 45,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen IPv4 und IPv6?",
+          "options": [
+            "Nur die Version",
+            "IPv6 hat längere Adressen, mehr Adressen verfügbar, bessere Sicherheit integriert",
+            "IPv6 ist langsamer",
+            "IPv4 ist sicherer"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 46,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen horizontaler und vertikaler Skalierung?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Horizontal fügt mehr Instanzen hinzu, vertikal erhöht Ressourcen einer Instanz",
+            "Horizontal ist teurer",
+            "Vertikal ist immer besser"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 47,
+          "difficulty": "mittel",
+          "question": "Was ist der kritische Pfad in der Projektplanung?",
+          "options": [
+            "Der kürzeste Weg",
+            "Die Abfolge von Aktivitäten, die die Gesamtprojektdauer bestimmen",
+            "Der teuerste Weg",
+            "Die riskantesten Aufgaben"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 48,
+          "difficulty": "schwer",
+          "question": "Was sind die Vor- und Nachteile einer Event-Driven Architecture?",
+          "options": [
+            "Hat nur Vorteile",
+            "Vorteile: lose Kopplung, Skalierbarkeit; Nachteile: Komplexität, schwierige Fehlersuche",
+            "Ist veraltet",
+            "Nur für kleine Systeme"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 49,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Black-Box und White-Box Tests?",
+          "options": [
+            "Die Farbe",
+            "Black-Box testet ohne Kenntnisse der Implementierung, White-Box mit Kenntnis des Codes",
+            "Black-Box ist veraltet",
+            "White-Box ist nur für Backend"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 50,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen CAPEX und OPEX?",
+          "options": [
+            "Sind das Gleiche",
+            "CAPEX sind Investitionsausgaben, OPEX sind laufende Betriebskosten",
+            "Nur für Großunternehmen relevant",
+            "Nur für Hardware relevant"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 51,
+          "difficulty": "mittel",
+          "question": "Was ist Privacy by Design?",
+          "options": [
+            "Ein Design-Pattern",
+            "Datenschutz von Anfang an in Entwicklung und Prozesse integrieren",
+            "Ein UI-Konzept",
+            "Eine Software"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 52,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Stakeholder und einem Shareholder?",
+          "options": [
+            "Sind identisch",
+            "Stakeholder hat Interesse am Projekt, Shareholder besitzt Unternehmensanteile",
+            "Nur andere Schreibweise",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 53,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Loose Coupling und Tight Coupling?",
+          "options": [
+            "Keine Unterschiede",
+            "Loose Coupling minimiert Abhängigkeiten, Tight Coupling hat starke Abhängigkeiten",
+            "Nur theoretische Konzepte",
+            "Veraltete Ansätze"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 54,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Fehler, Defekt und Versagen?",
+          "options": [
+            "Alles das Gleiche",
+            "Fehler im Code, Defekt im Programm, Versagen im Betrieb",
+            "Nur verschiedene Namen",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 55,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen TCO und ROI?",
+          "options": [
+            "Sind gleich",
+            "TCO betrachtet Gesamtkosten, ROI betrachtet Rendite",
+            "Nur Marketing-Begriffe",
+            "Veraltete Kennzahlen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 56,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Datenschutzbeauftragten und einem Informationssicherheitsbeauftragten?",
+          "options": [
+            "Sind identisch",
+            "Datenschutzbeauftragter für personenbezogene Daten, Informationssicherheitsbeauftragter für allgemeine IT-Sicherheit",
+            "Nur unterschiedliche Titel",
+            "Veraltete Positionen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 57,
+          "difficulty": "mittel",
+          "question": "Was ist das Observer Pattern?",
+          "options": [
+            "Ein Überwachungssystem",
+            "Ein Muster zur Benachrichtigung abhängiger Objekte bei Zustandsänderungen",
+            "Ein Logging-System",
+            "Ein Security Pattern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 58,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Adapter und Bridge Pattern?",
+          "options": [
+            "Sind identisch",
+            "Adapter macht inkompatible Schnittstellen kompatibel, Bridge entkoppelt Abstraktion von Implementierung",
+            "Nur die Namen",
+            "Unterschiedliche Anwendungsfälle"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 59,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Fehler, Defekt und Versagen?",
+          "options": [
+            "Alles das Gleiche",
+            "Fehler im Code, Defekt im Programm, Versagen im Betrieb",
+            "Nur verschiedene Namen",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 60,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Verification und Validation?",
+          "options": [
+            "Keine Unterschied",
+            "Verification prüft Spezifikationstreue, Validation prüft Kundennutzen",
+            "Nur für große Projekte",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 61,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen linearer und binärer Suche?",
+          "options": [
+            "Kein Unterschied",
+            "Lineare Suche prüft jeden Eintrag, binäre Suche halbiert den Suchbereich (erfordert sortierte Daten)",
+            "Nur die Geschwindigkeit",
+            "Nur der Name"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 62,
+          "difficulty": "mittel",
+          "question": "Was bedeutet der Begriff 'Normalisierung' in Datenbanken?",
+          "options": [
+            "Daten komprimieren",
+            "Strukturierung von Daten zur Vermeidung von Redundanz und Anomalien",
+            "Daten verschlüsseln",
+            "Daten sortieren"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 63,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Penetration Testing und Vulnerability Scanning?",
+          "options": [
+            "Sind identisch",
+            "Pen-Testing ist aktiver Angriffsversuch, Vulnerability Scanning ist automatisierte Schwachstellensuche",
+            "Nur für Webseiten relevant",
+            "Veraltete Methoden"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 64,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Hub und einem Switch?",
+          "options": [
+            "Keine Unterschiede",
+            "Hub sendet an alle Ports, Switch nur an den Zielport",
+            "Hub ist neuer",
+            "Switch ist günstiger"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 65,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Public, Private und Hybrid Cloud?",
+          "options": [
+            "Nur Marketing-Begriffe",
+            "Public ist öffentlich zugänglich, Private firmenintern, Hybrid ist eine Kombination",
+            "Unterschiedliche Anbieter",
+            "Unterschiedliche Technologien"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 66,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Meilenstein und Deliverable?",
+          "options": [
+            "Sind das Gleiche",
+            "Meilenstein ist ein Zeitpunkt/Ereignis, Deliverable ist ein konkretes Ergebnis",
+            "Nur für große Projekte relevant",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 67,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen synchroner und asynchroner Kommunikation?",
+          "options": [
+            "Kein Unterschied",
+            "Synchron wartet auf Antwort, Asynchron arbeitet weiter ohne zu warten",
+            "Nur für Webservices relevant",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 68,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Alpha- und Beta-Testing?",
+          "options": [
+            "Keine Unterschiede",
+            "Alpha intern durch Entwickler, Beta extern durch echte Nutzer",
+            "Unterschiedliche Tools",
+            "Unterschiedliche Programmiersprachen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 69,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Break-Even-Point und ROI?",
+          "options": [
+            "Sind identisch",
+            "Break-Even zeigt Gewinnschelle, ROI zeigt Rendite des eingesetzten Kapitals",
+            "Nur für Großprojekte relevant",
+            "Veraltete Kennzahlen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 70,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Auftragsverarbeiter und einem Verantwortlichen nach DSGVO?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Verantwortlicher bestimmt Zwecke der Verarbeitung, Auftragsverarbeiter verarbeitet im Auftrag",
+            "Nur für große Unternehmen relevant",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 71,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Continuous Integration und Continuous Deployment?",
+          "options": [
+            "Sind das Gleiche",
+            "CI integriert Code automatisch, CD stellt automatisch in Produktion bereit",
+            "Nur für große Teams",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 72,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einer Transaktion und einem Savepoint?",
+          "options": [
+            "Keine Unterschiede",
+            "Transaktion ist eine komplette Einheit, Savepoint ermöglicht teilweises Rollback",
+            "Nur in Oracle verfügbar",
+            "Veraltete Funktionen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 73,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Virus und einem Wurm?",
+          "options": [
+            "Sind das Gleiche",
+            "Virus benötigt Wirtsprogramm, Wurm verbreitet sich selbstständig",
+            "Nur Namensunterschiede",
+            "Unterschiedliche Programmiersprachen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 74,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Gateway und einem Router?",
+          "options": [
+            "Keine Unterschiede",
+            "Gateway verbindet unterschiedliche Netzwerktypen, Router verbindet gleiche Netzwerke",
+            "Nur die Größe",
+            "Nur der Preis"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 75,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Layer 2 und Layer 3 Switch?",
+          "options": [
+            "Nur Marketing",
+            "L2 arbeitet mit MAC-Adressen, L3 kann auch IP-Routing durchführen",
+            "Die Größe",
+            "Der Preis"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 76,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen linearer und binärer Suche?",
+          "options": [
+            "Kein Unterschied",
+            "Lineare Suche prüft jeden Eintrag, binäre Suche halbiert den Suchbereich (erfordert sortierte Daten)",
+            "Nur die Geschwindigkeit",
+            "Nur der Name"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 77,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Bubble Sort und Selection Sort?",
+          "options": [
+            "Keine Unterschiede",
+            "Bubble Sort vertauscht Nachbarn, Selection Sort sucht das Minimum und tauscht einmal pro Durchlauf",
+            "Nur die Namen",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 78,
+          "difficulty": "mittel",
+          "question": "Was ist Rekursion und wann ist sie sinnvoll?",
+          "options": [
+            "Eine Art Schleife",
+            "Selbstaufruf einer Funktion, sinnvoll bei sich wiederholenden Teilproblemen gleicher Struktur",
+            "Ein Sortieralgorithmus",
+            "Eine Datenstruktur"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 79,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einer Schleife und Rekursion?",
+          "options": [
+            "Kein Unterschied",
+            "Schleife wiederholt Code iterativ, Rekursion durch Selbstaufrufe mit Abbruchbedingung",
+            "Nur die Syntax",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 80,
+          "difficulty": "mittel",
+          "question": "Was ist eine Endrekursion (tail recursion)?",
+          "options": [
+            "Eine endlose Rekursion",
+            "Eine Rekursion, bei der der rekursive Aufruf die letzte Operation ist",
+            "Ein Fehler im Code",
+            "Eine spezielle Schleife"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 81,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einer for- und einer while-Schleife?",
+          "options": [
+            "Kein Unterschied",
+            "for-Schleife für bekannte Anzahl Durchläufe, while für unbekannte Anzahl mit Bedingung",
+            "Nur die Syntax",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 82,
+          "difficulty": "mittel",
+          "question": "Was ist ein Pseudocode?",
+          "options": [
+            "Fehlerhafter Code",
+            "Eine programmiersprachenunabhängige Beschreibung eines Algorithmus",
+            "Eine Programmiersprache",
+            "Ein Compiler"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 83,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Algorithmus und einem Programm?",
+          "options": [
+            "Sind das Gleiche",
+            "Algorithmus ist die abstrakte Lösungsbeschreibung, Programm die konkrete Implementation",
+            "Nur die Sprache",
+            "Nur die Ausführbarkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 84,
+          "difficulty": "mittel",
+          "question": "Was ist eine Verzweigung (if-then-else)?",
+          "options": [
+            "Eine Schleife",
+            "Eine Kontrollstruktur zur bedingten Ausführung von Code",
+            "Ein Fehler",
+            "Eine Variable"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 85,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen break und continue in Schleifen?",
+          "options": [
+            "Kein Unterschied",
+            "break beendet die Schleife, continue springt zum nächsten Durchlauf",
+            "Nur die Namen",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 86,
+          "difficulty": "mittel",
+          "question": "Welche Schichten hat das OSI-Modell?",
+          "options": [
+            "3 Schichten",
+            "7 Schichten: Physikalisch, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung",
+            "5 Schichten",
+            "10 Schichten"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 87,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Layer 2 und Layer 3 im OSI-Modell?",
+          "options": [
+            "Keine Unterschiede",
+            "Layer 2 arbeitet mit MAC-Adressen (Sicherungsschicht), Layer 3 mit IP-Adressen (Vermittlungsschicht)",
+            "Nur die Nummer",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 88,
+          "difficulty": "mittel",
+          "question": "Welche Protokolle arbeiten auf der Anwendungsschicht (Layer 7)?",
+          "options": [
+            "TCP und UDP",
+            "HTTP, FTP, SMTP, DNS",
+            "IP und ICMP",
+            "Ethernet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 89,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen der Transport- und der Vermittlungsschicht?",
+          "options": [
+            "Kein Unterschied",
+            "Transportschicht (L4) für Ende-zu-Ende-Verbindungen, Vermittlungsschicht (L3) für Routing",
+            "Nur die Position",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 90,
+          "difficulty": "mittel",
+          "question": "Welche Aufgabe hat die Sitzungsschicht (Layer 5)?",
+          "options": [
+            "Physische Übertragung",
+            "Aufbau, Verwaltung und Abbau von Sitzungen zwischen Anwendungen",
+            "Routing von Paketen",
+            "Fehlererkennung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 91,
+          "difficulty": "schwer",
+          "question": "Was ist die Aufgabe der Darstellungsschicht (Layer 6)?",
+          "options": [
+            "Routing",
+            "Datenkodierung, Kompression und Verschlüsselung",
+            "Physische Übertragung",
+            "Verbindungsaufbau"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 92,
+          "difficulty": "mittel",
+          "question": "Welche Aufgabe hat die physikalische Schicht (Layer 1)?",
+          "options": [
+            "Routing",
+            "Übertragung von Bits über ein physikalisches Medium",
+            "Verschlüsselung",
+            "Anwendungsprotokolle"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 93,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen dem OSI-Modell und dem TCP/IP-Modell?",
+          "options": [
+            "Sind identisch",
+            "OSI hat 7 Schichten und ist theoretisch, TCP/IP hat 4 Schichten und ist praktisch implementiert",
+            "Nur die Namen",
+            "Nur die Verwendung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 94,
+          "difficulty": "mittel",
+          "question": "Welche Geräte arbeiten auf welcher OSI-Schicht?",
+          "options": [
+            "Alle auf allen Schichten",
+            "Hub (L1), Switch (L2), Router (L3), Firewall (L3-L7)",
+            "Nur Router auf allen Schichten",
+            "Zufällig verteilt"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 95,
+          "difficulty": "schwer",
+          "question": "Was ist Kapselung (Encapsulation) im OSI-Modell?",
+          "options": [
+            "Eine Verschlüsselungsmethode",
+            "Das Hinzufügen von Header-Informationen jeder Schicht zu den Daten",
+            "Ein Routing-Protokoll",
+            "Eine Fehlerkorrektur"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 96,
+          "difficulty": "mittel",
+          "question": "Was ist die korrekte Reihenfolge der OSI-Schichten von unten nach oben?",
+          "options": [
+            "Anwendung, Transport, Vermittlung, Sicherung, Physikalisch",
+            "Physikalisch, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung",
+            "Transport, Netzwerk, Sicherung, Physikalisch, Anwendung",
+            "Anwendung, Physikalisch, Transport, Vermittlung, Sicherung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 97,
+          "difficulty": "schwer",
+          "question": "Welche Dateneinheiten werden in welcher OSI-Schicht verwendet?",
+          "options": [
+            "Alle Schichten verwenden Pakete",
+            "L1: Bits, L2: Frames, L3: Pakete, L4: Segmente, L5-7: Daten",
+            "Nur Bits in allen Schichten",
+            "Jede Schicht hat eigene Formate"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 98,
+          "difficulty": "mittel",
+          "question": "Welche Adressierung wird in welcher OSI-Schicht verwendet?",
+          "options": [
+            "Alle Schichten verwenden IP-Adressen",
+            "L2: MAC-Adressen, L3: IP-Adressen, L4: Ports",
+            "Nur IP-Adressen sind wichtig",
+            "Adressierung ist nicht schichtabhängig"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 99,
+          "difficulty": "schwer",
+          "question": "Wie werden Daten durch die OSI-Schichten transportiert?",
+          "options": [
+            "Direkt von Anwendung zu Anwendung",
+            "Von oben nach unten mit Kapselung, von unten nach oben mit Entkapselung",
+            "Immer nur horizontal",
+            "Zufällige Reihenfolge"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 100,
+          "difficulty": "mittel",
+          "question": "Welche Protokolle arbeiten auf der Transportschicht (Layer 4)?",
+          "options": [
+            "HTTP und FTP",
+            "TCP und UDP",
+            "IP und ICMP",
+            "Ethernet und WLAN"
+          ],
+          "correctAnswer": 1
+        }
+      ]
+    },
+    "Netzwerke": {
+      "description": "OSI-Modell, Protokolle, Netzwerksicherheit",
+      "questions": [
+        {
+          "id": 101,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen WPA2 und WPA3?",
+          "options": [
+            "Nur die Version",
+            "WPA3 bietet besseren Schutz gegen Wörterbuchattacken und Forward Secrecy",
+            "WPA2 ist sicherer",
+            "Nur Marketing"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 102,
+          "difficulty": "mittel",
+          "question": "Was ist DMZ (Demilitarized Zone) im Netzwerk?",
+          "options": [
+            "Ein Backup-Bereich",
+            "Ein Zwischennetzwerk für öffentlich zugängliche Server",
+            "Eine Firewall-Software",
+            "Ein Virenschutz"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 103,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Reverse Proxy und einem Forward Proxy?",
+          "options": [
+            "Keine Unterschiede",
+            "Forward Proxy schützt Clients, Reverse Proxy schützt Server",
+            "Nur die Richtung der Daten",
+            "Nur Marketing-Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 104,
+          "difficulty": "mittel",
+          "question": "Was ist ARP Spoofing und wie kann man sich dagegen schützen?",
+          "options": [
+            "Ein Backup-System",
+            "Eine Man-in-the-Middle-Attacke auf ARP-Ebene, Schutz durch statische ARP-Einträge und ARP-Inspektion",
+            "Ein Verschlüsselungsstandard",
+            "Eine Firewall-Regel"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 105,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Layer 2 und Layer 3 Switch?",
+          "options": [
+            "Nur Marketing",
+            "L2 arbeitet mit MAC-Adressen, L3 kann auch IP-Routing durchführen",
+            "Die Größe",
+            "Der Preis"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 106,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen linearer und binärer Suche?",
+          "options": [
+            "Kein Unterschied",
+            "Lineare Suche prüft jeden Eintrag, binäre Suche halbiert den Suchbereich (erfordert sortierte Daten)",
+            "Nur die Geschwindigkeit",
+            "Nur der Name"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 107,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Bubble Sort und Selection Sort?",
+          "options": [
+            "Keine Unterschiede",
+            "Bubble Sort vertauscht Nachbarn, Selection Sort sucht das Minimum und tauscht einmal pro Durchlauf",
+            "Nur die Namen",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 108,
+          "difficulty": "mittel",
+          "question": "Was ist Rekursion und wann ist sie sinnvoll?",
+          "options": [
+            "Eine Art Schleife",
+            "Selbstaufruf einer Funktion, sinnvoll bei sich wiederholenden Teilproblemen gleicher Struktur",
+            "Ein Sortieralgorithmus",
+            "Eine Datenstruktur"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 109,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einer Schleife und Rekursion?",
+          "options": [
+            "Kein Unterschied",
+            "Schleife wiederholt Code iterativ, Rekursion durch Selbstaufrufe mit Abbruchbedingung",
+            "Nur die Syntax",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 110,
+          "difficulty": "mittel",
+          "question": "Was ist eine Endrekursion (tail recursion)?",
+          "options": [
+            "Eine endlose Rekursion",
+            "Eine Rekursion, bei der der rekursive Aufruf die letzte Operation ist",
+            "Ein Fehler im Code",
+            "Eine spezielle Schleife"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 111,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einer for- und einer while-Schleife?",
+          "options": [
+            "Kein Unterschied",
+            "for-Schleife für bekannte Anzahl Durchläufe, while für unbekannte Anzahl mit Bedingung",
+            "Nur die Syntax",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 112,
+          "difficulty": "mittel",
+          "question": "Was ist ein Pseudocode?",
+          "options": [
+            "Fehlerhafter Code",
+            "Eine programmiersprachenunabhängige Beschreibung eines Algorithmus",
+            "Eine Programmiersprache",
+            "Ein Compiler"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 113,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Algorithmus und einem Programm?",
+          "options": [
+            "Sind das Gleiche",
+            "Algorithmus ist die abstrakte Lösungsbeschreibung, Programm die konkrete Implementation",
+            "Nur die Sprache",
+            "Nur die Ausführbarkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 114,
+          "difficulty": "mittel",
+          "question": "Was ist eine Verzweigung (if-then-else)?",
+          "options": [
+            "Eine Schleife",
+            "Eine Kontrollstruktur zur bedingten Ausführung von Code",
+            "Ein Fehler",
+            "Eine Variable"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 115,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen break und continue in Schleifen?",
+          "options": [
+            "Kein Unterschied",
+            "break beendet die Schleife, continue springt zum nächsten Durchlauf",
+            "Nur die Namen",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 116,
+          "difficulty": "mittel",
+          "question": "Welche Schichten hat das OSI-Modell?",
+          "options": [
+            "3 Schichten",
+            "7 Schichten: Physikalisch, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung",
+            "5 Schichten",
+            "10 Schichten"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 117,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Layer 2 und Layer 3 im OSI-Modell?",
+          "options": [
+            "Keine Unterschiede",
+            "Layer 2 arbeitet mit MAC-Adressen (Sicherungsschicht), Layer 3 mit IP-Adressen (Vermittlungsschicht)",
+            "Nur die Nummer",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 118,
+          "difficulty": "mittel",
+          "question": "Welche Protokolle arbeiten auf der Anwendungsschicht (Layer 7)?",
+          "options": [
+            "TCP und UDP",
+            "HTTP, FTP, SMTP, DNS",
+            "IP und ICMP",
+            "Ethernet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 119,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen der Transport- und der Vermittlungsschicht?",
+          "options": [
+            "Kein Unterschied",
+            "Transportschicht (L4) für Ende-zu-Ende-Verbindungen, Vermittlungsschicht (L3) für Routing",
+            "Nur die Position",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 120,
+          "difficulty": "mittel",
+          "question": "Welche Aufgabe hat die Sitzungsschicht (Layer 5)?",
+          "options": [
+            "Physische Übertragung",
+            "Aufbau, Verwaltung und Abbau von Sitzungen zwischen Anwendungen",
+            "Routing von Paketen",
+            "Fehlererkennung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 121,
+          "difficulty": "schwer",
+          "question": "Was ist die Aufgabe der Darstellungsschicht (Layer 6)?",
+          "options": [
+            "Routing",
+            "Datenkodierung, Kompression und Verschlüsselung",
+            "Physische Übertragung",
+            "Verbindungsaufbau"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 122,
+          "difficulty": "mittel",
+          "question": "Welche Aufgabe hat die physikalische Schicht (Layer 1)?",
+          "options": [
+            "Routing",
+            "Übertragung von Bits über ein physikalisches Medium",
+            "Verschlüsselung",
+            "Anwendungsprotokolle"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 123,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen dem OSI-Modell und dem TCP/IP-Modell?",
+          "options": [
+            "Sind identisch",
+            "OSI hat 7 Schichten und ist theoretisch, TCP/IP hat 4 Schichten und ist praktisch implementiert",
+            "Nur die Namen",
+            "Nur die Verwendung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 124,
+          "difficulty": "mittel",
+          "question": "Welche Geräte arbeiten auf welcher OSI-Schicht?",
+          "options": [
+            "Alle auf allen Schichten",
+            "Hub (L1), Switch (L2), Router (L3), Firewall (L3-L7)",
+            "Nur Router auf allen Schichten",
+            "Zufällig verteilt"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 125,
+          "difficulty": "schwer",
+          "question": "Was ist Kapselung (Encapsulation) im OSI-Modell?",
+          "options": [
+            "Eine Verschlüsselungsmethode",
+            "Das Hinzufügen von Header-Informationen jeder Schicht zu den Daten",
+            "Ein Routing-Protokoll",
+            "Eine Fehlerkorrektur"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 126,
+          "difficulty": "mittel",
+          "question": "Was ist die korrekte Reihenfolge der OSI-Schichten von unten nach oben?",
+          "options": [
+            "Anwendung, Transport, Vermittlung, Sicherung, Physikalisch",
+            "Physikalisch, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung",
+            "Transport, Netzwerk, Sicherung, Physikalisch, Anwendung",
+            "Anwendung, Physikalisch, Transport, Vermittlung, Sicherung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 127,
+          "difficulty": "schwer",
+          "question": "Welche Dateneinheiten werden in welcher OSI-Schicht verwendet?",
+          "options": [
+            "Alle Schichten verwenden Pakete",
+            "L1: Bits, L2: Frames, L3: Pakete, L4: Segmente, L5-7: Daten",
+            "Nur Bits in allen Schichten",
+            "Jede Schicht hat eigene Formate"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 128,
+          "difficulty": "mittel",
+          "question": "Welche Adressierung wird in welcher OSI-Schicht verwendet?",
+          "options": [
+            "Alle Schichten verwenden IP-Adressen",
+            "L2: MAC-Adressen, L3: IP-Adressen, L4: Ports",
+            "Nur IP-Adressen sind wichtig",
+            "Adressierung ist nicht schichtabhängig"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 129,
+          "difficulty": "schwer",
+          "question": "Wie werden Daten durch die OSI-Schichten transportiert?",
+          "options": [
+            "Direkt von Anwendung zu Anwendung",
+            "Von oben nach unten mit Kapselung, von unten nach oben mit Entkapselung",
+            "Immer nur horizontal",
+            "Zufällige Reihenfolge"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 130,
+          "difficulty": "mittel",
+          "question": "Welche Protokolle arbeiten auf der Transportschicht (Layer 4)?",
+          "options": [
+            "HTTP und FTP",
+            "TCP und UDP",
+            "IP und ICMP",
+            "Ethernet und WLAN"
+          ],
+          "correctAnswer": 1
+        }
+      ]
+    },
+    "IT-Sicherheit": {
+      "description": "Authentifizierung, Verschlüsselung, Datenschutz",
+      "questions": [
+        {
+          "id": 1,
+          "difficulty": "leicht",
+          "question": "Was ist der Unterschied zwischen einer Klasse und einem Objekt?",
+          "options": [
+            "Es gibt keinen Unterschied",
+            "Eine Klasse ist die Vorlage, ein Objekt ist eine konkrete Instanz der Klasse",
+            "Klassen sind nur in Java, Objekte nur in Python",
+            "Objekte sind veraltet, Klassen modern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "difficulty": "mittel",
+          "question": "Was bedeutet das SOLID-Prinzip 'Single Responsibility'?",
+          "options": [
+            "Eine Klasse darf nur eine Methode haben",
+            "Eine Klasse sollte nur einen Grund haben, sich zu ändern",
+            "Ein Programm darf nur eine Funktion haben",
+            "Eine Methode darf nur eine Zeile Code haben"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Kompilierung und Interpretation?",
+          "options": [
+            "Es gibt keinen Unterschied",
+            "Kompilierung ist schneller, aber plattformabhängig, Interpretation ist langsamer, aber plattformunabhängig",
+            "Interpretation ist schneller und plattformabhängig",
+            "Kompilierung ist langsamer und plattformunabhängig"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "difficulty": "mittel",
+          "question": "Was ist das MVC-Pattern?",
+          "options": [
+            "Multiple Version Control",
+            "Model View Controller - ein Architekturmuster zur Trennung von Daten, Darstellung und Logik",
+            "Main Variable Container",
+            "Memory Virtual Cache"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 14,
+          "difficulty": "leicht",
+          "question": "Was ist der Unterschied zwischen Vererbung und Komposition?",
+          "options": [
+            "Keiner, beides sind Synonyme",
+            "Vererbung ist 'ist ein', Komposition ist 'hat ein'",
+            "Vererbung ist nur in Java möglich, Komposition in allen Sprachen",
+            "Vererbung ist modern, Komposition veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 23,
+          "difficulty": "schwer",
+          "question": "Was sind die SOLID-Prinzipien?",
+          "options": [
+            "Regeln für Datenbanken",
+            "Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
+            "Regeln für HTML",
+            "Prinzipien für Netzwerke"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 24,
+          "difficulty": "mittel",
+          "question": "Was ist das Singleton Pattern und wofür wird es verwendet?",
+          "options": [
+            "Ein Pattern für Datenbanken",
+            "Ein Pattern, das sicherstellt, dass eine Klasse nur eine Instanz hat und globalen Zugriffspunkt bietet",
+            "Ein Pattern für Arrays",
+            "Ein Pattern für Webseiten"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 25,
+          "difficulty": "schwer",
+          "question": "Was ist die Zeitkomplexität von QuickSort im durchschnittlichen Fall?",
+          "options": [
+            "O(n)",
+            "O(n log n)",
+            "O(n²)",
+            "O(2^n)"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 26,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Polymorphismus und Vererbung?",
+          "options": [
+            "Sind das Gleiche",
+            "Polymorphismus erlaubt verschiedene Implementierungen gleicher Methoden, Vererbung überträgt Eigenschaften",
+            "Nur in Java verfügbar",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 27,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Aggregation und Komposition in der OOP?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Aggregation ist eine lose Beziehung ('hat ein'), Komposition ist eine starke Beziehung ('ist Teil von')",
+            "Nur für Java relevant",
+            "Nur theoretische Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 28,
+          "difficulty": "schwer",
+          "question": "Was ist Clean Architecture?",
+          "options": [
+            "Code-Formatierung",
+            "Eine Architektur mit Fokus auf Geschäftsregeln und Unabhängigkeit von Frameworks",
+            "Ein Code-Generator",
+            "Ein Build-System"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 29,
+          "difficulty": "mittel",
+          "question": "Was ist das Repository Pattern?",
+          "options": [
+            "Ein Versionskontrollsystem",
+            "Ein Muster zur Abstraktion der Datenzugriffslogik von der Geschäftslogik",
+            "Eine Datenbank",
+            "Ein Deployment-Tool"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 30,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Continuous Integration und Continuous Deployment?",
+          "options": [
+            "Sind das Gleiche",
+            "CI integriert Code automatisch, CD stellt automatisch in Produktion bereit",
+            "Nur für große Teams",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 31,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Dependency Injection und Service Locator Pattern?",
+          "options": [
+            "Sind das Gleiche",
+            "DI injiziert Abhängigkeiten von außen, Service Locator verwaltet zentral Abhängigkeiten",
+            "DI ist nur für Java",
+            "Service Locator ist veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 32,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Array und einer verketteten Liste?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Arrays haben feste Größe und direkten Zugriff, Listen sind dynamisch mit sequenziellem Zugriff",
+            "Arrays sind nur für Zahlen, Listen nur für Text",
+            "Arrays sind modern, Listen veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 33,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Web Workers in JavaScript?",
+          "options": [
+            "Normale Funktionen",
+            "Scripts die im Hintergrund parallel zum Hauptthread laufen",
+            "CSS-Styles",
+            "HTML-Tags"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 34,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen nativen und hybriden Apps?",
+          "options": [
+            "Kein Unterschied",
+            "Native Apps sind speziell für eine Plattform entwickelt, hybride Apps nutzen Webtechnologien",
+            "Native Apps sind Webseiten",
+            "Hybride Apps sind schneller"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 35,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen überwachtem und unüberwachtem Lernen?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Überwachtes Lernen nutzt gelabelte Daten, unüberwachtes Lernen findet selbst Muster",
+            "Überwachtes Lernen ist schneller",
+            "Unüberwachtes Lernen ist immer besser"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 36,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Scrum und Kanban?",
+          "options": [
+            "Sind das Gleiche",
+            "Scrum arbeitet in Sprints mit festen Rollen, Kanban ist flexibler mit kontinuierlichem Flow",
+            "Scrum ist nur für große Teams",
+            "Kanban ist nur für kleine Projekte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 37,
+          "difficulty": "mittel",
+          "question": "Was ist eine n-Tier Architektur?",
+          "options": [
+            "Ein Netzwerkprotokoll",
+            "Eine mehrschichtige Anwendungsarchitektur (z.B. Präsentation, Logik, Daten)",
+            "Ein Programmierparadigma",
+            "Ein Betriebssystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 38,
+          "difficulty": "schwer",
+          "question": "Was ist ein Enterprise Service Bus (ESB)?",
+          "options": [
+            "Ein Firmenbus",
+            "Eine Middleware zur Integration verschiedener Anwendungen und Services",
+            "Ein Netzwerkkabel",
+            "Ein Datenbanksystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 39,
+          "difficulty": "mittel",
+          "question": "Was ist BPMN?",
+          "options": [
+            "Ein Programmiersprache",
+            "Business Process Model and Notation - Standard zur Geschäftsprozessmodellierung",
+            "Ein Betriebssystem",
+            "Ein Netzwerkprotokoll"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 40,
+          "difficulty": "schwer",
+          "question": "Was sind die Kernprozesse von ITIL?",
+          "options": [
+            "Nur Incident Management",
+            "Service Strategy, Service Design, Service Transition, Service Operation, Continual Service Improvement",
+            "Nur Problem Management",
+            "Nur Change Management"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 41,
+          "difficulty": "mittel",
+          "question": "Was ist ROI?",
+          "options": [
+            "Eine Programmiersprache",
+            "Return on Investment - Verhältnis zwischen Gewinn und investiertem Kapital",
+            "Ein Netzwerkprotokoll",
+            "Ein Betriebssystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 42,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Materialized View und einer normalen View?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Materialized Views speichern Daten physisch, normale Views berechnen bei jedem Aufruf neu",
+            "Materialized Views sind nur für Oracle",
+            "Normale Views sind schneller"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 43,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Verschlüsselung und Hashing?",
+          "options": [
+            "Sind das Gleiche",
+            "Verschlüsselung ist reversibel, Hashing ist nicht reversibel",
+            "Verschlüsselung ist nur für Dateien",
+            "Hashing ist veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 44,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen LEFT JOIN und RIGHT JOIN?",
+          "options": [
+            "Keine Unterschied",
+            "LEFT JOIN behält alle Datensätze der linken Tabelle, RIGHT JOIN der rechten Tabelle",
+            "LEFT JOIN ist schneller",
+            "RIGHT JOIN ist moderner"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 45,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen IPv4 und IPv6?",
+          "options": [
+            "Nur die Version",
+            "IPv6 hat längere Adressen, mehr Adressen verfügbar, bessere Sicherheit integriert",
+            "IPv6 ist langsamer",
+            "IPv4 ist sicherer"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 46,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen horizontaler und vertikaler Skalierung?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Horizontal fügt mehr Instanzen hinzu, vertikal erhöht Ressourcen einer Instanz",
+            "Horizontal ist teurer",
+            "Vertikal ist immer besser"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 47,
+          "difficulty": "mittel",
+          "question": "Was ist der kritische Pfad in der Projektplanung?",
+          "options": [
+            "Der kürzeste Weg",
+            "Die Abfolge von Aktivitäten, die die Gesamtprojektdauer bestimmen",
+            "Der teuerste Weg",
+            "Die riskantesten Aufgaben"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 48,
+          "difficulty": "schwer",
+          "question": "Was sind die Vor- und Nachteile einer Event-Driven Architecture?",
+          "options": [
+            "Hat nur Vorteile",
+            "Vorteile: lose Kopplung, Skalierbarkeit; Nachteile: Komplexität, schwierige Fehlersuche",
+            "Ist veraltet",
+            "Nur für kleine Systeme"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 49,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Black-Box und White-Box Tests?",
+          "options": [
+            "Die Farbe",
+            "Black-Box testet ohne Kenntnisse der Implementierung, White-Box mit Kenntnis des Codes",
+            "Black-Box ist veraltet",
+            "White-Box ist nur für Backend"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 50,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen CAPEX und OPEX?",
+          "options": [
+            "Sind das Gleiche",
+            "CAPEX sind Investitionsausgaben, OPEX sind laufende Betriebskosten",
+            "Nur für Großunternehmen relevant",
+            "Nur für Hardware relevant"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 51,
+          "difficulty": "mittel",
+          "question": "Was ist Privacy by Design?",
+          "options": [
+            "Ein Design-Pattern",
+            "Datenschutz von Anfang an in Entwicklung und Prozesse integrieren",
+            "Ein UI-Konzept",
+            "Eine Software"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 52,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Stakeholder und einem Shareholder?",
+          "options": [
+            "Sind identisch",
+            "Stakeholder hat Interesse am Projekt, Shareholder besitzt Unternehmensanteile",
+            "Nur andere Schreibweise",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 53,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Loose Coupling und Tight Coupling?",
+          "options": [
+            "Keine Unterschiede",
+            "Loose Coupling minimiert Abhängigkeiten, Tight Coupling hat starke Abhängigkeiten",
+            "Nur theoretische Konzepte",
+            "Veraltete Ansätze"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 54,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Fehler, Defekt und Versagen?",
+          "options": [
+            "Alles das Gleiche",
+            "Fehler im Code, Defekt im Programm, Versagen im Betrieb",
+            "Nur verschiedene Namen",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 55,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen TCO und ROI?",
+          "options": [
+            "Sind gleich",
+            "TCO betrachtet Gesamtkosten, ROI betrachtet Rendite",
+            "Nur Marketing-Begriffe",
+            "Veraltete Kennzahlen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 56,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Datenschutzbeauftragten und einem Informationssicherheitsbeauftragten?",
+          "options": [
+            "Sind identisch",
+            "Datenschutzbeauftragter für personenbezogene Daten, Informationssicherheitsbeauftragter für allgemeine IT-Sicherheit",
+            "Nur unterschiedliche Titel",
+            "Veraltete Positionen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 57,
+          "difficulty": "mittel",
+          "question": "Was ist das Observer Pattern?",
+          "options": [
+            "Ein Überwachungssystem",
+            "Ein Muster zur Benachrichtigung abhängiger Objekte bei Zustandsänderungen",
+            "Ein Logging-System",
+            "Ein Security Pattern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 58,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Adapter und Bridge Pattern?",
+          "options": [
+            "Sind identisch",
+            "Adapter macht inkompatible Schnittstellen kompatibel, Bridge entkoppelt Abstraktion von Implementierung",
+            "Nur die Namen",
+            "Unterschiedliche Anwendungsfälle"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 59,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Fehler, Defekt und Versagen?",
+          "options": [
+            "Alles das Gleiche",
+            "Fehler im Code, Defekt im Programm, Versagen im Betrieb",
+            "Nur verschiedene Namen",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 60,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Verification und Validation?",
+          "options": [
+            "Keine Unterschied",
+            "Verification prüft Spezifikationstreue, Validation prüft Kundennutzen",
+            "Nur für große Projekte",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 61,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen linearer und binärer Suche?",
+          "options": [
+            "Kein Unterschied",
+            "Lineare Suche prüft jeden Eintrag, binäre Suche halbiert den Suchbereich (erfordert sortierte Daten)",
+            "Nur die Geschwindigkeit",
+            "Nur der Name"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 62,
+          "difficulty": "mittel",
+          "question": "Was bedeutet der Begriff 'Normalisierung' in Datenbanken?",
+          "options": [
+            "Daten komprimieren",
+            "Strukturierung von Daten zur Vermeidung von Redundanz und Anomalien",
+            "Daten verschlüsseln",
+            "Daten sortieren"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 63,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Penetration Testing und Vulnerability Scanning?",
+          "options": [
+            "Sind identisch",
+            "Pen-Testing ist aktiver Angriffsversuch, Vulnerability Scanning ist automatisierte Schwachstellensuche",
+            "Nur für Webseiten relevant",
+            "Veraltete Methoden"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 64,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Hub und einem Switch?",
+          "options": [
+            "Keine Unterschiede",
+            "Hub sendet an alle Ports, Switch nur an den Zielport",
+            "Hub ist neuer",
+            "Switch ist günstiger"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 65,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Public, Private und Hybrid Cloud?",
+          "options": [
+            "Nur Marketing-Begriffe",
+            "Public ist öffentlich zugänglich, Private firmenintern, Hybrid ist eine Kombination",
+            "Unterschiedliche Anbieter",
+            "Unterschiedliche Technologien"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 66,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Meilenstein und Deliverable?",
+          "options": [
+            "Sind das Gleiche",
+            "Meilenstein ist ein Zeitpunkt/Ereignis, Deliverable ist ein konkretes Ergebnis",
+            "Nur für große Projekte relevant",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 67,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen synchroner und asynchroner Kommunikation?",
+          "options": [
+            "Kein Unterschied",
+            "Synchron wartet auf Antwort, Asynchron arbeitet weiter ohne zu warten",
+            "Nur für Webservices relevant",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 68,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Alpha- und Beta-Testing?",
+          "options": [
+            "Keine Unterschiede",
+            "Alpha intern durch Entwickler, Beta extern durch echte Nutzer",
+            "Unterschiedliche Tools",
+            "Unterschiedliche Programmiersprachen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 69,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Break-Even-Point und ROI?",
+          "options": [
+            "Sind identisch",
+            "Break-Even zeigt Gewinnschelle, ROI zeigt Rendite des eingesetzten Kapitals",
+            "Nur für Großprojekte relevant",
+            "Veraltete Kennzahlen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 70,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Auftragsverarbeiter und einem Verantwortlichen nach DSGVO?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Verantwortlicher bestimmt Zwecke der Verarbeitung, Auftragsverarbeiter verarbeitet im Auftrag",
+            "Nur für große Unternehmen relevant",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 71,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Continuous Integration und Continuous Deployment?",
+          "options": [
+            "Sind das Gleiche",
+            "CI integriert Code automatisch, CD stellt automatisch in Produktion bereit",
+            "Nur für große Teams",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 72,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einer Transaktion und einem Savepoint?",
+          "options": [
+            "Keine Unterschiede",
+            "Transaktion ist eine komplette Einheit, Savepoint ermöglicht teilweises Rollback",
+            "Nur in Oracle verfügbar",
+            "Veraltete Funktionen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 73,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Virus und einem Wurm?",
+          "options": [
+            "Sind das Gleiche",
+            "Virus benötigt Wirtsprogramm, Wurm verbreitet sich selbstständig",
+            "Nur Namensunterschiede",
+            "Unterschiedliche Programmiersprachen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 74,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Gateway und einem Router?",
+          "options": [
+            "Keine Unterschiede",
+            "Gateway verbindet unterschiedliche Netzwerktypen, Router verbindet gleiche Netzwerke",
+            "Nur die Größe",
+            "Nur der Preis"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 75,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Layer 2 und Layer 3 Switch?",
+          "options": [
+            "Nur Marketing",
+            "L2 arbeitet mit MAC-Adressen, L3 kann auch IP-Routing durchführen",
+            "Die Größe",
+            "Der Preis"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 76,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen linearer und binärer Suche?",
+          "options": [
+            "Kein Unterschied",
+            "Lineare Suche prüft jeden Eintrag, binäre Suche halbiert den Suchbereich (erfordert sortierte Daten)",
+            "Nur die Geschwindigkeit",
+            "Nur der Name"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 77,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Bubble Sort und Selection Sort?",
+          "options": [
+            "Keine Unterschiede",
+            "Bubble Sort vertauscht Nachbarn, Selection Sort sucht das Minimum und tauscht einmal pro Durchlauf",
+            "Nur die Namen",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 78,
+          "difficulty": "mittel",
+          "question": "Was ist Rekursion und wann ist sie sinnvoll?",
+          "options": [
+            "Eine Art Schleife",
+            "Selbstaufruf einer Funktion, sinnvoll bei sich wiederholenden Teilproblemen gleicher Struktur",
+            "Ein Sortieralgorithmus",
+            "Eine Datenstruktur"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 79,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einer Schleife und Rekursion?",
+          "options": [
+            "Kein Unterschied",
+            "Schleife wiederholt Code iterativ, Rekursion durch Selbstaufrufe mit Abbruchbedingung",
+            "Nur die Syntax",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 80,
+          "difficulty": "mittel",
+          "question": "Was ist eine Endrekursion (tail recursion)?",
+          "options": [
+            "Eine endlose Rekursion",
+            "Eine Rekursion, bei der der rekursive Aufruf die letzte Operation ist",
+            "Ein Fehler im Code",
+            "Eine spezielle Schleife"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 81,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einer for- und einer while-Schleife?",
+          "options": [
+            "Kein Unterschied",
+            "for-Schleife für bekannte Anzahl Durchläufe, while für unbekannte Anzahl mit Bedingung",
+            "Nur die Syntax",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 82,
+          "difficulty": "mittel",
+          "question": "Was ist ein Pseudocode?",
+          "options": [
+            "Fehlerhafter Code",
+            "Eine programmiersprachenunabhängige Beschreibung eines Algorithmus",
+            "Eine Programmiersprache",
+            "Ein Compiler"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 83,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Algorithmus und einem Programm?",
+          "options": [
+            "Sind das Gleiche",
+            "Algorithmus ist die abstrakte Lösungsbeschreibung, Programm die konkrete Implementation",
+            "Nur die Sprache",
+            "Nur die Ausführbarkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 84,
+          "difficulty": "mittel",
+          "question": "Was ist eine Verzweigung (if-then-else)?",
+          "options": [
+            "Eine Schleife",
+            "Eine Kontrollstruktur zur bedingten Ausführung von Code",
+            "Ein Fehler",
+            "Eine Variable"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 85,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen break und continue in Schleifen?",
+          "options": [
+            "Kein Unterschied",
+            "break beendet die Schleife, continue springt zum nächsten Durchlauf",
+            "Nur die Namen",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 86,
+          "difficulty": "mittel",
+          "question": "Welche Schichten hat das OSI-Modell?",
+          "options": [
+            "3 Schichten",
+            "7 Schichten: Physikalisch, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung",
+            "5 Schichten",
+            "10 Schichten"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 87,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Layer 2 und Layer 3 im OSI-Modell?",
+          "options": [
+            "Keine Unterschiede",
+            "Layer 2 arbeitet mit MAC-Adressen (Sicherungsschicht), Layer 3 mit IP-Adressen (Vermittlungsschicht)",
+            "Nur die Nummer",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 88,
+          "difficulty": "mittel",
+          "question": "Welche Protokolle arbeiten auf der Anwendungsschicht (Layer 7)?",
+          "options": [
+            "TCP und UDP",
+            "HTTP, FTP, SMTP, DNS",
+            "IP und ICMP",
+            "Ethernet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 89,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen der Transport- und der Vermittlungsschicht?",
+          "options": [
+            "Kein Unterschied",
+            "Transportschicht (L4) für Ende-zu-Ende-Verbindungen, Vermittlungsschicht (L3) für Routing",
+            "Nur die Position",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 90,
+          "difficulty": "mittel",
+          "question": "Welche Aufgabe hat die Sitzungsschicht (Layer 5)?",
+          "options": [
+            "Physische Übertragung",
+            "Aufbau, Verwaltung und Abbau von Sitzungen zwischen Anwendungen",
+            "Routing von Paketen",
+            "Fehlererkennung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 91,
+          "difficulty": "schwer",
+          "question": "Was ist die Aufgabe der Darstellungsschicht (Layer 6)?",
+          "options": [
+            "Routing",
+            "Datenkodierung, Kompression und Verschlüsselung",
+            "Physische Übertragung",
+            "Verbindungsaufbau"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 92,
+          "difficulty": "mittel",
+          "question": "Welche Aufgabe hat die physikalische Schicht (Layer 1)?",
+          "options": [
+            "Routing",
+            "Übertragung von Bits über ein physikalisches Medium",
+            "Verschlüsselung",
+            "Anwendungsprotokolle"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 93,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen dem OSI-Modell und dem TCP/IP-Modell?",
+          "options": [
+            "Sind identisch",
+            "OSI hat 7 Schichten und ist theoretisch, TCP/IP hat 4 Schichten und ist praktisch implementiert",
+            "Nur die Namen",
+            "Nur die Verwendung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 94,
+          "difficulty": "mittel",
+          "question": "Welche Geräte arbeiten auf welcher OSI-Schicht?",
+          "options": [
+            "Alle auf allen Schichten",
+            "Hub (L1), Switch (L2), Router (L3), Firewall (L3-L7)",
+            "Nur Router auf allen Schichten",
+            "Zufällig verteilt"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 95,
+          "difficulty": "schwer",
+          "question": "Was ist Kapselung (Encapsulation) im OSI-Modell?",
+          "options": [
+            "Eine Verschlüsselungsmethode",
+            "Das Hinzufügen von Header-Informationen jeder Schicht zu den Daten",
+            "Ein Routing-Protokoll",
+            "Eine Fehlerkorrektur"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 96,
+          "difficulty": "mittel",
+          "question": "Was ist die korrekte Reihenfolge der OSI-Schichten von unten nach oben?",
+          "options": [
+            "Anwendung, Transport, Vermittlung, Sicherung, Physikalisch",
+            "Physikalisch, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung",
+            "Transport, Netzwerk, Sicherung, Physikalisch, Anwendung",
+            "Anwendung, Physikalisch, Transport, Vermittlung, Sicherung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 97,
+          "difficulty": "schwer",
+          "question": "Welche Dateneinheiten werden in welcher OSI-Schicht verwendet?",
+          "options": [
+            "Alle Schichten verwenden Pakete",
+            "L1: Bits, L2: Frames, L3: Pakete, L4: Segmente, L5-7: Daten",
+            "Nur Bits in allen Schichten",
+            "Jede Schicht hat eigene Formate"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 98,
+          "difficulty": "mittel",
+          "question": "Welche Adressierung wird in welcher OSI-Schicht verwendet?",
+          "options": [
+            "Alle Schichten verwenden IP-Adressen",
+            "L2: MAC-Adressen, L3: IP-Adressen, L4: Ports",
+            "Nur IP-Adressen sind wichtig",
+            "Adressierung ist nicht schichtabhängig"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 99,
+          "difficulty": "schwer",
+          "question": "Wie werden Daten durch die OSI-Schichten transportiert?",
+          "options": [
+            "Direkt von Anwendung zu Anwendung",
+            "Von oben nach unten mit Kapselung, von unten nach oben mit Entkapselung",
+            "Immer nur horizontal",
+            "Zufällige Reihenfolge"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 100,
+          "difficulty": "mittel",
+          "question": "Welche Protokolle arbeiten auf der Transportschicht (Layer 4)?",
+          "options": [
+            "HTTP und FTP",
+            "TCP und UDP",
+            "IP und ICMP",
+            "Ethernet und WLAN"
+          ],
+          "correctAnswer": 1
+        }
+      ]
+    },
+    "Datenbanken": {
+      "description": "SQL, Normalisierung, Datenbankdesign",
+      "questions": [
+        {
+          "id": 3,
+          "difficulty": "leicht",
+          "question": "Was ist der Unterschied zwischen DELETE und TRUNCATE in SQL?",
+          "options": [
+            "Es gibt keinen Unterschied",
+            "DELETE kann gefiltert werden und ist langsamer, TRUNCATE löscht alle Daten und ist schneller",
+            "DELETE ist für Tabellen, TRUNCATE für Datenbanken",
+            "TRUNCATE ist veraltet, DELETE ist modern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 4,
+          "difficulty": "mittel",
+          "question": "Was ist eine Stored Procedure?",
+          "options": [
+            "Eine gespeicherte Datei",
+            "Ein in der Datenbank gespeichertes und vorbereitetes SQL-Skript",
+            "Ein Backup-Verfahren",
+            "Ein Datentyp"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 7,
+          "difficulty": "leicht",
+          "question": "Was bedeutet ACID im Kontext von Datenbanktransaktionen?",
+          "options": [
+            "Application Control and Internal Design",
+            "Atomicity, Consistency, Isolation, Durability",
+            "Automated Content Integration Database",
+            "Access Control Identity Database"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 8,
+          "difficulty": "mittel",
+          "question": "Was ist ein SQL-Injection-Angriff?",
+          "options": [
+            "Ein Virus, der Datenbanken löscht",
+            "Eine Methode, um schädlichen SQL-Code in Datenbankanfragen einzuschleusen",
+            "Ein Tool zum Datenbank-Backup",
+            "Ein Programm zur Datenbankoptimierung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 13,
+          "difficulty": "schwer",
+          "question": "Was ist Cross-Site Scripting (XSS)?",
+          "options": [
+            "Eine Programmiertechnik für Websites",
+            "Ein Angriff, bei dem schädlicher Code in Webseiten eingeschleust wird",
+            "Eine Methode zur Website-Optimierung",
+            "Ein Tool für Cross-Browser-Testing"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 15,
+          "difficulty": "leicht",
+          "question": "Was ist ein DNS-Server?",
+          "options": [
+            "Ein Mailserver",
+            "Ein Server, der Domainnamen in IP-Adressen übersetzt",
+            "Ein Dateiserver",
+            "Ein Webserver"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 16,
+          "difficulty": "schwer",
+          "question": "Was sind die wichtigsten Grundsätze der DSGVO?",
+          "options": [
+            "Nur Datenspeicherung und Löschung",
+            "Rechtmäßigkeit, Verarbeitung nach Treu und Glauben, Transparenz, Zweckbindung, Datenminimierung, Richtigkeit, Speicherbegrenzung, Integrität und Vertraulichkeit",
+            "Nur Verschlüsselung der Daten",
+            "Ausschließlich Backup und Recovery"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 17,
+          "difficulty": "mittel",
+          "question": "Was sind die Kernelemente von Scrum?",
+          "options": [
+            "Nur Daily Meetings",
+            "Product Backlog, Sprint Backlog, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective",
+            "Nur Dokumentation schreiben",
+            "Ausschließlich Programmierung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 18,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen IaaS, PaaS und SaaS?",
+          "options": [
+            "Sind alle das Gleiche",
+            "IaaS bietet Infrastruktur, PaaS bietet Entwicklungsplattform, SaaS bietet fertige Software",
+            "Sind verschiedene Programmiersprachen",
+            "Sind verschiedene Datenbanksysteme"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 19,
+          "difficulty": "mittel",
+          "question": "Was ist der Hauptvorteil von Containern gegenüber virtuellen Maschinen?",
+          "options": [
+            "Sind immer sicherer",
+            "Leichtgewichtiger und schneller, da sie sich Betriebssystemkern teilen",
+            "Bieten bessere Grafik",
+            "Sind einfacher zu programmieren"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 20,
+          "difficulty": "schwer",
+          "question": "Welche Vorteile bieten Microservices gegenüber monolithischen Anwendungen?",
+          "options": [
+            "Sind immer günstiger",
+            "Unabhängige Entwicklung, Deployment und Skalierung einzelner Services, bessere Wartbarkeit",
+            "Brauchen weniger Speicherplatz",
+            "Sind immer schneller"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 21,
+          "difficulty": "mittel",
+          "question": "Was sind die HTTP-Methoden für CRUD-Operationen?",
+          "options": [
+            "Nur GET und POST",
+            "POST (Create), GET (Read), PUT/PATCH (Update), DELETE (Delete)",
+            "Nur PUT und DELETE",
+            "CRUD sind keine HTTP-Methoden"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 22,
+          "difficulty": "leicht",
+          "question": "Was ist der Unterschied zwischen git pull und git fetch?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "fetch lädt nur herunter, pull lädt herunter und merged",
+            "pull ist veraltet",
+            "fetch ist nur für große Dateien"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 23,
+          "difficulty": "schwer",
+          "question": "Was sind die SOLID-Prinzipien?",
+          "options": [
+            "Regeln für Datenbanken",
+            "Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion",
+            "Regeln für HTML",
+            "Prinzipien für Netzwerke"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 24,
+          "difficulty": "mittel",
+          "question": "Was ist das Singleton Pattern und wofür wird es verwendet?",
+          "options": [
+            "Ein Pattern für Datenbanken",
+            "Ein Pattern, das sicherstellt, dass eine Klasse nur eine Instanz hat und globalen Zugriffspunkt bietet",
+            "Ein Pattern für Arrays",
+            "Ein Pattern für Webseiten"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 25,
+          "difficulty": "schwer",
+          "question": "Was ist die Zeitkomplexität von QuickSort im durchschnittlichen Fall?",
+          "options": [
+            "O(n)",
+            "O(n log n)",
+            "O(n²)",
+            "O(2^n)"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 26,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Polymorphismus und Vererbung?",
+          "options": [
+            "Sind das Gleiche",
+            "Polymorphismus erlaubt verschiedene Implementierungen gleicher Methoden, Vererbung überträgt Eigenschaften",
+            "Nur in Java verfügbar",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 27,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Aggregation und Komposition in der OOP?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Aggregation ist eine lose Beziehung ('hat ein'), Komposition ist eine starke Beziehung ('ist Teil von')",
+            "Nur für Java relevant",
+            "Nur theoretische Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 28,
+          "difficulty": "schwer",
+          "question": "Was ist Clean Architecture?",
+          "options": [
+            "Code-Formatierung",
+            "Eine Architektur mit Fokus auf Geschäftsregeln und Unabhängigkeit von Frameworks",
+            "Ein Code-Generator",
+            "Ein Build-System"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 29,
+          "difficulty": "mittel",
+          "question": "Was ist das Repository Pattern?",
+          "options": [
+            "Ein Versionskontrollsystem",
+            "Ein Muster zur Abstraktion der Datenzugriffslogik von der Geschäftslogik",
+            "Eine Datenbank",
+            "Ein Deployment-Tool"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 30,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Continuous Integration und Continuous Deployment?",
+          "options": [
+            "Sind das Gleiche",
+            "CI integriert Code automatisch, CD stellt automatisch in Produktion bereit",
+            "Nur für große Teams",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 31,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Dependency Injection und Service Locator Pattern?",
+          "options": [
+            "Sind das Gleiche",
+            "DI injiziert Abhängigkeiten von außen, Service Locator verwaltet zentral Abhängigkeiten",
+            "DI ist nur für Java",
+            "Service Locator ist veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 32,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Array und einer verketteten Liste?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Arrays haben feste Größe und direkten Zugriff, Listen sind dynamisch mit sequenziellem Zugriff",
+            "Arrays sind nur für Zahlen, Listen nur für Text",
+            "Arrays sind modern, Listen veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 33,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Web Workers in JavaScript?",
+          "options": [
+            "Normale Funktionen",
+            "Scripts die im Hintergrund parallel zum Hauptthread laufen",
+            "CSS-Styles",
+            "HTML-Tags"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 34,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen nativen und hybriden Apps?",
+          "options": [
+            "Kein Unterschied",
+            "Native Apps sind speziell für eine Plattform entwickelt, hybride Apps nutzen Webtechnologien",
+            "Native Apps sind Webseiten",
+            "Hybride Apps sind schneller"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 35,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen überwachtem und unüberwachtem Lernen?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Überwachtes Lernen nutzt gelabelte Daten, unüberwachtes Lernen findet selbst Muster",
+            "Überwachtes Lernen ist schneller",
+            "Unüberwachtes Lernen ist immer besser"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 36,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Scrum und Kanban?",
+          "options": [
+            "Sind das Gleiche",
+            "Scrum arbeitet in Sprints mit festen Rollen, Kanban ist flexibler mit kontinuierlichem Flow",
+            "Scrum ist nur für große Teams",
+            "Kanban ist nur für kleine Projekte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 37,
+          "difficulty": "mittel",
+          "question": "Was ist eine n-Tier Architektur?",
+          "options": [
+            "Ein Netzwerkprotokoll",
+            "Eine mehrschichtige Anwendungsarchitektur (z.B. Präsentation, Logik, Daten)",
+            "Ein Programmierparadigma",
+            "Ein Betriebssystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 38,
+          "difficulty": "schwer",
+          "question": "Was ist ein Enterprise Service Bus (ESB)?",
+          "options": [
+            "Ein Firmenbus",
+            "Eine Middleware zur Integration verschiedener Anwendungen und Services",
+            "Ein Netzwerkkabel",
+            "Ein Datenbanksystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 39,
+          "difficulty": "mittel",
+          "question": "Was ist BPMN?",
+          "options": [
+            "Ein Programmiersprache",
+            "Business Process Model and Notation - Standard zur Geschäftsprozessmodellierung",
+            "Ein Betriebssystem",
+            "Ein Netzwerkprotokoll"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 40,
+          "difficulty": "schwer",
+          "question": "Was sind die Kernprozesse von ITIL?",
+          "options": [
+            "Nur Incident Management",
+            "Service Strategy, Service Design, Service Transition, Service Operation, Continual Service Improvement",
+            "Nur Problem Management",
+            "Nur Change Management"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 41,
+          "difficulty": "mittel",
+          "question": "Was ist ROI?",
+          "options": [
+            "Eine Programmiersprache",
+            "Return on Investment - Verhältnis zwischen Gewinn und investiertem Kapital",
+            "Ein Netzwerkprotokoll",
+            "Ein Betriebssystem"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 42,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Materialized View und einer normalen View?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Materialized Views speichern Daten physisch, normale Views berechnen bei jedem Aufruf neu",
+            "Materialized Views sind nur für Oracle",
+            "Normale Views sind schneller"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 43,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Verschlüsselung und Hashing?",
+          "options": [
+            "Sind das Gleiche",
+            "Verschlüsselung ist reversibel, Hashing ist nicht reversibel",
+            "Verschlüsselung ist nur für Dateien",
+            "Hashing ist veraltet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 44,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen LEFT JOIN und RIGHT JOIN?",
+          "options": [
+            "Keine Unterschied",
+            "LEFT JOIN behält alle Datensätze der linken Tabelle, RIGHT JOIN der rechten Tabelle",
+            "LEFT JOIN ist schneller",
+            "RIGHT JOIN ist moderner"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 45,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen IPv4 und IPv6?",
+          "options": [
+            "Nur die Version",
+            "IPv6 hat längere Adressen, mehr Adressen verfügbar, bessere Sicherheit integriert",
+            "IPv6 ist langsamer",
+            "IPv4 ist sicherer"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 46,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen horizontaler und vertikaler Skalierung?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Horizontal fügt mehr Instanzen hinzu, vertikal erhöht Ressourcen einer Instanz",
+            "Horizontal ist teurer",
+            "Vertikal ist immer besser"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 47,
+          "difficulty": "mittel",
+          "question": "Was ist der kritische Pfad in der Projektplanung?",
+          "options": [
+            "Der kürzeste Weg",
+            "Die Abfolge von Aktivitäten, die die Gesamtprojektdauer bestimmen",
+            "Der teuerste Weg",
+            "Die riskantesten Aufgaben"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 48,
+          "difficulty": "schwer",
+          "question": "Was sind die Vor- und Nachteile einer Event-Driven Architecture?",
+          "options": [
+            "Hat nur Vorteile",
+            "Vorteile: lose Kopplung, Skalierbarkeit; Nachteile: Komplexität, schwierige Fehlersuche",
+            "Ist veraltet",
+            "Nur für kleine Systeme"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 49,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Black-Box und White-Box Tests?",
+          "options": [
+            "Die Farbe",
+            "Black-Box testet ohne Kenntnisse der Implementierung, White-Box mit Kenntnis des Codes",
+            "Black-Box ist veraltet",
+            "White-Box ist nur für Backend"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 50,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen CAPEX und OPEX?",
+          "options": [
+            "Sind das Gleiche",
+            "CAPEX sind Investitionsausgaben, OPEX sind laufende Betriebskosten",
+            "Nur für Großunternehmen relevant",
+            "Nur für Hardware relevant"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 51,
+          "difficulty": "mittel",
+          "question": "Was ist Privacy by Design?",
+          "options": [
+            "Ein Design-Pattern",
+            "Datenschutz von Anfang an in Entwicklung und Prozesse integrieren",
+            "Ein UI-Konzept",
+            "Eine Software"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 52,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Stakeholder und einem Shareholder?",
+          "options": [
+            "Sind identisch",
+            "Stakeholder hat Interesse am Projekt, Shareholder besitzt Unternehmensanteile",
+            "Nur andere Schreibweise",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 53,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Loose Coupling und Tight Coupling?",
+          "options": [
+            "Keine Unterschiede",
+            "Loose Coupling minimiert Abhängigkeiten, Tight Coupling hat starke Abhängigkeiten",
+            "Nur theoretische Konzepte",
+            "Veraltete Ansätze"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 54,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Fehler, Defekt und Versagen?",
+          "options": [
+            "Alles das Gleiche",
+            "Fehler im Code, Defekt im Programm, Versagen im Betrieb",
+            "Nur verschiedene Namen",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 55,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen TCO und ROI?",
+          "options": [
+            "Sind gleich",
+            "TCO betrachtet Gesamtkosten, ROI betrachtet Rendite",
+            "Nur Marketing-Begriffe",
+            "Veraltete Kennzahlen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 56,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Datenschutzbeauftragten und einem Informationssicherheitsbeauftragten?",
+          "options": [
+            "Sind identisch",
+            "Datenschutzbeauftragter für personenbezogene Daten, Informationssicherheitsbeauftragter für allgemeine IT-Sicherheit",
+            "Nur unterschiedliche Titel",
+            "Veraltete Positionen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 57,
+          "difficulty": "mittel",
+          "question": "Was ist das Observer Pattern?",
+          "options": [
+            "Ein Überwachungssystem",
+            "Ein Muster zur Benachrichtigung abhängiger Objekte bei Zustandsänderungen",
+            "Ein Logging-System",
+            "Ein Security Pattern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 58,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Adapter und Bridge Pattern?",
+          "options": [
+            "Sind identisch",
+            "Adapter macht inkompatible Schnittstellen kompatibel, Bridge entkoppelt Abstraktion von Implementierung",
+            "Nur die Namen",
+            "Unterschiedliche Anwendungsfälle"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 59,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Fehler, Defekt und Versagen?",
+          "options": [
+            "Alles das Gleiche",
+            "Fehler im Code, Defekt im Programm, Versagen im Betrieb",
+            "Nur verschiedene Namen",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 60,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Verification und Validation?",
+          "options": [
+            "Keine Unterschied",
+            "Verification prüft Spezifikationstreue, Validation prüft Kundennutzen",
+            "Nur für große Projekte",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 61,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen linearer und binärer Suche?",
+          "options": [
+            "Kein Unterschied",
+            "Lineare Suche prüft jeden Eintrag, binäre Suche halbiert den Suchbereich (erfordert sortierte Daten)",
+            "Nur die Geschwindigkeit",
+            "Nur der Name"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 62,
+          "difficulty": "mittel",
+          "question": "Was bedeutet der Begriff 'Normalisierung' in Datenbanken?",
+          "options": [
+            "Daten komprimieren",
+            "Strukturierung von Daten zur Vermeidung von Redundanz und Anomalien",
+            "Daten verschlüsseln",
+            "Daten sortieren"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 63,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Penetration Testing und Vulnerability Scanning?",
+          "options": [
+            "Sind identisch",
+            "Pen-Testing ist aktiver Angriffsversuch, Vulnerability Scanning ist automatisierte Schwachstellensuche",
+            "Nur für Webseiten relevant",
+            "Veraltete Methoden"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 64,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Hub und einem Switch?",
+          "options": [
+            "Keine Unterschiede",
+            "Hub sendet an alle Ports, Switch nur an den Zielport",
+            "Hub ist neuer",
+            "Switch ist günstiger"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 65,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Public, Private und Hybrid Cloud?",
+          "options": [
+            "Nur Marketing-Begriffe",
+            "Public ist öffentlich zugänglich, Private firmenintern, Hybrid ist eine Kombination",
+            "Unterschiedliche Anbieter",
+            "Unterschiedliche Technologien"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 66,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Meilenstein und Deliverable?",
+          "options": [
+            "Sind das Gleiche",
+            "Meilenstein ist ein Zeitpunkt/Ereignis, Deliverable ist ein konkretes Ergebnis",
+            "Nur für große Projekte relevant",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 67,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen synchroner und asynchroner Kommunikation?",
+          "options": [
+            "Kein Unterschied",
+            "Synchron wartet auf Antwort, Asynchron arbeitet weiter ohne zu warten",
+            "Nur für Webservices relevant",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 68,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen Alpha- und Beta-Testing?",
+          "options": [
+            "Keine Unterschiede",
+            "Alpha intern durch Entwickler, Beta extern durch echte Nutzer",
+            "Unterschiedliche Tools",
+            "Unterschiedliche Programmiersprachen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 69,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Break-Even-Point und ROI?",
+          "options": [
+            "Sind identisch",
+            "Break-Even zeigt Gewinnschelle, ROI zeigt Rendite des eingesetzten Kapitals",
+            "Nur für Großprojekte relevant",
+            "Veraltete Kennzahlen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 70,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Auftragsverarbeiter und einem Verantwortlichen nach DSGVO?",
+          "options": [
+            "Gibt keinen Unterschied",
+            "Verantwortlicher bestimmt Zwecke der Verarbeitung, Auftragsverarbeiter verarbeitet im Auftrag",
+            "Nur für große Unternehmen relevant",
+            "Veraltete Begriffe"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 71,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Continuous Integration und Continuous Deployment?",
+          "options": [
+            "Sind das Gleiche",
+            "CI integriert Code automatisch, CD stellt automatisch in Produktion bereit",
+            "Nur für große Teams",
+            "Veraltete Konzepte"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 72,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einer Transaktion und einem Savepoint?",
+          "options": [
+            "Keine Unterschiede",
+            "Transaktion ist eine komplette Einheit, Savepoint ermöglicht teilweises Rollback",
+            "Nur in Oracle verfügbar",
+            "Veraltete Funktionen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 73,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Virus und einem Wurm?",
+          "options": [
+            "Sind das Gleiche",
+            "Virus benötigt Wirtsprogramm, Wurm verbreitet sich selbstständig",
+            "Nur Namensunterschiede",
+            "Unterschiedliche Programmiersprachen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 74,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einem Gateway und einem Router?",
+          "options": [
+            "Keine Unterschiede",
+            "Gateway verbindet unterschiedliche Netzwerktypen, Router verbindet gleiche Netzwerke",
+            "Nur die Größe",
+            "Nur der Preis"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 75,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Layer 2 und Layer 3 Switch?",
+          "options": [
+            "Nur Marketing",
+            "L2 arbeitet mit MAC-Adressen, L3 kann auch IP-Routing durchführen",
+            "Die Größe",
+            "Der Preis"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 76,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen linearer und binärer Suche?",
+          "options": [
+            "Kein Unterschied",
+            "Lineare Suche prüft jeden Eintrag, binäre Suche halbiert den Suchbereich (erfordert sortierte Daten)",
+            "Nur die Geschwindigkeit",
+            "Nur der Name"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 77,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Bubble Sort und Selection Sort?",
+          "options": [
+            "Keine Unterschiede",
+            "Bubble Sort vertauscht Nachbarn, Selection Sort sucht das Minimum und tauscht einmal pro Durchlauf",
+            "Nur die Namen",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 78,
+          "difficulty": "mittel",
+          "question": "Was ist Rekursion und wann ist sie sinnvoll?",
+          "options": [
+            "Eine Art Schleife",
+            "Selbstaufruf einer Funktion, sinnvoll bei sich wiederholenden Teilproblemen gleicher Struktur",
+            "Ein Sortieralgorithmus",
+            "Eine Datenstruktur"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 79,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einer Schleife und Rekursion?",
+          "options": [
+            "Kein Unterschied",
+            "Schleife wiederholt Code iterativ, Rekursion durch Selbstaufrufe mit Abbruchbedingung",
+            "Nur die Syntax",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 80,
+          "difficulty": "mittel",
+          "question": "Was ist eine Endrekursion (tail recursion)?",
+          "options": [
+            "Eine endlose Rekursion",
+            "Eine Rekursion, bei der der rekursive Aufruf die letzte Operation ist",
+            "Ein Fehler im Code",
+            "Eine spezielle Schleife"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 81,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einer for- und einer while-Schleife?",
+          "options": [
+            "Kein Unterschied",
+            "for-Schleife für bekannte Anzahl Durchläufe, while für unbekannte Anzahl mit Bedingung",
+            "Nur die Syntax",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 82,
+          "difficulty": "mittel",
+          "question": "Was ist ein Pseudocode?",
+          "options": [
+            "Fehlerhafter Code",
+            "Eine programmiersprachenunabhängige Beschreibung eines Algorithmus",
+            "Eine Programmiersprache",
+            "Ein Compiler"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 83,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen einem Algorithmus und einem Programm?",
+          "options": [
+            "Sind das Gleiche",
+            "Algorithmus ist die abstrakte Lösungsbeschreibung, Programm die konkrete Implementation",
+            "Nur die Sprache",
+            "Nur die Ausführbarkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 84,
+          "difficulty": "mittel",
+          "question": "Was ist eine Verzweigung (if-then-else)?",
+          "options": [
+            "Eine Schleife",
+            "Eine Kontrollstruktur zur bedingten Ausführung von Code",
+            "Ein Fehler",
+            "Eine Variable"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 85,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen break und continue in Schleifen?",
+          "options": [
+            "Kein Unterschied",
+            "break beendet die Schleife, continue springt zum nächsten Durchlauf",
+            "Nur die Namen",
+            "Nur die Performance"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 86,
+          "difficulty": "mittel",
+          "question": "Welche Schichten hat das OSI-Modell?",
+          "options": [
+            "3 Schichten",
+            "7 Schichten: Physikalisch, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung",
+            "5 Schichten",
+            "10 Schichten"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 87,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen Layer 2 und Layer 3 im OSI-Modell?",
+          "options": [
+            "Keine Unterschiede",
+            "Layer 2 arbeitet mit MAC-Adressen (Sicherungsschicht), Layer 3 mit IP-Adressen (Vermittlungsschicht)",
+            "Nur die Nummer",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 88,
+          "difficulty": "mittel",
+          "question": "Welche Protokolle arbeiten auf der Anwendungsschicht (Layer 7)?",
+          "options": [
+            "TCP und UDP",
+            "HTTP, FTP, SMTP, DNS",
+            "IP und ICMP",
+            "Ethernet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 89,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen der Transport- und der Vermittlungsschicht?",
+          "options": [
+            "Kein Unterschied",
+            "Transportschicht (L4) für Ende-zu-Ende-Verbindungen, Vermittlungsschicht (L3) für Routing",
+            "Nur die Position",
+            "Nur die Geschwindigkeit"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 90,
+          "difficulty": "mittel",
+          "question": "Welche Aufgabe hat die Sitzungsschicht (Layer 5)?",
+          "options": [
+            "Physische Übertragung",
+            "Aufbau, Verwaltung und Abbau von Sitzungen zwischen Anwendungen",
+            "Routing von Paketen",
+            "Fehlererkennung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 91,
+          "difficulty": "schwer",
+          "question": "Was ist die Aufgabe der Darstellungsschicht (Layer 6)?",
+          "options": [
+            "Routing",
+            "Datenkodierung, Kompression und Verschlüsselung",
+            "Physische Übertragung",
+            "Verbindungsaufbau"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 92,
+          "difficulty": "mittel",
+          "question": "Welche Aufgabe hat die physikalische Schicht (Layer 1)?",
+          "options": [
+            "Routing",
+            "Übertragung von Bits über ein physikalisches Medium",
+            "Verschlüsselung",
+            "Anwendungsprotokolle"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 93,
+          "difficulty": "schwer",
+          "question": "Was ist der Unterschied zwischen dem OSI-Modell und dem TCP/IP-Modell?",
+          "options": [
+            "Sind identisch",
+            "OSI hat 7 Schichten und ist theoretisch, TCP/IP hat 4 Schichten und ist praktisch implementiert",
+            "Nur die Namen",
+            "Nur die Verwendung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 94,
+          "difficulty": "mittel",
+          "question": "Welche Geräte arbeiten auf welcher OSI-Schicht?",
+          "options": [
+            "Alle auf allen Schichten",
+            "Hub (L1), Switch (L2), Router (L3), Firewall (L3-L7)",
+            "Nur Router auf allen Schichten",
+            "Zufällig verteilt"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 95,
+          "difficulty": "schwer",
+          "question": "Was ist Kapselung (Encapsulation) im OSI-Modell?",
+          "options": [
+            "Eine Verschlüsselungsmethode",
+            "Das Hinzufügen von Header-Informationen jeder Schicht zu den Daten",
+            "Ein Routing-Protokoll",
+            "Eine Fehlerkorrektur"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 96,
+          "difficulty": "mittel",
+          "question": "Was ist die korrekte Reihenfolge der OSI-Schichten von unten nach oben?",
+          "options": [
+            "Anwendung, Transport, Vermittlung, Sicherung, Physikalisch",
+            "Physikalisch, Sicherung, Vermittlung, Transport, Sitzung, Darstellung, Anwendung",
+            "Transport, Netzwerk, Sicherung, Physikalisch, Anwendung",
+            "Anwendung, Physikalisch, Transport, Vermittlung, Sicherung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 97,
+          "difficulty": "schwer",
+          "question": "Welche Dateneinheiten werden in welcher OSI-Schicht verwendet?",
+          "options": [
+            "Alle Schichten verwenden Pakete",
+            "L1: Bits, L2: Frames, L3: Pakete, L4: Segmente, L5-7: Daten",
+            "Nur Bits in allen Schichten",
+            "Jede Schicht hat eigene Formate"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 98,
+          "difficulty": "mittel",
+          "question": "Welche Adressierung wird in welcher OSI-Schicht verwendet?",
+          "options": [
+            "Alle Schichten verwenden IP-Adressen",
+            "L2: MAC-Adressen, L3: IP-Adressen, L4: Ports",
+            "Nur IP-Adressen sind wichtig",
+            "Adressierung ist nicht schichtabhängig"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 99,
+          "difficulty": "schwer",
+          "question": "Wie werden Daten durch die OSI-Schichten transportiert?",
+          "options": [
+            "Direkt von Anwendung zu Anwendung",
+            "Von oben nach unten mit Kapselung, von unten nach oben mit Entkapselung",
+            "Immer nur horizontal",
+            "Zufällige Reihenfolge"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 100,
+          "difficulty": "mittel",
+          "question": "Welche Protokolle arbeiten auf der Transportschicht (Layer 4)?",
+          "options": [
+            "HTTP und FTP",
+            "TCP und UDP",
+            "IP und ICMP",
+            "Ethernet und WLAN"
+          ],
+          "correctAnswer": 1
+        }
+      ]
+    }
+  }
+} 
