@@ -86,13 +86,13 @@ class AppTheme {
           iconColor: Colors.white,
         ),
         switchTheme: SwitchThemeData(
-          thumbColor: MaterialStateProperty.resolveWith((states) {
-            return states.contains(MaterialState.selected)
+          thumbColor: WidgetStateProperty.resolveWith((states) {
+            return states.contains(WidgetState.selected)
                 ? primaryColor
                 : Colors.grey;
           }),
-          trackColor: MaterialStateProperty.resolveWith((states) {
-            return states.contains(MaterialState.selected)
+          trackColor: WidgetStateProperty.resolveWith((states) {
+            return states.contains(WidgetState.selected)
                 ? primaryColor.withOpacity(0.5)
                 : Colors.grey.withOpacity(0.5);
           }),
