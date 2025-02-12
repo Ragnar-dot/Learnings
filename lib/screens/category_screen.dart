@@ -50,6 +50,11 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': Icons.school_outlined,
       'description': 'Das Unternehmen und die Eigene Rolle im Betrieb',
     },
+  {
+      'name': 'Lernfeld2',
+      'icon': Icons.school_outlined,
+      'description': 'Arbeitsplatz und Prozesse',
+    },
   ];
 
   Map<String, QuizStats> categoryStats = {};

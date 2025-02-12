@@ -1,0 +1,1043 @@
+{
+    "categories": {
+      "Lernfeld2": {
+        "description": "Arbeitsplatz und Prozesse",
+    "questions": [
+      {
+        "id": 1,
+        "difficulty": "leicht",
+        "question": "Was ist das Grundprinzip der Datenverarbeitung?",
+        "options": [
+          "Eingabe - Analyse - Speicherung",
+          "Eingabe - Verarbeitung - Ausgabe",
+          "Ausgabe - Verarbeitung - Eingabe",
+          "Speicherung - Verarbeitung - Ausgabe"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 2,
+        "difficulty": "mittel",
+        "question": "Welche der folgenden Optionen ist ein Beispiel für einen Sachmangel?",
+        "options": [
+          "Ein Dritter hat Rechte an dem Produkt.",
+          "Das Produkt entspricht nicht der versprochenen Qualität.",
+          "Das Produkt wurde nicht rechtzeitig geliefert.",
+          "Das Produkt wurde beschädigt geliefert."
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 3,
+        "difficulty": "mittel",
+        "question": "Welche Organisation steht hinter der Norm ISO 9000?",
+        "options": [
+          "DIN",
+          "IEC",
+          "ISO",
+          "IEEE"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 4,
+        "difficulty": "leicht",
+        "question": "Was ist das Ziel von Green IT?",
+        "options": [
+          "Den Stromverbrauch von Computern zu erhöhen.",
+          "Die Umweltbelastung durch IT zu verringern.",
+          "Die Rechenleistung von Computern zu maximieren, unabhängig vom Energieverbrauch.",
+          "Die Kosten für IT-Geräte zu senken, ohne auf Energieeffizienz zu achten."
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 5,
+        "difficulty": "mittel",
+        "question": "Was ist der Unterschied zwischen Datenschutz und Datensicherheit?",
+        "options": [
+          "Datenschutz schützt alle Daten, während Datensicherheit nur personenbezogene Daten schützt.",
+          "Datenschutz schützt personenbezogene Daten, während Datensicherheit alle Daten schützt.",
+          "Datenschutz und Datensicherheit sind dasselbe.",
+          "Datenschutz bezieht sich auf physische Sicherheit, während Datensicherheit sich auf digitale Sicherheit bezieht."
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 6,
+        "difficulty": "schwer",
+        "question": "Welche der folgenden Optionen ist ein Beispiel für einen Sicherheitsvorfall?",
+        "options": [
+          "Regelmäßige Datensicherung",
+          "Installation eines Antivirenprogramms",
+          "Phishing-Angriff",
+          "Schulung der Mitarbeiter zum Thema IT-Sicherheit"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 7,
+        "difficulty": "mittel",
+        "question": "Was ist ein digitales Ökosystem?",
+        "options": [
+          "Ein System, das ausschließlich aus Hardwarekomponenten besteht.",
+          "Ein System, das nur Softwareanwendungen umfasst.",
+          "Ein vernetztes System aus digitalen Plattformen, Technologien und Diensten.",
+          "Eine einzelne, isolierte Computeranwendung."
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 8,
+        "difficulty": "schwer",
+        "question": "Was ist ein Embedded System?",
+        "options": [
+          "Ein Betriebssystem für Desktop-Computer.",
+          "Ein Computer, der in ein größeres Gerät integriert ist und spezifische Aufgaben übernimmt.",
+          "Eine Cloud-basierte Speicherlösung.",
+          "Eine Softwareanwendung zur Textverarbeitung."
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 9,
+        "difficulty": "mittel",
+        "question": "Was ist der Zweck des BIOS auf einem Mainboard?",
+        "options": [
+          "Die Kühlung der CPU zu gewährleisten",
+          "Die Grafikkarte anzusteuern",
+          "Den Startvorgang des Computers zu steuern",
+          "Die Audioausgabe zu verwalten"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 10,
+        "difficulty": "leicht",
+        "question": "Was ist die Hauptaufgabe der CPU?",
+        "options": [
+          "Daten speichern",
+          "Programme ausführen",
+          "Grafiken darstellen",
+          "Netzwerkverbindungen verwalten"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 11,
+        "difficulty": "mittel",
+        "question": "Was gibt die Taktrate eines Prozessors an?",
+        "options": [
+          "Die Größe des Cachespeichers",
+          "Die Anzahl der Kerne",
+          "Die Anzahl der Transistoren",
+          "Die Anzahl der Zyklen pro Sekunde, die der Prozessor ausführen kann"
+        ],
+        "correctAnswer": 3
+      },
+      {
+        "id": 12,
+        "difficulty": "schwer",
+        "question": "Was ist der Unterschied zwischen Multithreading und Multiprozessor-System?",
+        "options": [
+          "Multithreading bezieht sich auf mehrere Kerne in einem Prozessor, während Multiprozessor-Systeme mehrere separate Prozessoren verwenden.",
+          "Multithreading und Multiprozessor-Systeme sind dasselbe.",
+          "Multithreading bezieht sich auf die Anzahl der installierten RAM-Module, während Multiprozessor-Systeme die Anzahl der Grafikkarten beschreibt.",
+          "Multithreading bezieht sich auf die Anzahl der installierten Festplatten, während Multiprozessor-Systeme die Anzahl der optischen Laufwerke beschreibt."
+        ],
+        "correctAnswer": 0
+      },
+      {
+        "id": 13,
+        "difficulty": "leicht",
+        "question": "Wozu dient der Arbeitsspeicher (RAM)?",
+        "options": [
+          "Zur dauerhaften Speicherung von Daten",
+          "Zur temporären Speicherung von Daten, die von der CPU benötigt werden",
+          "Zur Kühlung der CPU",
+          "Zur Steuerung der Festplatte"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 14,
+        "difficulty": "mittel",
+        "question": "Was ist der Unterschied zwischen USB 3.0 und Thunderbolt 3 in Bezug auf die Datentransferrate?",
+        "options": [
+          "USB 3.0 ist schneller als Thunderbolt 3.",
+          "Thunderbolt 3 ist schneller als USB 3.0.",
+          "USB 3.0 und Thunderbolt 3 haben die gleiche Datentransferrate.",
+          "USB 3.0 dient nur zum Aufladen, während Thunderbolt 3 zur Datenübertragung dient."
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 15,
+        "difficulty": "mittel",
+        "question": "Welche Funktion hat ein Netzteil (PSU) in einem Computer?",
+        "options": [
+          "Die Kühlung des Computers zu gewährleisten",
+          "Die Umwandlung von Gleichstrom in Wechselstrom",
+          "Die Umwandlung von Wechselstrom in Gleichstrom und die Versorgung der Komponenten mit Strom",
+          "Die Steuerung der Lüftergeschwindigkeit"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 16,
+        "difficulty": "schwer",
+        "question": "Was bedeutet die 80 Plus-Zertifizierung bei Netzteilen?",
+        "options": [
+          "Die Anzahl der Anschlüsse, die das Netzteil bietet",
+          "Die Effizienz des Netzteils bei verschiedenen Lasten",
+          "Die maximale Leistung, die das Netzteil liefern kann",
+          "Die Lautstärke des Netzteils"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 17,
+        "difficulty": "mittel",
+        "question": "Was ist der Hauptunterschied zwischen einer HDD und einer SSD?",
+        "options": [
+          "HDDs sind schneller als SSDs.",
+          "SSDs verwenden mechanische Teile, während HDDs elektronische Komponenten verwenden.",
+          "HDDs verwenden drehende Platten, während SSDs Flash-Speicher verwenden.",
+          "HDDs sind leiser als SSDs."
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 18,
+        "difficulty": "schwer",
+        "question": "Welche Panel-Technologie bietet die besten Betrachtungswinkel?",
+        "options": [
+          "TN",
+          "VA",
+          "IPS",
+          "MVA"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        "id": 19,
+        "difficulty": "leicht",
+        "question": "Was sind wichtige Entscheidungsgründe beim Kauf eines Monitors?",
+        "options": [
+          "Farbe des Gehäuses, Anzahl der Aufkleber, Gewicht, Preis",
+          "Reaktionszeit, Leistungsaufnahme, Panel-Technologie, Auflösung",
+          "Anzahl der mitgelieferten Kabel, Marke, Größe der Verpackung, Material",
+          "Anzahl der Schrauben, Lautsprecherleistung, Anzahl der Knöpfe, Design"
+        ],
+        "correctAnswer": 1
+      },
+      {
+        "id": 20,
+        "difficulty": "mittel",
+        "question": "Wie funktioniert ein Tintenstrahldrucker?",
+        "options": [
+          "Durch das Aufbringen von Tonerpulver auf das Papier",
+          "Durch das Erhitzen von Wachs auf das Papier",
+          "Durch das Sprühen winziger Tintentropfen auf das Papier",
+          "Durch das Einprägen von Zeichen mit einem Hammer"
+        ],
+        "correctAnswer": 2
+      },
+      {
+        
+            "id": 21,
+            "difficulty": "leicht",
+            "question": "Was ist eine Public Cloud?",
+            "options": [
+              "Eine Cloud, die exklusiv für ein Unternehmen betrieben wird.",
+              "Eine Cloud, bei der IT-Ressourcen von einem Drittanbieter über das Internet bereitgestellt werden.",
+              "Eine Kombination aus Public und Private Cloud.",
+              "Eine Cloud, die nur für Regierungsbehörden zugänglich ist."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 22,
+            "difficulty": "mittel",
+            "question": "Was kennzeichnet eine Private Cloud?",
+            "options": [
+              "Sie wird von mehreren Unternehmen gemeinsam genutzt.",
+              "Sie wird exklusiv für ein einzelnes Unternehmen betrieben.",
+              "Sie ist nur über eine private Netzwerkverbindung zugänglich.",
+              "Sie bietet unbegrenzten Speicherplatz."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 23,
+            "difficulty": "schwer",
+            "question": "Was sind die charakteristischen Merkmale einer Hybrid Cloud?",
+            "options": [
+              "Sie ist nur für öffentliche Einrichtungen geeignet.",
+              "Sie ist nur für kleine Unternehmen geeignet.",
+              "Sie kombiniert Public und Private Cloud.",
+              "Sie bietet nur Speicherdienste an."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 24,
+            "difficulty": "leicht",
+            "question": "Was bedeutet IaaS?",
+            "options": [
+              "Software as a Service",
+              "Platform as a Service",
+              "Infrastructure as a Service",
+              "Integration as a Service"
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 25,
+            "difficulty": "mittel",
+            "question": "Welche Verantwortlichkeiten hat ein Unternehmen bei der Nutzung von IaaS?",
+            "options": [
+              "Die Verwaltung der gesamten Infrastruktur.",
+              "Die Installation und Verwaltung von Betriebssystemen, Anwendungen und Daten.",
+              "Die Entwicklung von Anwendungen.",
+              "Die Bereitstellung der Netzwerkinfrastruktur."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 26,
+            "difficulty": "leicht",
+            "question": "Was bietet PaaS?",
+            "options": [
+              "Eine Plattform zur Entwicklung, zum Testen und zur Bereitstellung von Anwendungen.",
+              "Zugriff auf grundlegende IT-Infrastrukturkomponenten.",
+              "Software, die über das Internet bereitgestellt wird.",
+              "Die Möglichkeit, die gesamte IT-Infrastruktur selbst zu verwalten."
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 27,
+            "difficulty": "mittel",
+            "question": "Was verwaltet der Cloud-Anbieter bei PaaS?",
+            "options": [
+              "Nur die Anwendungen.",
+              "Nur die Daten.",
+              "Die Infrastruktur, das Betriebssystem und Middleware.",
+              "Nur die Netzwerksicherheit."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 28,
+            "difficulty": "leicht",
+            "question": "Was ist SaaS?",
+            "options": [
+              "Software, die auf dem eigenen Computer installiert werden muss.",
+              "Software, die über das Internet bereitgestellt wird.",
+              "Hardware, die gemietet wird.",
+              "Eine Plattform zur Entwicklung von Software."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 29,
+            "difficulty": "mittel",
+            "question": "Welche Vorteile bietet SaaS?",
+            "options": [
+              "Volle Kontrolle über die Infrastruktur.",
+              "Geringere Abhängigkeit vom Internet.",
+              "Der Cloud-Anbieter verwaltet alles, einschließlich Infrastruktur, Anwendungen und Daten.",
+              "Höhere Investitionen in Hardware."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 30,
+            "difficulty": "leicht",
+            "question": "Welche Kostenvorteile bietet Cloud Computing?",
+            "options": [
+              "Hohe Investitionen in Hardware sind erforderlich.",
+              "Es fallen hohe Betriebskosten an.",
+              "Unternehmen zahlen nur für die genutzten Ressourcen (Pay-per-Use-Modell).",
+              "Es ist keine Skalierung möglich."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 31,
+            "difficulty": "mittel",
+            "question": "Wie beeinflusst Cloud Computing die Skalierbarkeit und Flexibilität?",
+            "options": [
+              "Es ist nicht möglich, IT-Ressourcen dynamisch zu erweitern oder zu reduzieren.",
+              "Cloud-Dienste bieten die Möglichkeit, IT-Ressourcen je nach Bedarf dynamisch zu erweitern oder zu reduzieren.",
+              "Es ist nur möglich, die Ressourcen manuell anzupassen.",
+              "Die Skalierbarkeit ist begrenzt."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 32,
+            "difficulty": "leicht",
+            "question": "Wie beeinflusst Cloud Computing den Zugriff auf Daten und Anwendungen?",
+            "options": [
+              "Der Zugriff ist nur von einem bestimmten Gerät aus möglich.",
+              "Der Zugriff ist nur innerhalb des Unternehmensnetzwerks möglich.",
+              "Cloud-Dienste sind über das Internet zugänglich, sodass Mitarbeiter weltweit von verschiedenen Geräten aus auf Anwendungen und Daten zugreifen können.",
+              "Es ist keine Zusammenarbeit möglich."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 33,
+            "difficulty": "mittel",
+            "question": "Welche Sicherheitsbedenken gibt es bei Cloud Computing?",
+            "options": [
+              "Es gibt keine Sicherheitsrisiken.",
+              "Die Daten sind immer sicher.",
+              "Da Daten auf den Servern von Drittanbietern gespeichert werden, können Sicherheits- und Datenschutzrisiken entstehen.",
+              "Die Daten werden nur lokal gespeichert."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 34,
+            "difficulty": "mittel",
+            "question": "Inwiefern ist man vom Internet abhängig?",
+            "options": [
+              "Es gibt keine Abhängigkeit vom Internet.",
+              "Cloud-Dienste sind auf eine stabile und schnelle Internetverbindung angewiesen.",
+              "Die Daten können auch ohne Internetverbindung abgerufen werden.",
+              "Es gibt nur geringe Einschränkungen bei langsamen Verbindungen."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 35,
+            "difficulty": "schwer",
+            "question": "Welche Einschränkungen der Kontrolle gibt es bei Cloud-Services?",
+            "options": [
+              "Unternehmen haben volle Kontrolle über die Infrastruktur.",
+              "Es gibt keine Einschränkungen.",
+              "Bei Cloud-Services, insbesondere bei SaaS und PaaS, haben Unternehmen weniger Kontrolle über die Infrastruktur und die Anpassungsmöglichkeiten.",
+              "Die Anpassungsmöglichkeiten sind unbegrenzt."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 36,
+            "difficulty": "leicht",
+            "question": "Was versteht man unter IT-Sourcing?",
+            "options": [
+              "Die interne Entwicklung aller IT-Dienstleistungen.",
+              "Die Strategie, IT-Dienstleistungen entweder intern oder extern zu beziehen, um geschäftliche Anforderungen effizient zu erfüllen.",
+              "Die Beschaffung von Hardware.",
+              "Die Verwaltung der IT-Infrastruktur."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 37,
+            "difficulty": "mittel",
+            "question": "Was ist IT-Outsourcing?",
+            "options": [
+              "Die interne Bereitstellung von IT-Dienstleistungen.",
+              "Beim IT-Outsourcing werden IT-Dienstleistungen oder Funktionen an externe Dienstleister ausgelagert, um Kosten zu senken.",
+              "Die Beschaffung von Softwarelizenzen.",
+              "Die Entwicklung von Software."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 38,
+            "difficulty": "leicht",
+            "question": "Was beinhalten Managed Services?",
+            "options": [
+              "Die Auslagerung der IT-Verwaltung und des Betriebs an einen externen Anbieter, der diese Aufgaben proaktiv übernimmt.",
+              "Die interne Verwaltung der IT-Infrastruktur.",
+              "Die Beschaffung von Hardware.",
+              "Die Entwicklung von Software."
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 39,
+            "difficulty": "mittel",
+            "question": "Was umfassen Desktop Services?",
+            "options": [
+              "Die Bereitstellung, Verwaltung und Wartung von Arbeitsplatzrechnern und Endbenutzergeräten in einem Unternehmen.",
+              "Die Entwicklung von Desktop-Anwendungen.",
+              "Die Verwaltung der Serverinfrastruktur.",
+              "Die Bereitstellung von Cloud-Diensten."
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 40,
+            "difficulty": "leicht",
+            "question": "Was ist die Funktion eines User-Helpdesks?",
+            "options": [
+              "Die Entwicklung von Software.",
+              "Die Verwaltung der Netzwerkinfrastruktur.",
+              "Ein User-Helpdesk bietet technischen Support und Hilfe bei IT-Problemen für Endbenutzer.",
+              "Die Beschaffung von Hardware."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 41,
+            "difficulty": "leicht",
+            "question": "Was sind Cloud-Services?",
+            "options": [
+              "Dienste, die lokal auf dem Computer installiert werden.",
+              "Cloud-Services bieten IT-Ressourcen, wie Rechenleistung, Speicher und Anwendungen, über das Internet an.",
+              "Dienste, die nur intern im Unternehmen genutzt werden können.",
+              "Dienste, die nur für die Datensicherung verwendet werden."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 42,
+            "difficulty": "mittel",
+            "question": "Was ist Application Service Providing (ASP)?",
+            "options": [
+              "Die Bereitstellung von Hardware über das Internet.",
+              "ASP bietet Softwareanwendungen über das Internet an, die Kunden nutzen können, ohne sie lokal installieren oder verwalten zu müssen.",
+              "Die Entwicklung von Software.",
+              "Die Verwaltung der Netzwerkinfrastruktur."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 43,
+            "difficulty": "leicht",
+            "question": "Was bezeichnet On-Site Management?",
+            "options": [
+              "Die Verwaltung von IT-Systemen aus der Ferne.",
+              "On-Site Management bezeichnet die Bereitstellung von IT-Support und -Dienstleistungen direkt vor Ort beim Kunden durch IT-Fachkräfte.",
+              "Die Beschaffung von Hardware.",
+              "Die Entwicklung von Software."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 44,
+            "difficulty": "mittel",
+            "question": "Was sind Service Level Agreements (SLAs)?",
+            "options": [
+              "Vereinbarungen über die Softwareentwicklung.",
+              "SLAs sind vertragliche Vereinbarungen, die die Leistung, Verfügbarkeit und Verantwortlichkeiten eines Dienstleisters festlegen.",
+              "Vereinbarungen über die Hardwarebeschaffung.",
+              "Vereinbarungen über die interne IT-Verwaltung."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 45,
+            "difficulty": "leicht",
+            "question": "Was passiert bei der Geschäftsanbahnung im Leistungsprozess?",
+            "options": [
+              "Die Produktion der Güter beginnt.",
+              "Kunden stellen Anfragen und bitten um Angebote.",
+              "Der Vertrag wird unterzeichnet.",
+              "Die Zahlung erfolgt."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 46,
+            "difficulty": "mittel",
+            "question": "Was ist wichtig beim Vertragsabschluss?",
+            "options": [
+              "Eine mündliche Vereinbarung reicht immer aus.",
+              "Ein Vertragsabschluss kommt nur mit zwei übereinstimmenden Willenserklärungen zustande.",
+              "Es ist keine Schriftform erforderlich.",
+              "Es ist keine Prüfung der Zahlungsfähigkeit notwendig."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 47,
+            "difficulty": "leicht",
+            "question": "Was verpflichtet den Verkäufer beim Erfüllungsgeschäft?",
+            "options": [
+              "Nur die Zahlung zu erhalten.",
+              "Die Machbarkeit des Auftrages zu prüfen und sich zur mangelfreien und pünktlichen Lieferung zu verpflichten.",
+              "Keine Prüfung der Machbarkeit.",
+              "Nur die Lieferung zu organisieren."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 48,
+            "difficulty": "mittel",
+            "question": "Was ist eine Anpreisung?",
+            "options": [
+              "Eine individuelle Anfrage an ein Unternehmen.",
+              "Ein verbindliches Angebot.",
+              "Ein unverlangtes Angebot, das sich nicht an eine bestimmte Firma richtet.",
+              "Ein Angebot mit Gewähr."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 49,
+            "difficulty": "leicht",
+            "question": "Was kennzeichnet ein unverbindliches Angebot?",
+            "options": [
+              "Es ist immer verbindlich.",
+              "Es erkennt man durch z.B. ohne Gewähr, solange der Vorrat reicht, Zwischenverkauf vorbehalten.",
+              "Es ist immer individuell.",
+              "Es ist immer schriftlich."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 50,
+            "difficulty": "mittel",
+            "question": "Was bedeutet ein verbindliches Angebot?",
+            "options": [
+              "Der Anbieter kann das Angebot jederzeit ändern.",
+              "Der Anbieter ist innerhalb bestimmter Frist an das Angebot gebunden.",
+              "Das Angebot ist immer unverbindlich.",
+              "Das Angebot gilt nur mündlich."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 51,
+            "difficulty": "leicht",
+            "question": "Wer gehört zu den internen Zielgruppen und Kundenarten?",
+            "options": [
+              "Verbraucher.",
+              "Behörden.",
+              "Geschäftsleitung, Projektabteilung, Fachabteilungen.",
+              "Andere Unternehmen."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 52,
+            "difficulty": "mittel",
+            "question": "Welche Gesetze gelten für Verbraucher und Privatkunden?",
+            "options": [
+              "Vergaberichtlinien.",
+              "Verbrauchergesetze.",
+              "E-Commerce Gesetze.",
+              "Keine speziellen Gesetze."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 53,
+            "difficulty": "leicht",
+            "question": "Was zeichnet A-Kunden aus?",
+            "options": [
+              "Sie machen nur 5% des Umsatzes aus.",
+              "Sie sind die meisten Kunden.",
+              "Sie generieren 75-80% des Umsatzes.",
+              "Sie kaufen unregelmäßig ein."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 54,
+            "difficulty": "mittel",
+            "question": "Was sind Neukunden?",
+            "options": [
+              "Kunden, die seit mehr als einem Jahr nicht gekauft haben.",
+              "Kunden, die regelmäßig einkaufen.",
+              "Kunden, die im letzten halben Jahr in den Kundenstamm gekommen sind.",
+              "Kunden, die nur einmalig einkaufen."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 55,
+            "difficulty": "leicht",
+            "question": "Was gehört zur Vorbereitung eines Beratungs- und Angebotsgesprächs?",
+            "options": [
+              "Die Produktpräsentation.",
+              "Wie Besprechungsort, Datum, Information über Kunden einholen etc.",
+              "Die Bedarfsanalyse.",
+              "Der Abschluss des Gesprächs."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 56,
+            "difficulty": "mittel",
+            "question": "Was ist das Ziel der Bedarfsanalyse?",
+            "options": [
+              "Die Produktpräsentation zu starten.",
+              "Kaufmotive, Kundenanforderungen und Wünsche durch Zuhören und Fragetechniken zu erkunden.",
+              "Den Preis zu verhandeln.",
+              "Das Gespräch zu beenden."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 57,
+            "difficulty": "leicht",
+            "question": "Was gehört zur Produktpräsentation?",
+            "options": [
+              "Die Ermittlung der Kundenwünsche.",
+              "Die Festlegung des Preises.",
+              "Es werden passend zur Wunschermittlung Produkte und Dienstleistungen präsentiert.",
+              "Der Vertragsabschluss."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 58,
+            "difficulty": "mittel",
+            "question": "Wie kann ein Kaufabschluss herbeigeführt werden?",
+            "options": [
+              "Durch die Präsentation aller Produkte.",
+              "Durch Vorteilsargumentation des jetzigen Produkts oder Vergleichsmodell eines teureren Produkts, oder Rabatt etc.",
+              "Durch die Verlängerung des Gesprächs.",
+              "Durch das Ignorieren der Kundenwünsche."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 59,
+            "difficulty": "leicht",
+            "question": "Was gehört zur Nachbereitung eines Kundengesprächs?",
+            "options": [
+              "Eindrücke, Kundentyp, Kundengespräch im Gedächtnisprotokoll festhalten.",
+              "Das Gespräch vergessen.",
+              "Keine Dokumentation erstellen.",
+              "Nur den Umsatz notieren."
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 60,
+            "difficulty": "mittel",
+            "question": "Welche Aufgabenbereiche hat das Marketing?",
+            "options": [
+              "Nur die Produktentwicklung.",
+              "Marktuntersuchung, Produkt- und Sortimentspolitik, Preispolitik, Kommunikationspolitik, Distributionspolitik.",
+              "Nur die Preisgestaltung.",
+              "Nur die Werbung."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 61,
+            "difficulty": "leicht",
+            "question": "Was ist das Ziel der Marktuntersuchung?",
+            "options": [
+              "Die Produkte zu entwickeln.",
+              "Den Markt zu beobachten oder Marktforschungsinstitute zu beauftragen.",
+              "Die Preise festzulegen.",
+              "Die Werbung zu gestalten."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 62,
+            "difficulty": "mittel",
+            "question": "Was beinhaltet die Produkt- und Sortimentspolitik?",
+            "options": [
+              "Die Gestaltung der Werbung.",
+              "Die Festlegung der Preise.",
+              "Welche Produkte mit welcher Ausstattung sind angemessen? Welche Waren sollen angeboten werden?",
+              "Die Verteilung der Waren."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 63,
+            "difficulty": "leicht",
+            "question": "Welche Instrumente gehören zur Kommunikationspolitik?",
+            "options": [
+              "Werbung, durch Sozialmedia, Gewinnspiele, Sponsoren, Produktplatzierungen etc.",
+              "Die Festlegung der Preise.",
+              "Die Marktforschung.",
+              "Die Produktentwicklung."
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 64,
+            "difficulty": "mittel",
+            "question": "Was wird in der Distributionspolitik geregelt?",
+            "options": [
+              "Nur die Werbung.",
+              "Die Verteilung und Wege der Ware müssen geklärt werden.",
+              "Die Festlegung der Preise.",
+              "Die Marktforschung."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 65,
+            "difficulty": "leicht",
+            "question": "Was ist das Besondere an der Marktbeobachtung?",
+            "options": [
+              "Der Markt wächst langsam.",
+              "Im Gegensatz zu früher, wächst der Markt viel schneller und Unternehmen müssen schneller reagieren.",
+              "Der Markt verändert sich nicht.",
+              "Unternehmen müssen nicht reagieren."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 66,
+            "difficulty": "mittel",
+            "question": "Was ist der Unterschied zwischen Markterkundung und Marktforschung?",
+            "options": [
+              "Es gibt keinen Unterschied.",
+              "Markterkundung ist betriebsintern, Marktforschung wird von externen Instituten durchgeführt.",
+              "Marktforschung ist betriebsintern, Markterkundung wird von externen Instituten durchgeführt.",
+              "Markterkundung und Marktforschung sind dasselbe."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 67,
+            "difficulty": "leicht",
+            "question": "Was ist ein Projekt?",
+            "options": [
+              "Eine Routineaufgabe.",
+              "Jedes Einzelvorhaben was ein definierbarer Anfang und ein Ende hat.",
+              "Eine wiederkehrende Aufgabe.",
+              "Eine Aufgabe ohne Zielvorgabe."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 68,
+            "difficulty": "mittel",
+            "question": "Was ist ein Lastenheft?",
+            "options": [
+              "Ein Dokument, das vom Auftragnehmer erstellt wird.",
+              "Meist wird fpr ein Projekt zunächst ein Lastenheft oder Anforderungskatalog erstellt, in diesem beschreibt der Auftraggeber in seinen Worten, was er mit dem Projekt erreichen möchte.",
+              "Ein Dokument ohne Anforderungen und Ziele.",
+              "Ein Dokument nur für die interne Nutzung."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 69,
+            "difficulty": "leicht",
+            "question": "Was ist der Projektstrukturplan?",
+            "options": [
+              "Die Grundlage für den Projektauftrag.",
+              "Die Grundlage für das Lastenheft.",
+              "Mit dem Projektstrukturplan wird die Gesamtaufgabe Teil und Hauptaufgaben gegliedert.",
+              "Die Grundlage für die Rechnung."
+            ],
+            "correctAnswer": 2
+          },
+          {
+            "id": 70,
+            "difficulty": "mittel",
+            "question": "Was ist der Projektablaufplan?",
+            "options": [
+              "Der Projektstrukturplan ohne zeitliche Rahmenbedingungen.",
+              "Sobald der Projektstrukturplan steht, wird dieser mit zeitlichen Rahmenbedingungen gekennzeichnet und dies nennt man dann Projektablaufplan.",
+              "Ein Plan ohne Aufgaben.",
+              "Ein Plan ohne Ziele."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 71,
+            "difficulty": "leicht",
+            "question": "Was identifiziert die Bedarfsanalyse?",
+            "options": [
+              "Die konkreten Anforderungen und Spezifikationen.",
+              "Die grundlegenden Bedürfnisse oder Probleme, die durch eine Lösung adressiert werden sollen.",
+              "Die technischen Details der Lösung.",
+              "Die Kosten der Lösung."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 72,
+            "difficulty": "mittel",
+            "question": "Was definiert die Anforderungsanalyse?",
+            "options": [
+              "Die groben Ziele des Projekts.",
+              "Die konkreten Anforderungen und Spezifikationen, die notwendig sind, um die in der Bedarfsanalyse ermittelten Bedürfnisse zu erfüllen.",
+              "Die technischen Details des Produkts.",
+              "Die Marketingstrategie."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 73,
+            "difficulty": "leicht",
+            "question": "Wer erstellt das Lastenheft?",
+            "options": [
+              "Der Auftragnehmer.",
+              "Der Auftraggeber.",
+              "Beide gemeinsam.",
+              "Ein unabhängiges Institut."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 74,
+            "difficulty": "mittel",
+            "question": "Was beschreibt das Pflichtenheft?",
+            "options": [
+              "Was entwickelt werden soll.",
+              "Wie die Anforderungen aus dem Lastenheft umgesetzt werden.",
+              "Die groben Ziele des Projekts.",
+              "Die Marketingstrategie."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 75,
+            "difficulty": "leicht",
+            "question": "Was ist ein LCD?",
+            "options": [
+              "Ein Lautsprecher.",
+              "Ein Flüssigkristallbildschirm.",
+              "Ein Leuchtdiodenbildschirm.",
+              "Ein organischer Leuchtdiodenbildschirm."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 76,
+            "difficulty": "mittel",
+            "question": "Was benötigen LCD-Bildschirme?",
+            "options": [
+              "Keine zusätzliche Beleuchtung.",
+              "Eine Hintergrundbeleuchtung.",
+              "Eine externe Stromquelle.",
+              "Eine spezielle Kühlung."
+            ],
+            "correctAnswer": 1
+          },
+          {
+            "id": 78,
+            "difficulty": "leicht",
+            "question": "Was ist ein LED-Bildschirm?",
+            "options": [
+              "Ein Bildschirm ohne Hintergrundbeleuchtung.",
+              "Ein Bildschirm mit organischen Leuchtdioden.",
+              "Eine Art von LCDs, bei denen LEDs als Hintergrundbeleuchtung verwendet werden.",
+              "Ein Bildschirm mit Kathodenstrahlröhre."
+            ],
+            "correctAnswer": 2
+          },
+           {
+            "id": 79,
+            "difficulty": "mittel",
+            "question": "Was zeichnet OLED-Displays aus?",
+            "options": [
+              "Sie benötigen eine starke Hintergrundbeleuchtung.",
+              "Jeder Pixel emittiert selbst Licht.",
+              "Sie haben eine schlechte Farbgenauigkeit.",
+              "Sie sind sehr energieineffizient."
+            ],
+            "correctAnswer": 1
+          },
+         {
+            "id": 80,
+            "difficulty": "leicht",
+            "question": "Was bietet ein VA-Panel?",
+            "options": [
+              "Schlechten Kontrast und keine tiefen Schwarztöne.",
+              "Guten Kontrast und tiefe Schwarztöne.",
+              "Schnellere Reaktionszeiten.",
+              "Schlechte Betrachtungswinkel."
+            ],
+            "correctAnswer": 1
+          },
+         {
+            "id": 81,
+            "difficulty": "mittel",
+            "question": "Wofür sind IPS-Panels bekannt?",
+            "options": [
+              "Schlechte Farbgenauigkeit und enge Blickwinkel.",
+              "Bessere Farbgenauigkeit und weite Blickwinkel.",
+              "Hohe Reaktionszeiten.",
+              "Geringe Helligkeit."
+            ],
+            "correctAnswer": 1
+          },
+           {
+            "id": 82,
+            "difficulty": "leicht",
+            "question": "Was ist ein Server?",
+            "options": [
+              "Ein einfacher Arbeitsplatzrechner.",
+              "Leistungsfähiger Rechner im Dataacenter( Rechenzentrum) die Dienste und Rechenleistung im Netzwerk anbieten.",
+              "Ein Drucker.",
+              "Ein Router."
+            ],
+            "correctAnswer": 1
+          },
+       {
+            "id": 83,
+            "difficulty": "mittel",
+            "question": "Was ermöglicht ein Computernetzwerk?",
+            "options": [
+              "Nur den Austausch von Informationen.",
+              "Nur den Zugriff auf gemeinsame Ressourcen.",
+              "Ermöglicht Benutzern, Daten zu teilen, auf gemeinsame Ressourcen zuzugreifen und miteinander zu kommunizieren.",
+              "Nur die Kommunikation."
+            ],
+            "correctAnswer": 2
+          },
+       {
+            "id": 84,
+            "difficulty": "leicht",
+            "question": "Was ist ein LAN?",
+            "options": [
+              "Ein Netzwerk über ein großes geografisches Gebiet.",
+              "Ein Netzwerk, das sich über ein kleines geografisches Gebiet erstreckt.",
+              "Ein virtuelles Netzwerk.",
+              "Ein privates Netzwerk über das Internet."
+            ],
+            "correctAnswer": 1
+          },
+       {
+            "id": 85,
+            "difficulty": "mittel",
+            "question": "Was ermöglicht ein WLAN?",
+            "options": [
+              "Nur kabelgebundene Verbindungen.",
+              "Ein Netzwerk, das nur in Büros funktioniert.",
+              "Ein kabelloses Netzwerk, das es Geräten ermöglicht, sich ohne physische Verbindungen zu verbinden.",
+              "Ein Netzwerk, das nur Drucker verbindet."
+            ],
+            "correctAnswer": 2
+          },
+       {
+            "id": 86,
+            "difficulty": "leicht",
+            "question": "Was ist ein VLAN?",
+            "options": [
+              "Ein physisches Netzwerk.",
+              "Ein virtuelles Netzwerk, das innerhalb eines physischen LANs erstellt wird, um verschiedene logische Netzwerke zu trennen.",
+              "Ein Netzwerk, das nur für Regierungsbehörden zugänglich ist.",
+              "Ein Netzwerk, das nur für private Nutzung bestimmt ist."
+            ],
+            "correctAnswer": 1
+          },
+       {
+            "id": 87,
+            "difficulty": "mittel",
+            "question": "Was ist die Funktion eines VPN?",
+            "options": [
+              "Ein ungesichertes Netzwerk.",
+              "Ein Netzwerk ohne Internetverbindung.",
+              "Ein sicheres Netzwerk, das über das Internet Daten überträgt.",
+              "Ein Netzwerk, das nur für den Datenaustausch innerhalb eines Gebäudes genutzt wird."
+            ],
+            "correctAnswer": 2
+          }
+        ]
+      }
+  }
+  
+}
