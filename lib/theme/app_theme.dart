@@ -52,7 +52,7 @@ class AppTheme {
   );
 
   static ThemeData get lightTheme => _baseTheme.copyWith(
-        scaffoldBackgroundColor: backgroundColor,
+        scaffoldBackgroundColor: const Color.fromARGB(255, 255, 255, 255),
         cardTheme: _baseTheme.cardTheme.copyWith(
           color: cardColor,
         ),
