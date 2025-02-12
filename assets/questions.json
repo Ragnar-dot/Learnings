@@ -182,7 +182,182 @@
             "Hybride Apps sind schneller"
           ],
           "correctAnswer": 1
+        },
+
+        {
+          "id": 16,
+          "difficulty": "mittel",
+          "question": "Was versteht man unter Test Driven Development (TDD)?",
+          "options": [
+            "Code schreiben und erst danach testen",
+            "Tests schreiben, dann Code entwickeln, bis der Test besteht", 
+            "Software erst nach Fertigstellung testen",
+            "Fehlerhafte Programme mit Debugging beheben"
+          ],
+          "correctAnswer": 1
+        },
+
+
+
+        {
+          "id": 17,
+          "difficulty": "mittel",
+          "question": "Welche Vorteile bietet Scrum im Entwicklungsprozess?",
+          "options": [
+            "Starre Planungsphasen ohne Änderungen",
+            "Flexible Anpassung an Kundenwünsche", 
+            "Keine Dokumentation erforderlich",
+            "Ein Entwickler entscheidet alles alleine"
+          ],
+          "correctAnswer": 1
+        },
+
+
+        {
+          "id": 18,
+          "difficulty": "leicht",
+          "question": "Was sind Architektur-Patterns?",
+          "options": [
+            "Vorgefertigte Benutzeroberflächen",
+            "Muster zur Strukturierung von Software",
+            "Regeln für das Schreiben von Kommentaren",
+            "Tools zur Code-Formatierung"
+          ],
+          "correctAnswer": 1 
+        },
+
+
+        {
+          "id": 19,
+          "difficulty": "leicht",
+          "question": "Erkläre den Begriff Kapselung in der Objektorientierung.",
+          "options": [
+            "Alle Variablen und Methoden sind öffentlich",
+            "Verbergen interner Zustände einer Klasse",
+            "Code wird nur mit Passwort sichtbar",
+            "Methoden sind nur im Debug-Modus sichtbar"
+          ],
+          "correctAnswer": 1 
+        },
+
+
+        {
+          "id": 20,
+          "difficulty": "mittel",
+          "question": "Welche Softwarequalitätsmerkmale gibt es?",
+          "options": [
+            "Nur Performance ist entscheidend",
+            "Verständlichkeit, Wartbarkeit, Effizienz",
+            "Code ist gut, wenn er schnell geschrieben wurde",
+            "Viele Kommentare verbessern automatisch die Qualität"
+          ],
+          "correctAnswer": 1 
+        },
+
+
+        {
+          "id": 21,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen agiler und klassischer Softwareentwicklung?",
+          "options": [
+            "Agile Methoden haben keine Struktur",
+            "Agile Methoden ermöglichen iterative Anpassungen",
+            "Klassische Methoden sind flexibler",
+            "Klassische Methoden setzen auf Test Driven Development"
+          ],
+          "correctAnswer": 1
+        },
+
+
+        {
+          "id": 22,
+          "difficulty": "leicht",
+          "question": "Was gehört in eine Konfigurationsdokumentation?",
+          "options": [
+            "Eine Beschreibung der Benutzeroberfläche",
+            "Einstellungen, Parameter und Abhängigkeiten der Software",
+            "Code-Kommentare und deren Bedeutung",
+            "Ein Tutorial zur Bedienung der Software"
+          ],
+          "correctAnswer": 1
+        },
+
+
+        {
+          "id": 23,
+          "difficulty": "leicht",
+          "question": "Was bedeutet Refactoring, und warum ist es wichtig?",
+          "options": [
+            "Reduzierung der Code-Länge durch Löschung von Funktionen",
+            "Änderung des Codes zur Verbesserung der Struktur",
+            "Neuprogrammierung einer Anwendung",
+            "Einführung von Bugs zur Testzwecken"
+          ],
+          "correctAnswer": 1
+        },
+
+
+        {
+          "id": 24,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen synchroner und asynchroner Programmierung?",
+          "options": [
+            "Asynchrone Programmierung blockiert den Haupt-Thread",
+            "Asynchrone Programmierung ermöglicht nicht-blockierende Prozesse",
+            "Synchrone Programmierung läuft in mehreren Threads",
+            "Synchrone Programmierung verwendet Promises"
+          ],
+          "correctAnswer": 1
+        },
+
+
+        {
+          "id": 25,
+          "difficulty": "mittel",
+          "question": "Wie funktioniert eine Dependency Injection?",
+          "options": [
+            "Manuelles Erstellen von Abhängigkeiten",
+            "Automatische Bereitstellung von Abhängigkeiten durch den Konstruktor",
+            "Zufällige Zuweisung von Variablen",
+            "Erstellen von globalen Variablen"
+          ],
+          "correctAnswer": 1 
+        },
+
+
+        {
+          "id": 26,
+          "difficulty": "mittel",
+          "question": "Welche Arten von APIs gibt es?",
+          "options": [
+            "Nur SOAP und REST",
+            "REST, SOAP, GraphQL",
+            "APIs sind immer cloudbasiert",
+            "Es gibt nur Open-Source-APIs"
+          ],
+          "correctAnswer": 1 
+        },
+
+
+        {
+          "id": 27,
+          "difficulty": "mittel",
+          "question": "Was ist ein CI/CD-Pipeline?",
+          "options": [
+            "Eine Struktur zur Versionskontrolle",
+            "Ein automatisierter Prozess für Integration und Deployment",
+            "Ein Framework für Datenbankverwaltung",
+            "Eine Testumgebung für Entwickler"
+          ],
+          "correctAnswer": 1 
         }
+
+
+
+
+
+
+
       ]
     },
     "Algorithmen": {
@@ -260,6 +435,8 @@
           ],
           "correctAnswer": 1
         },
+
+
         {
           "id": 22,
           "difficulty": "schwer",
@@ -271,14 +448,329 @@
             "Nur die Ausführbarkeit"
           ],
           "correctAnswer": 1
+        },
+
+
+        {
+          "id": 23,
+          "difficulty": "schwer",
+          "question": "Was ist die Komplexität von Binary Search im Worst-Case?",
+          "options": [
+            "O(n)",
+            "O(log n)" ,
+            "O(1)",
+            "O(n²)"
+          ],
+          "correctAnswer": 1
+        },
+
+
+        {
+          "id": 24,
+          "difficulty": "schwer",
+          "question": "Welche Sortiermethode hat die beste durchschnittliche Laufzeit?",
+          "options": [
+            "Bubble Sort",
+            "Quick Sort",
+            "Insertion Sort",
+            "Selection Sort"
+          ],
+          "correctAnswer": 1
+        },
+
+        {
+          "id": 25,
+          "difficulty": "schwer",
+          "question": "Was bedeutet Big O Notation?",
+          "options": [
+            "Eine Methode zur Fehlerbehandlung",
+            "Ein Maß für die Laufzeit- und Speicherkomplexität",
+            "Ein Algorithmus zur Sortierung",
+            "Eine Programmiersprache"
+          ],
+          "correctAnswer": 1
+        },
+
+        {
+          "id": 26,
+          "difficulty": "leicht",
+          "question": "Welcher Algorithmus basiert auf dem Teile-und-herrsche-Prinzip?",
+          "options": [
+            "Bubble Sort",
+            "Merge Sort ",
+            "Selection Sort",
+            "Linear Search"
+          ],
+          "correctAnswer": 1
+        },
+
+        {
+          "id": 27,
+          "difficulty": "mittel",
+          "question": "Was ist der Unterschied zwischen einer verketteten Liste und einem Array?",
+          "options": [
+            "Arrays sind dynamisch, verkettete Listen nicht",
+            "Verkettete Listen haben keine feste Größe",
+            "Arrays brauchen mehr Speicherplatz als verkettete Listen", 
+            "Verkettete Listen können nur Strings speichern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 28,
+          "difficulty": "mittel", 
+          "question": "Was bedeutet Hashing in der Informatik?",
+          "options": [
+            "Daten werden in einer Baumstruktur gespeichert",
+            "Daten werden in eine feste Länge umgewandelt",
+            "Daten werden zufällig verschlüsselt",
+            "Daten werden als Liste gespeichert"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 29,
+          "difficulty": "mittel",
+          "question": "Wie funktioniert Breadth-First Search (BFS)?",
+          "options": [
+            "Durchläuft einen Graphen immer rekursiv",
+            "Durchläuft einen Graphen Ebene für Ebene",
+            "Durchläuft den Graphen nur in eine Richtung",
+            "Durchläuft den Graphen zufällig"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 30,
+          "difficulty": "mittel",
+          "question": "Welche Datenstruktur eignet sich für einen LRU-Cache?",
+          "options": [
+            "Hash Table",
+            "Doubly Linked List & Hash Map",
+            "Stack",
+            "Binary Search Tree"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 31,
+          "difficulty": "mittel",
+          "question": "Welche Datenstruktur eignet sich am besten für eine Autovervollständigungsfunktion?",
+          "options": [
+            "Hash Table",
+            "Trie",
+            "Stack",
+            "Linked List"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 32,
+          "difficulty": "mittel",
+          "question": "Welche Sortieralgorithmen sind stabil?",
+          "options": [
+            "Merge Sort & Bubble Sort",
+            "Quick Sort & Heap Sort",
+            "Selection Sort & Quick Sort",
+            "Radix Sort & Selection Sort"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 33,
+          "difficulty": "mittel",
+          "question": "Welche Datenstruktur hat eine O(1) Zugriffszeit im Durchschnittsfall?",
+          "options": [
+            "Stack",
+            "Hash Table",
+            "Linked List",
+            "Queue"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 34,
+          "difficulty": "mittel",
+          "question": "Welche Operation ist in einer Hash Table langsam?",
+          "options": [
+            "Einfügen",
+            "Löschen",
+            "Iteration über alle Elemente",
+            "Zugriff auf ein einzelnes Element"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 35,
+          "difficulty": "mittel",
+          "question": "Welche Eigenschaft hat ein Heap?",
+          "options": [
+            "Die kleinste Zahl steht immer ganz oben",
+            "Die größte Zahl steht immer ganz oben (bei einem Max-Heap)",
+            "Elemente sind zufällig angeordnet",
+            "Nur Strings können gespeichert werden"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 36,
+          "difficulty": "mittel",
+          "question": "Was ist die Zeitkomplexität von Bubble Sort im Worst-Case?",
+          "options": [
+            "O(log n)",
+            "O(n)",
+            "O(n²)",
+            "O(1)"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 37,
+          "difficulty": "mittel",
+          "question": "Wie viele Vergleiche braucht Binary Search in einer sortierten Liste mit 1024 Elementen im Worst-Case?",
+          "options": [
+            "10",
+            "512",
+            "1024",
+            "50"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 38,
+          "difficulty": "mittel",
+          "question": "Welche Datenstruktur ist ein selbstbalancierender Baum?",
+          "options": [
+            "AVL-Baum",
+            "Binärer Suchbaum",
+            "Hash Table",
+            "Heap"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 39,
+          "difficulty": "mittel",
+          "question": "Wie unterscheidet sich DFS von BFS?",
+          "options": [
+            "DFS nutzt eine Queue, BFS einen Stack",
+            "DFS nutzt einen Stack, BFS eine Queue",
+            "BFS ist rekursiv, DFS iterativ",
+            "BFS kann nur sortierte Graphen durchlaufen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 40,
+          "difficulty": "mittel",
+          "question": "Welche Eigenschaft hat ein Graph mit einem Eulerkreis?",
+          "options": [
+            "Alle Knoten haben eine gerade Anzahl an Kanten",
+            "Es gibt keinen Kreis",
+            "Es gibt keine doppelten Kanten",
+            "Der Graph ist gerichtet"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 41,
+          "difficulty": "mittel",
+          "question": "Was ist ein Greedy Algorithmus?",
+          "options": [
+            "Ein Algorithmus, der alle Lösungen prüft",
+            "Ein Algorithmus, der immer die lokal beste Entscheidung trifft",
+            "Ein Algorithmus für rekursive Probleme",
+            "Ein Algorithmus für Sortierprobleme"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 42,
+          "difficulty": "mittel",
+          "question": "Wie funktioniert ein Backtracking-Algorithmus?",
+          "options": [
+            "Probiert alle Möglichkeiten durch und verwirft falsche Pfade",
+            "Sortiert Elemente in umgekehrter Reihenfolge",
+            "Ist eine Art von Sortieralgorithmus",
+            "Wird nur für Datenbankabfragen verwendet"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 43,
+          "difficulty": "mittel",
+          "question": "Welche Struktur hat eine doppelt verkettete Liste?",
+          "options": [
+            "Jeder Knoten hat nur eine Referenz auf den nächsten",
+            "Jeder Knoten hat eine Referenz auf den nächsten und den vorherigen",
+            "Es gibt keine Referenzen zwischen Knoten",
+            "Sie kann nur numerische Werte speichern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 44,
+          "difficulty": "mittel",
+          "question": "Welche Anwendung verwendet typischerweise Graphen?",
+          "options": [
+            "Sortieralgorithmen",
+            "Routing- und Navigationssysteme",
+            "Textverarbeitung",
+            "Bildbearbeitung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 45,
+          "difficulty": "mittel",
+          "question": "Welche Laufzeit hat Quick Sort im Worst-Case?",
+          "options": [
+            "O(n)",
+            "O(n log n)",
+            "O(n²)",
+            "O(1)"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 46,
+          "difficulty": "mittel",
+          "question": "Welche Datenstruktur speichert Schlüssel-Wert-Paare?",
+          "options": [
+            "Array",
+            "Hash Table",
+            "Stack",
+            "Linked List"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 47,
+          "difficulty": "mittel",
+          "question": "Welche Datenstruktur ist für Rekursion unverzichtbar?",
+          "options": [
+            "Stack",
+            "Queue",
+            "Heap",
+            "Linked List"
+          ],
+          "correctAnswer": 0
         }
+
+
+
+
+
+
+
+
       ]
     },
     "Netzwerke": {
       "description": "OSI-Modell, Protokolle, Routing, Cloud",
       "questions": [
         {
-          "id": 23,
+          "id": 48,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen dem OSI-Modell und dem TCP/IP-Modell?",
           "options": [
@@ -290,7 +782,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 24,
+          "id": 49,
           "difficulty": "mittel",
           "question": "Welche Geräte arbeiten auf welcher OSI-Schicht?",
           "options": [
@@ -302,7 +794,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 25,
+          "id": 50,
           "difficulty": "schwer",
           "question": "Was ist Kapselung (Encapsulation) im OSI-Modell?",
           "options": [
@@ -314,7 +806,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 26,
+          "id": 51,
           "difficulty": "mittel",
           "question": "Was ist die korrekte Reihenfolge der OSI-Schichten von unten nach oben?",
           "options": [
@@ -326,7 +818,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 27,
+          "id": 52,
           "difficulty": "schwer",
           "question": "Welche Dateneinheiten werden in welcher OSI-Schicht verwendet?",
           "options": [
@@ -338,7 +830,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 28,
+          "id": 53,
           "difficulty": "mittel",
           "question": "Welche Adressierung wird in welcher OSI-Schicht verwendet?",
           "options": [
@@ -350,7 +842,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 29,
+          "id": 54,
           "difficulty": "schwer",
           "question": "Wie werden Daten durch die OSI-Schichten transportiert?",
           "options": [
@@ -362,7 +854,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 30,
+          "id": 55,
           "difficulty": "mittel",
           "question": "Welche Protokolle arbeiten auf der Transportschicht (Layer 4)?",
           "options": [
@@ -379,7 +871,7 @@
       "description": "Verschlüsselung, Authentifizierung, Penetration Testing",
       "questions": [
         {
-          "id": 31,
+          "id": 56,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen Verschlüsselung und Hashing?",
           "options": [
@@ -391,7 +883,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 32,
+          "id": 57,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen Penetration Testing und Vulnerability Scanning?",
           "options": [
@@ -403,7 +895,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 33,
+          "id": 58,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen einem Auftragsverarbeiter und einem Verantwortlichen nach DSGVO?",
           "options": [
@@ -415,7 +907,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 34,
+          "id": 59,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen einem Datenschutzbeauftragten und einem Informationssicherheitsbeauftragten?",
           "options": [
@@ -425,14 +917,341 @@
             "Veraltete Positionen"
           ],
           "correctAnswer": 1
+        },
+
+
+        {
+          "id": 60,
+          "difficulty": "mittel",
+          "question": "Welches Gesetz regelt den Schutz personenbezogener Daten in der EU?",
+          "options": [
+            "Bundesdatenschutzgesetz (BDSG)",
+            "Datenschutz-Grundverordnung (DSGVO)",
+            "IT-Sicherheitsgesetz",
+            "Urheberrechtsgesetz"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 61,
+          "difficulty": "leicht",
+          "question": "Was gilt als personenbezogenes Datum?",
+          "options": [
+            "IP-Adresse",
+            "Betriebssystem eines Computers", 
+            "Dateiformat eines Dokuments",
+            "Farbe eines Autos"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 62,
+          "difficulty": "mittel",
+          "question": "Was ist ein Data Breach?",
+          "options": [
+            "Eine geplante Löschung von Daten",
+            "Ein unbefugter Zugriff oder Verlust sensibler Daten",
+            "Die Verschlüsselung von Daten",
+            "Eine Art der Datenkomprimierung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 63,
+          "difficulty": "mittel", 
+          "question": "Was bedeutet Privacy by Design?",
+          "options": [
+            "Datenschutzmaßnahmen sind nachträglich integrierbar",
+            "Datenschutz ist von Anfang an in Systeme eingebaut",
+            "Datenschutz muss erst nach einer Datenschutzverletzung implementiert werden",
+            "Datenschutz ist nur in großen Unternehmen erforderlich"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 64,
+          "difficulty": "leicht",
+          "question": "Welche Maßnahme zählt zu den technischen und organisatorischen Maßnahmen (TOMs)?",
+          "options": [
+            "Ein sicheres Passwort",
+            "Eine Marketingkampagne",
+            "Die Verwendung von Open-Source-Software",
+            "Die Speicherung von Passwörtern in Klartext"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 65,
+          "difficulty": "mittel",
+          "question": "Was ist Social Engineering?",
+          "options": [
+            "Eine Methode zur Verbesserung sozialer Netzwerke",
+            "Eine Angriffstechnik, die menschliche Schwächen ausnutzt",
+            "Eine Technik zur Verschlüsselung von Daten",
+            "Eine Sicherheitsmaßnahme für Cloud-Computing"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 66,
+          "difficulty": "leicht",
+          "question": "Was ist Phishing?",
+          "options": [
+            "Eine Methode zur Passwortverschlüsselung",
+            "Ein Cyberangriff, der gefälschte E-Mails verwendet",
+            "Ein Verfahren zur Datenkomprimierung",
+            "Ein Schutzmechanismus für Netzwerke"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 67,
+          "difficulty": "mittel",
+          "question": "Wie schützt man sich am besten gegen Phishing-Angriffe?",
+          "options": [
+            "Durch regelmäßige Passwortwechsel",
+            "Durch die Nutzung von Firewalls",
+            "Durch Sensibilisierung und Erkennen von betrügerischen E-Mails",
+            "Durch das Blockieren von Werbung"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 68,
+          "difficulty": "leicht",
+          "question": "Welche Eigenschaft hat ein sicheres Passwort?",
+          "options": [
+            "Es ist kurz und einfach zu merken",
+            "Es besteht aus mindestens 12 Zeichen mit Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen",
+            "Es enthält persönliche Informationen",
+            "Es wird für mehrere Konten wiederverwendet"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 69,
+          "difficulty": "mittel",
+          "question": "Was ist Two-Factor Authentication (2FA)?",
+          "options": [
+            "Eine Technik zur Verschlüsselung von Daten",
+            "Ein zusätzlicher Sicherheitsfaktor neben Benutzername und Passwort",
+            "Eine Firewall-Technologie",
+            "Ein Verfahren zur Wiederherstellung von Passwörtern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 70,
+          "difficulty": "mittel",
+          "question": "Welche Art von Angriff ist Brute-Force-Angriff?",
+          "options": [
+            "Ein Angriff, bei dem Passwörter durch systematisches Ausprobieren erraten werden",
+            "Ein Angriff, der das Opfer psychologisch manipuliert",
+            "Ein Angriff, bei dem Schadsoftware installiert wird",
+            "Eine Methode zur schnellen Datenübertragung"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 71,
+          "difficulty": "mittel",
+          "question": "Welche Maßnahme schützt am besten vor Brute-Force-Angriffen?",
+          "options": [
+            "Nutzung langer und komplexer Passwörter",
+            "Verwendung von einfachen Passwörtern",
+            "Deaktivierung der Passwortabfrage",
+            "Speicherung von Passwörtern im Klartext"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 72,
+          "difficulty": "schwer",
+          "question": "Was ist ein Man-in-the-Middle-Angriff?",
+          "options": [
+            "Ein Angriff, bei dem sich ein Angreifer zwischen zwei Kommunikationspartner schaltet",
+            "Ein Angriff auf eine Datenbank",
+            "Ein Angriff auf eine Firewall",
+            "Eine Form von Phishing"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 73,
+          "difficulty": "mittel",
+          "question": "Welche Verschlüsselungsmethode gilt als sicher?",
+          "options": [
+            "MD5",
+            "SHA-1",
+            "AES-256",
+            "Base64"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 74,
+          "difficulty": "mittel",
+          "question": "Was bedeutet Ende-zu-Ende-Verschlüsselung?",
+          "options": [
+            "Daten werden nur auf dem Server verschlüsselt",
+            "Daten sind nur für den Sender und Empfänger lesbar",
+            "Daten werden automatisch in die Cloud gespeichert",
+            "Daten sind unverschlüsselt, wenn sie das Netzwerk verlassen"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 75,
+          "difficulty": "schwer",
+          "question": "Welche Schwachstelle nutzen SQL-Injection-Angriffe aus?",
+          "options": [
+            "Unsichere Passwortspeicherung",
+            "Fehlende Validierung von Benutzereingaben",
+            "Veraltete Firewalls",
+            "Langsame Internetverbindung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 76,
+          "difficulty": "leicht",
+          "question": "Was ist der Hauptzweck einer Firewall?",
+          "options": [
+            "Schutz vor Hardware-Defekten",
+            "Kontrolle des ein- und ausgehenden Netzwerkverkehrs",
+            "Verschlüsselung von Daten",
+            "Identifikation von Benutzern"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 78,
+          "difficulty": "mittel",
+          "question": "Was ist Ransomware?",
+          "options": [
+            "Eine Software zur Datensicherung",
+            "Schadsoftware, die Dateien verschlüsselt und Lösegeld fordert",
+            "Eine Sicherheitslösung für Netzwerke",
+            "Ein Phishing-Angriff"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 79,
+          "difficulty": "mittel",
+          "question": "Welche Methode hilft gegen Ransomware-Angriffe?",
+          "options": [
+            "Regelmäßige Backups",
+            "Verwendung von MD5",
+            "Nutzung schwacher Passwörter",
+            "Öffnen aller Anhänge in E-Mails"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 80,
+          "difficulty": "schwer",
+          "question": "Was ist eine Zero-Day-Schwachstelle?",
+          "options": [
+            "Eine Schwachstelle, die bereits behoben wurde",
+            "Eine Sicherheitslücke, die noch nicht öffentlich bekannt ist",
+            "Ein sicheres Software-Update",
+            "Eine Methode zur Code-Optimierung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 81,
+          "difficulty": "mittel",
+          "question": "Was ist der Hauptzweck von Penetration Testing?",
+          "options": [
+            "Analyse der Software-Performance",
+            "Testen der Sicherheit eines Systems durch simulierte Angriffe",
+            "Entwicklung neuer Verschlüsselungsalgorithmen",
+            "Wartung von Netzwerken"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 82,
+          "difficulty": "mittel",
+          "question": "Welche Rechte haben betroffene Personen laut DSGVO?",
+          "options": [
+            "Keine Rechte",
+            "Recht auf Auskunft, Löschung, Berichtigung",
+            "Recht auf uneingeschränkten Zugriff auf alle Daten",
+            "Recht auf unbegrenzte Datenspeicherung"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 83,
+          "difficulty": "mittel",
+          "question": "Was ist der Zweck eines Datenschutzbeauftragten?",
+          "options": [
+            "Er ist für das IT-Management verantwortlich",
+            "Er überwacht und berät zur Einhaltung der Datenschutzgesetze",
+            "Er entwickelt neue Verschlüsselungsalgorithmen",
+            "Er verwaltet Server"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 84,
+          "difficulty": "leicht",
+          "question": "Welche Technik hilft beim anonymen Surfen im Internet?",
+          "options": [
+            "VPN",
+            "Cookies",
+            "HTML5",
+            "JavaScript"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 85,
+          "difficulty": "schwer",
+          "question": "Welche Schwachstelle nutzt Cross-Site Scripting (XSS) aus?",
+          "options": [
+            "Unsichere Passwortspeicherung",
+            "Fehlende Eingabevalidierung",
+            "Veraltete Netzwerkgeräte",
+            "Zu lange URLs"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 86,
+          "difficulty": "mittel",
+          "question": "Welche Daten sollten laut DSGVO besonders geschützt werden?",
+          "options": [
+            "Öffentliche Telefonnummern",
+            "Gesundheitsdaten",
+            "Social-Media-Profile",
+            "Webseiten-URLs"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 87,
+          "difficulty": "mittel",
+          "question": "Welche Strafe droht bei Verstößen gegen die DSGVO?",
+          "options": [
+            "Keine Konsequenzen",
+            "Geldstrafen bis zu 20 Mio. Euro oder 4 % des Jahresumsatzes",
+            "Nur eine Verwarnung",
+            "Eine Sperrung der Webseite"
+          ],
+          "correctAnswer": 1
         }
+
       ]
     },
     "Datenbanken": {
       "description": "SQL, Normalisierung, Transaktionen, NoSQL",
       "questions": [
         {
-          "id": 35,
+          "id": 88,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen einer Transaktion und einem Stored Procedure?",
           "options": [
@@ -444,7 +1263,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 36,
+          "id": 89,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen einem Inner und Left Join?",
           "options": [
@@ -456,7 +1275,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 37,
+          "id": 90,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen einer View und einer Materialized View?",
           "options": [
@@ -468,7 +1287,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 38,
+          "id": 91,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen DELETE und TRUNCATE?",
           "options": [
@@ -480,7 +1299,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 39,
+          "id": 92,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen einer relationalen und einer NoSQL-Datenbank?",
           "options": [
@@ -492,7 +1311,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 40,
+          "id": 93,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen Normalisierung und Denormalisierung?",
           "options": [

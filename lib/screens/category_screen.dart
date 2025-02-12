@@ -114,12 +114,12 @@ class _CategoryScreenState extends State<CategoryScreen> {
           ),
           Expanded(
             child: GridView.builder(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(10),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: 0.75,
-                crossAxisSpacing: 16,
-                mainAxisSpacing: 16,
+                crossAxisSpacing: 2,
+                mainAxisSpacing: 2,
               ),
               itemCount: categories.length,
               itemBuilder: (context, index) {

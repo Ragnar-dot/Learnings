@@ -255,7 +255,8 @@ class _QuizScreenState extends State<QuizScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Card(
-                    child: Padding(
+                    child: Container(
+                      
                       padding: const EdgeInsets.all(16),
                       child: Text(
                         question.question,
@@ -292,6 +293,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     ),
                   ),
                 ],
+
               ),
             ),
           ),
