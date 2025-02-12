@@ -46,21 +46,27 @@ Future<void> loadQuestions() async {
     // Lade beide JSON-Dateien parallel
     final List<String> jsonFiles = await Future.wait([
       rootBundle.loadString('assets/questions.json'),
-      rootBundle.loadString('assets/lernfeld1.json')
+      rootBundle.loadString('assets/lernfeld1.json'),
+      rootBundle.loadString('assets/lernfeld2.json')
+
     ]);
 
     // Dekodiere beide JSON-Dateien
     final questionsData = json.decode(jsonFiles[0]);
-    final lernfeldData = json.decode(jsonFiles[1]);
+    final lernfeldData1 = json.decode(jsonFiles[1]);
+    final lernfeldData2 = json.decode(jsonFiles[2]);
 
     // Hole die Kategoriedaten aus beiden JSONs
     final categoryDataQuestions = questionsData['categories'][widget.category];
-    final categoryDataLernfeld = lernfeldData['categories'][widget.category];
+    final categoryDataLernfeld1 = lernfeldData1['categories'][widget.category];
+    final categoryDataLernfeld2 = lernfeldData2['categories'][widget.category];
 
     // Wähle die passende Kategorie basierend auf widget.category
     final dynamic categoryData = widget.category == 'Lernfeld1' 
-        ? categoryDataLernfeld 
-        : categoryDataQuestions;
+        ? categoryDataLernfeld1 
+        : widget.category == 'Lernfeld2' 
+            ? categoryDataLernfeld2 
+            : categoryDataQuestions;
 
 if (categoryData == null) {
         if (!mounted) return;

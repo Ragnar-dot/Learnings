@@ -22,3 +22,4 @@ flutter:
   assets:
     - assets/questions.json
     - assets/lernfeld1.json
+    - assets/lernfeld2.json
