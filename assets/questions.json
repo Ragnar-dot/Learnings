@@ -28,7 +28,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 9,
+          "id": 3,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen Kompilierung und Interpretation?",
           "options": [
@@ -40,7 +40,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 10,
+          "id": 4,
           "difficulty": "mittel",
           "question": "Was ist das MVC-Pattern?",
           "options": [
@@ -52,7 +52,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 14,
+          "id": 5,
           "difficulty": "leicht",
           "question": "Was ist der Unterschied zwischen Vererbung und Komposition?",
           "options": [
@@ -64,7 +64,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 23,
+          "id": 6,
           "difficulty": "schwer",
           "question": "Was sind die SOLID-Prinzipien?",
           "options": [
@@ -76,7 +76,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 24,
+          "id": 7,
           "difficulty": "mittel",
           "question": "Was ist das Singleton Pattern und wofür wird es verwendet?",
           "options": [
@@ -88,7 +88,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 26,
+          "id": 8,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen Polymorphismus und Vererbung?",
           "options": [
@@ -100,7 +100,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 27,
+          "id": 9,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen Aggregation und Komposition in der OOP?",
           "options": [
@@ -112,7 +112,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 28,
+          "id": 10,
           "difficulty": "schwer",
           "question": "Was ist Clean Architecture?",
           "options": [
@@ -124,7 +124,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 29,
+          "id": 11,
           "difficulty": "mittel",
           "question": "Was ist das Repository Pattern?",
           "options": [
@@ -136,7 +136,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 30,
+          "id": 12,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen Continuous Integration und Continuous Deployment?",
           "options": [
@@ -148,7 +148,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 31,
+          "id": 13,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen Dependency Injection und Service Locator Pattern?",
           "options": [
@@ -160,7 +160,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 33,
+          "id": 14,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen Web Workers in JavaScript?",
           "options": [
@@ -172,7 +172,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 34,
+          "id": 15,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen nativen und hybriden Apps?",
           "options": [
@@ -189,7 +189,7 @@
       "description": "Sortierung, Suche, Datenstrukturen, Komplexität",
       "questions": [
         {
-          "id": 25,
+          "id": 16,
           "difficulty": "schwer",
           "question": "Was ist die Zeitkomplexität von QuickSort im durchschnittlichen Fall?",
           "options": [
@@ -201,7 +201,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 32,
+          "id": 17,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen einem Array und einer verketteten Liste?",
           "options": [
@@ -213,7 +213,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 79,
+          "id": 18,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen einer Schleife und Rekursion?",
           "options": [
@@ -225,7 +225,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 80,
+          "id": 19,
           "difficulty": "mittel",
           "question": "Was ist eine Endrekursion (tail recursion)?",
           "options": [
@@ -237,7 +237,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 81,
+          "id": 20,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen einer for- und einer while-Schleife?",
           "options": [
@@ -249,7 +249,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 82,
+          "id": 21,
           "difficulty": "mittel",
           "question": "Was ist ein Pseudocode?",
           "options": [
@@ -261,7 +261,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 83,
+          "id": 22,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen einem Algorithmus und einem Programm?",
           "options": [
@@ -278,7 +278,7 @@
       "description": "OSI-Modell, Protokolle, Routing, Cloud",
       "questions": [
         {
-          "id": 93,
+          "id": 23,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen dem OSI-Modell und dem TCP/IP-Modell?",
           "options": [
@@ -290,7 +290,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 94,
+          "id": 24,
           "difficulty": "mittel",
           "question": "Welche Geräte arbeiten auf welcher OSI-Schicht?",
           "options": [
@@ -302,7 +302,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 95,
+          "id": 25,
           "difficulty": "schwer",
           "question": "Was ist Kapselung (Encapsulation) im OSI-Modell?",
           "options": [
@@ -314,7 +314,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 96,
+          "id": 26,
           "difficulty": "mittel",
           "question": "Was ist die korrekte Reihenfolge der OSI-Schichten von unten nach oben?",
           "options": [
@@ -326,7 +326,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 97,
+          "id": 27,
           "difficulty": "schwer",
           "question": "Welche Dateneinheiten werden in welcher OSI-Schicht verwendet?",
           "options": [
@@ -338,7 +338,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 98,
+          "id": 28,
           "difficulty": "mittel",
           "question": "Welche Adressierung wird in welcher OSI-Schicht verwendet?",
           "options": [
@@ -350,7 +350,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 99,
+          "id": 29,
           "difficulty": "schwer",
           "question": "Wie werden Daten durch die OSI-Schichten transportiert?",
           "options": [
@@ -362,7 +362,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 100,
+          "id": 30,
           "difficulty": "mittel",
           "question": "Welche Protokolle arbeiten auf der Transportschicht (Layer 4)?",
           "options": [
@@ -379,7 +379,7 @@
       "description": "Verschlüsselung, Authentifizierung, Penetration Testing",
       "questions": [
         {
-          "id": 43,
+          "id": 31,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen Verschlüsselung und Hashing?",
           "options": [
@@ -391,7 +391,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 63,
+          "id": 32,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen Penetration Testing und Vulnerability Scanning?",
           "options": [
@@ -403,7 +403,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 70,
+          "id": 33,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen einem Auftragsverarbeiter und einem Verantwortlichen nach DSGVO?",
           "options": [
@@ -415,7 +415,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 56,
+          "id": 34,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen einem Datenschutzbeauftragten und einem Informationssicherheitsbeauftragten?",
           "options": [
@@ -432,7 +432,7 @@
       "description": "SQL, Normalisierung, Transaktionen, NoSQL",
       "questions": [
         {
-          "id": 71,
+          "id": 35,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen einer Transaktion und einem Stored Procedure?",
           "options": [
@@ -444,7 +444,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 72,
+          "id": 36,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen einem Inner und Left Join?",
           "options": [
@@ -456,7 +456,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 73,
+          "id": 37,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen einer View und einer Materialized View?",
           "options": [
@@ -468,7 +468,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 74,
+          "id": 38,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen DELETE und TRUNCATE?",
           "options": [
@@ -480,7 +480,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 75,
+          "id": 39,
           "difficulty": "schwer",
           "question": "Was ist der Unterschied zwischen einer relationalen und einer NoSQL-Datenbank?",
           "options": [
@@ -492,7 +492,7 @@
           "correctAnswer": 1
         },
         {
-          "id": 76,
+          "id": 40,
           "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen Normalisierung und Denormalisierung?",
           "options": [
