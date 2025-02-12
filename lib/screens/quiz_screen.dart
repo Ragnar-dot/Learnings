@@ -41,14 +41,28 @@ class _QuizScreenState extends State<QuizScreen> {
     loadQuestions();
   }
 
-  Future<void> loadQuestions() async {
-    try {
-      final String jsonString =
-          await rootBundle.loadString('assets/questions.json');
-      final data = json.decode(jsonString);
-      final categoryData = data['categories'][widget.category];
+Future<void> loadQuestions() async {
+  try {
+    // Lade beide JSON-Dateien parallel
+    final List<String> jsonFiles = await Future.wait([
+      rootBundle.loadString('assets/questions.json'),
+      rootBundle.loadString('assets/lernfeld1.json')
+    ]);
 
-      if (categoryData == null) {
+    // Dekodiere beide JSON-Dateien
+    final questionsData = json.decode(jsonFiles[0]);
+    final lernfeldData = json.decode(jsonFiles[1]);
+
+    // Hole die Kategoriedaten aus beiden JSONs
+    final categoryDataQuestions = questionsData['categories'][widget.category];
+    final categoryDataLernfeld = lernfeldData['categories'][widget.category];
+
+    // Wähle die passende Kategorie basierend auf widget.category
+    final dynamic categoryData = widget.category == 'Lernfeld1' 
+        ? categoryDataLernfeld 
+        : categoryDataQuestions;
+
+if (categoryData == null) {
         if (!mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(

@@ -45,6 +45,11 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': Icons.psychology,
       'description': 'MML, Neuronale Netze, Deep Learning, KI-Ethik',
     },
+    {
+      'name': 'Lernfeld1',
+      'icon': Icons.school_outlined,
+      'description': 'Das Unternehmen und die Eigene Rolle im Betrieb',
+    },
   ];
 
   Map<String, QuizStats> categoryStats = {};

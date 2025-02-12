@@ -155,7 +155,7 @@ class _StartScreenState extends State<StartScreen> {
         child: Column(
           children: [
             Icon(icon, color: color, size: 32),
-            const SizedBox(height: 4),
+            const SizedBox(height: 6),
             Text(
               value,
               style: TextStyle(
@@ -165,6 +165,7 @@ class _StartScreenState extends State<StartScreen> {
               ),
             ),
             Text(title),
+            
           ],
         ),
       ),
