@@ -1300,7 +1300,7 @@
         },
         {
           "id": 92,
-          "difficulty": "schwer",
+          "difficulty": "mittel",
           "question": "Was ist der Unterschied zwischen einer relationalen und einer NoSQL-Datenbank?",
           "options": [
             "Keine Unterschiede",
@@ -1321,7 +1321,373 @@
             "Veraltete Methoden"
           ],
           "correctAnswer": 1
-        }
+        },
+
+
+
+        {
+              "id": 121,
+              "difficulty": "leicht",
+              "question": "Was ist eine relationale Datenbank?",
+              "options": [
+              "Eine Datenbank, die Daten in Tabellen mit Beziehungen speichert",
+              "Eine Datenbank, die nur unstrukturierte Daten speichert",
+              "Eine Art von Blockchain",
+              "Eine Datenbank ohne Indizes"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 122,
+              "difficulty": "leicht", 
+              "question": "Welche Sprache wird zur Abfrage relationaler Datenbanken verwendet?",
+              "options": [
+              "HTML",
+              "SQL",
+              "JSON",
+              "YAML"
+              ],
+              "correctAnswer": 1
+            },
+            {
+              "id": 123,
+              "difficulty": "mittel",
+              "question": "Was ist der Primärschlüssel in einer Datenbank?",
+              "options": [
+              "Eine Spalte, die eindeutige Werte für jeden Datensatz enthält",
+              "Eine verschlüsselte Datenbankspalte",
+              "Eine Funktion zur Indizierung",
+              "Eine nicht eindeutige Identifikation"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 124,
+              "difficulty": "leicht",
+              "question": "Welche SQL-Anweisung wird verwendet, um Daten aus einer Tabelle abzurufen?",
+              "options": [
+              "UPDATE",
+              "DELETE", 
+              "SELECT",
+              "INSERT"
+              ],
+              "correctAnswer": 2
+            },
+            {
+              "id": 125,
+              "difficulty": "schwer",
+              "question": "Welche Normalform eliminiert Redundanzen vollständig?",
+              "options": [
+              "Erste Normalform (1NF)",
+              "Zweite Normalform (2NF)",
+              "Dritte Normalform (3NF)",
+              "Vierte Normalform (4NF)"
+              ],
+              "correctAnswer": 2
+            },
+            {
+              "id": 126,
+              "difficulty": "leicht",
+              "question": "Welche SQL-Anweisung wird genutzt, um eine neue Tabelle zu erstellen?",
+              "options": [
+              "CREATE TABLE",
+              "INSERT TABLE",
+              "ADD TABLE", 
+              "NEW TABLE"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 127,
+              "difficulty": "leicht",
+              "question": "Welcher SQL-Befehl wird genutzt, um eine bestehende Tabelle zu löschen?",
+              "options": [
+              "DROP TABLE",
+              "DELETE TABLE",
+              "REMOVE TABLE",
+              "ERASE TABLE"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 128,
+              "difficulty": "mittel",
+              "question": "Was ist der Fremdschlüssel (Foreign Key)?",
+              "options": [
+              "Eine Spalte, die auf den Primärschlüssel einer anderen Tabelle verweist",
+              "Eine Spalte mit verschlüsselten Werten",
+              "Eine temporäre Spalte",
+              "Eine automatisch generierte ID"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 129,
+              "difficulty": "schwer",
+              "question": "Welche Art von Index beschleunigt die Suche in einer Datenbank?",
+              "options": [
+              "Clustered Index",
+              "Random Index",
+              "Sequential Index",
+              "Compressed Index"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 130,
+              "difficulty": "leicht",
+              "question": "Welche SQL-Anweisung wird genutzt, um Daten in eine Tabelle einzufügen?",
+              "options": [
+              "ADD INTO",
+              "INSERT INTO",
+              "PUSH INTO",
+              "PUT INTO"
+              ],
+              "correctAnswer": 1
+            },
+            {
+              "id": 131,
+              "difficulty": "mittel",
+              "question": "Welche Datenbankoperation entspricht CRUD?",
+              "options": [
+              "Create, Read, Update, Delete",
+              "Copy, Read, Update, Download",
+              "Create, Remove, Upload, Delete",
+              "Compute, Read, Upload, Deploy"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 132,
+              "difficulty": "leicht",
+              "question": "Welche SQL-Anweisung wird genutzt, um Daten in einer Tabelle zu ändern?",
+              "options": [
+              "CHANGE",
+              "UPDATE",
+              "MODIFY",
+              "ALTER"
+              ],
+              "correctAnswer": 1
+            },
+            {
+              "id": 133,
+              "difficulty": "schwer",
+              "question": "Was bedeutet ACID in Bezug auf Datenbanken?",
+              "options": [
+              "Eine chemische Formel für Datenbankverarbeitung",
+              "Ein Konsistenzmodell mit den Prinzipien: Atomicity, Consistency, Isolation, Durability",
+              "Eine spezielle Verschlüsselungsmethode",
+              "Ein SQL-Befehl"
+              ],
+              "correctAnswer": 1
+            },
+            {
+              "id": 134,
+              "difficulty": "mittel",
+              "question": "Welche Art von Datenbank speichert Daten als JSON-Dokumente?",
+              "options": [
+              "Relationale Datenbank",
+              "NoSQL-Datenbank",
+              "Key-Value-Store",
+              "Graph-Datenbank"
+              ],
+              "correctAnswer": 1
+            },
+            {
+              "id": 135,
+              "difficulty": "schwer",
+              "question": "Was ist Sharding in Datenbanken?",
+              "options": [
+              "Eine Methode zur Datenbankpartitionierung",
+              "Eine Backup-Technologie",
+              "Eine SQL-Abfrage",
+              "Eine Art von Indexierung"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 136,
+              "difficulty": "mittel",
+              "question": "Welche SQL-Anweisung entfernt alle Datensätze einer Tabelle, ohne die Tabelle selbst zu löschen?",
+              "options": [
+              "DROP",
+              "DELETE",
+              "TRUNCATE",
+              "REMOVE"
+              ],
+              "correctAnswer": 2
+            },
+            {
+              "id": 137,
+              "difficulty": "mittel",
+              "question": "Welche JOIN-Art gibt nur übereinstimmende Datensätze beider Tabellen zurück?",
+              "options": [
+              "INNER JOIN",
+              "LEFT JOIN",
+              "RIGHT JOIN",
+              "FULL JOIN"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 138,
+              "difficulty": "mittel",
+              "question": "Welche JOIN-Art gibt alle Datensätze der linken Tabelle und nur übereinstimmende der rechten zurück?",
+              "options": [
+              "INNER JOIN",
+              "LEFT JOIN",
+              "RIGHT JOIN",
+              "FULL JOIN"
+              ],
+              "correctAnswer": 1
+            },
+            {
+              "id": 139,
+              "difficulty": "schwer",
+              "question": "Welche Datenbank-Architektur hat Master-Slave-Replikation?",
+              "options": [
+              "Verteilte Datenbanken",
+              "Einzelserver-Datenbanken",
+              "Flat-File-Datenbanken",
+              "Blockchain-Datenbanken"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 140,
+              "difficulty": "leicht",
+              "question": "Was bedeutet 'SELECT * FROM users;' in SQL?",
+              "options": [
+              "Alle Spalten der Tabelle 'users' werden abgerufen",
+              "Die Tabelle 'users' wird gelöscht",
+              "Ein neuer Nutzer wird hinzugefügt",
+              "Ein Index wird erstellt"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 141,
+              "difficulty": "mittel",
+              "question": "Welche Datentypen gibt es in SQL?",
+              "options": [
+              "INTEGER, VARCHAR, BOOLEAN",
+              "TEXT, BOOLEAN, OBJECT",
+              "CHAR, JSON, ARRAY",
+              "STRING, BYTE, LIST"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 142,
+              "difficulty": "schwer",
+              "question": "Was ist eine Stored Procedure in SQL?",
+              "options": [
+              "Eine gespeicherte Abfrage oder Funktion",
+              "Eine SQL-Fehlermeldung",
+              "Ein primärer Schlüssel",
+              "Eine Art Index"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 143,
+              "difficulty": "mittel",
+              "question": "Was ist der Unterschied zwischen DELETE und TRUNCATE?",
+              "options": [
+              "DELETE entfernt nur spezifische Datensätze, TRUNCATE löscht alle",
+              "Beide löschen dieselben Daten",
+              "DELETE ist schneller als TRUNCATE",
+              "TRUNCATE kann einzelne Zeilen löschen"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 144,
+              "difficulty": "schwer",
+              "question": "Was ist Big Data?",
+              "options": [
+              "Eine sehr große Datenmenge, die spezielle Verarbeitung benötigt",
+              "Ein SQL-Befehl",
+              "Eine normale Datenbank",
+              "Eine Art von Index"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 145,
+              "difficulty": "mittel",
+              "question": "Welche Datenbankabfrage summiert Werte einer Spalte?",
+              "options": [
+              "SUM()",
+              "COUNT()",
+              "AVG()",
+              "GROUP()"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 146,
+              "difficulty": "mittel",
+              "question": "Was ist eine Indexierung in Datenbanken?",
+              "options": [
+              "Eine Methode zur Beschleunigung von Abfragen",
+              "Eine Verschlüsselungstechnik",
+              "Eine Methode zur Datenbankbereinigung",
+              "Eine Speichertechnik"
+              ],
+              "correctAnswer": 0
+            },
+            {
+              "id": 147,
+              "difficulty": "schwer",
+              "question": "Welche Art von Datenbank speichert Informationen als Knoten und Kanten?",
+              "options": [
+              "Relationale Datenbank",
+              "Graph-Datenbank",
+              "NoSQL-Datenbank",
+              "Key-Value-Store"
+              ],
+              "correctAnswer": 1
+            },
+            {
+              "id": 148,
+              "difficulty": "leicht",
+              "question": "Welche SQL-Anweisung gibt die Anzahl der Zeilen einer Tabelle zurück?",
+              "options": [
+                "SUM()",
+                "AVG()",
+                "COUNT()",
+              "LENGTH()"
+              ],
+              "correctAnswer": 2
+            },
+            {
+              "id": 149,
+              "difficulty": "mittel",
+              "question": "Was ist ein Hash in einer Datenbank?",
+              "options": [
+                "Ein SQL-Befehl",
+                "Eine Art von Backup",
+                "Eine eindeutige Zeichenfolge zur Identifikation",
+              "Eine Methode zur Reduzierung von Speicherplatz"
+              ],
+              "correctAnswer": 2
+            },
+            {
+              "id": 150,
+              "difficulty": "schwer",
+              "question": "Welche Datenbank-Backup-Methode speichert nur Änderungen seit dem letzten Backup?",
+              "options": [
+                "Komplettes Backup",
+                "Inkrementelles Backup",
+              "Differenzielles Backup",
+              "Snapshot"
+              ],
+              "correctAnswer": 1
+            }
+
+
+
       ]
     },
 

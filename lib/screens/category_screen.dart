@@ -101,7 +101,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
         children: [
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: theme.primaryColor,
               borderRadius: const BorderRadius.only(
@@ -119,7 +119,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
           ),
           Expanded(
             child: GridView.builder(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(5),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: 0.75,
@@ -133,6 +133,10 @@ class _CategoryScreenState extends State<CategoryScreen> {
                     categoryStats[category] ?? QuizStats(category: category);
 
                 return Card(
+                  
+
+                  
+                 
                   child: InkWell(
                     onTap: () async {
                       final result = await Navigator.push<QuizStats>(
@@ -217,7 +221,10 @@ class _CategoryScreenState extends State<CategoryScreen> {
                                 ),
                                 child: Text(
                                   '${stats.wrongAnswers} falsche wiederholen',
-                                  style: const TextStyle(fontSize: 11),
+                                  style: const TextStyle(
+                                    fontSize: 11,
+                                    color: Color.fromARGB(255, 255, 94, 0),
+                                  ),
                                 ),
                               ),
                           ],
