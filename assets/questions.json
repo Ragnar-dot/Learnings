@@ -1323,6 +1323,344 @@
           "correctAnswer": 1
         }
       ]
+    },
+
+
+
+    "Künstliche Intelligenz (KI)": {
+        "description": "MML, Neuronale Netze, Deep Learning, KI-Ethik",
+        "questions": [
+          {
+            "id": 94,
+            "difficulty": "leicht",
+            "question": "Was ist künstliche Intelligenz (KI)?",
+            "options": [
+              "Eine Technologie, die menschliche Intelligenz nachahmt",
+              "Ein neuer Programmierstil",
+              "Eine spezielle Art von Hardware",
+              "Ein Verschlüsselungsalgorithmus"
+            ],
+            "correctAnswer": 0
+          },
+
+
+
+            {
+            "id": 95,
+            "difficulty": "mittel",
+            "question": "Welche der folgenden Methoden gehört zu maschinellem Lernen?",
+            "options": [
+              "Bubble Sort",
+              "Binary Search", 
+              "Lineare Regression",
+              "Merge Sort"
+            ],
+            "correctAnswer": 2
+            },
+            {
+            "id": 96,
+            "difficulty": "leicht",
+            "question": "Welche Art von KI kann aus Daten lernen und sich anpassen?",
+            "options": [
+              "Regelbasierte Systeme",
+              "Maschinelles Lernen",
+              "Deterministische Algorithmen",
+              "Statische Programme"
+            ],
+            "correctAnswer": 1
+            },
+            {
+            "id": 97,
+            "difficulty": "leicht",
+            "question": "Welche Programmiersprache wird häufig für KI-Entwicklung genutzt?",
+            "options": [
+              "Python",
+              "HTML",
+              "CSS",
+              "PHP"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 98,
+            "difficulty": "mittel",
+            "question": "Welche Technologie wird für neuronale Netzwerke verwendet?",
+            "options": [
+              "Data Warehousing",
+              "Blockchain",
+              "Deep Learning",
+              "Virtual Reality"
+            ],
+            "correctAnswer": 2
+            },
+            {
+            "id": 99,
+            "difficulty": "mittel",
+            "question": "Was ist ein Neuronales Netz?",
+            "options": [
+              "Ein Netzwerk aus physischen Computern",
+              "Ein Sicherheitsprotokoll für Datenbanken",
+              "Eine Art von Datenbank",
+              "Ein System aus künstlichen Neuronen zur Mustererkennung"
+            ],
+            "correctAnswer": 3
+            },
+            {
+            "id": 100,
+            "difficulty": "mittel",
+            "question": "Welcher Begriff beschreibt das Training eines KI-Modells mit markierten Daten?",
+            "options": [
+              "Überwachtes Lernen",
+              "Unüberwachtes Lernen",
+              "Reinforcement Learning",
+              "Randomized Training"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 101,
+            "difficulty": "schwer",
+            "question": "Welche KI-Methode nutzt Belohnungssysteme, um optimale Strategien zu lernen?",
+            "options": [
+              "Reinforcement Learning",
+              "Unüberwachtes Lernen",
+              "Backpropagation",
+              "Symbolisches Lernen"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 102,
+            "difficulty": "mittel",
+            "question": "Welche Anwendung nutzt KI für Bild- und Spracherkennung?",
+            "options": [
+              "SQL-Abfragen",
+              "Convolutional Neural Networks (CNNs)",
+              "Load Balancing",
+              "DNS-Routing"
+            ],
+            "correctAnswer": 1
+            },
+            {
+            "id": 103,
+            "difficulty": "leicht",
+            "question": "Was bedeutet NLP (Natural Language Processing)?",
+            "options": [
+              "Verarbeitung und Analyse natürlicher Sprache",
+              "Netzwerkprotokolle für große Datenbanken",
+              "Ein Sicherheitssystem für KI-Modelle",
+              "Eine spezielle Art von Hardware"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 104,
+            "difficulty": "mittel",
+            "question": "Welches Modell wird für Textverarbeitung und Spracherkennung genutzt?",
+            "options": [
+              "Transformer-Modelle",
+              "Grafische Benutzeroberflächen",
+              "SQL-Datenbanken",
+              "Netzwerktopologien"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 105,
+            "difficulty": "leicht",
+            "question": "Welche bekannte KI basiert auf Transformer-Modellen?",
+            "options": [
+              "Windows Defender",
+              "Google Chrome",
+              "ChatGPT",
+              "Wireshark"
+            ],
+            "correctAnswer": 2
+            },
+            {
+            "id": 106,
+            "difficulty": "mittel",
+            "question": "Welche Technik nutzt KI, um große Datenmengen zu analysieren?",
+            "options": [
+              "Big Data Analytics",
+              "Relationale Datenbanken",
+              "Cache Management",
+              "Netzwerktopologien"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 107,
+            "difficulty": "mittel",
+            "question": "Was ist ein Deepfake?",
+            "options": [
+              "Ein Sicherheitstest für Server",
+              "Ein SQL-Befehl",
+              "Ein Verfahren zur Passwortverschlüsselung",
+              "Ein KI-generiertes Video, das echte Personen imitiert"
+            ],
+            "correctAnswer": 3
+            },
+            {
+            "id": 108,
+            "difficulty": "schwer",
+            "question": "Welche Ethik-Frage stellt sich bei KI-Systemen?",
+            "options": [
+              "Diskriminierung durch algorithmische Verzerrung",
+              "Speicherverbrauch von Computern",
+              "Die Wahl der besten Programmiersprache",
+              "Die Wahl zwischen SQL und NoSQL"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 109,
+            "difficulty": "leicht",
+            "question": "Was ist der Turing-Test?",
+            "options": [
+              "Ein Test zur Bewertung von KI-Intelligenz",
+              "Ein Sicherheitsalgorithmus",
+              "Ein SQL-Datenbankindex",
+              "Ein Betriebssystem"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 110,
+            "difficulty": "leicht",
+            "question": "Was ist eine schwache KI?",
+            "options": [
+              "Eine KI mit begrenzter, spezifischer Funktionalität",
+              "Eine fehlerhafte KI",
+              "Eine KI, die keine Daten verarbeiten kann",
+              "Eine KI mit zufälligen Ergebnissen"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 111,
+            "difficulty": "mittel",
+            "question": "Welche Anwendung nutzt KI im medizinischen Bereich?",
+            "options": [
+              "Steuerberechnung",
+              "Musikkomposition",
+              "Diagnoseunterstützung",
+              "E-Mail-Verschlüsselung"
+            ],
+            "correctAnswer": 2
+            },
+            {
+            "id": 112,
+            "difficulty": "schwer",
+            "question": "Was ist ein Generatives Modell?",
+            "options": [
+              "Ein Modell, das neue Daten generiert",
+              "Ein System zur Datenkomprimierung",
+              "Ein Hardware-Bauteil",
+              "Ein traditionelles Regelwerk"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 113,
+            "difficulty": "schwer",
+            "question": "Welche Herausforderung gibt es bei KI in der Cybersicherheit?",
+            "options": [
+              "Manipulation von KI-Modellen durch Angreifer",
+              "Überlastung von SQL-Servern",
+              "Langsame WLAN-Verbindungen",
+              "Fehlende Netzwerkprotokolle"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 114,
+            "difficulty": "mittel",
+            "question": "Was ist Computer Vision?",
+            "options": [
+              "Eine Virtual-Reality-Anwendung",
+              "Eine Art von Datenbank",
+              "Ein Bereich der KI zur Bildanalyse",
+              "Ein Hardware-Chip"
+            ],
+            "correctAnswer": 2
+            },
+            {
+            "id": 115,
+            "difficulty": "schwer",
+            "question": "Was ist eine Bias in KI-Modellen?",
+            "options": [
+              "Eine Verzerrung in den Trainingsdaten",
+              "Ein Fehler im Betriebssystem",
+              "Ein Computervirus",
+              "Ein Defekt in der Hardware"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 116,
+            "difficulty": "mittel",
+            "question": "Welche KI-Anwendung nutzt Reinforcement Learning?",
+            "options": [
+              "Tabellenkalkulation",
+              "Selbstfahrende Autos",
+              "Texteditoren",
+              "WLAN-Router"
+            ],
+            "correctAnswer": 1
+            },
+            {
+            "id": 117,
+            "difficulty": "leicht",
+            "question": "Was ist der Hauptvorteil von KI in der Industrie?",
+            "options": [
+              "Automatisierung von Prozessen",
+              "Höherer Energieverbrauch",
+              "Weniger Datenverkehr",
+              "Schnellere Grafikkarten"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 118,
+            "difficulty": "schwer",
+            "question": "Welche Art von KI kann komplexe strategische Spiele meistern?",
+            "options": [
+              "Reinforcement Learning",
+              "Unüberwachtes Lernen",
+              "Logikprogrammierung",
+              "Symbolische KI"
+            ],
+            "correctAnswer": 0
+            },
+            {
+            "id": 119,
+            "difficulty": "schwer",
+            "question": "Was ist eine Black Box in der KI?",
+            "options": [
+              "Ein gehacktes System",
+              "Ein SQL-Fehler",
+              "Ein undurchsichtiges KI-Modell",
+              "Eine Art von Firewall"
+            ],
+            "correctAnswer": 2
+            },
+            {
+            "id": 120,
+            "difficulty": "schwer",
+            "question": "Was ist Federated Learning?",
+            "options": [
+              "Ein dezentraler Ansatz für KI-Training",
+              "Eine Art von Verschlüsselung",
+              "Eine Hardware-Komponente",
+              "Eine Blockchain-Technologie"
+            ],
+            "correctAnswer": 0
+            }
+
+
+
+        ]
     }
   }
 }

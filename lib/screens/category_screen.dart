@@ -40,6 +40,11 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': Icons.storage,
       'description': 'SQL, Normalisierung, Datenbankdesign',
     },
+    {
+      'name': 'Künstliche Intelligenz (KI)',
+      'icon': Icons.psychology,
+      'description': 'MML, Neuronale Netze, Deep Learning, KI-Ethik',
+    },
   ];
 
   Map<String, QuizStats> categoryStats = {};
