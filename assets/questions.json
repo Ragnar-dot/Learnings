@@ -367,7 +367,7 @@
 
 
 
-    
+
     "Algorithmen": {
       "description": "Sortierung, Suche, Datenstrukturen, Komplexität",
       "questions": [
@@ -2275,7 +2275,7 @@
 
 
 
-            "Künstliche Intelligenz (KI)": {
+            "Künstliche Intelligenz": {
               "description": "MML, Neuronale Netze, Deep Learning, KI-Ethik",
               "questions": [
                 {

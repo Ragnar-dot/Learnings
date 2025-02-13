@@ -41,7 +41,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'description': 'SQL, Normalisierung, Datenbankdesign',
     },
     {
-      'name': 'Künstliche Intelligenz (KI)',
+      'name': 'Künstliche Intelligenz',
       'icon': Icons.psychology,
       'description': 'MML, Neuronale Netze, Deep Learning, KI-Ethik',
     },
