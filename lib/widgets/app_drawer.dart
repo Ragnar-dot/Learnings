@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/theme_provider.dart';
@@ -25,13 +26,13 @@ class AppDrawer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Icons.quiz,
+                  Icons.school,                                                 // icon
                   color: Colors.white,
-                  size: 48,
+                  size: 50,
                 ),
                 SizedBox(height: 9),
                 Text(
-                  'IHK Prüfungs-Quiz',
+                  'FIAE/FISI Prüfungs-Quiz',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 22,
