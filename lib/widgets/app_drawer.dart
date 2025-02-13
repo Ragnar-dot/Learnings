@@ -32,7 +32,7 @@ class AppDrawer extends StatelessWidget {
                 ),
                 SizedBox(height: 9),
                 Text(
-                  'FIAE/FISI Prüfungs-Quiz',
+                  'FIAE / FISI  Prüfungs-Quiz',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 22,
