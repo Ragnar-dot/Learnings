@@ -4,6 +4,7 @@ import 'providers/theme_provider.dart';
 import 'screens/start_screen.dart';
 import 'theme/app_theme.dart';
 
+
 void main() {
   runApp(
     ChangeNotifierProvider(

@@ -4,6 +4,7 @@ import '../models/quiz_stats.dart';
 
 class StorageService {
   static const String statsKey = 'quiz_stats';
+  static const String totalStatsKey = 'total_quiz_stats';
 
   static Future<void> saveStats(Map<String, QuizStats> stats) async {
     final prefs = await SharedPreferences.getInstance();
@@ -47,6 +48,48 @@ class StorageService {
     } catch (e) {
       print('Error loading stats: $e');
       return {};
+    }
+  }
+
+  static Future<void> saveTotalStats({
+    required int totalQuestions,
+    required int totalCorrect,
+    required int totalWrong,
+  }) async {
+    final prefs = await SharedPreferences.getInstance();
+    final totalStats = {
+      'totalQuestions': totalQuestions,
+      'totalCorrect': totalCorrect,
+      'totalWrong': totalWrong,
+    };
+    await prefs.setString(totalStatsKey, jsonEncode(totalStats));
+  }
+
+  static Future<Map<String, int>> loadTotalStats() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final statsString = prefs.getString(totalStatsKey);
+      if (statsString == null) {
+        return {
+          'totalQuestions': 0,
+          'totalCorrect': 0,
+          'totalWrong': 0,
+        };
+      }
+
+      final Map<String, dynamic> stats = jsonDecode(statsString);
+      return {
+        'totalQuestions': stats['totalQuestions'] as int? ?? 0,
+        'totalCorrect': stats['totalCorrect'] as int? ?? 0,
+        'totalWrong': stats['totalWrong'] as int? ?? 0,
+      };
+    } catch (e) {
+      print('Error loading total stats: $e');
+      return {
+        'totalQuestions': 0,
+        'totalCorrect': 0,
+        'totalWrong': 0,
+      };
     }
   }
 }

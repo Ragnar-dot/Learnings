@@ -1,9 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/theme_provider.dart';
 import '../screens/start_screen.dart';
 import '../screens/category_screen.dart';
+import '../screens/video_screen.dart';
 import '../theme/app_theme.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -75,6 +75,18 @@ class AppDrawer extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => const CategoryScreen(),
+                ),
+              );
+            },
+          ),
+                    ListTile(
+            leading: const Icon(Icons.video_library),
+            title: const Text('Lernvideos'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const VideoScreen(),
                 ),
               );
             },

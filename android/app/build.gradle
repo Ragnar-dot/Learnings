@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.learnings"
+    namespace "com.example.learnings"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
