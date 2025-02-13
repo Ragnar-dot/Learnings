@@ -84,7 +84,7 @@ class VideoScreen extends StatelessWidget {
           return ExpansionTile(
             title: Text(category),
             children: videos.map((video) => Card(
-              margin: const EdgeInsets.all(8),
+              margin: const EdgeInsets.all(12),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -104,7 +104,7 @@ class VideoScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(12.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
