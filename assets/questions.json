@@ -352,14 +352,22 @@
           "correctAnswer": 1 
         }
 
-
-
-
-
-
-
       ]
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     "Algorithmen": {
       "description": "Sortierung, Suche, Datenstrukturen, Komplexität",
       "questions": [
@@ -764,6 +772,14 @@
 
 
 
+
+
+
+
+
+
+
+
       ]
     },
     "Netzwerke": {
@@ -867,6 +883,16 @@
         }
       ]
     },
+
+
+
+
+
+
+
+
+
+
     "IT-Sicherheit": {
       "description": "Verschlüsselung, Authentifizierung, Penetration Testing",
       "questions": [
@@ -1859,7 +1885,730 @@
               ],
               "correctAnswer": 1
             }
-            ]
-        }
+
+          ]
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+"Datenbanken": {
+  "description": "SQL, Normalisierung, Transaktionen, NoSQL",
+  "questions": [
+    {
+      "id": 139,
+      "difficulty": "leicht",
+      "question": "Was ist eine relationale Datenbank?",
+      "options": [
+        "Eine Datenbank, die Daten in Tabellen mit Beziehungen speichert",
+        "Eine Datenbank, die nur unstrukturierte Daten speichert",
+        "Eine Art von Blockchain",
+        "Eine Datenbank ohne Indizes"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 140,
+      "difficulty": "leicht",
+      "question": "Welche Sprache wird zur Abfrage relationaler Datenbanken verwendet?",
+      "options": [
+        "HTML",
+        "SQL",
+        "JSON",
+        "YAML"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 141,
+      "difficulty": "mittel",
+      "question": "Was ist der Primärschlüssel in einer Datenbank?",
+      "options": [
+        "Eine Spalte, die eindeutige Werte für jeden Datensatz enthält",
+        "Eine verschlüsselte Datenbankspalte",
+        "Eine Funktion zur Indizierung",
+        "Eine nicht eindeutige Identifikation"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 142,
+      "difficulty": "leicht",
+      "question": "Welche SQL-Anweisung wird verwendet, um Daten aus einer Tabelle abzurufen?",
+      "options": [
+        "UPDATE",
+        "DELETE",
+        "SELECT",
+        "INSERT"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 143,
+      "difficulty": "schwer",
+      "question": "Welche Normalform eliminiert Redundanzen vollständig?",
+      "options": [
+        "Erste Normalform (1NF)",
+        "Zweite Normalform (2NF)",
+        "Dritte Normalform (3NF)",
+        "Vierte Normalform (4NF)"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 144,
+      "difficulty": "leicht",
+      "question": "Welche SQL-Anweisung wird genutzt, um eine neue Tabelle zu erstellen?",
+      "options": [
+        "CREATE TABLE",
+        "INSERT TABLE",
+        "ADD TABLE",
+        "NEW TABLE"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 145,
+      "difficulty": "leicht",
+      "question": "Welcher SQL-Befehl wird genutzt, um eine bestehende Tabelle zu löschen?",
+      "options": [
+        "DROP TABLE",
+        "DELETE TABLE",
+        "REMOVE TABLE",
+        "ERASE TABLE"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 146,
+      "difficulty": "mittel",
+      "question": "Was ist der Fremdschlüssel (Foreign Key)?",
+      "options": [
+        "Eine Spalte, die auf den Primärschlüssel einer anderen Tabelle verweist",
+        "Eine Spalte mit verschlüsselten Werten",
+        "Eine temporäre Spalte",
+        "Eine automatisch generierte ID"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 147,
+      "difficulty": "mittel",
+      "question": "Welche Art von Index beschleunigt die Suche in einer Datenbank?",
+      "options": [
+        "Clustered Index",
+        "Random Index",
+        "Sequential Index",
+        "Compressed Index"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 148,
+      "difficulty": "leicht",
+      "question": "Welche SQL-Anweisung wird genutzt, um Daten in eine Tabelle einzufügen?",
+      "options": [
+        "ADD INTO",
+        "INSERT INTO",
+        "PUSH INTO",
+        "PUT INTO"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 149,
+      "difficulty": "leicht",
+      "question": "Welche Datenbankoperation entspricht CRUD?",
+      "options": [
+        "Create, Read, Update, Delete",
+        "Copy, Read, Update, Download",
+        "Create, Remove, Upload, Delete",
+        "Compute, Read, Upload, Deploy"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 150,
+      "difficulty": "leicht",
+      "question": "Welche SQL-Anweisung wird genutzt, um Daten in einer Tabelle zu ändern?",
+      "options": [
+        "CHANGE",
+        "UPDATE",
+        "MODIFY",
+        "ALTER"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 151,
+      "difficulty": "schwer",
+      "question": "Was bedeutet ACID in Bezug auf Datenbanken?",
+      "options": [
+        "Eine chemische Formel für Datenbankverarbeitung",
+        "Ein Konsistenzmodell mit den Prinzipien: Atomicity, Consistency, Isolation, Durability",
+        "Eine spezielle Verschlüsselungsmethode",
+        "Ein SQL-Befehl"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 152,
+      "difficulty": "mittel",
+      "question": "Welche Art von Datenbank speichert Daten als JSON-Dokumente?",
+      "options": [
+        "Relationale Datenbank",
+        "NoSQL-Datenbank",
+        "Key-Value-Store",
+        "Graph-Datenbank"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 153,
+      "difficulty": "schwer",
+      "question": "Was ist Sharding in Datenbanken?",
+      "options": [
+        "Eine Methode zur Datenbankpartitionierung",
+        "Eine Backup-Technologie",
+        "Eine SQL-Abfrage",
+        "Eine Art von Indexierung"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 154,
+      "difficulty": "mittel",
+      "question": "Welche SQL-Anweisung entfernt alle Datensätze einer Tabelle, ohne die Tabelle selbst zu löschen?",
+      "options": [
+        "DROP",
+        "DELETE",
+        "TRUNCATE",
+        "REMOVE"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 155,
+      "difficulty": "mittel",
+      "question": "Welche JOIN-Art gibt nur übereinstimmende Datensätze beider Tabellen zurück?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL JOIN"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 156,
+      "difficulty": "mittel",
+      "question": "Welche JOIN-Art gibt alle Datensätze der linken Tabelle und nur übereinstimmende der rechten zurück?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL JOIN"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 157,
+      "difficulty": "mittel",
+      "question": "Welche Datenbank-Architektur hat Master-Slave-Replikation?",
+      "options": [
+        "Verteilte Datenbanken",
+        "Einzelserver-Datenbanken",
+        "Flat-File-Datenbanken",
+        "Blockchain-Datenbanken"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 158,
+      "difficulty": "leicht",
+      "question": "Was bedeutet 'SELECT * FROM users;' in SQL?",
+      "options": [
+        "Alle Spalten der Tabelle 'users' werden abgerufen",
+        "Die Tabelle 'users' wird gelöscht",
+        "Ein neuer Nutzer wird hinzugefügt",
+        "Ein Index wird erstellt"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 159,
+      "difficulty": "mittel",
+      "question": "Welche Datentypen gibt es in SQL?",
+      "options": [
+        "INTEGER, VARCHAR, BOOLEAN",
+        "TEXT, BOOLEAN, OBJECT",
+        "CHAR, JSON, ARRAY",
+        "STRING, BYTE, LIST"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 160,
+      "difficulty": "mittel",
+      "question": "Was ist eine Stored Procedure in SQL?",
+      "options": [
+        "Eine gespeicherte Abfrage oder Funktion",
+        "Eine SQL-Fehlermeldung",
+        "Ein primärer Schlüssel",
+        "Eine Art Index"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 161,
+      "difficulty": "mittel",
+      "question": "Was ist der Unterschied zwischen DELETE und TRUNCATE?",
+      "options": [
+        "DELETE entfernt nur spezifische Datensätze, TRUNCATE löscht alle",
+        "Beide löschen dieselben Daten",
+        "DELETE ist schneller als TRUNCATE",
+        "TRUNCATE kann einzelne Zeilen löschen"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 162,
+      "difficulty": "schwer",
+      "question": "Was ist Big Data?",
+      "options": [
+        "Eine sehr große Datenmenge, die spezielle Verarbeitung benötigt",
+        "Ein SQL-Befehl",
+        "Eine normale Datenbank",
+        "Eine Art von Index"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 163,
+      "difficulty": "leicht",
+      "question": "Welche Datenbankabfrage summiert Werte einer Spalte?",
+      "options": [
+        "SUM()",
+        "COUNT()",
+        "AVG()",
+        "GROUP()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 164,
+      "difficulty": "mittel",
+      "question": "Was ist eine Indexierung in Datenbanken?",
+      "options": [
+        "Eine Methode zur Beschleunigung von Abfragen",
+        "Eine Verschlüsselungstechnik",
+        "Eine Methode zur Datenbankbereinigung",
+        "Eine Speichertechnik"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 165,
+      "difficulty": "mittel",
+      "question": "Welche Art von Datenbank speichert Informationen als Knoten und Kanten?",
+      "options": [
+        "Relationale Datenbank",
+        "Graph-Datenbank",
+        "NoSQL-Datenbank",
+        "Key-Value-Store"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 166,
+      "difficulty": "leicht",
+      "question": "Welche SQL-Anweisung gibt die Anzahl der Zeilen einer Tabelle zurück?",
+      "options": [
+        "COUNT()",
+        "SUM()",
+        "AVG()",
+        "LENGTH()"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 167,
+      "difficulty": "mittel",
+      "question": "Was ist ein Hash in einer Datenbank?",
+      "options": [
+        "Eine eindeutige Zeichenfolge zur Identifikation",
+        "Ein SQL-Befehl",
+        "Eine Art von Backup",
+        "Eine Methode zur Reduzierung von Speicherplatz"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 168,
+      "difficulty": "mittel",
+      "question": "Welche Datenbank-Backup-Methode speichert nur Änderungen seit dem letzten Backup?",
+      "options": [
+        "Inkrementelles Backup",
+        "Komplettes Backup",
+        "Differenzielles Backup",
+        "Snapshot"
+      ],
+      "correctAnswer": 0
     }
-}
+  ]
+},
+
+
+
+
+
+
+
+
+
+
+            "Künstliche Intelligenz (KI)": {
+              "description": "MML, Neuronale Netze, Deep Learning, KI-Ethik",
+              "questions": [
+                {
+                  "id": 94,
+                  "difficulty": "leicht",
+                  "question": "Was ist künstliche Intelligenz (KI)?",
+                  "options": [
+                    "Eine Technologie, die menschliche Intelligenz nachahmt",
+                    "Ein neuer Programmierstil",
+                    "Eine spezielle Art von Hardware",
+                    "Ein Verschlüsselungsalgorithmus"
+                  ],
+                  "correctAnswer": 0
+                },
+      
+      
+      
+                  {
+                  "id": 95,
+                  "difficulty": "mittel",
+                  "question": "Welche der folgenden Methoden gehört zu maschinellem Lernen?",
+                  "options": [
+                    "Bubble Sort",
+                    "Binary Search", 
+                    "Lineare Regression",
+                    "Merge Sort"
+                  ],
+                  "correctAnswer": 2
+                  },
+                  {
+                  "id": 96,
+                  "difficulty": "leicht",
+                  "question": "Welche Art von KI kann aus Daten lernen und sich anpassen?",
+                  "options": [
+                    "Regelbasierte Systeme",
+                    "Maschinelles Lernen",
+                    "Deterministische Algorithmen",
+                    "Statische Programme"
+                  ],
+                  "correctAnswer": 1
+                  },
+                  {
+                  "id": 97,
+                  "difficulty": "leicht",
+                  "question": "Welche Programmiersprache wird häufig für KI-Entwicklung genutzt?",
+                  "options": [
+                    "Python",
+                    "HTML",
+                    "CSS",
+                    "PHP"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 98,
+                  "difficulty": "mittel",
+                  "question": "Welche Technologie wird für neuronale Netzwerke verwendet?",
+                  "options": [
+                    "Data Warehousing",
+                    "Blockchain",
+                    "Deep Learning",
+                    "Virtual Reality"
+                  ],
+                  "correctAnswer": 2
+                  },
+                  {
+                  "id": 99,
+                  "difficulty": "mittel",
+                  "question": "Was ist ein Neuronales Netz?",
+                  "options": [
+                    "Ein Netzwerk aus physischen Computern",
+                    "Ein Sicherheitsprotokoll für Datenbanken",
+                    "Eine Art von Datenbank",
+                    "Ein System aus künstlichen Neuronen zur Mustererkennung"
+                  ],
+                  "correctAnswer": 3
+                  },
+                  {
+                  "id": 100,
+                  "difficulty": "mittel",
+                  "question": "Welcher Begriff beschreibt das Training eines KI-Modells mit markierten Daten?",
+                  "options": [
+                    "Überwachtes Lernen",
+                    "Unüberwachtes Lernen",
+                    "Reinforcement Learning",
+                    "Randomized Training"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 101,
+                  "difficulty": "schwer",
+                  "question": "Welche KI-Methode nutzt Belohnungssysteme, um optimale Strategien zu lernen?",
+                  "options": [
+                    "Reinforcement Learning",
+                    "Unüberwachtes Lernen",
+                    "Backpropagation",
+                    "Symbolisches Lernen"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 102,
+                  "difficulty": "mittel",
+                  "question": "Welche Anwendung nutzt KI für Bild- und Spracherkennung?",
+                  "options": [
+                    "SQL-Abfragen",
+                    "Convolutional Neural Networks (CNNs)",
+                    "Load Balancing",
+                    "DNS-Routing"
+                  ],
+                  "correctAnswer": 1
+                  },
+                  {
+                  "id": 103,
+                  "difficulty": "leicht",
+                  "question": "Was bedeutet NLP (Natural Language Processing)?",
+                  "options": [
+                    "Verarbeitung und Analyse natürlicher Sprache",
+                    "Netzwerkprotokolle für große Datenbanken",
+                    "Ein Sicherheitssystem für KI-Modelle",
+                    "Eine spezielle Art von Hardware"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 104,
+                  "difficulty": "mittel",
+                  "question": "Welches Modell wird für Textverarbeitung und Spracherkennung genutzt?",
+                  "options": [
+                    "Transformer-Modelle",
+                    "Grafische Benutzeroberflächen",
+                    "SQL-Datenbanken",
+                    "Netzwerktopologien"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 105,
+                  "difficulty": "leicht",
+                  "question": "Welche bekannte KI basiert auf Transformer-Modellen?",
+                  "options": [
+                    "Windows Defender",
+                    "Google Chrome",
+                    "ChatGPT",
+                    "Wireshark"
+                  ],
+                  "correctAnswer": 2
+                  },
+                  {
+                  "id": 106,
+                  "difficulty": "mittel",
+                  "question": "Welche Technik nutzt KI, um große Datenmengen zu analysieren?",
+                  "options": [
+                    "Big Data Analytics",
+                    "Relationale Datenbanken",
+                    "Cache Management",
+                    "Netzwerktopologien"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 107,
+                  "difficulty": "mittel",
+                  "question": "Was ist ein Deepfake?",
+                  "options": [
+                    "Ein Sicherheitstest für Server",
+                    "Ein SQL-Befehl",
+                    "Ein Verfahren zur Passwortverschlüsselung",
+                    "Ein KI-generiertes Video, das echte Personen imitiert"
+                  ],
+                  "correctAnswer": 3
+                  },
+                  {
+                  "id": 108,
+                  "difficulty": "schwer",
+                  "question": "Welche Ethik-Frage stellt sich bei KI-Systemen?",
+                  "options": [
+                    "Diskriminierung durch algorithmische Verzerrung",
+                    "Speicherverbrauch von Computern",
+                    "Die Wahl der besten Programmiersprache",
+                    "Die Wahl zwischen SQL und NoSQL"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 109,
+                  "difficulty": "leicht",
+                  "question": "Was ist der Turing-Test?",
+                  "options": [
+                    "Ein Test zur Bewertung von KI-Intelligenz",
+                    "Ein Sicherheitsalgorithmus",
+                    "Ein SQL-Datenbankindex",
+                    "Ein Betriebssystem"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 110,
+                  "difficulty": "leicht",
+                  "question": "Was ist eine schwache KI?",
+                  "options": [
+                    "Eine KI mit begrenzter, spezifischer Funktionalität",
+                    "Eine fehlerhafte KI",
+                    "Eine KI, die keine Daten verarbeiten kann",
+                    "Eine KI mit zufälligen Ergebnissen"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 111,
+                  "difficulty": "mittel",
+                  "question": "Welche Anwendung nutzt KI im medizinischen Bereich?",
+                  "options": [
+                    "Steuerberechnung",
+                    "Musikkomposition",
+                    "Diagnoseunterstützung",
+                    "E-Mail-Verschlüsselung"
+                  ],
+                  "correctAnswer": 2
+                  },
+                  {
+                  "id": 112,
+                  "difficulty": "schwer",
+                  "question": "Was ist ein Generatives Modell?",
+                  "options": [
+                    "Ein Modell, das neue Daten generiert",
+                    "Ein System zur Datenkomprimierung",
+                    "Ein Hardware-Bauteil",
+                    "Ein traditionelles Regelwerk"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 113,
+                  "difficulty": "schwer",
+                  "question": "Welche Herausforderung gibt es bei KI in der Cybersicherheit?",
+                  "options": [
+                    "Manipulation von KI-Modellen durch Angreifer",
+                    "Überlastung von SQL-Servern",
+                    "Langsame WLAN-Verbindungen",
+                    "Fehlende Netzwerkprotokolle"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 114,
+                  "difficulty": "mittel",
+                  "question": "Was ist Computer Vision?",
+                  "options": [
+                    "Eine Virtual-Reality-Anwendung",
+                    "Eine Art von Datenbank",
+                    "Ein Bereich der KI zur Bildanalyse",
+                    "Ein Hardware-Chip"
+                  ],
+                  "correctAnswer": 2
+                  },
+                  {
+                  "id": 115,
+                  "difficulty": "schwer",
+                  "question": "Was ist eine Bias in KI-Modellen?",
+                  "options": [
+                    "Eine Verzerrung in den Trainingsdaten",
+                    "Ein Fehler im Betriebssystem",
+                    "Ein Computervirus",
+                    "Ein Defekt in der Hardware"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 116,
+                  "difficulty": "mittel",
+                  "question": "Welche KI-Anwendung nutzt Reinforcement Learning?",
+                  "options": [
+                    "Tabellenkalkulation",
+                    "Selbstfahrende Autos",
+                    "Texteditoren",
+                    "WLAN-Router"
+                  ],
+                  "correctAnswer": 1
+                  },
+                  {
+                  "id": 117,
+                  "difficulty": "leicht",
+                  "question": "Was ist der Hauptvorteil von KI in der Industrie?",
+                  "options": [
+                    "Automatisierung von Prozessen",
+                    "Höherer Energieverbrauch",
+                    "Weniger Datenverkehr",
+                    "Schnellere Grafikkarten"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 118,
+                  "difficulty": "schwer",
+                  "question": "Welche Art von KI kann komplexe strategische Spiele meistern?",
+                  "options": [
+                    "Reinforcement Learning",
+                    "Unüberwachtes Lernen",
+                    "Logikprogrammierung",
+                    "Symbolische KI"
+                  ],
+                  "correctAnswer": 0
+                  },
+                  {
+                  "id": 119,
+                  "difficulty": "schwer",
+                  "question": "Was ist eine Black Box in der KI?",
+                  "options": [
+                    "Ein gehacktes System",
+                    "Ein SQL-Fehler",
+                    "Ein undurchsichtiges KI-Modell",
+                    "Eine Art von Firewall"
+                  ],
+                  "correctAnswer": 2
+                  },
+                  {
+                  "id": 120,
+                  "difficulty": "schwer",
+                  "question": "Was ist Federated Learning?",
+                  "options": [
+                    "Ein dezentraler Ansatz für KI-Training",
+                    "Eine Art von Verschlüsselung",
+                    "Eine Hardware-Komponente",
+                    "Eine Blockchain-Technologie"
+                  ],
+                  "correctAnswer": 0
+                  }
+      
+      
+      
+              ]
+          }
+        }
+      }
