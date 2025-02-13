@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/quiz_stats.dart';
 import '../screens/category_screen.dart';
 import '../services/storage_service.dart';
+import '../widgets/app_drawer.dart';
 import 'dart:math' show max;
 
 class StartScreen extends StatefulWidget {
@@ -13,6 +14,11 @@ class StartScreen extends StatefulWidget {
 
 class _StartScreenState extends State<StartScreen> {
   Map<String, QuizStats> categoryStats = {};
+  Map<String, int> totalStats = {
+    'totalQuestions': 0,
+    'totalCorrect': 0,
+    'totalWrong': 0,
+  };
 
   @override
   void initState() {
@@ -22,8 +28,10 @@ class _StartScreenState extends State<StartScreen> {
 
   Future<void> loadStats() async {
     final stats = await StorageService.loadStats();
+    final totals = await StorageService.loadTotalStats();
     setState(() {
       categoryStats = stats;
+      totalStats = totals;
     });
   }
 
@@ -36,6 +44,7 @@ class _StartScreenState extends State<StartScreen> {
         title: const Text('Prüfungs-Quiz'),
         elevation: 0,
       ),
+      drawer: const AppDrawer(),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -112,17 +121,23 @@ class _StartScreenState extends State<StartScreen> {
   }
 
   Widget _buildProgressStats() {
-    // Initialize counters for totals
+    // Berechne die Gesamtstatistiken
     int totalQuestions = 0;
     int totalCorrect = 0;
     int totalWrong = 0;
 
-    // Sum up statistics from all categories
     categoryStats.forEach((_, stats) {
-      totalQuestions += stats.totalQuestions;    // Total number of questions attempted
-      totalCorrect += stats.correctAnswers;      // Total correct answers
-      totalWrong += stats.wrongAnswers;          // Total wrong answers
+      totalQuestions += stats.totalQuestions;
+      totalCorrect += stats.correctAnswers;
+      totalWrong += stats.wrongAnswers;
     });
+
+    // Speichere die aktualisierten Gesamtstatistiken
+    StorageService.saveTotalStats(
+      totalQuestions: totalQuestions,
+      totalCorrect: totalCorrect,
+      totalWrong: totalWrong,
+    );
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,

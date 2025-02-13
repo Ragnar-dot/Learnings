@@ -1,0 +1,3 @@
+android {
+    namespace "com.pichillilorenzo.flutter_inappwebview"
+} 
