@@ -22,7 +22,7 @@ class QuizApp extends StatelessWidget {
       builder: (context, themeProvider, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'IHK Prüfungs-Quiz',
+          title: 'Prüfungs-Quiz',
           theme: AppTheme.lightTheme,
           darkTheme: AppTheme.darkTheme,
           themeMode:

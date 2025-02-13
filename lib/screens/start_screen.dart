@@ -33,7 +33,7 @@ class _StartScreenState extends State<StartScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('IHK Prüfungs-Quiz'),
+        title: const Text('Prüfungs-Quiz'),
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -52,7 +52,7 @@ class _StartScreenState extends State<StartScreen> {
               child: Column(
                 children: [
                   Text(
-                    'Willkommen zum IHK Prüfungs-Quiz!',
+                    'Willkommen zum Prüfungs-Quiz!',
                     style: theme.textTheme.headlineLarge?.copyWith(
                       color: Colors.white,
                     ),
@@ -112,14 +112,16 @@ class _StartScreenState extends State<StartScreen> {
   }
 
   Widget _buildProgressStats() {
+    // Initialize counters for totals
     int totalQuestions = 0;
     int totalCorrect = 0;
     int totalWrong = 0;
 
+    // Sum up statistics from all categories
     categoryStats.forEach((_, stats) {
-      totalQuestions += stats.totalQuestions;
-      totalCorrect += stats.correctAnswers;
-      totalWrong += stats.wrongAnswers;
+      totalQuestions += stats.totalQuestions;    // Total number of questions attempted
+      totalCorrect += stats.correctAnswers;      // Total correct answers
+      totalWrong += stats.wrongAnswers;          // Total wrong answers
     });
 
     return Row(
