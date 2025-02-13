@@ -84,6 +84,15 @@ class AppTheme {
         listTileTheme: const ListTileThemeData(
           textColor: Colors.white,
           iconColor: Colors.white,
+          tileColor: Color(0xFF1E1E1E),
+        ),
+        expansionTileTheme: const ExpansionTileThemeData(
+          backgroundColor: Color(0xFF1E1E1E),
+          collapsedBackgroundColor: Color(0xFF1E1E1E),
+          textColor: Colors.white,
+          iconColor: Colors.white,
+          collapsedTextColor: Colors.white,
+          collapsedIconColor: Colors.white,
         ),
         switchTheme: SwitchThemeData(
           thumbColor: WidgetStateProperty.resolveWith((states) {
