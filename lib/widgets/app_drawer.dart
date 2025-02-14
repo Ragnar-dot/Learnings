@@ -6,9 +6,31 @@ import '../screens/category_screen.dart';
 import '../screens/video_screen.dart';
 import '../screens/document_screen.dart';
 import '../theme/app_theme.dart';
+import '../services/supabase_service.dart';
 
-class AppDrawer extends StatelessWidget {
+class AppDrawer extends StatefulWidget {
   const AppDrawer({super.key});
+
+  @override
+  State<AppDrawer> createState() => _AppDrawerState();
+}
+
+class _AppDrawerState extends State<AppDrawer> {
+  bool _isLoading = false;
+
+  Future<void> _handleLogout() async {
+    setState(() => _isLoading = true);
+    try {
+      await SupabaseService.signOut();
+      if (mounted) {
+        Navigator.of(context).pushReplacementNamed('/login');
+      }
+    } finally {
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -103,6 +125,11 @@ class AppDrawer extends StatelessWidget {
                 ),
               );
             },
+          ),
+          ListTile(
+            leading: const Icon(Icons.logout),
+            title: const Text('Abmelden'),
+            onTap: _isLoading ? null : _handleLogout,
           ),
         ],
       ),

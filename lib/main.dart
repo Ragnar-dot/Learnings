@@ -3,9 +3,24 @@ import 'package:provider/provider.dart';
 import 'providers/theme_provider.dart';
 import 'screens/start_screen.dart';
 import 'theme/app_theme.dart';
+import 'services/supabase_service.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'screens/auth/login_screen.dart';
 
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(); // Lade .env
+  await SupabaseService.initialize();
 
-void main() {
+  // Auskommentieren nach erstem erfolgreichen Import
+  // await SupabaseService.importInitialDocuments();
+
+  // Überprüfe ob die Dokumente geladen werden können
+  final docs = await SupabaseService.getDocuments('all');
+  print('Vorhandene Dokumente: $docs');
+
+  // await SupabaseService.importQuestionsFromJson(); // Auskommentiert nach erfolgreichem Import
+
   runApp(
     ChangeNotifierProvider(
       create: (_) => ThemeProvider()..init(),
@@ -28,7 +43,11 @@ class QuizApp extends StatelessWidget {
           darkTheme: AppTheme.darkTheme,
           themeMode:
               themeProvider.isDarkMode ? ThemeMode.dark : ThemeMode.light,
-          home: const StartScreen(),
+          initialRoute: SupabaseService.isAuthenticated ? '/home' : '/login',
+          routes: {
+            '/login': (context) => const LoginScreen(),
+            '/home': (context) => const StartScreen(),
+          },
         );
       },
     );

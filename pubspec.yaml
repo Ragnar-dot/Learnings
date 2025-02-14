@@ -13,6 +13,9 @@ dependencies:
   provider: ^6.1.1
   youtube_player_iframe: ^4.0.4
   url_launcher: ^6.2.5
+  supabase_flutter: ^2.3.4
+  flutter_dotenv: ^5.1.0
+  app_links: ^3.5.0
   
 
 dev_dependencies:
@@ -22,7 +25,4 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/questions.json
-    - assets/lernfeld1.json
-    - assets/lernfeld2.json
+  

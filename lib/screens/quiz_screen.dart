@@ -6,6 +6,7 @@ import '../models/question.dart';
 import '../models/quiz_stats.dart';
 import '../theme/app_theme.dart';
 import '../widgets/app_drawer.dart';
+import '../services/supabase_service.dart';
 
 class QuizScreen extends StatefulWidget {
   final String category;
@@ -25,7 +26,6 @@ class _QuizScreenState extends State<QuizScreen> {
   List<Question> questions = [];
   List<Question> filteredQuestions = [];
   bool isPaused = false;
-  late Category selectedCategory;
   int currentQuestionIndex = 0;
   Timer? timer;
   int timeLeft = 30;
@@ -33,72 +33,193 @@ class _QuizScreenState extends State<QuizScreen> {
   bool showCorrectAnswer = false;
   bool showWrongAnswer = false;
   int? selectedAnswer;
+  late Future<List<Question>> _questionsFuture;
 
   @override
   void initState() {
     super.initState();
     stats = QuizStats(category: widget.category);
-    loadQuestions();
+    _questionsFuture = SupabaseService.getQuestions(widget.category);
   }
 
-Future<void> loadQuestions() async {
-  try {
-    // Lade beide JSON-Dateien parallel
-    final List<String> jsonFiles = await Future.wait([
-      rootBundle.loadString('assets/questions.json'),
-      rootBundle.loadString('assets/lernfeld1.json'),
-      rootBundle.loadString('assets/lernfeld2.json')
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
 
-    ]);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Quiz: ${widget.category}'),
+        elevation: 0,
+        actions: [
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Text(
+                'Frage ${currentQuestionIndex + 1}/${questions.length}',
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+          IconButton(
+            icon: Icon(isPaused ? Icons.play_arrow : Icons.pause),
+            onPressed: () {
+              setState(() {
+                isPaused = !isPaused;
+              });
+            },
+          ),
+        ],
+      ),
+      drawer: const AppDrawer(),
+      body: FutureBuilder<List<Question>>(
+        future: _questionsFuture,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
 
-    // Dekodiere beide JSON-Dateien
-    final questionsData = json.decode(jsonFiles[0]);
-    final lernfeldData1 = json.decode(jsonFiles[1]);
-    final lernfeldData2 = json.decode(jsonFiles[2]);
+          if (snapshot.hasError) {
+            return Center(
+              child: Text('Fehler beim Laden der Fragen: ${snapshot.error}'),
+            );
+          }
 
-    // Hole die Kategoriedaten aus beiden JSONs
-    final categoryDataQuestions = questionsData['categories'][widget.category];
-    final categoryDataLernfeld1 = lernfeldData1['categories'][widget.category];
-    final categoryDataLernfeld2 = lernfeldData2['categories'][widget.category];
+          questions = snapshot.data ?? [];
+          if (questions.isEmpty) {
+            return const Center(
+              child: Text('Keine Fragen verfügbar'),
+            );
+          }
 
-    // Wähle die passende Kategorie basierend auf widget.category
-    final dynamic categoryData = widget.category == 'Lernfeld1' 
-        ? categoryDataLernfeld1 
-        : widget.category == 'Lernfeld2' 
-            ? categoryDataLernfeld2 
-            : categoryDataQuestions;
+          final question = questions[currentQuestionIndex];
 
-if (categoryData == null) {
-        if (!mounted) return;
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-              content: Text('Keine Fragen für diese Kategorie verfügbar')),
-        );
-        Navigator.pop(context);
-        return;
-      }
-
-      setState(() {
-        selectedCategory = Category.fromJson(widget.category, categoryData);
-        questions = selectedCategory.questions;
-        if (widget.wrongQuestionIds != null) {
-          questions = questions
-              .where((q) => widget.wrongQuestionIds!.contains(q.id))
-              .toList();
-        }
-        filteredQuestions = List.from(questions);
-        if (questions.isNotEmpty) {
-          startTimer();
-        }
-      });
-    } catch (e) {
-      print('Error loading questions: $e');
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Fehler beim Laden der Fragen')),
-      );
-      Navigator.pop(context);
-    }
+          return Column(
+            children: [
+              // Timer und Fortschrittsbalken
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                color: theme.primaryColor,
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.timer,
+                          color: Colors.white,
+                          size: 24,
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          'Zeit: $timeLeft',
+                          style: theme.textTheme.titleLarge?.copyWith(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(4),
+                      child: LinearProgressIndicator(
+                        value: timeLeft / 30,
+                        backgroundColor: Colors.white24,
+                        valueColor: AlwaysStoppedAnimation<Color>(
+                          timeLeft > 10 ? Colors.white : Colors.red,
+                        ),
+                        minHeight: 8,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              // Schwierigkeitsgrad-Badge
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        color: _getDifficultyColor(question.difficulty),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Text(
+                        question.difficulty,
+                        style: const TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              // Frage und Antworten
+              Expanded(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Card(
+                        child: Container(
+                          padding: const EdgeInsets.all(16),
+                          child: Text(
+                            question.question,
+                            style: theme.textTheme.titleLarge,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      ...List.generate(
+                        question.options.length,
+                        (index) => Padding(
+                          padding: const EdgeInsets.only(bottom: 12),
+                          child: AnimatedContainer(
+                            duration: const Duration(milliseconds: 300),
+                            child: ElevatedButton(
+                              onPressed: () => checkAnswer(index),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor:
+                                    _getOptionColor(index, question),
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 20,
+                                  vertical: 16,
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                              child: Text(
+                                question.options[index],
+                                style: const TextStyle(fontSize: 16),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                alignment: Alignment.center,
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: _buildFeedbackText(),
+              ),
+            ],
+          );
+        },
+      ),
+    );
   }
 
   void startTimer() {
@@ -174,157 +295,6 @@ if (categoryData == null) {
   void dispose() {
     timer?.cancel();
     super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
-    if (questions.isEmpty) {
-      return const Scaffold(
-        body: Center(child: CircularProgressIndicator()),
-      );
-    }
-
-    final question = questions[currentQuestionIndex];
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Frage ${currentQuestionIndex + 1}/${questions.length}'),
-        elevation: 0,
-        actions: [
-          IconButton(
-            icon: Icon(isPaused ? Icons.play_arrow : Icons.pause),
-            onPressed: () {
-              setState(() {
-                isPaused = !isPaused;
-              });
-            },
-          ),
-        ],
-      ),
-      drawer: const AppDrawer(),
-      body: Column(
-        children: [
-          // Timer und Fortschrittsbalken
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            color: theme.primaryColor,
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.timer,
-                      color: Colors.white,
-                      size: 24,
-                    ),
-                    const SizedBox(width: 8),
-                    Text(
-                      'Zeit: $timeLeft',
-                      style: theme.textTheme.titleLarge?.copyWith(
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 8),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(4),
-                  child: LinearProgressIndicator(
-                    value: timeLeft / 30,
-                    backgroundColor: Colors.white24,
-                    valueColor: AlwaysStoppedAnimation<Color>(
-                      timeLeft > 10 ? Colors.white : Colors.red,
-                    ),
-                    minHeight: 8,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          // Schwierigkeitsgrad-Badge
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 4,
-                  ),
-                  decoration: BoxDecoration(
-                    color: _getDifficultyColor(question.difficulty),
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: Text(
-                    question.difficulty,
-                    style: const TextStyle(color: Colors.white),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          // Frage und Antworten
-          Expanded(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Card(
-                    child: Container(
-                      
-                      padding: const EdgeInsets.all(16),
-                      child: Text(
-                        question.question,
-                        style: theme.textTheme.titleLarge,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  ...List.generate(
-                    question.options.length,
-                    (index) => Padding(
-                      padding: const EdgeInsets.only(bottom: 12),
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 300),
-                        child: ElevatedButton(
-                          onPressed: () => checkAnswer(index),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: _getOptionColor(index, question),
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 20,
-                              vertical: 16,
-                            ),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                          ),
-                          child: Text(
-                            question.options[index],
-                            style: const TextStyle(fontSize: 16),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-
-              ),
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            padding: const EdgeInsets.symmetric(vertical: 8),
-            child: _buildFeedbackText(),
-          ),
-        ],
-      ),
-    );
   }
 
   Color _getDifficultyColor(String difficulty) {

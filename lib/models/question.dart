@@ -1,46 +1,26 @@
 class Question {
   final int id;
-  final String difficulty;
   final String question;
   final List<String> options;
   final int correctAnswer;
+  final String difficulty;
 
   Question({
     required this.id,
-    required this.difficulty,
     required this.question,
     required this.options,
     required this.correctAnswer,
+    required this.difficulty,
   });
 
-  factory Question.fromJson(Map<String, dynamic> json) {
+  // Factory-Methode für Supabase-Daten
+  factory Question.fromSupabase(Map<String, dynamic> data) {
     return Question(
-      id: json['id'],
-      difficulty: json['difficulty'],
-      question: json['question'],
-      options: List<String>.from(json['options']),
-      correctAnswer: json['correctAnswer'],
-    );
-  }
-}
-
-class Category {
-  final String name;
-  final String description;
-  final List<Question> questions;
-
-  Category({
-    required this.name,
-    required this.description,
-    required this.questions,
-  });
-
-  factory Category.fromJson(String name, Map<String, dynamic> json) {
-    return Category(
-      name: name,
-      description: json['description'],
-      questions:
-          (json['questions'] as List).map((q) => Question.fromJson(q)).toList(),
+      id: data['id'],
+      question: data['question'],
+      options: List<String>.from(data['options']),
+      correctAnswer: data['correct_answer'],
+      difficulty: data['difficulty'],
     );
   }
 }
