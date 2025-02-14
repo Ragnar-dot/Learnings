@@ -4,6 +4,7 @@ import '../providers/theme_provider.dart';
 import '../screens/start_screen.dart';
 import '../screens/category_screen.dart';
 import '../screens/video_screen.dart';
+import '../screens/document_screen.dart';
 import '../theme/app_theme.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -26,7 +27,7 @@ class AppDrawer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Icons.school,                                                 // icon
+                  Icons.school, // icon
                   color: Colors.white,
                   size: 50,
                 ),
@@ -79,7 +80,7 @@ class AppDrawer extends StatelessWidget {
               );
             },
           ),
-                    ListTile(
+          ListTile(
             leading: const Icon(Icons.video_library),
             title: const Text('Lernvideos'),
             onTap: () {
@@ -87,6 +88,18 @@ class AppDrawer extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => const VideoScreen(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.file_present),
+            title: const Text('Dokumente'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const DocumentScreen(),
                 ),
               );
             },
