@@ -6,6 +6,7 @@ import 'theme/app_theme.dart';
 import 'services/supabase_service.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'screens/auth/login_screen.dart';
+import 'screens/auth/register_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -46,6 +47,7 @@ class QuizApp extends StatelessWidget {
           initialRoute: SupabaseService.isAuthenticated ? '/home' : '/login',
           routes: {
             '/login': (context) => const LoginScreen(),
+            '/register': (context) => const RegisterScreen(),
             '/home': (context) => const StartScreen(),
           },
         );

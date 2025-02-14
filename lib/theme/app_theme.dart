@@ -69,6 +69,9 @@ class AppTheme {
 
   static ThemeData get darkTheme => _baseTheme.copyWith(
         scaffoldBackgroundColor: const Color(0xFF121212),
+        iconTheme: const IconThemeData(
+          color: Colors.white,
+        ),
         cardTheme: _baseTheme.cardTheme.copyWith(
           color: const Color(0xFF1E1E1E),
           elevation: 8,

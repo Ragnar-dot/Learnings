@@ -174,4 +174,11 @@ class SupabaseService {
       rethrow;
     }
   }
+
+  static Future<AuthResponse> signUp(String email, String password) async {
+    return await _client.auth.signUp(
+      email: email,
+      password: password,
+    );
+  }
 }
