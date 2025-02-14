@@ -55,6 +55,11 @@ class AppTheme {
         scaffoldBackgroundColor: const Color.fromARGB(255, 255, 255, 255),
         cardTheme: _baseTheme.cardTheme.copyWith(
           color: cardColor,
+          elevation: 8,
+          shadowColor: Colors.black.withOpacity(0.3),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
         ),
         textTheme: _baseTheme.textTheme.apply(
           bodyColor: textColor,
@@ -66,6 +71,12 @@ class AppTheme {
         scaffoldBackgroundColor: const Color(0xFF121212),
         cardTheme: _baseTheme.cardTheme.copyWith(
           color: const Color(0xFF1E1E1E),
+          elevation: 8,
+          shadowColor: Colors.white.withOpacity(0.1),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+            side: const BorderSide(color: Color.fromARGB(12, 255, 255, 255)),
+          ),
         ),
         textTheme: _baseTheme.textTheme.apply(
           bodyColor: Colors.white,
