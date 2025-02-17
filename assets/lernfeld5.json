@@ -1,0 +1,39 @@
+{
+    "categories": {
+      "Lernfeld3": {
+        "description": "Software zur Verwaltung von Daten anpassen",
+        "questions": [
+          {
+            "id": 1,
+            "difficulty": "leicht",
+            "question": "Was bedeutet CMS ?",
+            "options": [
+              "Content Management System"
+
+
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 2,
+            "difficulty": "leicht",
+            "question": "Was bedeutet DMS ?",
+            "options": [
+              "Document Management System"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 3,
+            "difficulty": "leicht",
+            "question": "Was bedeutet A.I.D.A ?",
+            "options": [
+              "Attention, Interest, Desire, Action"
+            ],
+            "correctAnswer": 0
+          }
+
+        ]
+      }
+    }
+}
