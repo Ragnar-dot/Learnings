@@ -1,0 +1,74 @@
+{
+    "categories": {
+      "Lernfeld3": {
+        "description": "Clients in Netzwerke einbinden",
+        "questions": [
+          {
+            "id": 1,
+            "difficulty": "leicht",
+            "question": "Sie planen ein Kundengespräch. Welche Faktoren könnten für den Kunden bei der Vernetzung der Infrastruktur relevant sein ?",
+            "options": [
+              "Preis,Datenübertragung, Datensicherheit, Änderung der Räumlichkeiten, Wie viel Teilnehmer sollen auf das Netzwerk zugreifen können, Informationen über den Kunden recherchieren"
+
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 2,
+            "difficulty": "leicht",
+            "question": "Welche Service-Leistungen bzw. Angebote bieten sie Ihren Kunden an ?",
+            "options": [
+              "Aufbau eines Netzwerkes, Wartung und Instandhaltung, Kundensupport, Installation von Hardware,Installation von Software, Monitoring und Optimierung"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 3,
+            "difficulty": "leicht",
+            "question": "Welche Vor und Nachteile gegenüber anderen Übertragungsmedien bietet die Vernetzung eines Netzwerkes mit IEEE 802.11 (WLAN) ?",
+            "options": [
+              "Vorteile: Schnelle Installation, Mobilität, Flexibilität, Kosten sparen. Nachteile: nicht genug Reichweite, Sicherheit, geringere Datenrate, Störungen durch andere WLAN-Geräte"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 4,
+            "difficulty": "leicht",
+            "question": "Welche Aspekte spielen eine Rolle bei der Dokumentation des Kundengesprächs eine Rolle ?",
+            "options": [
+              "Vollständige Informationen über den Kunden, Kundenanforderungen, Kundenwünsche, Kundenbedürfnisse, Kundenprobleme, Kundenwünsche, Kundenbedürfnisse, Kundenprobleme, Einfache Formulierungen (wichtig für Teamarbeit), nur so viel wie nötig keine unnötigen Informationen"
+            ],
+            "correctAnswer": 0 
+        },
+        {
+            "id": 5,
+            "difficulty": "leicht",
+            "question": "Welche Kommunikationsformen können in einem Netzwerk umgesetzt werden ?",
+            "options": [
+              "Unicast (Eine Nachricht an einen Empfänger), Multicast (Eine Nachricht an mehrere Empfänger), Broadcast (Eine Nachricht an alle Empfänger), Anycast (Eine Nachricht an den nächstliegenden Empfänger)"
+            ],
+            "correctAnswer": 0 
+        },
+        {
+            "id": 6,
+            "difficulty": "leicht",
+            "question": "Nennen Sie drei Zielsetzungen, die sich aus der Vernetzung von Computern ergeben ?",
+            "options": [
+              "Verteilung der zu bewätigenden Aufgaben, Nutzung gemeinsamer Ressourcen, Datenaustausch über Räumliche Entfernungen"
+            ],
+            "correctAnswer": 0 
+        },
+        {
+            "id": 7,
+            "difficulty": "leicht",
+            "question": "Nennen sie jeweils fünf aktive und fünf passive Netzwerkkomponenten ?",
+            "options": [
+              "aktive: Switches,Firewalls,Gateways,WLAN, Accespoints. passive: Pathfelder, Patchkabel, Anschlussdosen, Netzwerkschränke, DSL-Splitter"
+            ],
+            "correctAnswer": 0 
+            }
+        ]
+      }
+    }
+}
+

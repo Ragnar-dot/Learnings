@@ -1,23 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:path_provider/path_provider.dart';
+import 'dart:io';
 import '../widgets/app_drawer.dart';
 
 class DocumentScreen extends StatelessWidget {
   const DocumentScreen({super.key});
 
   final Map<String, List<Map<String, String>>> documents = const {
-    'Präsentationen': [
+
+    'SQL': [
       {
-        'title': 'OOP Grundlagen',
-        'url': 'https://ihre-domain.de/presentations/oop.pdf',
+        'title': 'SQL Befehle',
+        'assets': 'assets/summaries/sql_befehle.pdf',
         'type': 'PDF',
-        'description': 'Grundlagen der Objektorientierten Programmierung',
+        'description': 'Die wichtigsten SQL Befehle',
       },
-    ],
-    'Zusammenfassungen': [
-      {
-        'title': 'SQL Cheat Sheet',
-        'url': 'https://ihre-domain.de/docs/sql-cheatsheet.pdf',
+            {
+        'title': 'SQL Befehlssammlung',
+        'assets': 'assets/summaries/Befehlssammlung_SQL.pdf',
         'type': 'PDF',
         'description': 'Die wichtigsten SQL Befehle',
       },
@@ -25,7 +27,7 @@ class DocumentScreen extends StatelessWidget {
     'Übungsaufgaben': [
       {
         'title': 'Algorithmen Übungen',
-        'url': 'https://ihre-domain.de/exercises/algo.pdf',
+        'assets': 'assets/exercises/sortieralgorithmen_uebungen.pdf',
         'type': 'PDF',
         'description': 'Übungsaufgaben zu Sortieralgorithmen',
       },
@@ -46,9 +48,19 @@ class DocumentScreen extends StatelessWidget {
   }
 
   Future<void> _openDocument(String url) async {
-    final Uri uri = Uri.parse(url);
-    if (!await launchUrl(uri)) {
-      throw Exception('Could not launch $url');
+    try {
+      final ByteData data = await rootBundle.load(url);
+      final List<int> bytes = data.buffer.asUint8List();
+
+      final tempDir = await getTemporaryDirectory();
+      final tempFile = File('${tempDir.path}/${url.split('/').last}');
+      await tempFile.writeAsBytes(bytes);
+
+      if (!await launchUrl(Uri.file(tempFile.path))) {
+        throw Exception('Could not open file $url');
+      }
+    } catch (e) {
+      debugPrint('Error opening document: $e');
     }
   }
 
@@ -75,7 +87,7 @@ class DocumentScreen extends StatelessWidget {
                         title: Text(doc['title']!),
                         subtitle: Text(doc['description']!),
                         trailing: const Icon(Icons.open_in_new),
-                        onTap: () => _openDocument(doc['url']!),
+                        onTap: () => _openDocument(doc['assets']!),
                       ),
                     ))
                 .toList(),

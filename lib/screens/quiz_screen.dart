@@ -43,63 +43,80 @@ class _QuizScreenState extends State<QuizScreen> {
 
 Future<void> loadQuestions() async {
   try {
-    // Lade beide JSON-Dateien parallel
+    print('Loading category: ${widget.category}');
+
     final List<String> jsonFiles = await Future.wait([
       rootBundle.loadString('assets/questions.json'),
       rootBundle.loadString('assets/lernfeld1.json'),
-      rootBundle.loadString('assets/lernfeld2.json')
-
+      rootBundle.loadString('assets/lernfeld2.json'),
+      rootBundle.loadString('assets/lernfeld3.json'),
+      rootBundle.loadString('assets/lernfeld4.json'),
+      rootBundle.loadString('assets/lernfeld5.json')
     ]);
 
-    // Dekodiere beide JSON-Dateien
-    final questionsData = json.decode(jsonFiles[0]);
-    final lernfeldData1 = json.decode(jsonFiles[1]);
-    final lernfeldData2 = json.decode(jsonFiles[2]);
+    print('JSON files loaded');
 
-    // Hole die Kategoriedaten aus beiden JSONs
-    final categoryDataQuestions = questionsData['categories'][widget.category];
-    final categoryDataLernfeld1 = lernfeldData1['categories'][widget.category];
-    final categoryDataLernfeld2 = lernfeldData2['categories'][widget.category];
-
-    // Wähle die passende Kategorie basierend auf widget.category
-    final dynamic categoryData = widget.category == 'Lernfeld1' 
-        ? categoryDataLernfeld1 
-        : widget.category == 'Lernfeld2' 
-            ? categoryDataLernfeld2 
-            : categoryDataQuestions;
-
-if (categoryData == null) {
-        if (!mounted) return;
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-              content: Text('Keine Fragen für diese Kategorie verfügbar')),
-        );
-        Navigator.pop(context);
-        return;
+    // Einzeln dekodieren um den Fehler zu lokalisieren
+    Map<String, dynamic>? jsonData;
+    try {
+      switch(widget.category) {
+        case 'Lernfeld1':
+          jsonData = json.decode(jsonFiles[1]);
+          break;
+        case 'Lernfeld2':
+          jsonData = json.decode(jsonFiles[2]);
+          break;
+        case 'Lernfeld3':
+          jsonData = json.decode(jsonFiles[3]);
+          break;
+        case 'Lernfeld4':
+          jsonData = json.decode(jsonFiles[4]);
+          break;
+        case 'Lernfeld5':
+          jsonData = json.decode(jsonFiles[5]);
+          break;
       }
-
-      setState(() {
-        selectedCategory = Category.fromJson(widget.category, categoryData);
-        questions = selectedCategory.questions;
-        if (widget.wrongQuestionIds != null) {
-          questions = questions
-              .where((q) => widget.wrongQuestionIds!.contains(q.id))
-              .toList();
-        }
-        filteredQuestions = List.from(questions);
-        if (questions.isNotEmpty) {
-          startTimer();
-        }
-      });
+      print('Selected JSON decoded: $jsonData');
     } catch (e) {
-      print('Error loading questions: $e');
+      print('Error decoding ${widget.category}: $e');
+      rethrow;
+    }
+
+    final categoryData = jsonData?['categories']?[widget.category];
+    print('Category data: $categoryData');
+
+    if (categoryData == null) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Fehler beim Laden der Fragen')),
+        const SnackBar(
+            content: Text('Keine Fragen für diese Kategorie verfügbar')),
       );
       Navigator.pop(context);
+      return;
     }
+
+    setState(() {
+      selectedCategory = Category.fromJson(widget.category, categoryData);
+      questions = selectedCategory.questions;
+      if (widget.wrongQuestionIds != null) {
+        questions = questions
+            .where((q) => widget.wrongQuestionIds!.contains(q.id))
+            .toList();
+      }
+      filteredQuestions = List.from(questions);
+      if (questions.isNotEmpty) {
+        startTimer();
+      }
+    });
+  } catch (e) {
+    print('Error loading questions: $e');
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Fehler beim Laden der Fragen')),
+    );
+    Navigator.pop(context);
   }
+}
 
   void startTimer() {
     timer?.cancel();

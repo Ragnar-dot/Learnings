@@ -55,6 +55,21 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': Icons.school_outlined,
       'description': 'Arbeitsplatz und Prozesse',
     },
+        {
+      'name': 'Lernfeld3',
+      'icon': Icons.school_outlined,
+      'description': 'Clients in Netzwerke einbinden',
+    },
+  {
+      'name': 'Lernfeld4',
+      'icon': Icons.school_outlined,
+      'description': 'Schutzbeadarfsanalyse im eigenen Arbeitsbereich',
+    },
+      {
+      'name': 'Lernfeld5',
+      'icon': Icons.school_outlined,
+      'description': 'Software zur Verwaltung von Daten',
+    },
   ];
 
   Map<String, QuizStats> categoryStats = {};
