@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:path_provider/path_provider.dart';
+import 'package:path_provider/path_provider.dart' show getTemporaryDirectory;
 import 'dart:io';
 import '../widgets/app_drawer.dart';
 
@@ -13,18 +13,18 @@ class DocumentScreen extends StatelessWidget {
     'SQL': [
       {
         'title': 'SQL Befehle',
-        'assets': 'assets/summaries/sql_befehle.pdf',
+        'assets': 'assets/SQL/sql_befehle.pdf',
         'type': 'PDF',
         'description': 'Die wichtigsten SQL Befehle',
       },
             {
         'title': 'SQL Befehlssammlung',
-        'assets': 'assets/summaries/Befehlssammlung_SQL.pdf',
+        'assets': 'assets/SQL/Befehlssammlung_SQL.pdf',
         'type': 'PDF',
         'description': 'Die wichtigsten SQL Befehle',
       },
     ],
-    'Übungsaufgaben': [
+    'exercises': [
       {
         'title': 'Algorithmen Übungen',
         'assets': 'assets/exercises/sortieralgorithmen_uebungen.pdf',

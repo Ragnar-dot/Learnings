@@ -65,6 +65,13 @@ class VideoScreen extends StatelessWidget {
             'JavaScript Tutorial - Kompletter Einsteigerkurs zum JavaScript lernen',
       },
     ],
+        'Netzplan': [
+      {
+        'title': 'Flutter und Dart - Einführung',
+        'url': 'https://youtu.be/hyy1jnHTqtE',
+        'description': 'Netzplan',
+      },
+    ],
   };
 
   Future<void> _launchURL(String url) async {
