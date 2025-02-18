@@ -41,82 +41,75 @@ class _QuizScreenState extends State<QuizScreen> {
     loadQuestions();
   }
 
-Future<void> loadQuestions() async {
-  try {
-    print('Loading category: ${widget.category}');
-
-    final List<String> jsonFiles = await Future.wait([
-      rootBundle.loadString('assets/questions.json'),
-      rootBundle.loadString('assets/lernfeld1.json'),
-      rootBundle.loadString('assets/lernfeld2.json'),
-      rootBundle.loadString('assets/lernfeld3.json'),
-      rootBundle.loadString('assets/lernfeld4.json'),
-      rootBundle.loadString('assets/lernfeld5.json')
-    ]);
-
-    print('JSON files loaded');
-
-    // Einzeln dekodieren um den Fehler zu lokalisieren
-    Map<String, dynamic>? jsonData;
+  Future<void> loadQuestions() async {
     try {
+      print('Loading category: ${widget.category}');
+
+      // Lade die richtige JSON-Datei
+      String jsonFile;
       switch(widget.category) {
         case 'Lernfeld1':
-          jsonData = json.decode(jsonFiles[1]);
+          jsonFile = 'assets/lernfeld1.json';
           break;
         case 'Lernfeld2':
-          jsonData = json.decode(jsonFiles[2]);
+          jsonFile = 'assets/lernfeld2.json';
           break;
         case 'Lernfeld3':
-          jsonData = json.decode(jsonFiles[3]);
+          jsonFile = 'assets/lernfeld3.json';
           break;
         case 'Lernfeld4':
-          jsonData = json.decode(jsonFiles[4]);
+          jsonFile = 'assets/lernfeld4.json';
           break;
         case 'Lernfeld5':
-          jsonData = json.decode(jsonFiles[5]);
+          jsonFile = 'assets/lernfeld5.json';
           break;
+        default:
+          jsonFile = 'assets/questions.json';
       }
-      print('Selected JSON decoded: $jsonData');
+
+      final jsonString = await rootBundle.loadString(jsonFile);
+      print('Loaded JSON from: $jsonFile');
+
+      final Map<String, dynamic> jsonData = json.decode(jsonString);
+      print('Decoded JSON data: $jsonData');
+
+      // Prüfe die JSON-Struktur
+      if (!jsonData.containsKey('categories') || 
+          !jsonData['categories'].containsKey(widget.category)) {
+        throw Exception('Invalid JSON structure or missing category');
+      }
+
+      final categoryData = jsonData['categories'][widget.category];
+      print('Category data: $categoryData');
+
+      setState(() {
+        selectedCategory = Category.fromJson(widget.category, categoryData);
+        questions = selectedCategory.questions;
+        
+        // Filter für falsche Fragen
+        if (widget.wrongQuestionIds != null) {
+          questions = questions
+              .where((q) => widget.wrongQuestionIds!.contains(q.id))
+              .toList();
+        }
+        
+        filteredQuestions = List.from(questions);
+        if (questions.isNotEmpty) {
+          startTimer();
+        }
+      });
     } catch (e) {
-      print('Error decoding ${widget.category}: $e');
-      rethrow;
-    }
-
-    final categoryData = jsonData?['categories']?[widget.category];
-    print('Category data: $categoryData');
-
-    if (categoryData == null) {
+      print('Error loading questions: $e');
       if (!mounted) return;
+      
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-            content: Text('Keine Fragen für diese Kategorie verfügbar')),
+        SnackBar(
+          content: Text('Fehler beim Laden der Fragen: $e'),
+          backgroundColor: Colors.red,
+        ),
       );
-      Navigator.pop(context);
-      return;
     }
-
-    setState(() {
-      selectedCategory = Category.fromJson(widget.category, categoryData);
-      questions = selectedCategory.questions;
-      if (widget.wrongQuestionIds != null) {
-        questions = questions
-            .where((q) => widget.wrongQuestionIds!.contains(q.id))
-            .toList();
-      }
-      filteredQuestions = List.from(questions);
-      if (questions.isNotEmpty) {
-        startTimer();
-      }
-    });
-  } catch (e) {
-    print('Error loading questions: $e');
-    if (!mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Fehler beim Laden der Fragen')),
-    );
-    Navigator.pop(context);
   }
-}
 
   void startTimer() {
     timer?.cancel();

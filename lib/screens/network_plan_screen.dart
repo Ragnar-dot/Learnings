@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../widgets/app_drawer.dart';
+import 'dart:math';  // Hinzugefügt für min und max Funktionen
+
 
 class NetworkPlanScreen extends StatefulWidget {
   const NetworkPlanScreen({super.key});
@@ -19,30 +20,32 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       'duration': 2,
       'predecessors': [],
       'successors': ['B'],
-      'position': const Offset(0, 100),
+      'position': const Offset(50, 100),
       'correctValues': {
-        'FAZ': '',
-        'FEZ': '',
-        'SAZ': '',
-        'SEZ': '',
-        'GP': '',
-        'FP': '',
+        'duration': '2',  // Dauer als String
+        'FAZ': '0',
+        'FEZ': '2',
+        'SAZ': '0',
+        'SEZ': '2',
+        'GP': '0',
+        'FP': '0',
       }
     },
     {
       'id': 'B',
-      'title': 'Systemauswahl und Beschaffung',
+      'title': 'Systemauswahl',
       'duration': 4,
       'predecessors': ['A'],
       'successors': ['C'],
-      'position': const Offset(150, 100),
+      'position': const Offset(200, 100),
       'correctValues': {
-        'FAZ': '',
-        'FEZ': '',
-        'SAZ': '',
-        'SEZ': '',
-        'GP': '',
-        'FP': '',
+        'duration': '4',  // Dauer als String
+        'FAZ': '2',
+        'FEZ': '6',
+        'SAZ': '2',
+        'SEZ': '6',
+        'GP': '0',
+        'FP': '0',
       }
     },
     {
@@ -179,114 +182,59 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
 
   void checkValue(String nodeId, String field, String value) {
     final node = networkNodes.firstWhere((n) => n['id'] == nodeId);
-    
-    // Tabellenwerte zur Validierung
-    final tableValues = {
-      'A': {
-        'duration': '2',
-        'FAZ': '0',
-        'FEZ': '2',
-        'SAZ': '0',
-        'SEZ': '2',
-        'GP': '0',
-        'FP': '0',
-      },
-      'B': {
-        'duration': '4',
-        'FAZ': '2',
-        'FEZ': '6',
-        'SAZ': '2',
-        'SEZ': '6',
-        'GP': '0',
-        'FP': '0',
-      },
-      'C': {
-        'duration': '3',
-        'FAZ': '6',
-        'FEZ': '9',
-        'SAZ': '6',
-        'SEZ': '9',
-        'GP': '0',
-        'FP': '0',
-      },
-      'D': {
-        'duration': '6',
-        'FAZ': '9',
-        'FEZ': '15',
-        'SAZ': '9',
-        'SEZ': '15',
-        'GP': '0',
-        'FP': '0',
-      },
-      'E': {
-        'duration': '10',
-        'FAZ': '9',
-        'FEZ': '19',
-        'SAZ': '13',
-        'SEZ': '23',
-        'GP': '4',
-        'FP': '0',
-      },
-      'F': {
-        'duration': '3',
-        'FAZ': '19',
-        'FEZ': '22',
-        'SAZ': '20',
-        'SEZ': '23',
-        'GP': '1',
-        'FP': '0',
-      },
-      'G': {
-        'duration': '5',
-        'FAZ': '15',
-        'FEZ': '20',
-        'SAZ': '18',
-        'SEZ': '23',
-        'GP': '3',
-        'FP': '0',
-      },
-      'H': {
-        'duration': '6',
-        'FAZ': '23',
-        'FEZ': '29',
-        'SAZ': '23',
-        'SEZ': '29',
-        'GP': '0',
-        'FP': '0',
-      },
-      'I': {
-        'duration': '2',
-        'FAZ': '29',
-        'FEZ': '31',
-        'SAZ': '29',
-        'SEZ': '31',
-        'GP': '0',
-        'FP': '0',
-      },
-    };
+    final correctValues = node['correctValues'] as Map<String, String>;
+    bool isValid = false;
 
-    // Prüfung der Eingabe gegen die Tabellenwerte
-    if (tableValues[nodeId]?.containsKey(field) ?? false) {
-      final isValueCorrect = value == tableValues[nodeId]?[field];
-      setState(() {
-        isCorrect['${nodeId}_$field'] = isValueCorrect;
-      });
+    switch (field) {
+      case 'duration':
+        // Prüfe die eingegebene Dauer gegen die Tabellenwerte
+        isValid = value == node['duration'].toString();
+        break;
 
-      // Zeige Feedback an
-      if (field == 'duration') {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(
-              isValueCorrect 
-                  ? 'Korrekt! Die Dauer für Vorgang $nodeId beträgt $value Stunden.'
-                  : 'Die eingegebene Dauer ist nicht korrekt.',
-            ),
-            backgroundColor: isValueCorrect ? Colors.green : Colors.red,
-            duration: const Duration(seconds: 1),
-          ),
-        );
-      }
+      case 'FAZ':
+        if (nodeId == 'A') {
+          isValid = value == '0';  // A startet bei 0
+        } else {
+          // FAZ = Maximum der FEZ aller Vorgänger
+          final predecessors = node['predecessors'] as List<dynamic>;
+          if (predecessors.isNotEmpty) {
+            final maxFEZ = predecessors.map((p) {
+              return int.tryParse(controllers['${p}_FEZ']?.text ?? '') ?? -1;
+            }).where((fez) => fez >= 0).reduce(max);
+            isValid = int.tryParse(value) == maxFEZ;
+          }
+        }
+        break;
+
+      case 'FEZ':
+        // FEZ = FAZ + Dauer
+        final faz = int.tryParse(controllers['${nodeId}_FAZ']?.text ?? '') ?? -1;
+        if (faz >= 0) {
+          final duration = node['duration'] as int;
+          isValid = int.tryParse(value) == (faz + duration);
+        }
+        break;
+
+      default:
+        // Für alle anderen Felder: Prüfe gegen correctValues
+        isValid = value == correctValues[field];
+        break;
     }
+
+    setState(() {
+      isCorrect['${nodeId}_$field'] = isValid;
+    });
+
+    // Feedback anzeigen
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(isValid 
+            ? 'Korrekt! $field für Vorgang $nodeId ist richtig.'
+            : 'Der Wert für $field ist nicht korrekt.'),
+        backgroundColor: isValid ? Colors.green : Colors.red,
+        duration: const Duration(seconds: 1),
+      ),
+    );
   }
 
   void checkAllValues() {
@@ -490,152 +438,68 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
   }
 
   Widget _buildTable() {
-    return Stack(
-      children: [
-        // Haupttabelle
-        Container(
-          margin: const EdgeInsets.all(30), // Platz für die Eingabefelder
-          decoration: BoxDecoration(
-            color: Colors.white,
-            border: Border.all(color: Colors.blue.shade300),
-            borderRadius: BorderRadius.circular(8),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.blue.shade100,
-                blurRadius: 4,
-                offset: const Offset(0, 2),
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+      child: Table(
+        border: TableBorder.all(
+          color: Colors.blue.shade300,
+          width: 1,
+        ),
+        defaultColumnWidth: const IntrinsicColumnWidth(),
+        children: [
+          // Header
+          TableRow(
+            decoration: BoxDecoration(
+              color: Colors.blue.shade50,
+            ),
+            children: const [
+              Padding(
+                padding: EdgeInsets.all(8),
+                child: Text('Vorgang',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              ),
+              Padding(
+                padding: EdgeInsets.all(8),
+                child: Text('Dauer',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+              ),
+              Padding(
+                padding: EdgeInsets.all(8),
+                child: Text('Vorgänger',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
               ),
             ],
           ),
-          child: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: DataTable(
-              headingRowColor: MaterialStateProperty.all(Colors.blue.shade50),
-              columnSpacing: 24,
-              columns: const [
-                DataColumn(
-                  label: Text(
-                    'Vorgang',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ),
-                DataColumn(
-                  label: Text(
-                    'Beschreibung',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ),
-                DataColumn(
-                  label: Text(
-                    'Dauer in\nStunden',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ),
-                DataColumn(
-                  label: Text(
-                    'Vorgänger',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ],
-              rows: [
-                _buildDataRow('A', 'Anforderungsanalyse', '2', '-'),
-                _buildDataRow('B', 'Systemauswahl und Beschaffung', '4', 'A'),
-                _buildDataRow('C', 'Installation der CRM-Software', '3', 'B'),
-                _buildDataRow('D', 'Datenmigration', '6', 'C'),
-                _buildDataRow('E', 'Kontinuierliche Fehlersuche', '10', 'C'),
-                _buildDataRow('F', 'Sicherheitstests', '3', 'E'),
-                _buildDataRow('G', 'Anpassung und Konfiguration', '5', 'D'),
-                _buildDataRow('H', 'Schulung der Mitarbeiter', '6', 'E, F, G'),
-                _buildDataRow('I', 'Systemübergabe und Go-Live', '2', 'H'),
-              ],
-            ),
-          ),
-        ),
-        // Eingabefelder an den Ecken
-        Positioned(
-          left: 0,
-          top: 0,
-          child: _buildTableInput('topLeft'),
-        ),
-        Positioned(
-          right: 0,
-          top: 0,
-          child: _buildTableInput('topRight'),
-        ),
-        Positioned(
-          left: 0,
-          bottom: 0,
-          child: _buildTableInput('bottomLeft'),
-        ),
-        Positioned(
-          right: 0,
-          bottom: 0,
-          child: _buildTableInput('bottomRight'),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildTableInput(String id) {
-    return Container(
-      width: 25,
-      height: 25,
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.blue),
-        color: Colors.white,
-      ),
-      child: TextField(
-        controller: controllers['table_$id'],
-        textAlign: TextAlign.center,
-        style: const TextStyle(fontSize: 12),
-        decoration: const InputDecoration(
-          border: InputBorder.none,
-          contentPadding: EdgeInsets.zero,
-        ),
-        onChanged: (value) {
-          // Validierung für Tabellen-Eingabefelder
-          setState(() {
-            isCorrect['table_$id'] = _validateTableInput(id, value);
-          });
-        },
+          // Alle Vorgänge
+          _buildTableRow('A', '2', '-'),
+          _buildTableRow('B', '4', 'A'),
+          _buildTableRow('C', '3', 'B'),
+          _buildTableRow('D', '6', 'C'),
+          _buildTableRow('E', '10', 'C'),
+          _buildTableRow('F', '3', 'E'),
+          _buildTableRow('G', '5', 'D'),
+          _buildTableRow('H', '6', 'E, F, G'),
+          _buildTableRow('I', '2', 'H'),
+        ],
       ),
     );
   }
 
-  bool _validateTableInput(String id, String value) {
-    // Validierungslogik für die Tabellen-Eingabefelder
-    final correctValues = {
-      'topLeft': '0',
-      'topRight': '2',
-      'bottomLeft': '2',
-      'bottomRight': '0',
-    };
-    return value == correctValues[id];
-  }
-
-  DataRow _buildDataRow(String id, String description, String duration, String predecessors) {
-    return DataRow(
-      cells: [
-        DataCell(
-          Container(
-            padding: const EdgeInsets.symmetric(vertical: 8),
-            child: Text(
-              id,
-              style: const TextStyle(fontWeight: FontWeight.w500),
-            ),
-          ),
+  TableRow _buildTableRow(String id, String duration, String predecessors) {
+    return TableRow(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8),
+          child: Text(id),
         ),
-        DataCell(Text(description)),
-        DataCell(
-          Center(
-            child: Text(
-              duration,
-              style: const TextStyle(fontFamily: 'monospace'),
-            ),
-          ),
+        Padding(
+          padding: const EdgeInsets.all(8),
+          child: Text(duration),
         ),
-        DataCell(Text(predecessors)),
+        Padding(
+          padding: const EdgeInsets.all(8),
+          child: Text(predecessors),
+        ),
       ],
     );
   }
@@ -685,139 +549,141 @@ class NetworkNode extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        // Hauptbox mit Buchstabe und GP, FP, Dauer
-        Container(
-          width: 90,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              // Buchstabenfeld
-              Container(
-                height: 30,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.blue),
-                ),
-                child: Center(
+    return Container(
+      width: 90,
+      height: 60,
+      child: Stack(
+        children: [
+          // Hauptbox
+          Container(
+            margin: const EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.blue.shade300),
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // Buchstabe in der Mitte
+                Container(
+                  height: 18,
+                  alignment: Alignment.center,
                   child: Text(
                     node['id'] as String,
                     style: const TextStyle(
-                      fontSize: 16,
+                      fontSize: 12,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
-              ),
-              // Untere Zeile für Dauer, GP, FP
-              Container(
-                height: 40,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.blue),
+                // Untere Zeile für Dauer, GP, FP
+                SizedBox(
+                  height: 18,
+                  child: Row(
+                    children: [
+                      Expanded(child: buildInputField('${node['id']}_duration')),
+                      Expanded(child: buildInputField('${node['id']}_GP')),
+                      Expanded(child: buildInputField('${node['id']}_FP')),
+                    ],
+                  ),
                 ),
-                child: Row(
-                  children: [
-                    // Dauer links
-                    Expanded(child: buildInputField('${node['id']}_duration')),
-                    // GP in der Mitte
-                    Expanded(child: buildInputField('${node['id']}_GP')),
-                    // FP rechts
-                    Expanded(child: buildInputField('${node['id']}_FP')),
-                  ],
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-        // Eingabefelder an den Ecken
-        // FAZ oben links
-        Positioned(
-          left: -25,
-          top: -25,
-          child: buildSmallInputField('${node['id']}_FAZ'),
-        ),
-        // FEZ oben rechts
-        Positioned(
-          right: -25,
-          top: -25,
-          child: buildSmallInputField('${node['id']}_FEZ'),
-        ),
-        // SAZ unten links
-        Positioned(
-          left: -25,
-          bottom: -25,
-          child: buildSmallInputField('${node['id']}_SAZ'),
-        ),
-        // SEZ unten rechts
-        Positioned(
-          right: -25,
-          bottom: -25,
-          child: buildSmallInputField('${node['id']}_SEZ'),
-        ),
-      ],
+          // Eckfelder
+          Positioned(
+            left: -3,
+            top: -3,
+            child: buildCornerInput('${node['id']}_FAZ'),
+          ),
+          Positioned(
+            right: -3,
+            top: -3,
+            child: buildCornerInput('${node['id']}_FEZ'),
+          ),
+          Positioned(
+            left: -3,
+            bottom: -3,
+            child: buildCornerInput('${node['id']}_SAZ'),
+          ),
+          Positioned(
+            right: -3,
+            bottom: -3,
+            child: buildCornerInput('${node['id']}_SEZ'),
+          ),
+        ],
+      ),
     );
   }
 
   Widget buildInputField(String controllerId) {
+    final isValid = isCorrect[controllerId] ?? false;
+    final hasValue = controllers[controllerId]?.text.isNotEmpty ?? false;
+
     return Container(
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: isCorrect[controllerId] == true 
-              ? Colors.green 
-              : isCorrect[controllerId] == false 
-                  ? Colors.red 
-                  : Colors.blue,
-          width: 0.8,
+      margin: const EdgeInsets.all(1),
+      child: TextField(
+        controller: controllers[controllerId],
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          fontSize: 11,
+          fontWeight: FontWeight.bold,
+          color: hasValue
+              ? (isValid ? Colors.green : Colors.red)
+              : Colors.black87,
         ),
-        color: isCorrect[controllerId] == true 
-            ? Colors.green.shade50
-            : isCorrect[controllerId] == false 
-                ? Colors.red.shade50 
-                : Colors.white,
+        decoration: InputDecoration(
+          isDense: true,
+          contentPadding: EdgeInsets.zero,
+          border: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.blue.shade300,
+              width: 0.5,
+            ),
+          ),
+          filled: false,
+          fillColor: Colors.white,
+        ),
+        onChanged: (value) {
+          onChanged(node['id'] as String, controllerId.split('_')[1], value);
+        },
+      ),
+    );
+  }
+
+  Widget buildCornerInput(String controllerId) {
+    final isValid = isCorrect[controllerId] ?? false;
+    final hasValue = controllers[controllerId]?.text.isNotEmpty ?? false;
+
+    return Container(
+      width: 15,
+      height: 15,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(
+          color: Colors.blue.shade300,
+          width: 0.5,
+        ),
       ),
       child: TextField(
         controller: controllers[controllerId],
         textAlign: TextAlign.center,
         style: TextStyle(
-          fontSize: 16,
-          color: isCorrect[controllerId] == true 
-              ? Colors.green 
-              : isCorrect[controllerId] == false 
-                  ? Colors.red 
-                  : Colors.black,
+          fontSize: 9,
+          fontWeight: FontWeight.bold,
+          color: hasValue
+              ? (isValid ? Colors.green : Colors.red)
+              : Colors.black87,
         ),
         decoration: const InputDecoration(
-          border: InputBorder.none,
+          isDense: true,
           contentPadding: EdgeInsets.zero,
-        ),
-        onChanged: (value) => onChanged(node['id'] as String, controllerId.split('_')[1], value),
-      ),
-    );
-  }
-
-  Widget buildSmallInputField(String controllerId) {
-    return Container(
-      width: 25,
-      height: 25,
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: isCorrect[controllerId] == true 
-              ? Colors.green 
-              : isCorrect[controllerId] == false 
-                  ? Colors.red 
-                  : Colors.blue,
-        ),
-        color: Colors.white,
-      ),
-      child: TextField(
-        controller: controllers[controllerId],
-        textAlign: TextAlign.center,
-        style: const TextStyle(fontSize: 12),
-        decoration: const InputDecoration(
           border: InputBorder.none,
-          contentPadding: EdgeInsets.zero,
         ),
-        onChanged: (value) => onChanged(node['id'] as String, controllerId.split('_')[1], value),
+        onChanged: (value) {
+          onChanged(node['id'] as String, controllerId.split('_')[1], value);
+        },
       ),
     );
   }
