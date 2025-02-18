@@ -53,7 +53,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       'title': 'Installation',
       'duration': 3,
       'predecessors': ['B'],
-      'successors': ['D', 'E'],
+      'successors': ['D',"E","F"],
       'position': const Offset(300, 100),
       'correctValues': {
         'duration': '3',
@@ -87,7 +87,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       'title': 'Kontinuierliche Fehlersuche',
       'duration': 10,
       'predecessors': ['C'],
-      'successors': ['F'],
+      'successors': ['G'],
       'position': const Offset(450, 150),
       'correctValues': {
         'duration': '10',
@@ -103,16 +103,16 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       'id': 'F',
       'title': 'Sicherheitstests',
       'duration': 3,
-      'predecessors': ['E'],
-      'successors': ['H'],
+      'predecessors': ['C'],
+      'successors': ['G'],
       'position': const Offset(450, 250),
       'correctValues': {
         'duration': '3',
-        'FAZ': '19',
-        'FEZ': '22',
+        'FAZ': '9',
+        'FEZ': '12',
         'SAZ': '20',
         'SEZ': '23',
-        'GP': '1',
+        'GP': '11',
         'FP': '0',
       }
     },
@@ -137,7 +137,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       'id': 'H',
       'title': 'Schulung der Mitarbeiter',
       'duration': 6,
-      'predecessors': ['F', 'G'],
+      'predecessors': ['G'],
       'successors': ['I'],
       'position': const Offset(750, 100),
       'correctValues': {
@@ -182,11 +182,11 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       });
 
       // Controller für die inneren Ecken
-      ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'].forEach((corner) {
+      for (var corner in ['topLeft', 'topRight', 'bottomLeft', 'bottomRight']) {
         final controllerId = '${node['id']}_$corner';
         controllers[controllerId] = TextEditingController();
         isCorrect[controllerId] = false;
-      });
+      }
 
       // Controller für den Buchstaben
       controllers['${node['id']}_letter'] = TextEditingController();
@@ -617,7 +617,7 @@ class NetworkNode extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 90,
       height: 60,
       child: Stack(

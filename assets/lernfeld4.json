@@ -1,0 +1,56 @@
+{
+    "categories": {
+      "Lernfeld4": {
+        "description": "Schutzbeadarfanalyse",
+        "questions": [
+          {
+            "id": 1,
+            "difficulty": "leicht",
+            "question": "Nenneb sie drei Vorteile die ein Unternehmen durch die Zertifizierung nach ISO 27001 erlangt ?",
+            "options": [
+              "Wetbewerbsvorteil, Beleg für sicheruen Umgang mit sensiblen Informationen, zuverläsige Problem und Bedrohungserkennung"
+
+
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 2,
+            "difficulty": "leicht",
+            "question": "Was ist die ISO 27001 ?",
+            "options": [
+              "Eine globale Norm für die Informationssicherheit"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 3,
+            "difficulty": "leicht",
+            "question": "Was ist der BSI ?",
+            "options": [
+              "Das Bundesamt für Sicherheit in der Informationstechnik ( BSI ) gestaltet Informationssicherheit in der Digitalisierung durch Prävention, Detektion und Reaktion für Staat, Wirtschaft und Gesellschaft. Das BSI ist die Cybersicherheitsbehörde des Bundes und Gestalter einer sicheren Digitalisierung in Deutschland."
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 4,
+            "difficulty": "leicht",
+            "question": "Was ist der BDSG ?",
+            "options": [
+              "Das Bundesdatenschutzgesetz (BDSG) ist ein deutsches Gesetz, das die Verarbeitung personenbezogener Daten durch öffentliche Stellen des Bundes, private Unternehmen und Personen regelt. Es dient dem Schutz vor Missbrauch dieser Daten und gewährleistet das Recht auf informationelle Selbstbestimmung."
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 5,
+            "difficulty": "leicht",
+            "question": "Nennen Sie drei Vorraussetzungen die erfüllt sein müssen, damit eine persöhnliche Schöpfung als Werk urheberrechtlich geschützt ist?",
+            "options": [
+              "Das Werk ist das Ergebnis menschlichens Schaffens, Das Werk ist durch menschliche Sinne wahrnehmbar, Das Werk stellt eine kreative Leistung dar"
+            ],
+            "correctAnswer": 0
+          }
+        ]
+      }
+    }
+}
