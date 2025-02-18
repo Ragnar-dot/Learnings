@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/quiz_stats.dart';
 import 'quiz_screen.dart';
+import 'network_plan_screen.dart';
 import '../services/storage_service.dart';
 import '../theme/app_theme.dart';
 
@@ -50,25 +51,30 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': Icons.school_outlined,
       'description': 'Das Unternehmen und die Eigene Rolle im Betrieb',
     },
-  {
+    {
       'name': 'Lernfeld2',
       'icon': Icons.school_outlined,
       'description': 'Arbeitsplatz und Prozesse',
     },
-        {
+    {
       'name': 'Lernfeld3',
       'icon': Icons.school_outlined,
       'description': 'Clients in Netzwerke einbinden',
     },
-  {
+    {
       'name': 'Lernfeld4',
       'icon': Icons.school_outlined,
       'description': 'Schutzbeadarfsanalyse im eigenen Arbeitsbereich',
     },
-      {
+    {
       'name': 'Lernfeld5',
       'icon': Icons.school_outlined,
       'description': 'Software zur Verwaltung von Daten',
+    },
+    {
+      'name': 'Netzplan',
+      'icon': Icons.account_tree,
+      'description': 'Netzplantechnik, Vorgänge und Abhängigkeiten',
     },
   ];
 
@@ -144,12 +150,12 @@ class _CategoryScreenState extends State<CategoryScreen> {
           ),
           Expanded(
             child: GridView.builder(
-              padding: const EdgeInsets.all(5),
+              padding: const EdgeInsets.all(10),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: 0.75,
-                crossAxisSpacing: 2,
-                mainAxisSpacing: 2,
+                crossAxisSpacing: 3,
+                mainAxisSpacing: 3,
               ),
               itemCount: categories.length,
               itemBuilder: (context, index) {
@@ -158,20 +164,25 @@ class _CategoryScreenState extends State<CategoryScreen> {
                     categoryStats[category] ?? QuizStats(category: category);
 
                 return Card(
-                  
-
-                  
-                 
                   child: InkWell(
                     onTap: () async {
-                      final result = await Navigator.push<QuizStats>(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => QuizScreen(category: category),
-                        ),
-                      );
-                      if (result != null) {
-                        updateStats(category, result);
+                      if (category == 'Netzplan') {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const NetworkPlanScreen(),
+                          ),
+                        );
+                      } else {
+                        final result = await Navigator.push<QuizStats>(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => QuizScreen(category: category),
+                          ),
+                        );
+                        if (result != null) {
+                          updateStats(category, result);
+                        }
                       }
                     },
                     borderRadius: BorderRadius.circular(8),
