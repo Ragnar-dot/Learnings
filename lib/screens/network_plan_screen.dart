@@ -50,15 +50,17 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
     },
     {
       'id': 'C',
-      'title': 'C',
-      'duration': 0,
-      'successors': [],
+      'title': 'Installation',
+      'duration': 3,
+      'predecessors': ['B'],
+      'successors': ['D', 'E'],
       'position': const Offset(300, 100),
       'correctValues': {
+        'duration': '3',
         'FAZ': '6',
-        'FEZ': '6',
+        'FEZ': '9',
         'SAZ': '6',
-        'SEZ': '6',
+        'SEZ': '9',
         'GP': '0',
         'FP': '0',
       }
@@ -67,90 +69,102 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       'id': 'D',
       'title': 'Datenmigration',
       'duration': 6,
+      'predecessors': ['C'],
       'successors': ['G'],
       'position': const Offset(450, 50),
       'correctValues': {
-        'FAZ': '',
-        'FEZ': '',
-        'SAZ': '',
-        'SEZ': '',
-        'GP': '',
-        'FP': '',
+        'duration': '6',
+        'FAZ': '9',
+        'FEZ': '15',
+        'SAZ': '9',
+        'SEZ': '15',
+        'GP': '0',
+        'FP': '0',
       }
     },
     {
       'id': 'E',
       'title': 'Kontinuierliche Fehlersuche',
       'duration': 10,
-      'successors': ['H'],
+      'predecessors': ['C'],
+      'successors': ['F'],
       'position': const Offset(450, 150),
       'correctValues': {
-        'FAZ': '',
-        'FEZ': '',
-        'SAZ': '',
-        'SEZ': '',
-        'GP': '',
-        'FP': '',
+        'duration': '10',
+        'FAZ': '9',
+        'FEZ': '19',
+        'SAZ': '13',
+        'SEZ': '23',
+        'GP': '4',
+        'FP': '0',
       }
     },
     {
       'id': 'F',
       'title': 'Sicherheitstests',
       'duration': 3,
+      'predecessors': ['E'],
       'successors': ['H'],
       'position': const Offset(450, 250),
       'correctValues': {
-        'FAZ': '',
-        'FEZ': '',
-        'SAZ': '',
-        'SEZ': '',
-        'GP': '',
-        'FP': '',
+        'duration': '3',
+        'FAZ': '19',
+        'FEZ': '22',
+        'SAZ': '20',
+        'SEZ': '23',
+        'GP': '1',
+        'FP': '0',
       }
     },
     {
       'id': 'G',
       'title': 'Anpassung und Konfiguration',
       'duration': 5,
+      'predecessors': ['D'],
       'successors': ['H'],
       'position': const Offset(600, 100),
       'correctValues': {
-        'FAZ': '',
-        'FEZ': '',
-        'SAZ': '',
-        'SEZ': '',
-        'GP': '',
-        'FP': '',
+        'duration': '5',
+        'FAZ': '15',
+        'FEZ': '20',
+        'SAZ': '18',
+        'SEZ': '23',
+        'GP': '3',
+        'FP': '0',
       }
     },
     {
       'id': 'H',
       'title': 'Schulung der Mitarbeiter',
       'duration': 6,
+      'predecessors': ['F', 'G'],
       'successors': ['I'],
       'position': const Offset(750, 100),
       'correctValues': {
-        'FAZ': '',
-        'FEZ': '',
-        'SAZ': '',
-        'SEZ': '',
-        'GP': '',
-        'FP': '',
+        'duration': '6',
+        'FAZ': '23',
+        'FEZ': '29',
+        'SAZ': '23',
+        'SEZ': '29',
+        'GP': '0',
+        'FP': '0',
       }
     },
     {
       'id': 'I',
       'title': 'Systemübergabe und Go-Live',
       'duration': 2,
+      'predecessors': ['H'],
       'successors': [],
       'position': const Offset(900, 100),
       'correctValues': {
-        'FAZ': '',
-        'FEZ': '',
-        'SAZ': '',
-        'SEZ': '',
-        'GP': '',
-        'FP': '',
+        'duration': '2',
+        'FAZ': '29',
+        'FEZ': '31',
+        'SAZ': '29',
+        'SEZ': '31',
+        'GP': '0',
+        'FP': '0',
       }
     }
   ];
@@ -182,26 +196,35 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
 
   void checkValue(String nodeId, String field, String value) {
     final node = networkNodes.firstWhere((n) => n['id'] == nodeId);
-    final correctValues = node['correctValues'] as Map<String, String>;
     bool isValid = false;
 
     switch (field) {
       case 'duration':
-        // Prüfe die eingegebene Dauer gegen die Tabellenwerte
-        isValid = value == node['duration'].toString();
+        // Prüfe die Dauer aus der Tabelle
+        final correctDuration = node['duration'].toString();
+        isValid = value == correctDuration;
         break;
 
       case 'FAZ':
         if (nodeId == 'A') {
-          isValid = value == '0';  // A startet bei 0
+          // Startknoten A beginnt bei 0
+          isValid = value == '0';
         } else {
           // FAZ = Maximum der FEZ aller Vorgänger
           final predecessors = node['predecessors'] as List<dynamic>;
           if (predecessors.isNotEmpty) {
-            final maxFEZ = predecessors.map((p) {
-              return int.tryParse(controllers['${p}_FEZ']?.text ?? '') ?? -1;
-            }).where((fez) => fez >= 0).reduce(max);
-            isValid = int.tryParse(value) == maxFEZ;
+            // Sammle alle gültigen FEZ-Werte der Vorgänger
+            final fezValues = predecessors
+                .map((p) => int.tryParse(controllers['${p}_FEZ']?.text ?? '') ?? -1)
+                .toList();
+            
+            // Prüfe ob überhaupt gültige Werte vorhanden sind
+            if (fezValues.any((fez) => fez >= 0)) {
+              final maxFEZ = fezValues
+                  .where((fez) => fez >= 0)
+                  .reduce(max);
+              isValid = int.tryParse(value) == maxFEZ;
+            }
           }
         }
         break;
@@ -215,9 +238,51 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
         }
         break;
 
-      default:
-        // Für alle anderen Felder: Prüfe gegen correctValues
-        isValid = value == correctValues[field];
+      case 'SEZ':
+        if (nodeId == 'I') {
+          // Endknoten I: SEZ = FEZ
+          final fez = int.tryParse(controllers['${nodeId}_FEZ']?.text ?? '') ?? -1;
+          isValid = value == fez.toString();
+        } else {
+          // SEZ = Minimum der SAZ aller Nachfolger
+          final successors = node['successors'] as List<dynamic>;
+          if (successors.isNotEmpty) {
+            final minSAZ = successors.map((s) {
+              return int.tryParse(controllers['${s}_SAZ']?.text ?? '') ?? 999;
+            }).reduce(min);
+            isValid = int.tryParse(value) == minSAZ;
+          }
+        }
+        break;
+
+      case 'SAZ':
+        // SAZ = SEZ - Dauer
+        final sez = int.tryParse(controllers['${nodeId}_SEZ']?.text ?? '') ?? -1;
+        if (sez >= 0) {
+          final duration = node['duration'] as int;
+          isValid = int.tryParse(value) == (sez - duration);
+        }
+        break;
+
+      case 'GP':
+        // GP = SAZ - FAZ oder SEZ - FEZ
+        final saz = int.tryParse(controllers['${nodeId}_SAZ']?.text ?? '') ?? -1;
+        final faz = int.tryParse(controllers['${nodeId}_FAZ']?.text ?? '') ?? -1;
+        if (saz >= 0 && faz >= 0) {
+          isValid = int.tryParse(value) == (saz - faz);
+        }
+        break;
+
+      case 'FP':
+        // FP = Minimum(FAZ_Nachfolger) - FEZ
+        final fez = int.tryParse(controllers['${nodeId}_FEZ']?.text ?? '') ?? -1;
+        final successors = node['successors'] as List<dynamic>;
+        if (fez >= 0 && successors.isNotEmpty) {
+          final minFAZ = successors.map((s) {
+            return int.tryParse(controllers['${s}_FAZ']?.text ?? '') ?? 999;
+          }).reduce(min);
+          isValid = int.tryParse(value) == (minFAZ - fez);
+        }
         break;
     }
 
@@ -392,7 +457,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
           decoration: BoxDecoration(
             border: Border.all(color: Colors.blue),
-            borderRadius: BorderRadius.circular(4),
+            borderRadius: BorderRadius.circular(3),
           ),
           child: Text(
             abbr,
@@ -412,19 +477,22 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Hilfe'),
+        title: const Text('Hilfe zur Berechnung'),
         content: const SingleChildScrollView(
           child: Text(
-            'FAZ = Frühester Anfangszeitpunkt\n'
-            'FEZ = Frühester Endzeitpunkt\n'
-            'SAZ = Spätester Anfangszeitpunkt\n'
-            'SEZ = Spätester Endzeitpunkt\n'
-            'GP = Gesamtpuffer\n'
-            'FP = Freier Puffer\n\n'
-            'Berechnung:\n'
-            'FEZ = FAZ + Dauer\n'
-            'GP = SAZ - FAZ\n'
-            'FP = Nachfolger FAZ - FEZ'
+            'Vorwärtsrechnung:\n'
+            '• FAZ = Maximum der FEZ aller Vorgänger\n'
+            '• FEZ = FAZ + Dauer\n\n'
+            'Rückwärtsrechnung:\n'
+            '• SEZ = Minimum der SAZ aller Nachfolger\n'
+            '• SAZ = SEZ - Dauer\n\n'
+            'Pufferzeiten:\n'
+            '• GP = SAZ - FAZ\n'
+            '• FP = Minimum(FAZ_Nachfolger) - FEZ\n\n'
+            'Besonderheiten:\n'
+            '• Startknoten A: FAZ = 0\n'
+            '• Endknoten I: SEZ = FEZ\n'
+            '• Kritischer Pfad: GP = 0'
           ),
         ),
         actions: [
@@ -593,23 +661,23 @@ class NetworkNode extends StatelessWidget {
           ),
           // Eckfelder
           Positioned(
-            left: -3,
-            top: -3,
+            left: -1,
+            top: -1,
             child: buildCornerInput('${node['id']}_FAZ'),
           ),
           Positioned(
-            right: -3,
-            top: -3,
+            right: -1,
+            top: -1,
             child: buildCornerInput('${node['id']}_FEZ'),
           ),
           Positioned(
-            left: -3,
-            bottom: -3,
+            left: -1,
+            bottom: -1,
             child: buildCornerInput('${node['id']}_SAZ'),
           ),
           Positioned(
-            right: -3,
-            bottom: -3,
+            right: -1,
+            bottom: -1,
             child: buildCornerInput('${node['id']}_SEZ'),
           ),
         ],
@@ -655,35 +723,61 @@ class NetworkNode extends StatelessWidget {
   Widget buildCornerInput(String controllerId) {
     final isValid = isCorrect[controllerId] ?? false;
     final hasValue = controllers[controllerId]?.text.isNotEmpty ?? false;
+    final cornerType = controllerId.split('_')[1]; // FAZ, FEZ, SAZ oder SEZ
 
     return Container(
-      width: 15,
-      height: 15,
+      width: 20,  // Etwas größer
+      height: 20,
       decoration: BoxDecoration(
         color: Colors.white,
         border: Border.all(
-          color: Colors.blue.shade300,
-          width: 0.5,
+          color: Colors.blue.shade400,
+          width: 1.0,  // Dickerer Rand
         ),
+        borderRadius: BorderRadius.circular(4),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.blue.shade100.withOpacity(0.5),
+            blurRadius: 2,
+            offset: const Offset(1, 1),
+          ),
+        ],
       ),
-      child: TextField(
-        controller: controllers[controllerId],
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          fontSize: 9,
-          fontWeight: FontWeight.bold,
-          color: hasValue
-              ? (isValid ? Colors.green : Colors.red)
-              : Colors.black87,
-        ),
-        decoration: const InputDecoration(
-          isDense: true,
-          contentPadding: EdgeInsets.zero,
-          border: InputBorder.none,
-        ),
-        onChanged: (value) {
-          onChanged(node['id'] as String, controllerId.split('_')[1], value);
-        },
+      child: Stack(
+        children: [
+          // Kleiner Indikator für den Typ (FAZ, FEZ, etc.)
+          Positioned(
+            right: 1,
+            top: 1,
+            child: Text(
+              cornerType[0], // Erster Buchstabe (F/S)
+              style: TextStyle(
+                fontSize: 6,
+                color: Colors.blue.shade300,
+              ),
+            ),
+          ),
+          // Eingabefeld
+          TextField(
+            controller: controllers[controllerId],
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 11,
+              fontWeight: FontWeight.bold,
+              color: hasValue
+                  ? (isValid ? Colors.green : Colors.red)
+                  : Colors.black87,
+            ),
+            decoration: const InputDecoration(
+              isDense: true,
+              contentPadding: EdgeInsets.only(bottom: 8), // Für bessere Zentrierung
+              border: InputBorder.none,
+            ),
+            onChanged: (value) {
+              onChanged(node['id'] as String, cornerType, value);
+            },
+          ),
+        ],
       ),
     );
   }
