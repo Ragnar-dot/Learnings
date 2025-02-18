@@ -403,7 +403,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
                       child: Stack(
                         children: [
                           CustomPaint(
-                            painter: NetworkPlanPainter(nodes: networkNodes),
+                            
                           ),
                           ...networkNodes.map((node) => Positioned(
                             left: (node['position'] as Offset).dx * (isSmallScreen ? 0.7 : 1.0),
@@ -628,14 +628,14 @@ class NetworkNode extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border.all(color: Colors.blue.shade300),
               color: Colors.white,
-              borderRadius: BorderRadius.circular(4),
+              borderRadius: BorderRadius.circular(2),
             ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
                 // Buchstabe in der Mitte
                 Container(
-                  height: 18,
+                  height: 15,
                   alignment: Alignment.center,
                   child: Text(
                     node['id'] as String,
@@ -647,7 +647,7 @@ class NetworkNode extends StatelessWidget {
                 ),
                 // Untere Zeile für Dauer, GP, FP
                 SizedBox(
-                  height: 18,
+                  height: 20,
                   child: Row(
                     children: [
                       Expanded(child: buildInputField('${node['id']}_duration')),
@@ -663,6 +663,7 @@ class NetworkNode extends StatelessWidget {
           Positioned(
             left: -1,
             top: -1,
+            
             child: buildCornerInput('${node['id']}_FAZ'),
           ),
           Positioned(
@@ -707,7 +708,7 @@ class NetworkNode extends StatelessWidget {
           border: OutlineInputBorder(
             borderSide: BorderSide(
               color: Colors.blue.shade300,
-              width: 0.5,
+              width: 0.1,
             ),
           ),
           filled: false,
@@ -734,11 +735,11 @@ class NetworkNode extends StatelessWidget {
           color: Colors.blue.shade400,
           width: 1.0,  // Dickerer Rand
         ),
-        borderRadius: BorderRadius.circular(4),
+        borderRadius: BorderRadius.circular(6),
         boxShadow: [
           BoxShadow(
             color: Colors.blue.shade100.withOpacity(0.5),
-            blurRadius: 2,
+            blurRadius: 10,
             offset: const Offset(1, 1),
           ),
         ],
@@ -770,7 +771,7 @@ class NetworkNode extends StatelessWidget {
             ),
             decoration: const InputDecoration(
               isDense: true,
-              contentPadding: EdgeInsets.only(bottom: 8), // Für bessere Zentrierung
+              contentPadding: EdgeInsets.only(bottom: 9), // Für bessere Zentrierung
               border: InputBorder.none,
             ),
             onChanged: (value) {
@@ -782,31 +783,3 @@ class NetworkNode extends StatelessWidget {
     );
   }
 }
-
-class NetworkPlanPainter extends CustomPainter {
-  final List<Map<String, dynamic>> nodes;
-
-  NetworkPlanPainter({required this.nodes});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = Colors.blue
-      ..strokeWidth = 0.5;
-
-    // Horizontale Verbindungslinien
-    canvas.drawLine(
-      const Offset(100, 45),  // Von A nach B
-      const Offset(200, 45),
-      paint,
-    );
-    canvas.drawLine(
-      const Offset(300, 45),  // Von B nach C
-      const Offset(400, 45),
-      paint,
-    );
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
-} 
