@@ -544,9 +544,9 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
           _buildTableRow('C', '3', 'B'),
           _buildTableRow('D', '6', 'C'),
           _buildTableRow('E', '10', 'C'),
-          _buildTableRow('F', '3', 'E'),
-          _buildTableRow('G', '5', 'D'),
-          _buildTableRow('H', '6', 'E, F, G'),
+          _buildTableRow('F', '3', 'C'),
+          _buildTableRow('G', '5', 'D,E,F'),
+          _buildTableRow('H', '6', 'G'),
           _buildTableRow('I', '2', 'H'),
         ],
       ),
@@ -557,15 +557,15 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
     return TableRow(
       children: [
         Padding(
-          padding: const EdgeInsets.all(8),
+          padding: const EdgeInsets.all(9),
           child: Text(id),
         ),
         Padding(
-          padding: const EdgeInsets.all(8),
+          padding: const EdgeInsets.all(9),
           child: Text(duration),
         ),
         Padding(
-          padding: const EdgeInsets.all(8),
+          padding: const EdgeInsets.all(9),
           child: Text(predecessors),
         ),
       ],
