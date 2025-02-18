@@ -30,6 +30,6 @@ flutter:
     - assets/lernfeld3.json
     - assets/lernfeld4.json
     - assets/lernfeld5.json
-    - assets/exercises/
-    - assets/SQL/
-    
+    - assets/exercises/sortieralgorithmen_uebungen.pdf
+    - assets/SQL/Befehlssammlung_SQL.pdf
+    - assets/SQL/sql_befehle.pdf
