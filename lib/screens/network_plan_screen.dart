@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:math';  // Hinzugefügt für min und max Funktionen
+import 'dart:math' as math;  // Import für math Funktionen
 
 
 class NetworkPlanScreen extends StatefulWidget {
@@ -22,7 +22,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       'successors': ['B'],
       'position': const Offset(50, 100),
       'correctValues': {
-        'duration': '2',  // Dauer als String
+        'duration': '2',
         'FAZ': '0',
         'FEZ': '2',
         'SAZ': '0',
@@ -39,7 +39,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       'successors': ['C'],
       'position': const Offset(200, 100),
       'correctValues': {
-        'duration': '4',  // Dauer als String
+        'duration': '4',
         'FAZ': '2',
         'FEZ': '6',
         'SAZ': '2',
@@ -53,8 +53,8 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       'title': 'Installation',
       'duration': 3,
       'predecessors': ['B'],
-      'successors': ['D',"E","F"],
-      'position': const Offset(300, 100),
+      'successors': ['D', 'E', 'F'],
+      'position': const Offset(350, 100),
       'correctValues': {
         'duration': '3',
         'FAZ': '6',
@@ -71,7 +71,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       'duration': 6,
       'predecessors': ['C'],
       'successors': ['G'],
-      'position': const Offset(450, 50),
+      'position': const Offset(500, 50),
       'correctValues': {
         'duration': '6',
         'FAZ': '9',
@@ -84,18 +84,18 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
     },
     {
       'id': 'E',
-      'title': 'Kontinuierliche Fehlersuche',
+      'title': 'Fehlersuche',
       'duration': 10,
       'predecessors': ['C'],
       'successors': ['G'],
-      'position': const Offset(450, 150),
+      'position': const Offset(500, 150),
       'correctValues': {
         'duration': '10',
         'FAZ': '9',
         'FEZ': '19',
-        'SAZ': '13',
-        'SEZ': '23',
-        'GP': '4',
+        'SAZ': '10',
+        'SEZ': '20',
+        'GP': '1',
         'FP': '0',
       }
     },
@@ -105,64 +105,64 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       'duration': 3,
       'predecessors': ['C'],
       'successors': ['G'],
-      'position': const Offset(450, 250),
+      'position': const Offset(500, 250),
       'correctValues': {
         'duration': '3',
         'FAZ': '9',
         'FEZ': '12',
-        'SAZ': '20',
-        'SEZ': '23',
-        'GP': '11',
+        'SAZ': '17',
+        'SEZ': '20',
+        'GP': '8',
         'FP': '0',
       }
     },
     {
       'id': 'G',
-      'title': 'Anpassung und Konfiguration',
+      'title': 'Anpassung',
       'duration': 5,
-      'predecessors': ['D'],
+      'predecessors': ['D', 'E', 'F'],
       'successors': ['H'],
-      'position': const Offset(600, 100),
+      'position': const Offset(650, 100),
       'correctValues': {
         'duration': '5',
         'FAZ': '15',
         'FEZ': '20',
-        'SAZ': '18',
-        'SEZ': '23',
-        'GP': '3',
+        'SAZ': '15',
+        'SEZ': '20',
+        'GP': '0',
         'FP': '0',
       }
     },
     {
       'id': 'H',
-      'title': 'Schulung der Mitarbeiter',
+      'title': 'Schulung',
       'duration': 6,
       'predecessors': ['G'],
       'successors': ['I'],
-      'position': const Offset(750, 100),
+      'position': const Offset(800, 100),
       'correctValues': {
         'duration': '6',
-        'FAZ': '23',
-        'FEZ': '29',
-        'SAZ': '23',
-        'SEZ': '29',
+        'FAZ': '20',
+        'FEZ': '26',
+        'SAZ': '20',
+        'SEZ': '26',
         'GP': '0',
         'FP': '0',
       }
     },
     {
       'id': 'I',
-      'title': 'Systemübergabe und Go-Live',
+      'title': 'Go-Live',
       'duration': 2,
       'predecessors': ['H'],
       'successors': [],
-      'position': const Offset(900, 100),
+      'position': const Offset(950, 100),
       'correctValues': {
         'duration': '2',
-        'FAZ': '29',
-        'FEZ': '31',
-        'SAZ': '29',
-        'SEZ': '31',
+        'FAZ': '26',
+        'FEZ': '28',
+        'SAZ': '26',
+        'SEZ': '28',
         'GP': '0',
         'FP': '0',
       }
@@ -222,7 +222,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
             if (fezValues.any((fez) => fez >= 0)) {
               final maxFEZ = fezValues
                   .where((fez) => fez >= 0)
-                  .reduce(max);
+                  .reduce(math.max);
               isValid = int.tryParse(value) == maxFEZ;
             }
           }
@@ -249,7 +249,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
           if (successors.isNotEmpty) {
             final minSAZ = successors.map((s) {
               return int.tryParse(controllers['${s}_SAZ']?.text ?? '') ?? 999;
-            }).reduce(min);
+            }).reduce(math.min);
             isValid = int.tryParse(value) == minSAZ;
           }
         }
@@ -275,13 +275,18 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
 
       case 'FP':
         // FP = Minimum(FAZ_Nachfolger) - FEZ
-        final fez = int.tryParse(controllers['${nodeId}_FEZ']?.text ?? '') ?? -1;
         final successors = node['successors'] as List<dynamic>;
-        if (fez >= 0 && successors.isNotEmpty) {
-          final minFAZ = successors.map((s) {
-            return int.tryParse(controllers['${s}_FAZ']?.text ?? '') ?? 999;
-          }).reduce(min);
-          isValid = int.tryParse(value) == (minFAZ - fez);
+        if (successors.isEmpty) {
+          // Endknoten (I) hat keine Nachfolger, FP ist immer 0
+          isValid = value == '0';
+        } else {
+          final fez = int.tryParse(controllers['${nodeId}_FEZ']?.text ?? '') ?? -1;
+          if (fez >= 0) {
+            final minFAZ = successors.map((s) {
+              return int.tryParse(controllers['${s}_FAZ']?.text ?? '') ?? 999;
+            }).reduce(math.min);
+            isValid = int.tryParse(value) == (minFAZ - fez);
+          }
         }
         break;
     }
@@ -398,16 +403,19 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
                   scrollDirection: Axis.horizontal,
                   child: SingleChildScrollView(
                     child: SizedBox(
-                      width: isSmallScreen ? 800 : 1200,
+                      width: isSmallScreen ? 1200 : 2000,
                       height: isSmallScreen ? 400 : 600,
                       child: Stack(
                         children: [
+                          // Verbindungslinien
                           CustomPaint(
-                            
+                            size: Size(isSmallScreen ? 800 : 1200, isSmallScreen ? 400 : 600),
+                            painter: NetworkPlanPainter(nodes: networkNodes),
                           ),
+                          // Knoten
                           ...networkNodes.map((node) => Positioned(
-                            left: (node['position'] as Offset).dx * (isSmallScreen ? 0.7 : 1.0),
-                            top: (node['position'] as Offset).dy * (isSmallScreen ? 0.7 : 1.0),
+                            left: (node['position'] as Offset).dx,
+                            top: (node['position'] as Offset).dy,
                             child: NetworkNode(
                               node: node,
                               controllers: controllers,
@@ -782,4 +790,66 @@ class NetworkNode extends StatelessWidget {
       ),
     );
   }
+}
+
+class NetworkPlanPainter extends CustomPainter {
+  final List<Map<String, dynamic>> nodes;
+
+  NetworkPlanPainter({required this.nodes});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = Colors.blue.shade400
+      ..strokeWidth = 1.5
+      ..style = PaintingStyle.stroke;
+
+    // Zeichne Verbindungslinien basierend auf Vorgänger-Nachfolger-Beziehungen
+    for (var node in nodes) {
+      final successors = node['successors'] as List<dynamic>;
+      final startPos = node['position'] as Offset;
+      
+      // Startpunkt ist die Mitte des Knotens
+      final startX = startPos.dx + 45; // Hälfte der Knotenbreite (90/2)
+      final startY = startPos.dy + 30; // Hälfte der Knotenhöhe (60/2)
+
+      // Zeichne Linien zu allen Nachfolgern
+      for (var successorId in successors) {
+        final successor = nodes.firstWhere((n) => n['id'] == successorId);
+        final endPos = successor['position'] as Offset;
+        final endX = endPos.dx;
+        final endY = endPos.dy + 30;
+
+        // Zeichne Pfeil
+        canvas.drawLine(
+          Offset(startX, startY),
+          Offset(endX, endY),
+          paint,
+        );
+
+        // Zeichne Pfeilspitze
+        final arrowSize = 8.0;
+        final angle = (endY - startY != 0) 
+            ? math.atan2(endY - startY, endX - startX)
+            : 0.0;
+        
+        final arrowPath = Path()
+          ..moveTo(endX, endY)
+          ..lineTo(
+            endX - arrowSize * math.cos(angle - math.pi / 6),
+            endY - arrowSize * math.sin(angle - math.pi / 6),
+          )
+          ..moveTo(endX, endY)
+          ..lineTo(
+            endX - arrowSize * math.cos(angle + math.pi / 6),
+            endY - arrowSize * math.sin(angle + math.pi / 6),
+          );
+
+        canvas.drawPath(arrowPath, paint);
+      }
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
