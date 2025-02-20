@@ -6,6 +6,7 @@ import '../screens/category_screen.dart';
 import '../screens/video_screen.dart';
 import '../screens/document_screen.dart';
 import '../theme/app_theme.dart';
+import '../widgets/day_night_themed_switcher.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -42,46 +43,21 @@ class AppDrawer extends StatelessWidget {
               ],
             ),
           ),
-          SwitchListTile(
+          ListTile(
             title: Text(
               themeProvider.isDarkMode ? 'Dark Mode' : 'Light Mode',
               style: TextStyle(
-                color: themeProvider.isDarkMode 
-                    ? Colors.white 
-                    : Colors.black87,
+                color: themeProvider.isDarkMode ? Colors.white : Colors.black87,
               ),
             ),
-            secondary: Container(
-              padding: const EdgeInsets.all(4),
-              decoration: BoxDecoration(
-                color: themeProvider.isDarkMode 
-                    ? const Color.fromARGB(255, 36, 36, 36)
-                    : const Color.fromARGB(255, 255, 255, 255),
-                borderRadius: BorderRadius.circular(8),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.3),
-                    blurRadius: 4,
-                    offset: const Offset(0,5),
-                  ),
-                ],
-              ),
-              child: Icon(
-                themeProvider.isDarkMode ? Icons.dark_mode : Icons.light_mode,
-                color: themeProvider.isDarkMode
-                    ? const Color.fromARGB(255, 0, 162, 255)
-                    : Colors.orange,
-                size: 24,
-              ),
+            trailing: DayNightSwitch(
+              initiallyDark: themeProvider.isDarkMode,
+              onChange: (bool value) {
+                themeProvider.toggleTheme();
+              },
+              size: 35,  // Größe des Switches
+              duration: const Duration(milliseconds: 400),
             ),
-            value: themeProvider.isDarkMode,
-            onChanged: (bool value) {
-              themeProvider.toggleTheme();
-            },
-            activeColor: const Color.fromARGB(255, 31, 31, 31).withOpacity(0.95),  // Leicht transparenter weißer Kreis
-            inactiveThumbColor: const Color.fromARGB(255, 70, 70, 70).withOpacity(0.95),
-            activeTrackColor: const Color.fromARGB(255, 76, 175, 79).withOpacity(0.8),  // Leicht transparentes Grün
-            inactiveTrackColor: const Color.fromARGB(255, 255, 255, 255).withOpacity(0.8),  // Leicht transparentes Rot
           ),
           const Divider(),
           ListTile(
