@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;  // Import für math Funktionen
+import 'dart:math' as math;  // Für math.atan2, math.cos, math.sin, math.pi
 
 
 class NetworkPlanScreen extends StatefulWidget {
