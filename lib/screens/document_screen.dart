@@ -32,6 +32,14 @@ class DocumentScreen extends StatelessWidget {
         'description': 'Übungsaufgaben zu Sortieralgorithmen',
       },
     ],
+        'Osi_Schichtmodell': [
+      {
+        'title': 'Osi Schichtmodell',
+        'assets': 'assets/Osi_Schichtmodell/osi-schichtenmodell.pdf',
+        'type': 'PDF',
+        'description': 'Übungsaufgaben zum Schichtmodell',
+      },
+    ],
   };
 
   Icon _getFileIcon(String type) {
