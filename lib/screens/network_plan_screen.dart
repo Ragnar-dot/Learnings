@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;  // Für math.atan2, math.cos, math.sin, math.pi
-
+import '../theme/app_theme.dart';
+import 'package:provider/provider.dart';
+import '../providers/theme_provider.dart';
 
 class NetworkPlanScreen extends StatefulWidget {
   const NetworkPlanScreen({super.key});
@@ -302,7 +304,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
             ? 'Korrekt! $field für Vorgang $nodeId ist richtig.'
             : 'Der Wert für $field ist nicht korrekt.'),
         backgroundColor: isValid ? Colors.green : Colors.red,
-        duration: const Duration(seconds: 1),
+        duration: const Duration(seconds: 1),                           // Dauer der Anzeige des Snackbars
       ),
     );
   }
@@ -485,8 +487,11 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: Theme.of(context).brightness == Brightness.dark
+            ? const Color.fromARGB(255, 107, 107, 107)
+            : const Color.fromARGB(255, 175, 175, 175),
         title: const Text('Hilfe zur Berechnung'),
-        content: const SingleChildScrollView(
+        content: SingleChildScrollView(
           child: Text(
             'Vorwärtsrechnung:\n'
             '• FAZ = Maximum der FEZ aller Vorgänger\n'
@@ -500,13 +505,30 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
             'Besonderheiten:\n'
             '• Startknoten A: FAZ = 0\n'
             '• Endknoten I: SEZ = FEZ\n'
-            '• Kritischer Pfad: GP = 0'
+            '• Kritischer Pfad: GP = 0',
+            style: TextStyle(
+              color: Theme.of(context).brightness == Brightness.dark
+                  ? const Color.fromARGB(255, 248, 248, 248)
+                  : Colors.black,
+            ),
           ),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Verstanden'),
+            child: Text(
+              'Verstanden',
+              style: TextStyle(
+                color: Theme.of(context).brightness == Brightness.dark 
+                    ? Colors.white 
+                    : Colors.black,
+              ),
+            ),
+            style: TextButton.styleFrom(
+              backgroundColor: Theme.of(context).brightness == Brightness.dark
+                  ? const Color.fromARGB(255, 218, 218, 218)
+                  : const Color.fromARGB(255, 116, 115, 115),
+            ),
           ),
         ],
       ),
@@ -525,9 +547,11 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
         children: [
           // Header
           TableRow(
-            decoration: BoxDecoration(
-              color: Colors.blue.shade50,
-            ),
+                 decoration: BoxDecoration(
+                color: Theme.of(context).brightness == Brightness.dark
+                    ? const Color.fromARGB(255, 65, 65, 65)  // Dark Mode Farbe
+                    : const Color.fromARGB(255, 107, 107, 107),  // Light Mode Farbe
+              ),
             children: const [
               Padding(
                 padding: EdgeInsets.all(8),
@@ -563,6 +587,11 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
 
   TableRow _buildTableRow(String id, String duration, String predecessors) {
     return TableRow(
+      decoration: BoxDecoration(
+        color: Theme.of(context).brightness == Brightness.dark
+            ? const Color.fromARGB(255, 65, 65, 65)  // Dark Mode Farbe
+            : const Color.fromARGB(255, 158, 158, 158),  // Light Mode Farbe
+      ),
       children: [
         Padding(
           padding: const EdgeInsets.all(9),
@@ -800,8 +829,8 @@ class NetworkPlanPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.blue.shade400
-      ..strokeWidth = 1.5
+      ..color = const Color.fromARGB(136, 66, 164, 245)
+      ..strokeWidth = 1.0
       ..style = PaintingStyle.stroke;
 
     // Zeichne Verbindungslinien basierend auf Vorgänger-Nachfolger-Beziehungen
