@@ -488,9 +488,16 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
       context: context,
       builder: (context) => AlertDialog(
         backgroundColor: Theme.of(context).brightness == Brightness.dark
-            ? const Color.fromARGB(255, 107, 107, 107)
-            : const Color.fromARGB(255, 175, 175, 175),
-        title: const Text('Hilfe zur Berechnung'),
+            ? const Color.fromARGB(255, 54, 54, 54)
+            : const Color.fromARGB(255, 206, 206, 206),
+        title: Text(
+          'Hilfe zur Berechnung',
+          style: TextStyle(
+            color: Theme.of(context).brightness == Brightness.dark
+                ? const Color.fromARGB(255, 17, 17, 17)
+                : const Color.fromARGB(255, 0, 0, 0),
+          ),
+        ),
         content: SingleChildScrollView(
           child: Text(
             'Vorwärtsrechnung:\n'
@@ -508,8 +515,8 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
             '• Kritischer Pfad: GP = 0',
             style: TextStyle(
               color: Theme.of(context).brightness == Brightness.dark
-                  ? const Color.fromARGB(255, 248, 248, 248)
-                  : Colors.black,
+                  ? const Color.fromARGB(255, 17, 17, 17)
+                  : const Color.fromARGB(255, 0, 0, 0),
             ),
           ),
         ),
@@ -520,14 +527,14 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
               'Verstanden',
               style: TextStyle(
                 color: Theme.of(context).brightness == Brightness.dark 
-                    ? Colors.white 
-                    : Colors.black,
+                    ? const Color.fromARGB(255, 66, 66, 66) 
+                    : const Color.fromARGB(255, 244, 244, 244),
               ),
             ),
             style: TextButton.styleFrom(
               backgroundColor: Theme.of(context).brightness == Brightness.dark
-                  ? const Color.fromARGB(255, 218, 218, 218)
-                  : const Color.fromARGB(255, 116, 115, 115),
+                  ? const Color.fromARGB(255, 238, 238, 238)
+                  : const Color.fromARGB(255, 87, 87, 87),
             ),
           ),
         ],
@@ -589,8 +596,8 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
     return TableRow(
       decoration: BoxDecoration(
         color: Theme.of(context).brightness == Brightness.dark
-            ? const Color.fromARGB(255, 65, 65, 65)  // Dark Mode Farbe
-            : const Color.fromARGB(255, 158, 158, 158),  // Light Mode Farbe
+            ? const Color.fromARGB(255, 241, 241, 241)  // Dark Mode Farbe
+            : const Color.fromARGB(255, 175, 175, 175),  // Light Mode Farbe
       ),
       children: [
         Padding(
@@ -664,8 +671,8 @@ class NetworkNode extends StatelessWidget {
             margin: const EdgeInsets.all(8),
             decoration: BoxDecoration(
               border: Border.all(color: Colors.blue.shade300),
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(2),
+              color: const Color.fromARGB(255, 255, 255, 255),                        // Light Mode Farbe Boxes
+              borderRadius: BorderRadius.circular(1),
             ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -676,9 +683,12 @@ class NetworkNode extends StatelessWidget {
                   alignment: Alignment.center,
                   child: Text(
                     node['id'] as String,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
+                      color: Theme.of(context).brightness == Brightness.dark
+                          ? Colors.black  // Schwarz im Dark Mode
+                          : Colors.black, // Schwarz im Light Mode
                     ),
                   ),
                 ),
