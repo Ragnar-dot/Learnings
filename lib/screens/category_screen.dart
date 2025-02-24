@@ -76,6 +76,11 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': Icons.account_tree,
       'description': 'Netzplantechnik, Vorgänge und Abhängigkeiten',
     },
+        {
+      'name': 'Prüfungsfragen',
+      'icon': Icons.document_scanner_rounded,
+      'description': 'Simulierte Prüfungsfragen',
+    },
   ];
 
   Map<String, QuizStats> categoryStats = {};

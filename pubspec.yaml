@@ -16,7 +16,7 @@ dependencies:
   path_provider: ^2.1.2
   flutter_inset_shadow: ^2.0.3
   flutter_svg: ^2.0.17
-  day_night_themed_switcher: ^1.2.5
+
   
 
 dev_dependencies:
@@ -33,6 +33,7 @@ flutter:
     - assets/lernfeld3.json
     - assets/lernfeld4.json
     - assets/lernfeld5.json
+    - assets/prüfungsfragen.json
     - assets/exercises/sortieralgorithmen_uebungen.pdf
     - assets/SQL/Befehlssammlung_SQL.pdf
     - assets/SQL/sql_befehle.pdf

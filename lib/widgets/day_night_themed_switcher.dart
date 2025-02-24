@@ -1,4 +1,4 @@
-import 'package:day_night_themed_switcher/src/painters.dart';
+import './painters.dart';
 import 'package:flutter/material.dart' hide BoxShadow, BoxDecoration;
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_inset_shadow/flutter_inset_shadow.dart';
@@ -178,7 +178,7 @@ class _DayNightSwitchState extends State<DayNightSwitch>
                 height: height,
                 width: width,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(height / 1),
+                  borderRadius: BorderRadius.circular(height / 2),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black.withValues(alpha: 0.6),
