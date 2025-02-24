@@ -63,6 +63,9 @@ class _QuizScreenState extends State<QuizScreen> {
         case 'Lernfeld5':
           jsonFile = 'assets/lernfeld5.json';
           break;
+        case 'Prüfungsfragen':
+          jsonFile = 'assets/prüfungsfragen.json';
+          break;
         default:
           jsonFile = 'assets/questions.json';
       }
