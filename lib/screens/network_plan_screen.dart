@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;  // Für math.atan2, math.cos, math.sin, math.pi
-import '../theme/app_theme.dart';
-import 'package:provider/provider.dart';
-import '../providers/theme_provider.dart';
 
 class NetworkPlanScreen extends StatefulWidget {
   const NetworkPlanScreen({super.key});
@@ -523,6 +520,11 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
+            style: TextButton.styleFrom(
+              backgroundColor: Theme.of(context).brightness == Brightness.dark
+                  ? const Color.fromARGB(255, 238, 238, 238)
+                  : const Color.fromARGB(255, 87, 87, 87),
+            ),
             child: Text(
               'Verstanden',
               style: TextStyle(
@@ -530,11 +532,6 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
                     ? const Color.fromARGB(255, 66, 66, 66) 
                     : const Color.fromARGB(255, 244, 244, 244),
               ),
-            ),
-            style: TextButton.styleFrom(
-              backgroundColor: Theme.of(context).brightness == Brightness.dark
-                  ? const Color.fromARGB(255, 238, 238, 238)
-                  : const Color.fromARGB(255, 87, 87, 87),
             ),
           ),
         ],

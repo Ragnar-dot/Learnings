@@ -1,12 +1,12 @@
 {
     "categories": {
-      "Prüfungsfragen": {
+      "Prüfungsfragen Set 1": {
         "description": "Simulierte Prüfungsfragen",
         "questions": [
           {
             "id": 1,
             "difficulty": "leicht",
-            "question": "Nenne vier Merkmale eines Projektes ",
+            "question": "Nenne vier Merkmale eines Projektes",
             "options": [
               "Einmaligkeit, Zeitliche Begrenzung, Ressourcenbegrenzung, Zielvorgabe,"
 

@@ -1,0 +1,22 @@
+{
+  "categories": {
+    "Prüfungsfragen Set 2": {
+      "description": "Simulierte Prüfungsfragen",
+      "questions": [
+          {
+            "id": 1,
+            "difficulty": "leicht",
+            "question": "ff",
+            "options": [
+              "ff"
+
+
+            ],
+            "correctAnswer": 0
+          }
+
+
+        ]
+      }
+    }
+}
