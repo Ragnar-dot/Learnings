@@ -6,33 +6,128 @@
           {
             "id": 1,
             "difficulty": "leicht",
-            "question": "Was bedeutet CMS ?",
+            "question": "Was ist ein Lastenheft?",
             "options": [
-              "Content Management System"
-
-
+              "Ein detaillierter Anforderungskatalog, der die SOLL-Funktionen und SOLL-Prozesse des Unternehmens definiert"
+              
             ],
             "correctAnswer": 0
           },
           {
             "id": 2,
-            "difficulty": "leicht",
-            "question": "Was bedeutet DMS ?",
+            "difficulty": "mittel",
+            "question": "Was ist der Hauptunterschied zwischen Lastenheft und Pflichtenheft?",
             "options": [
-              "Document Management System"
+              "Das Lastenheft wird vom Auftraggeber erstellt und beschreibt die Anforderungen, das Pflichtenheft wird vom Anbieter erstellt und beschreibt die technische Umsetzung"
+              
             ],
             "correctAnswer": 0
           },
           {
             "id": 3,
-            "difficulty": "leicht",
-            "question": "Was bedeutet A.I.D.A ?",
+            "difficulty": "mittel",
+            "question": "Welche Rolle spielt das Pflichtenheft im Projekt?",
             "options": [
-              "Attention, Interest, Desire, Action"
+              "Es dient als elementare Arbeitsgrundlage und Vertragsgrundlage für das Projekt"
+              
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 4,
+            "difficulty": "schwer",
+            "question": "Wer erstellt das Pflichtenheft?",
+            "options": [
+              "Primär der Software-Anbieter in Zusammenarbeit mit dem Auftraggeber"
+            
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 5,
+            "difficulty": "mittel",
+            "question": "Wozu dient das Lastenheft im Softwareprojekt?",
+            "options": [
+              "Als Grundlage für das Angebot des Software-Anbieters und Basis für das Pflichtenheft"
+              
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 6,
+            "difficulty": "leicht",
+            "question": "Nenne Nichtfunktionale Qualitätsanforderungen",
+            "options": [
+              "Benutzbarkeit, Zuverlässigkeit, Effizienz, Änderbarkeit, Übertagbarkeit"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 7,
+            "difficulty": "leicht",
+            "question": "Was macht ein Compiler",
+            "options": [
+              "Ein Compiler übersetzt Quellcode in Maschinencode ohne jedoch die Befehle ausführen zu können"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 8,
+            "difficulty": "leicht",
+            "question": "Was macht ein Interpreter",
+            "options": [
+              "Ein Interpreter interpretiert Quellcode während der Laufzeit eines Programms, er bearbeitet ein Programm Zeilenweise, wobei jede Zeile einer Syntaxprüfung unterzogen wird"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 9,
+            "difficulty": "leicht",
+            "question": "Wozu dient ein Debugger",
+            "options": [
+              "Zur Fehleranalyse und -behebung"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 10,
+            "difficulty": "leicht",
+            "question": "Beschreibe was ein Application Framework ist",
+            "options": [
+              "Sie dienen als Programmiergerüst für eine bestimmte Klasse von Anwendungen, die ihrerseits der Bereitstellung von Funktionen und Programmstruckturen dient"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 11,
+            "difficulty": "leicht",
+            "question": "Beschreibe was ein Web Framework ist",
+            "options": [
+              "Ein Web Framework ist ein Programmiergerüst für die Entwicklung von Webanwendungen, sie sind in der Regel dynamisch verwendbar."
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 12,
+            "difficulty": "leicht",
+            "question": "Was sind Bestandteile einer Programmiersprache?",
+            "options": [
+              "Syntax, Semantik, Bibliotheken, Konventionen"
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 13,
+            "difficulty": "leicht",
+            "question": "Was ist die Syntax einer Programmiersprache?",
+            "options": [
+              "Die Syntax einer Programmiersprache ist deren Grammatik. Sie beschreibt die Regeln, zulässige Sprachelemente und deren Struktur nach denen ein Programm geschrieben wird."
             ],
             "correctAnswer": 0
           }
-
+          
+           
+          
         ]
       }
     }
