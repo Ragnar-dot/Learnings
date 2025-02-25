@@ -76,8 +76,13 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': Icons.account_tree,
       'description': 'Netzplantechnik, Vorgänge und Abhängigkeiten',
     },
+    {
+      'name': 'Prüfungsfragen Set 1',
+      'icon': Icons.document_scanner_rounded,
+      'description': 'Simulierte Prüfungsfragen',
+    },
         {
-      'name': 'Prüfungsfragen',
+      'name': 'Prüfungsfragen Set 2',
       'icon': Icons.document_scanner_rounded,
       'description': 'Simulierte Prüfungsfragen',
     },

@@ -5,7 +5,6 @@ import '../screens/start_screen.dart';
 import '../screens/category_screen.dart';
 import '../screens/video_screen.dart';
 import '../screens/document_screen.dart';
-import '../theme/app_theme.dart';
 import '../widgets/day_night_themed_switcher.dart';
 
 class AppDrawer extends StatelessWidget {

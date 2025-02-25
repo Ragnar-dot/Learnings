@@ -44,52 +44,55 @@ class _QuizScreenState extends State<QuizScreen> {
   Future<void> loadQuestions() async {
     try {
       print('Loading category: ${widget.category}');
-
-      // Lade die richtige JSON-Datei
-      String jsonFile;
+      
+      // Wähle die richtige JSON-Datei basierend auf der Kategorie
+      String jsonPath;
       switch(widget.category) {
+        case 'Prüfungsfragen Set 1':
+          jsonPath = 'assets/prüfungsfragen_set_1.json';
+          break;
+        case 'Prüfungsfragen Set 2':
+          jsonPath = 'assets/prüfungsfragen_set_2.json';
+          break;
         case 'Lernfeld1':
-          jsonFile = 'assets/lernfeld1.json';
+          jsonPath = 'assets/lernfeld1.json';
           break;
         case 'Lernfeld2':
-          jsonFile = 'assets/lernfeld2.json';
+          jsonPath = 'assets/lernfeld2.json';
           break;
         case 'Lernfeld3':
-          jsonFile = 'assets/lernfeld3.json';
+          jsonPath = 'assets/lernfeld3.json';
           break;
         case 'Lernfeld4':
-          jsonFile = 'assets/lernfeld4.json';
+          jsonPath = 'assets/lernfeld4.json';
           break;
         case 'Lernfeld5':
-          jsonFile = 'assets/lernfeld5.json';
-          break;
-        case 'Prüfungsfragen':
-          jsonFile = 'assets/prüfungsfragen.json';
+          jsonPath = 'assets/lernfeld5.json';
           break;
         default:
-          jsonFile = 'assets/questions.json';
+          jsonPath = 'assets/questions.json';
       }
 
-      final jsonString = await rootBundle.loadString(jsonFile);
-      print('Loaded JSON from: $jsonFile');
-
+      print('Loading from path: $jsonPath');
+      final jsonString = await rootBundle.loadString(jsonPath);
+      
       final Map<String, dynamic> jsonData = json.decode(jsonString);
       print('Decoded JSON data: $jsonData');
-
-      // Prüfe die JSON-Struktur
-      if (!jsonData.containsKey('categories') || 
-          !jsonData['categories'].containsKey(widget.category)) {
-        throw Exception('Invalid JSON structure or missing category');
+      
+      if (!jsonData.containsKey('categories')) {
+        throw Exception('Invalid JSON structure - missing categories');
       }
 
       final categoryData = jsonData['categories'][widget.category];
-      print('Category data: $categoryData');
+      if (categoryData == null) {
+        throw Exception('Category ${widget.category} not found');
+      }
 
       setState(() {
-        selectedCategory = Category.fromJson(widget.category, categoryData);
-        questions = selectedCategory.questions;
+        questions = (categoryData['questions'] as List)
+            .map((q) => Question.fromJson(q))
+            .toList();
         
-        // Filter für falsche Fragen
         if (widget.wrongQuestionIds != null) {
           questions = questions
               .where((q) => widget.wrongQuestionIds!.contains(q.id))
@@ -103,14 +106,7 @@ class _QuizScreenState extends State<QuizScreen> {
       });
     } catch (e) {
       print('Error loading questions: $e');
-      if (!mounted) return;
-      
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Fehler beim Laden der Fragen: $e'),
-          backgroundColor: Colors.red,
-        ),
-      );
+      rethrow;
     }
   }
 
