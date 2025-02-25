@@ -6,15 +6,47 @@
           {
             "id": 1,
             "difficulty": "leicht",
-            "question": "ff",
+            "question": "Bennene das UML Diagramm, das die Struktur eines Programms  und dessen Abhängigkeiten zeigt",
             "options": [
-              "ff"
+              "Klassendiagramm"
+
+
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 2,
+            "difficulty": "leicht",
+            "question": "was bedeutet Aggregation?",
+            "options": [
+              "Eine Beziehung zwischen zwei Klassen, bei der eine Klasse eine andere Klasse als Teil ihrer Struktur enthält"
+
+
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 3,
+            "difficulty": "leicht",
+            "question": "was bedeutet Komposition?",  
+            "options": [
+              "Komposition ist ein Prinzip der Objektorientierten Programmierung (OOP), bei dem eine Klasse Objekte einer anderen Klasse als Attribute enthält, anstatt von ihr zu erben. Dadurch entsteht eine Hat-ein-Beziehung statt einer Ist-ein-Beziehung (wie bei Vererbung)."
+
+
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 4,
+            "difficulty": "leicht",
+            "question": "Was ist eine Vererbung?",
+            "options": [
+              "Eine Beziehung zwischen zwei Klassen, bei der eine Klasse eine andere Klasse als Teil ihrer Struktur enthält"
 
 
             ],
             "correctAnswer": 0
           }
-
 
         ]
       }
