@@ -176,7 +176,7 @@
                                   "correctAnswer": 0 
                                   },
                                   {
-                                    "id": 19,
+                                    "id": 20,
                                     "difficulty": "schwer",
                                     "question": "Was arbeitet auf dem Physical-Layer 1 ?",
                                     "options": [
@@ -186,7 +186,7 @@
                                     "correctAnswer": 0 
                                     },
                                     {
-                                      "id": 19,
+                                      "id": 21,
                                       "difficulty": "leicht",
                                       "question": "Was ist ein File Server ?",
                                       "options": [
@@ -196,7 +196,7 @@
                                       "correctAnswer": 0 
                                       },
                                       {
-                                        "id": 19,
+                                        "id": 22,
                                         "difficulty": "leicht",
                                         "question": "Was ist ein Print Server ?",
                                         "options": [
@@ -206,7 +206,7 @@
                                         "correctAnswer": 0 
                                         },
                                         {
-                                          "id": 19,
+                                          "id": 23,
                                           "difficulty": "leicht",
                                           "question": "Was bedeutet und ist ein NAS ?",
                                           "options": [
@@ -214,7 +214,47 @@
                                           ],
                                           
                                           "correctAnswer": 0 
-                                          }
+                                          },
+                                          {
+                                            "id": 24,
+                                            "difficulty": "mittel",
+                                            "question": "Wozu dient ein Terminal Server ?",
+                                            "options": [
+                                              "Ein Terminalserver ist ein Server, der Benutzern den Zugriff auf Anwendungen und Daten von entfernten Standorten aus ermöglicht. Benutzer können sich über das Netzwerk mit dem Terminalserver verbinden und Anwendungen und Daten ausführen, als ob sie lokal auf ihrem Computer ausgeführt würden.(Virtueller Arbeitsplatz zum Anschließen von Thin Clients)"
+                                            ],
+                                            
+                                            "correctAnswer": 0 
+                                            },
+                                            {
+                                              "id": 25,
+                                              "difficulty": "mittel",
+                                              "question": "Was ist ein WAN ?",
+                                              "options": [
+                                                "Ein Wide Area Network (WAN) ist ein Netzwerk, das sich über große geografische Entfernungen erstreckt und mehrere lokale Netzwerke miteinander verbindet. Öffentliche Netze über große Distanzen, Providernetze, DSL, Kabelmodem."
+                                              ],
+                                              
+                                              "correctAnswer": 0 
+                                              },
+                                              {
+                                                "id": 26,
+                                                "difficulty": "mittel",
+                                                "question": "Was versteht man unter VPN ?",
+                                                "options": [
+                                                  "Ein Virtual Private Network (VPN) ist ein Netzwerk, das eine sichere Verbindung über ein öffentliches Netzwerk wie das Internet herstellt. VPNs verschlüsseln den Datenverkehr und schützen die Privatsphäre der Benutzer, indem sie ihre IP-Adresse und ihren Standort verbergen."
+                                                ],
+                                                
+                                                "correctAnswer": 0 
+                                                },
+                                                {
+                                                  "id": 27,
+                                                  "difficulty": "mittel",
+                                                  "question": "Was versteht man unter VLAN ?",
+                                                  "options": [
+                                                    "Ein Virtual Local Area Network (VLAN) ist ein Virtuelles LAN das auf einer Physischen LAN mehrere Virtuelle LANs erstellt. VLANs ermöglichen es, Netzwerkgeräte in logische Gruppen zu unterteilen, unabhängig von ihrer physischen Position im Netzwerk."
+                                                  ],
+                                                  
+                                                  "correctAnswer": 0 
+                                                  }
         ]
       }
     }
