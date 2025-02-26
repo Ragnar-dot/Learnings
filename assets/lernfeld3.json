@@ -66,7 +66,155 @@
               "aktive: Switches,Firewalls,Gateways,WLAN, Accespoints. passive: Pathfelder, Patchkabel, Anschlussdosen, Netzwerkschränke, DSL-Splitter"
             ],
             "correctAnswer": 0 
-            }
+            },
+            {
+              "id": 8,
+              "difficulty": "leicht",
+              "question": "Was sind Managebare Switches ?",
+              "options": [
+                "Managebare Switches sind Switches die konfigurierbar sind, über eine Benutzeroberfläche konfiguriert und überwacht werden können. Sie bieten erweiterte Funktionen wie VLANs, Quality of Service (Geben Sie an, welcher Datenverkehr eine höhere oder niedrigere Priorität hat, unabhängig von der aktuellen Netzwerkbandbreite oder der relativen Prioritätseinstellung des Datenverkehrs, wenn er im Switch empfangen wird. Ändern Sie die Priorität des ausgehenden Datenverkehrs.), Port Mirroring (Portspiegelung)"
+              ],
+              "correctAnswer": 0 
+              },
+              {
+                "id": 9,
+                "difficulty": "leicht",
+                "question": "Was bedeutet SaaS ?",
+                "options": [
+                  "Software as a Service (SaaS) ist ein Abrechnungsmodell, bei dem Softwareanwendungen über das Internet bereitgestellt und genutzt werden. Die Softwareanwendungen werden von einem Anbieter zentral betrieben und gewartet. Die Kunden zahlen für die Nutzung der Softwareanwendungen"
+                ],
+                "correctAnswer": 0 
+                },
+                {
+                  "id": 10,
+                  "difficulty": "leicht",
+                  "question": "Was bedeutet PaaS ?",
+                  "options": [
+                    "Platform as a Service (PaaS) ist ein Abrechnungsmodell, bei dem eine Plattform für die Entwicklung, den Betrieb und die Verwaltung von Softwareanwendungen über das Internet bereitgestellt wird. Die Plattform wird von einem Anbieter zentral betrieben und gewartet. Die Kunden zahlen für die Nutzung der Plattform"
+                  ],
+                  "correctAnswer": 0 
+                  },
+                  {
+                    "id": 11,
+                    "difficulty": "leicht",
+                    "question": "Was bedeutet EaaS ?",
+                    "options": [
+                      "Everything as a Service (EaaS) ist ein Abrechnungsmodell, bei dem alle Dienstleistungen über das Internet bereitgestellt und genutzt werden. Die Dienstleistungen werden von einem Anbieter zentral betrieben und gewartet. Die Kunden zahlen für die Nutzung der Dienstleistungen"
+                    ],
+                    "correctAnswer": 0 
+                    },
+                    {
+                      "id": 12,
+                      "difficulty": "mittel",
+                      "question": "Beschreibe Unicast, Multicast, Broadcast und Anycast",
+                      "options": [
+                        "Unicast: Eine Nachricht an einen Empfänger (Einzelansprache), Multicast: Eine Nachricht an mehrere Empfänger, Broadcast: Eine Nachricht an alle Empfänger, Anycast: Eine Nachricht an den nächstliegenden Empfänger"
+                      ],
+                      
+                      "correctAnswer": 0 
+                      },
+                      {
+                        "id": 13,
+                        "difficulty": "mittel",
+                        "question": "Was ist der Umrechnuingsfaktor von Bit in Byte ?",
+                        "options": [
+                          "1 Byte = 8 Bit"
+                        ],
+                        
+                        
+                        "correctAnswer": 0 
+                        }, 
+                        {
+                          "id": 14,
+                          "difficulty": "mittel",
+                          "question": "Was ist der Umrechnuingsfaktor von Mibyte in Gibyte ?",
+                          "options": [
+                            "1 Gibyte = 1024 Mibyte"
+                          ],
+                          
+                          "correctAnswer": 0 
+                          },
+                          {
+                            "id": 15,
+                            "difficulty": "schwer",
+                            "question": "Was versteht man unter  Topologie im Netzwerk ?",
+                            "options": [
+                              "Die Netzwerktopologie (Landkarte) beschreibt die räumliche Anordnung der Netzwerkkomponenten und die Art und Weise, wie sie miteinander verbunden sind. Die Netzwerktopologie bestimmt die Übertragungswege und die Kommunikationsmöglichkeiten im Netzwerk."
+                            ],
+                            
+                            "correctAnswer": 0 
+                            },
+                            {
+                              "id": 16,
+                              "difficulty": "mittel",
+                              "question": "beschreibe was ein Router ist",
+                              "options": [
+                                "Ein Router ist ein Netzwerkgerät, das den Datenverkehr zwischen verschiedenen Netzwerken weiterleitet. Router arbeiten auf der Netzwerkschicht (Network Layer Schicht 3) des OSI-Modells und verwenden IP-Adressen, um Datenpakete an das Zielnetzwerk weiterzuleiten."
+                              ],
+                              
+                              
+                              "correctAnswer": 0 
+                              },
+                              {
+                                "id": 17,
+                                "difficulty": "schwer",
+                                "question": "Auf welcher Schicht arbeitet der Switch ?",
+                                "options": [
+                                  "Der Switch arbeitet auf der Datensicherungsschicht (Data Link Layer Schicht 2) des OSI-Modells. Der Switch verwendet MAC-Adressen, um Datenpakete an das Zielgerät im lokalen Netzwerk weiterzuleiten."
+                                ],
+                                
+                                "correctAnswer": 0 
+                                },
+                                {
+                                  "id": 18,
+                                  "difficulty": "schwer",
+                                  "question": "Auf welcher OSI Schicht arbeitet die Firewall ?",
+                                  "options": [
+                                    "Layer 4 (Transportschicht) und Layer 7 (Anwendungsschicht)"
+                                  ],
+                                  
+                                  "correctAnswer": 0 
+                                  },
+                                  {
+                                    "id": 19,
+                                    "difficulty": "schwer",
+                                    "question": "Was arbeitet auf dem Physical-Layer 1 ?",
+                                    "options": [
+                                      "Kabel und Leitungen: Kupferkabel (z.B. Twisted-Pair-Kabel, Koaxialkabel) und Glasfaserkabel, die die physische Verbindung zwischen Geräten herstellen."
+                                    ],
+                                    
+                                    "correctAnswer": 0 
+                                    },
+                                    {
+                                      "id": 19,
+                                      "difficulty": "leicht",
+                                      "question": "Was ist ein File Server ?",
+                                      "options": [
+                                        "Ein Fileserver ist ein Server, der Dateien speichert und verwaltet. Benutzer können auf Dateien auf dem Fileserver zugreifen, Dateien auf den Fileserver hochladen und Dateien vom Fileserver herunterladen."
+                                      ],
+                                      
+                                      "correctAnswer": 0 
+                                      },
+                                      {
+                                        "id": 19,
+                                        "difficulty": "leicht",
+                                        "question": "Was ist ein Print Server ?",
+                                        "options": [
+                                          "Ein Printserver ist ein Server, der Druckaufträge von Benutzern entgegennimmt und an Drucker weiterleitet. Benutzer können Druckaufträge an den Printserver senden, der die Druckaufträge an den Drucker weiterleitet."
+                                        ],
+                                        
+                                        "correctAnswer": 0 
+                                        },
+                                        {
+                                          "id": 19,
+                                          "difficulty": "leicht",
+                                          "question": "Was bedeutet und ist ein NAS ?",
+                                          "options": [
+                                            "Network Attached Storage (NAS) ist ein Speichergerät, das über das Netzwerk mit anderen Geräten verbunden ist. NAS-Geräte speichern Dateien und ermöglichen Benutzern den Zugriff auf Dateien über das Netzwerk."
+                                          ],
+                                          
+                                          "correctAnswer": 0 
+                                          }
         ]
       }
     }
