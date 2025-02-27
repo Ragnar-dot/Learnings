@@ -10,7 +10,7 @@ class AppTheme {
   static const Color secondaryTextColor = Color(0xFF757575); // Mittelgrau
 
   static final _baseTheme = ThemeData(
-    primaryColor: primaryColor,
+    primaryColor: const Color.fromARGB(255, 33, 65, 243),
     cardTheme: const CardTheme(
       elevation: 4,
       margin: EdgeInsets.all(8),
@@ -29,7 +29,7 @@ class AppTheme {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor: primaryColor,
+        backgroundColor: const Color.fromARGB(255, 34, 108, 204),
         foregroundColor: Colors.white,
         padding: const EdgeInsets.symmetric(
           horizontal: 24,
