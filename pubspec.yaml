@@ -35,6 +35,7 @@ flutter:
     - assets/lernfeld5.json
     - assets/prüfungsfragen_set_1.json
     - assets/prüfungsfragen_set_2.json
+    - assets/prüfungsfragen_set_3.json
     - assets/exercises/sortieralgorithmen_uebungen.pdf
     - assets/SQL/Befehlssammlung_SQL.pdf
     - assets/SQL/sql_befehle.pdf

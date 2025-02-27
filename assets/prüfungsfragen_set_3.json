@@ -1,0 +1,284 @@
+{
+  "categories": {
+    "Prüfungsfragen Set 3": {
+      "description": "Simulierte Prüfungsfragen",
+      "questions": [
+          {
+            "id": 1,
+            "difficulty": "leicht",
+            "question": "Nenne zwei Vorteile die sich durch 5G ergeben",
+            "options": [
+              "höhere Bandbreite, geringere Latenzzeiten, höchere download und upload Geschwindigkeiten"
+
+            ],
+            "correctAnswer": 0
+          }, 
+          {
+            "id": 2,
+            "difficulty": "leicht",
+            "question": "Was sind die Methoden einer Bedarfanalyse?",
+            "options": [
+              "Interviews, Fragebögen, Beobachtungen, Dokumentenanalysen, Expertenbefragungen, Benchmarking."
+            
+
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 3,
+            "difficulty": "leicht",
+            "question": "Was ist die Bedeutung von EULA ?",
+            "options": [
+              "Ein Endbenutzer-Lizenzvertrag gilt in der Regel für verschiedene Arten von Software und nicht für physische Waren, obwohl er auch für Nicht-Software-Produkte gelten kann. Er wird für einmalig verkaufte Produkte verwendet (nicht für Abonnements). Er stellt eine Vereinbarung zwischen dem Software-Entwickler oder -Unternehmen, dem Lizenzgeber oder Verkäufer und dem Verbraucher bezüglich der Nutzung der Software her.End User License Agreement"
+            ],
+            
+
+            
+            "correctAnswer": 0
+          },
+          {
+            "id": 4,
+            "difficulty": "leicht",
+            "question": "Was ist die Bedeutung von OEM ?",
+            "options": [
+              "Die Abkürzung OEM steht für Original Equipment Manufacturer, was so viel bedeutet wie Erstausrüster oder Originalgerätehersteller."
+              
+            ],
+
+            "correctAnswer": 0
+          },
+          {
+            "id": 5,
+            "difficulty": "leicht",
+            "question": "Was bedeutet GPL ?",
+            "options": [
+              "GPL steht für General Public License und ist eine Lizenz, die von der Free Software Foundation entwickelt wurde. Sie erlaubt es Benutzern, Software zu verwenden, zu ändern und zu verbreiten, solange sie die Lizenzbedingungen einhalten."
+              
+            ],
+
+            "correctAnswer": 0
+          },
+          {
+            "id": 6,
+            "difficulty": "leicht",
+            "question": "Was ist ein Lizenzvertrag ?",
+            "options": [
+              "Ein Lizenzvertrag ist ein Vertrag, der es einem Lizenznehmer erlaubt, die Rechte an geistigem Eigentum eines Lizenzgebers zu nutzen. Der Lizenzvertrag legt fest, wie der Lizenznehmer das geistige Eigentum nutzen darf, und enthält in der Regel Bedingungen, die die Rechte und Pflichten beider Parteien regeln."
+              
+            ],
+
+            "correctAnswer": 0
+          },
+          
+          
+          {
+            "id": 7,
+            "difficulty": "leicht",
+            "question": "Unterschiede zwischen Leasingvertrag und Mietvertrag ?",
+            "options": [
+              "Leasingvertrag: Der Leasingnehmer hat die Möglichkeit, das Leasingobjekt am Ende der Laufzeit zu einem vorher festgelegten Preis zu kaufen. Mietvertrag: Der Mieter hat keine Möglichkeit, das Mietobjekt zu kaufen."
+              
+            ],
+
+            "correctAnswer": 0
+          },
+          {
+            "id": 8,
+            "difficulty": "leicht",
+            "question": "Nenne Elemente des Abnahmeprozesses",
+            "options": [
+              "Abnahmevorbereitung, Abnahmedurchführung, Abnahmeentscheidung, Abnahmeprotokoll, Bereitstellung"
+              
+            ],
+
+            "correctAnswer": 0
+          },
+
+
+
+
+          {
+            "id": 9,
+            "difficulty": "leicht",
+            "question": "Nenne Elemente des Abnahmeprozesses",
+            "options": [
+              "Abnahmevorbereitung, Abnahmedurchführung, Abnahmeentscheidung, Abnahmeprotokoll, Bereitstellung"
+              
+            ],
+
+            "correctAnswer": 0
+          },
+
+
+
+          {
+            "id": 10,
+            "difficulty": "leicht",
+            "question": "Nenne den Zweck des Abnahmeprotokolls",
+            "options": [
+              "Ein Abnahmeprotokoll für ein Softwareprodukt in der IT dient dazu, den Abschluss des Softwareentwicklungsprozesses zu dokumentieren und sicherzustellen, dass das entwickelte Produkt die vereinbarten Anforderungen und Qualitätsstandards erfüllt. Es schützt sowohl den Auftraggeber als auch den Auftragnehmer, indem es alle relevanten Informationen zur Abnahme festhält und eine rechtliche Grundlage für die endgültige Übergabe der Software bietet"
+              
+            ],
+            
+
+            "correctAnswer": 0
+          },
+
+          {
+            "id": 11,
+            "difficulty": "leicht",
+            "question": "Nenne Inhalte eines Abnahmeprotokolls",
+            "options": [
+              "Projektbezeichnung und -beschreibung, Abnahmekriterien und Tests, Ergebnisse der Abnahmeprüfung, Mängel und Fehler (falls vorhanden), Vereinbarte Maßnahmen zur Behebung von Mängeln, Abnahmetermin und Unterschriften der Beteiligten"
+              
+            ],
+            
+
+            "correctAnswer": 0
+          },
+
+
+          {
+            "id": 12,
+            "difficulty": "leicht",
+            "question": "Nenne Inhalte eines Abnahmeprotokolls",
+            "options": [
+              "Projektbezeichnung und -beschreibung, Abnahmekriterien und Tests, Ergebnisse der Abnahmeprüfung, Mängel und Fehler (falls vorhanden), Vereinbarte Maßnahmen zur Behebung von Mängeln, Abnahmetermin und Unterschriften der Beteiligten"
+              
+            ],
+            
+
+            "correctAnswer": 0
+          },
+
+
+
+          {
+            "id": 13,
+            "difficulty": "leicht",
+            "question": "Nenne IT Grundschutz-Bausteine der Kategorie APP Anwendungen",
+            "options": [
+              " Office Pakete, Browser, E-Mail-Programme, Datenbanken, Entwicklungsumgebungen, Betriebssysteme, Anwendungssoftware, Webserver, ERP Systeme, Firewall"
+              
+            ],
+            
+
+            "correctAnswer": 0
+          },
+
+
+          {
+            "id": 14,
+            "difficulty": "leicht",
+            "question": "Nenne IT Grundschutz-Bausteine der Kategorie SYS IT Systeme",
+            "options": [
+              "IOS, Andoid, Clients unter Windows, Clients unter Linux, Clients unter Mac OS"
+              
+            ],
+            
+
+            "correctAnswer": 0
+          },
+
+
+
+          {
+            "id": 15,
+            "difficulty": "leicht",
+            "question": "Nenne Technische Maßnahmen zur Verbesserung der IT Sicherheit sowie des Datenschutzes",
+            "options": [
+              "Firewall, Virenschutz, Verschlüsselung, Zugriffskontrolle, Datensicherung, Sicherheitsupdates."
+              
+            ],
+
+            "correctAnswer": 0
+          },
+          
+          
+          {
+            "id": 16,
+            "difficulty": "leicht",
+            "question": "Nenne Organisatorische Maßnahmen zur Verbesserung der IT Sicherheit sowie des Datenschutzes",
+            "options": [
+              "Schulungen, Richtlinien, Notfallpläne, Sicherheitskonzepte, Sensibilisierung der Mitarbeiter mittels Pishing Tests"
+              
+            ],
+
+            "correctAnswer": 0
+          },
+
+
+
+          {
+            "id": 17,
+            "difficulty": "leicht",
+            "question": "Nenne Infrastrukturelle Maßnahmen zur Verbesserung der IT Sicherheit sowie des Datenschutzes",
+            "options": [
+              "Redundante Systeme, USV, Brandschutz, Zutrittskontrolle"
+              
+            ],
+
+            "correctAnswer": 0
+          },
+          
+          {
+            "id": 18,
+            "difficulty": "leicht",
+            "question": "Was bedeutet Security by Design ?",
+            "options": [
+              "Security by Design ist ein Konzept, bei dem Sicherheitsaspekte bereits in der Entwurfsphase eines Systems oder Produkts berücksichtigt werden. Das Ziel ist es, die Sicherheit von Anfang an zu integrieren und nicht erst im Nachhinein hinzuzufügen. Dadurch sollen Sicherheitslücken und Schwachstellen vermieden werden, die sonst erst im Betrieb entdeckt und behoben werden müssten."
+              
+            ],
+            
+
+            "correctAnswer": 0
+          },
+          
+          
+          {
+            "id": 18,
+            "difficulty": "mittel",
+            "question": "Was bedeutet Security by Design ?",
+            "options": [
+              "Security by Design ist ein Konzept, bei dem Sicherheitsaspekte bereits in der Entwurfsphase eines Systems oder Produkts berücksichtigt werden. Das Ziel ist es, die Sicherheit von Anfang an zu integrieren und nicht erst im Nachhinein hinzuzufügen. Dadurch sollen Sicherheitslücken und Schwachstellen vermieden werden, die sonst erst im Betrieb entdeckt und behoben werden müssten."
+              
+            ],
+            
+
+            "correctAnswer": 0
+          },
+          
+          
+
+          {
+            "id": 19,
+            "difficulty": "mittel",
+            "question": "Was bedeutet Security by Default ?",
+            "options": [
+              "Security by Default ist ein Konzept, bei dem die sichersten Einstellungen und Konfigurationen als Standard vorgegeben sind. Das bedeutet, dass ein System oder Produkt von Anfang an so konfiguriert ist, dass es sicher ist und keine zusätzlichen Maßnahmen erforderlich sind, um die Sicherheit zu gewährleisten. Der Benutzer muss also keine manuellen Anpassungen vornehmen, um das System sicher zu machen z.B bei Router, Windows 10/11, Google Cloud."
+              
+            ],
+            
+
+            "correctAnswer": 0
+          },
+
+
+          {
+            "id": 20,
+            "difficulty": "leicht",
+            "question": "Was sind die Aufgaben einer Firewall ?",
+            "options": [
+              "Eine Firewall ist eine Sicherheitsvorrichtung, die dazu dient, ein Netzwerk oder einen Computer vor unerwünschten Zugriffen aus dem Internet oder anderen Netzwerken zu schützen. Sie überwacht den Datenverkehr und blockiert oder erlaubt den Zugriff basierend auf vordefinierten Regeln. Die Aufgaben einer Firewall sind die Erkennung und Blockierung von unerwünschtem Datenverkehr, die Überwachung des Datenverkehrs, die Kontrolle des Datenverkehrs und die Protokollierung von Ereignissen."
+              
+            ],
+            
+
+            "correctAnswer": 0
+          }
+         
+
+        ]
+      }
+    }
+}

@@ -54,6 +54,9 @@ class _QuizScreenState extends State<QuizScreen> {
         case 'Prüfungsfragen Set 2':
           jsonPath = 'assets/prüfungsfragen_set_2.json';
           break;
+        case 'Prüfungsfragen Set 3':
+          jsonPath = 'assets/prüfungsfragen_set_3.json';
+          break;
         case 'Lernfeld1':
           jsonPath = 'assets/lernfeld1.json';
           break;
