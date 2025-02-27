@@ -254,8 +254,50 @@
                                                   ],
                                                   
                                                   "correctAnswer": 0 
-                                                  }
-        ]
+                                                  },
+                                                  {
+                                                    "id": 28,
+                                                    "difficulty": "mittel",
+                                                    "question": "Was versteht man USV ?",
+                                                    "options": [
+                                                      "Eine unterbrechungsfreie Stromversorgung (USV) ist ein Gerät, das Computer und andere elektronische Geräte vor Stromausfällen und Spannungsspitzen schützt. USVs speichern Energie in Batterien und schalten automatisch auf Batteriebetrieb um, wenn die Stromversorgung unterbrochen wird."
+                                                    ],
+                                                    
+                                                    "correctAnswer": 0 
+                                                    },
+                                                    {
+                                                      "id": 29,
+                                                      "difficulty": "mittel",
+                                                      "question": "Wie ist die Formel zum berechnen von USV ?",
+                                                      "options": [
+                                                        "USV = (Leistung x Zeit) / 1000 Wattstunden"
+                                                      ],
+                                                      
+                                                      "correctAnswer": 0 
+                                                      },
+                                                      {
+                                                        "id": 30,
+                                                        "difficulty": "leicht",
+                                                        "question": "Erkläre den Begriff Schutzbedarfsanalyse ?",
+                                                        "options": [
+                                                          "Durch systematische Analyse der gesamten IT werden der notwendige Schutz für die eigenen Daten erkannt und ensprechende Schutzmechanismen erarbeitet."
+                                                        ],
+                                                        
+                                                        "correctAnswer": 0 
+                                                        },
+                                                        {
+                                                          "id": 31,
+                                                          "difficulty": "leicht",
+                                                          "question": "Was sind die wesentliche Punkte, die in einer Schutzbedarfsanalyse berücksichtigt werden sollten?",
+                                                          "options": [
+                                                            "Kategorisierung der Daten, Bewertung von Bedrohungen, Risikoanalyse, Notfall- und Wiederherstellungsplanung, Bewertung der Schutzziele "
+                                                          ],
+                                                          
+                                                          "correctAnswer": 0 
+                                                          }
+          ]
+        
+          
       }
     }
 }
