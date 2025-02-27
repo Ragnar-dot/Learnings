@@ -28,7 +28,7 @@ class _QuizScreenState extends State<QuizScreen> {
   late Category selectedCategory;
   int currentQuestionIndex = 0;
   Timer? timer;
-  int timeLeft = 30;
+  int timeLeft = 60;
   late QuizStats stats;
   bool showCorrectAnswer = false;
   bool showWrongAnswer = false;
@@ -116,7 +116,7 @@ class _QuizScreenState extends State<QuizScreen> {
   void startTimer() {
     timer?.cancel();
     setState(() {
-      timeLeft = 30;
+      timeLeft = 60;
     });
     timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       if (mounted && !isPaused) {
@@ -202,7 +202,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Frage ${currentQuestionIndex + 1}/${questions.length}'),
+        title: Text( 'Frage ${currentQuestionIndex + 1}/${questions.length}         ${widget.category}'),
         elevation: 0,
         actions: [
           IconButton(
@@ -245,7 +245,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(4),
                   child: LinearProgressIndicator(
-                    value: timeLeft / 30,
+                    value: timeLeft / 60,
                     backgroundColor: Colors.white24,
                     valueColor: AlwaysStoppedAnimation<Color>(
                       timeLeft > 10 ? Colors.white : Colors.red,
