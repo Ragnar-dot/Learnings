@@ -8,9 +8,10 @@
             "difficulty": "leicht",
             "question": "Nenneb sie drei Vorteile die ein Unternehmen durch die Zertifizierung nach ISO 27001 erlangt ?",
             "options": [
-              "Wetbewerbsvorteil, Beleg für sicheruen Umgang mit sensiblen Informationen, zuverläsige Problem und Bedrohungserkennung"
-
-
+              "Wetbewerbsvorteil, Beleg für sicheruen Umgang mit sensiblen Informationen, zuverläsige Problem und Bedrohungserkennung",
+              "Kostenlose Software, schnelleres Internet, mehr Mitarbeiter",
+              "Steuervorteile, kostenlose Werbung, unbegrenzter Cloud-Speicher",
+              "Automatische Hackerabwehr, perfekte Firewall, unendliche Bandbreite"
             ],
             "correctAnswer": 0
           },
@@ -19,7 +20,10 @@
             "difficulty": "leicht",
             "question": "Was ist die ISO 27001 ?",
             "options": [
-              "Eine globale Norm für die Informationssicherheit"
+              "Eine globale Norm für die Informationssicherheit",
+              "Ein Computervirus",
+              "Eine Software für Datensicherung",
+              "Ein Internetprotokoll"
             ],
             "correctAnswer": 0
           },
@@ -28,7 +32,10 @@
             "difficulty": "leicht",
             "question": "Was ist der BSI ?",
             "options": [
-              "Das Bundesamt für Sicherheit in der Informationstechnik ( BSI ) gestaltet Informationssicherheit in der Digitalisierung durch Prävention, Detektion und Reaktion für Staat, Wirtschaft und Gesellschaft. Das BSI ist die Cybersicherheitsbehörde des Bundes und Gestalter einer sicheren Digitalisierung in Deutschland."
+              "Das Bundesamt für Sicherheit in der Informationstechnik ( BSI ) gestaltet Informationssicherheit in der Digitalisierung durch Prävention, Detektion und Reaktion für Staat, Wirtschaft und Gesellschaft. Das BSI ist die Cybersicherheitsbehörde des Bundes und Gestalter einer sicheren Digitalisierung in Deutschland.",
+              "Bundesamt für Software-Installation",
+              "Büro für System-Integration",
+              "Behörde für Server-Infrastruktur"
             ],
             "correctAnswer": 0
           },
@@ -37,7 +44,10 @@
             "difficulty": "leicht",
             "question": "Was ist der BDSG ?",
             "options": [
-              "Das Bundesdatenschutzgesetz (BDSG) ist ein deutsches Gesetz, das die Verarbeitung personenbezogener Daten durch öffentliche Stellen des Bundes, private Unternehmen und Personen regelt. Es dient dem Schutz vor Missbrauch dieser Daten und gewährleistet das Recht auf informationelle Selbstbestimmung."
+              "Das Bundesdatenschutzgesetz (BDSG) ist ein deutsches Gesetz, das die Verarbeitung personenbezogener Daten durch öffentliche Stellen des Bundes, private Unternehmen und Personen regelt. Es dient dem Schutz vor Missbrauch dieser Daten und gewährleistet das Recht auf informationelle Selbstbestimmung.",
+              "Bundesverband Deutscher Software-Gesellschaften",
+              "Besondere Datensicherungs-Grundlagen",
+              "Behörde für digitale Systemgestaltung"
             ],
             "correctAnswer": 0
           },
@@ -46,7 +56,10 @@
             "difficulty": "leicht",
             "question": "Nennen Sie drei Vorraussetzungen die erfüllt sein müssen, damit eine persöhnliche Schöpfung als Werk urheberrechtlich geschützt ist?",
             "options": [
-              "Das Werk ist das Ergebnis menschlichens Schaffens, Das Werk ist durch menschliche Sinne wahrnehmbar, Das Werk stellt eine kreative Leistung dar"
+              "Das Werk ist das Ergebnis menschlichens Schaffens, Das Werk ist durch menschliche Sinne wahrnehmbar, Das Werk stellt eine kreative Leistung dar",
+              "Das Werk muss digital sein, es muss Geld kosten, es muss im Internet sein",
+              "Das Werk muss patentiert sein, es muss verkauft werden, es muss beworben werden",
+              "Das Werk muss von einem Computer erstellt sein, es muss kopiergeschützt sein, es muss registriert sein"
             ],
             "correctAnswer": 0
           },
@@ -55,7 +68,10 @@
             "difficulty": "leicht",
             "question": "Welche Schutzziele hinsichtlich der personenbezogenen Daten werden in der DSGVO aus der Sicht der betroffenen Personen gefordert ?",
             "options": [
-              "In der DSGVO werden aus der Sicht der Betroffenen insbesondere Schutzziele Vertraulichkeit, Integrität und Verfügbarkeit personenbezogener Daten gefordert. "
+              "In der DSGVO werden aus der Sicht der Betroffenen insbesondere Schutzziele Vertraulichkeit, Integrität und Verfügbarkeit personenbezogener Daten gefordert.",
+              "Nur Verschlüsselung ist wichtig",
+              "Ausschließlich Backup der Daten",
+              "Lediglich Zugriffsprotokollierung"
             ],
             "correctAnswer": 0
           },
@@ -64,7 +80,10 @@
             "difficulty": "leicht",
             "question": "Was bedeutet TOM ?",
             "options": [
-              "Technische und organisatorische Maßnahmen (TOM) sind Maßnahmen, die dazu dienen, die Sicherheit der Verarbeitung personenbezogener Daten zu gewährleisten. "
+              "Technische und organisatorische Maßnahmen (TOM) sind Maßnahmen, die dazu dienen, die Sicherheit der Verarbeitung personenbezogener Daten zu gewährleisten.",
+              "Technischer Organisations-Manager",
+              "Tägliche Optimierungs-Maßnahmen",
+              "Theoretische Organisations-Methoden"
             ],
             "correctAnswer": 0
           },
@@ -73,7 +92,10 @@
             "difficulty": "leicht",
             "question": "Was bedeutet TOM ?",
             "options": [
-              "Technische und organisatorische Maßnahmen (TOM) sind Maßnahmen, die dazu dienen, die Sicherheit der Verarbeitung personenbezogener Daten zu gewährleisten. "
+              "Technische und organisatorische Maßnahmen (TOM) sind Maßnahmen, die dazu dienen, die Sicherheit der Verarbeitung personenbezogener Daten zu gewährleisten.",
+              "Total Office Management",
+              "Technische Optimierungs-Module",
+              "Test- und Organisations-Methodik"
             ],
             "correctAnswer": 0
           }

@@ -8,8 +8,10 @@
             "difficulty": "leicht",
             "question": "Sie planen ein Kundengespräch. Welche Faktoren könnten für den Kunden bei der Vernetzung der Infrastruktur relevant sein ?",
             "options": [
-              "Preis,Datenübertragung, Datensicherheit, Änderung der Räumlichkeiten, Wie viel Teilnehmer sollen auf das Netzwerk zugreifen können, Informationen über den Kunden recherchieren"
-
+              "Preis,Datenübertragung, Datensicherheit, Änderung der Räumlichkeiten, Wie viel Teilnehmer sollen auf das Netzwerk zugreifen können, Informationen über den Kunden recherchieren",
+              "Nur der Preis ist relevant",
+              "Die Farbe der Netzwerkkabel ist am wichtigsten",
+              "Ausschließlich die Marke der Hardware ist entscheidend"
             ],
             "correctAnswer": 0
           },
@@ -18,7 +20,10 @@
             "difficulty": "leicht",
             "question": "Welche Service-Leistungen bzw. Angebote bieten sie Ihren Kunden an ?",
             "options": [
-              "Aufbau eines Netzwerkes, Wartung und Instandhaltung, Kundensupport, Installation von Hardware,Installation von Software, Monitoring und Optimierung"
+              "Aufbau eines Netzwerkes, Wartung und Instandhaltung, Kundensupport, Installation von Hardware,Installation von Software, Monitoring und Optimierung",
+              "Nur Verkauf von Hardware ohne Service",
+              "Ausschließlich telefonische Beratung",
+              "Nur Software-Updates durchführen"
             ],
             "correctAnswer": 0
           },
@@ -27,7 +32,10 @@
             "difficulty": "leicht",
             "question": "Welche Vor und Nachteile gegenüber anderen Übertragungsmedien bietet die Vernetzung eines Netzwerkes mit IEEE 802.11 (WLAN) ?",
             "options": [
-              "Vorteile: Schnelle Installation, Mobilität, Flexibilität, Kosten sparen. Nachteile: nicht genug Reichweite, Sicherheit, geringere Datenrate, Störungen durch andere WLAN-Geräte"
+              "Vorteile: Schnelle Installation, Mobilität, Flexibilität, Kosten sparen. Nachteile: nicht genug Reichweite, Sicherheit, geringere Datenrate, Störungen durch andere WLAN-Geräte",
+              "Es gibt nur Vorteile: unbegrenzte Reichweite und perfekte Sicherheit",
+              "WLAN ist immer langsamer als Ethernet und sollte nie verwendet werden",
+              "WLAN funktioniert nur im Freien und hat keine Nachteile"
             ],
             "correctAnswer": 0
           },
@@ -36,7 +44,10 @@
             "difficulty": "leicht",
             "question": "Welche Aspekte spielen eine Rolle bei der Dokumentation des Kundengesprächs eine Rolle ?",
             "options": [
-              "Vollständige Informationen über den Kunden, Kundenanforderungen, Kundenwünsche, Kundenbedürfnisse, Kundenprobleme, Kundenwünsche, Kundenbedürfnisse, Kundenprobleme, Einfache Formulierungen (wichtig für Teamarbeit), nur so viel wie nötig keine unnötigen Informationen"
+              "Vollständige Informationen über den Kunden, Kundenanforderungen, Kundenwünsche, Kundenbedürfnisse, Kundenprobleme, Einfache Formulierungen (wichtig für Teamarbeit), nur so viel wie nötig keine unnötigen Informationen",
+              "Nur die Telefonnummer des Kunden ist wichtig",
+              "Die Dokumentation ist überflüssig, alles wird mündlich besprochen",
+              "Ausschließlich private Informationen über den Kunden sammeln"
             ],
             "correctAnswer": 0 
         },
@@ -45,7 +56,10 @@
             "difficulty": "leicht",
             "question": "Welche Kommunikationsformen können in einem Netzwerk umgesetzt werden ?",
             "options": [
-              "Unicast (Eine Nachricht an einen Empfänger), Multicast (Eine Nachricht an mehrere Empfänger), Broadcast (Eine Nachricht an alle Empfänger), Anycast (Eine Nachricht an den nächstliegenden Empfänger)"
+              "Unicast (Eine Nachricht an einen Empfänger), Multicast (Eine Nachricht an mehrere Empfänger), Broadcast (Eine Nachricht an alle Empfänger), Anycast (Eine Nachricht an den nächstliegenden Empfänger)",
+              "Nur Brieftauben-Kommunikation",
+              "Ausschließlich Rauchzeichen",
+              "Nur persönliche Gespräche sind möglich"
             ],
             "correctAnswer": 0 
         },
@@ -54,7 +68,10 @@
             "difficulty": "leicht",
             "question": "Nennen Sie drei Zielsetzungen, die sich aus der Vernetzung von Computern ergeben ?",
             "options": [
-              "Verteilung der zu bewätigenden Aufgaben, Nutzung gemeinsamer Ressourcen, Datenaustausch über Räumliche Entfernungen"
+              "Verteilung der zu bewätigenden Aufgaben, Nutzung gemeinsamer Ressourcen, Datenaustausch über Räumliche Entfernungen",
+              "Nur Computerspiele spielen",
+              "Ausschließlich E-Mails versenden",
+              "Computer sollen unabhängig voneinander arbeiten"
             ],
             "correctAnswer": 0 
         },
@@ -63,7 +80,10 @@
             "difficulty": "leicht",
             "question": "Nennen sie jeweils fünf aktive und fünf passive Netzwerkkomponenten ?",
             "options": [
-              "aktive: Switches,Firewalls,Gateways,WLAN, Accespoints. passive: Pathfelder, Patchkabel, Anschlussdosen, Netzwerkschränke, DSL-Splitter"
+              "aktive: Switches,Firewalls,Gateways,WLAN, Accespoints. passive: Pathfelder, Patchkabel, Anschlussdosen, Netzwerkschränke, DSL-Splitter",
+              "Alle Komponenten sind aktiv",
+              "Es gibt keine passiven Komponenten im Netzwerk",
+              "Nur Kabel sind Netzwerkkomponenten"
             ],
             "correctAnswer": 0 
             },
@@ -72,7 +92,10 @@
               "difficulty": "leicht",
               "question": "Was sind Managebare Switches ?",
               "options": [
-                "Managebare Switches sind Switches die konfigurierbar sind, über eine Benutzeroberfläche konfiguriert und überwacht werden können. Sie bieten erweiterte Funktionen wie VLANs, Quality of Service (Geben Sie an, welcher Datenverkehr eine höhere oder niedrigere Priorität hat, unabhängig von der aktuellen Netzwerkbandbreite oder der relativen Prioritätseinstellung des Datenverkehrs, wenn er im Switch empfangen wird. Ändern Sie die Priorität des ausgehenden Datenverkehrs.), Port Mirroring (Portspiegelung)"
+                "Managebare Switches sind Switches die konfigurierbar sind, über eine Benutzeroberfläche konfiguriert und überwacht werden können. Sie bieten erweiterte Funktionen wie VLANs, Quality of Service, Port Mirroring",
+                "Switches die man nur manuell bedienen kann",
+                "Switches die keine Konfiguration benötigen",
+                "Switches die sich selbst zerstören können"
               ],
               "correctAnswer": 0 
               },
@@ -81,7 +104,10 @@
                 "difficulty": "leicht",
                 "question": "Was bedeutet SaaS ?",
                 "options": [
-                  "Software as a Service (SaaS) ist ein Abrechnungsmodell, bei dem Softwareanwendungen über das Internet bereitgestellt und genutzt werden. Die Softwareanwendungen werden von einem Anbieter zentral betrieben und gewartet. Die Kunden zahlen für die Nutzung der Softwareanwendungen"
+                  "Software as a Service (SaaS) ist ein Abrechnungsmodell, bei dem Softwareanwendungen über das Internet bereitgestellt und genutzt werden",
+                  "Software als Sandwich",
+                  "System als Service",
+                  "Server and Storage"
                 ],
                 "correctAnswer": 0 
                 },
@@ -90,211 +116,253 @@
                   "difficulty": "leicht",
                   "question": "Was bedeutet PaaS ?",
                   "options": [
-                    "Platform as a Service (PaaS) ist ein Abrechnungsmodell, bei dem eine Plattform für die Entwicklung, den Betrieb und die Verwaltung von Softwareanwendungen über das Internet bereitgestellt wird. Die Plattform wird von einem Anbieter zentral betrieben und gewartet. Die Kunden zahlen für die Nutzung der Plattform"
+                    "Platform as a Service (PaaS) ist ein Abrechnungsmodell, bei dem eine Plattform für die Entwicklung, den Betrieb und die Verwaltung von Softwareanwendungen über das Internet bereitgestellt wird",
+                    "Pizza as a Service",
+                    "Programming as a System",
+                    "Platform and Software"
                   ],
                   "correctAnswer": 0 
-                  },
-                  {
-                    "id": 11,
-                    "difficulty": "leicht",
-                    "question": "Was bedeutet EaaS ?",
-                    "options": [
-                      "Everything as a Service (EaaS) ist ein Abrechnungsmodell, bei dem alle Dienstleistungen über das Internet bereitgestellt und genutzt werden. Die Dienstleistungen werden von einem Anbieter zentral betrieben und gewartet. Die Kunden zahlen für die Nutzung der Dienstleistungen"
-                    ],
-                    "correctAnswer": 0 
-                    },
-                    {
-                      "id": 12,
-                      "difficulty": "mittel",
-                      "question": "Beschreibe Unicast, Multicast, Broadcast und Anycast",
-                      "options": [
-                        "Unicast: Eine Nachricht an einen Empfänger (Einzelansprache), Multicast: Eine Nachricht an mehrere Empfänger, Broadcast: Eine Nachricht an alle Empfänger, Anycast: Eine Nachricht an den nächstliegenden Empfänger"
-                      ],
-                      
-                      "correctAnswer": 0 
-                      },
-                      {
-                        "id": 13,
-                        "difficulty": "mittel",
-                        "question": "Was ist der Umrechnuingsfaktor von Bit in Byte ?",
-                        "options": [
-                          "1 Byte = 8 Bit"
-                        ],
-                        
-                        
-                        "correctAnswer": 0 
-                        }, 
-                        {
-                          "id": 14,
-                          "difficulty": "mittel",
-                          "question": "Was ist der Umrechnuingsfaktor von Mibyte in Gibyte ?",
-                          "options": [
-                            "1 Gibyte = 1024 Mibyte"
-                          ],
-                          
-                          "correctAnswer": 0 
-                          },
-                          {
-                            "id": 15,
-                            "difficulty": "schwer",
-                            "question": "Was versteht man unter  Topologie im Netzwerk ?",
-                            "options": [
-                              "Die Netzwerktopologie (Landkarte) beschreibt die räumliche Anordnung der Netzwerkkomponenten und die Art und Weise, wie sie miteinander verbunden sind. Die Netzwerktopologie bestimmt die Übertragungswege und die Kommunikationsmöglichkeiten im Netzwerk."
-                            ],
-                            
-                            "correctAnswer": 0 
-                            },
-                            {
-                              "id": 16,
-                              "difficulty": "mittel",
-                              "question": "beschreibe was ein Router ist",
-                              "options": [
-                                "Ein Router ist ein Netzwerkgerät, das den Datenverkehr zwischen verschiedenen Netzwerken weiterleitet. Router arbeiten auf der Netzwerkschicht (Network Layer Schicht 3) des OSI-Modells und verwenden IP-Adressen, um Datenpakete an das Zielnetzwerk weiterzuleiten."
-                              ],
-                              
-                              
-                              "correctAnswer": 0 
-                              },
-                              {
-                                "id": 17,
-                                "difficulty": "schwer",
-                                "question": "Auf welcher Schicht arbeitet der Switch ?",
-                                "options": [
-                                  "Der Switch arbeitet auf der Datensicherungsschicht (Data Link Layer Schicht 2) des OSI-Modells. Der Switch verwendet MAC-Adressen, um Datenpakete an das Zielgerät im lokalen Netzwerk weiterzuleiten."
-                                ],
-                                
-                                "correctAnswer": 0 
-                                },
-                                {
-                                  "id": 18,
-                                  "difficulty": "schwer",
-                                  "question": "Auf welcher OSI Schicht arbeitet die Firewall ?",
-                                  "options": [
-                                    "Layer 4 (Transportschicht) und Layer 7 (Anwendungsschicht)"
-                                  ],
-                                  
-                                  "correctAnswer": 0 
-                                  },
-                                  {
-                                    "id": 20,
-                                    "difficulty": "schwer",
-                                    "question": "Was arbeitet auf dem Physical-Layer 1 ?",
-                                    "options": [
-                                      "Kabel und Leitungen: Kupferkabel (z.B. Twisted-Pair-Kabel, Koaxialkabel) und Glasfaserkabel, die die physische Verbindung zwischen Geräten herstellen."
-                                    ],
-                                    
-                                    "correctAnswer": 0 
-                                    },
-                                    {
-                                      "id": 21,
-                                      "difficulty": "leicht",
-                                      "question": "Was ist ein File Server ?",
-                                      "options": [
-                                        "Ein Fileserver ist ein Server, der Dateien speichert und verwaltet. Benutzer können auf Dateien auf dem Fileserver zugreifen, Dateien auf den Fileserver hochladen und Dateien vom Fileserver herunterladen."
-                                      ],
-                                      
-                                      "correctAnswer": 0 
-                                      },
-                                      {
-                                        "id": 22,
-                                        "difficulty": "leicht",
-                                        "question": "Was ist ein Print Server ?",
-                                        "options": [
-                                          "Ein Printserver ist ein Server, der Druckaufträge von Benutzern entgegennimmt und an Drucker weiterleitet. Benutzer können Druckaufträge an den Printserver senden, der die Druckaufträge an den Drucker weiterleitet."
-                                        ],
-                                        
-                                        "correctAnswer": 0 
-                                        },
-                                        {
-                                          "id": 23,
-                                          "difficulty": "leicht",
-                                          "question": "Was bedeutet und ist ein NAS ?",
-                                          "options": [
-                                            "Network Attached Storage (NAS) ist ein Speichergerät, das über das Netzwerk mit anderen Geräten verbunden ist. NAS-Geräte speichern Dateien und ermöglichen Benutzern den Zugriff auf Dateien über das Netzwerk."
-                                          ],
-                                          
-                                          "correctAnswer": 0 
-                                          },
-                                          {
-                                            "id": 24,
-                                            "difficulty": "mittel",
-                                            "question": "Wozu dient ein Terminal Server ?",
-                                            "options": [
-                                              "Ein Terminalserver ist ein Server, der Benutzern den Zugriff auf Anwendungen und Daten von entfernten Standorten aus ermöglicht. Benutzer können sich über das Netzwerk mit dem Terminalserver verbinden und Anwendungen und Daten ausführen, als ob sie lokal auf ihrem Computer ausgeführt würden.(Virtueller Arbeitsplatz zum Anschließen von Thin Clients)"
-                                            ],
-                                            
-                                            "correctAnswer": 0 
-                                            },
-                                            {
-                                              "id": 25,
-                                              "difficulty": "mittel",
-                                              "question": "Was ist ein WAN ?",
-                                              "options": [
-                                                "Ein Wide Area Network (WAN) ist ein Netzwerk, das sich über große geografische Entfernungen erstreckt und mehrere lokale Netzwerke miteinander verbindet. Öffentliche Netze über große Distanzen, Providernetze, DSL, Kabelmodem."
-                                              ],
-                                              
-                                              "correctAnswer": 0 
-                                              },
-                                              {
-                                                "id": 26,
-                                                "difficulty": "mittel",
-                                                "question": "Was versteht man unter VPN ?",
-                                                "options": [
-                                                  "Ein Virtual Private Network (VPN) ist ein Netzwerk, das eine sichere Verbindung über ein öffentliches Netzwerk wie das Internet herstellt. VPNs verschlüsseln den Datenverkehr und schützen die Privatsphäre der Benutzer, indem sie ihre IP-Adresse und ihren Standort verbergen."
-                                                ],
-                                                
-                                                "correctAnswer": 0 
-                                                },
-                                                {
-                                                  "id": 27,
-                                                  "difficulty": "mittel",
-                                                  "question": "Was versteht man unter VLAN ?",
-                                                  "options": [
-                                                    "Ein Virtual Local Area Network (VLAN) ist ein Virtuelles LAN das auf einer Physischen LAN mehrere Virtuelle LANs erstellt. VLANs ermöglichen es, Netzwerkgeräte in logische Gruppen zu unterteilen, unabhängig von ihrer physischen Position im Netzwerk."
-                                                  ],
-                                                  
-                                                  "correctAnswer": 0 
-                                                  },
-                                                  {
-                                                    "id": 28,
-                                                    "difficulty": "mittel",
-                                                    "question": "Was versteht man USV ?",
-                                                    "options": [
-                                                      "Eine unterbrechungsfreie Stromversorgung (USV) ist ein Gerät, das Computer und andere elektronische Geräte vor Stromausfällen und Spannungsspitzen schützt. USVs speichern Energie in Batterien und schalten automatisch auf Batteriebetrieb um, wenn die Stromversorgung unterbrochen wird."
-                                                    ],
-                                                    
-                                                    "correctAnswer": 0 
-                                                    },
-                                                    {
-                                                      "id": 29,
-                                                      "difficulty": "mittel",
-                                                      "question": "Wie ist die Formel zum berechnen von USV ?",
-                                                      "options": [
-                                                        "USV = (Leistung x Zeit) / 1000 Wattstunden"
-                                                      ],
-                                                      
-                                                      "correctAnswer": 0 
-                                                      },
-                                                      {
-                                                        "id": 30,
-                                                        "difficulty": "leicht",
-                                                        "question": "Erkläre den Begriff Schutzbedarfsanalyse ?",
-                                                        "options": [
-                                                          "Durch systematische Analyse der gesamten IT werden der notwendige Schutz für die eigenen Daten erkannt und ensprechende Schutzmechanismen erarbeitet."
-                                                        ],
-                                                        
-                                                        "correctAnswer": 0 
-                                                        },
-                                                        {
-                                                          "id": 31,
-                                                          "difficulty": "leicht",
-                                                          "question": "Was sind die wesentliche Punkte, die in einer Schutzbedarfsanalyse berücksichtigt werden sollten?",
-                                                          "options": [
-                                                            "Kategorisierung der Daten, Bewertung von Bedrohungen, Risikoanalyse, Notfall- und Wiederherstellungsplanung, Bewertung der Schutzziele "
-                                                          ],
-                                                          
-                                                          "correctAnswer": 0 
-                                                          }
+                },
+                {
+                  "id": 11,
+                  "difficulty": "leicht",
+                  "question": "Was bedeutet EaaS ?",
+                  "options": [
+                    "Everything as a Service (EaaS) ist ein Abrechnungsmodell, bei dem alle Dienstleistungen über das Internet bereitgestellt und genutzt werden",
+                    "Eating as a Service",
+                    "Enterprise and Service",
+                    "Equipment as Software"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 12,
+                  "difficulty": "mittel",
+                  "question": "Beschreibe Unicast, Multicast, Broadcast und Anycast",
+                  "options": [
+                    "Unicast: Eine Nachricht an einen Empfänger, Multicast: Eine Nachricht an mehrere Empfänger, Broadcast: Eine Nachricht an alle Empfänger, Anycast: Eine Nachricht an den nächstliegenden Empfänger",
+                    "Alle Kommunikationsformen sind gleich",
+                    "Es gibt nur Unicast-Kommunikation",
+                    "Broadcast sendet nur an einen Empfänger"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 13,
+                  "difficulty": "mittel",
+                  "question": "Was ist der Umrechnuingsfaktor von Bit in Byte ?",
+                  "options": [
+                    "1 Byte = 8 Bit",
+                    "1 Byte = 4 Bit",
+                    "1 Byte = 16 Bit",
+                    "1 Byte = 2 Bit"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 14,
+                  "difficulty": "mittel",
+                  "question": "Was ist der Umrechnuingsfaktor von Mibyte in Gibyte ?",
+                  "options": [
+                    "1 Gibyte = 1024 Mibyte",
+                    "1 Gibyte = 100 Mibyte",
+                    "1 Gibyte = 500 Mibyte",
+                    "1 Gibyte = 2048 Mibyte"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 15,
+                  "difficulty": "schwer",
+                  "question": "Was versteht man unter Topologie im Netzwerk ?",
+                  "options": [
+                    "Die Netzwerktopologie beschreibt die räumliche Anordnung der Netzwerkkomponenten und die Art und Weise, wie sie miteinander verbunden sind",
+                    "Topologie beschreibt nur die Farbe der Netzwerkkabel",
+                    "Topologie ist die Geschwindigkeit des Netzwerks",
+                    "Topologie bezieht sich nur auf die Anzahl der Computer"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 16,
+                  "difficulty": "mittel",
+                  "question": "beschreibe was ein Router ist",
+                  "options": [
+                    "Ein Router ist ein Netzwerkgerät, das den Datenverkehr zwischen verschiedenen Netzwerken weiterleitet und auf der Netzwerkschicht (Layer 3) arbeitet",
+                    "Ein Router ist nur für WLAN zuständig",
+                    "Ein Router speichert nur Dateien",
+                    "Ein Router arbeitet ausschließlich mit Bluetooth"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 17,
+                  "difficulty": "schwer",
+                  "question": "Auf welcher Schicht arbeitet der Switch ?",
+                  "options": [
+                    "Der Switch arbeitet auf der Datensicherungsschicht (Data Link Layer Schicht 2) des OSI-Modells",
+                    "Der Switch arbeitet nur auf Layer 7",
+                    "Der Switch arbeitet auf allen Schichten gleichzeitig",
+                    "Der Switch hat keine bestimmte Schicht"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 18,
+                  "difficulty": "schwer",
+                  "question": "Auf welcher OSI Schicht arbeitet die Firewall ?",
+                  "options": [
+                    "Layer 4 (Transportschicht) und Layer 7 (Anwendungsschicht)",
+                    "Nur Layer 1 (Physical Layer)",
+                    "Ausschließlich Layer 2 (Data Link Layer)",
+                    "Layer 3 (Network Layer) und Layer 5 (Session Layer)"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 20,
+                  "difficulty": "schwer",
+                  "question": "Was arbeitet auf dem Physical-Layer 1 ?",
+                  "options": [
+                    "Kabel und Leitungen: Kupferkabel (z.B. Twisted-Pair-Kabel, Koaxialkabel) und Glasfaserkabel",
+                    "Nur Software-Anwendungen",
+                    "Ausschließlich Firewalls",
+                    "Router und Switches"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 21,
+                  "difficulty": "leicht",
+                  "question": "Was ist ein File Server ?",
+                  "options": [
+                    "Ein Fileserver ist ein Server, der Dateien speichert und verwaltet",
+                    "Ein Server nur für E-Mails",
+                    "Ein Server ausschließlich für Spiele",
+                    "Ein Server für Drucker"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 22,
+                  "difficulty": "leicht",
+                  "question": "Was ist ein Print Server ?",
+                  "options": [
+                    "Ein Printserver ist ein Server, der Druckaufträge von Benutzern entgegennimmt und an Drucker weiterleitet",
+                    "Ein Server zum Speichern von Bildern",
+                    "Ein Server nur für Scanner",
+                    "Ein Server für Videobearbeitung"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 23,
+                  "difficulty": "leicht",
+                  "question": "Was bedeutet und ist ein NAS ?",
+                  "options": [
+                    "Network Attached Storage (NAS) ist ein Speichergerät, das über das Netzwerk mit anderen Geräten verbunden ist",
+                    "Network Analysis System",
+                    "New Application Software",
+                    "Network Access Security"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 24,
+                  "difficulty": "mittel",
+                  "question": "Wozu dient ein Terminal Server ?",
+                  "options": [
+                    "Ein Terminalserver ermöglicht Benutzern den Zugriff auf Anwendungen und Daten von entfernten Standorten aus",
+                    "Nur zum Spielen von Computerspielen",
+                    "Ausschließlich für E-Mail-Verwaltung",
+                    "Zum Drucken von Dokumenten"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 25,
+                  "difficulty": "mittel",
+                  "question": "Was ist ein WAN ?",
+                  "options": [
+                    "Ein Wide Area Network (WAN) ist ein Netzwerk, das sich über große geografische Entfernungen erstreckt",
+                    "Ein lokales Heimnetzwerk",
+                    "Wireless Access Network",
+                    "Web Application Network"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 26,
+                  "difficulty": "mittel",
+                  "question": "Was versteht man unter VPN ?",
+                  "options": [
+                    "Ein Virtual Private Network (VPN) ist ein verschlüsseltes Netzwerk über ein öffentliches Netzwerk",
+                    "Very Personal Network",
+                    "Visual Processing Network",
+                    "Variable Protocol Network"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 27,
+                  "difficulty": "mittel",
+                  "question": "Was versteht man unter VLAN ?",
+                  "options": [
+                    "Ein Virtual Local Area Network (VLAN) ist ein logisch segmentiertes Netzwerk auf physischer Hardware",
+                    "Very Large Area Network",
+                    "Virtual Link Access Node",
+                    "Variable LAN Access"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 28,
+                  "difficulty": "mittel",
+                  "question": "Was versteht man USV ?",
+                  "options": [
+                    "Eine unterbrechungsfreie Stromversorgung (USV) schützt vor Stromausfällen und Spannungsspitzen",
+                    "Universal Serial Voltage",
+                    "Unified System Verification",
+                    "User Service Validation"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 29,
+                  "difficulty": "mittel",
+                  "question": "Wie ist die Formel zum berechnen von USV ?",
+                  "options": [
+                    "USV = (Leistung x Zeit) / 1000 Wattstunden",
+                    "USV = Leistung + Zeit",
+                    "USV = Leistung / Zeit",
+                    "USV = Zeit / Leistung"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 30,
+                  "difficulty": "leicht",
+                  "question": "Erkläre den Begriff Schutzbedarfsanalyse ?",
+                  "options": [
+                    "Durch systematische Analyse der gesamten IT werden der notwendige Schutz für die eigenen Daten erkannt und entsprechende Schutzmechanismen erarbeitet",
+                    "Analyse nur der Hardware-Komponenten",
+                    "Ausschließlich Virenschutz-Analyse",
+                    "Analyse der Büroausstattung"
+                  ],
+                  "correctAnswer": 0 
+                },
+                {
+                  "id": 31,
+                  "difficulty": "leicht",
+                  "question": "Was sind die wesentliche Punkte, die in einer Schutzbedarfsanalyse berücksichtigt werden sollten?",
+                  "options": [
+                    "Kategorisierung der Daten, Bewertung von Bedrohungen, Risikoanalyse, Notfall- und Wiederherstellungsplanung, Bewertung der Schutzziele",
+                    "Nur Passwortschutz ist wichtig",
+                    "Ausschließlich Firewall-Einstellungen",
+                    "Analyse der Büromöbel"
+                  ],
+                  "correctAnswer": 0 
+                }
           ]
         
           

@@ -6,6 +6,7 @@ import '../models/question.dart';
 import '../models/quiz_stats.dart';
 import '../theme/app_theme.dart';
 import '../widgets/app_drawer.dart';
+import 'pruefungs_screen.dart';
 
 class QuizScreen extends StatefulWidget {
   final String category;
@@ -44,19 +45,27 @@ class _QuizScreenState extends State<QuizScreen> {
   Future<void> loadQuestions() async {
     try {
       print('Loading category: ${widget.category}');
-      
-      // Wähle die richtige JSON-Datei basierend auf der Kategorie
+
+      // Prüfe zuerst ob es sich um Prüfungsfragen handelt
+      if (widget.category.startsWith('Prüfungsfragen Set')) {
+        // Leite zur Karteikarten-Ansicht weiter
+        final flashcards = await _loadFlashcards();
+        if (!mounted) return;
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => PruefungsScreen(
+              flashcards: flashcards,
+              title: widget.category,
+            ),
+          ),
+        );
+        return;
+      }
+
+      // Normale Fragen laden
       String jsonPath;
-      switch(widget.category) {
-        case 'Prüfungsfragen Set 1':
-          jsonPath = 'assets/prüfungsfragen_set_1.json';
-          break;
-        case 'Prüfungsfragen Set 2':
-          jsonPath = 'assets/prüfungsfragen_set_2.json';
-          break;
-        case 'Prüfungsfragen Set 3':
-          jsonPath = 'assets/prüfungsfragen_set_3.json';
-          break;
+      switch (widget.category) {
         case 'Lernfeld1':
           jsonPath = 'assets/lernfeld1.json';
           break;
@@ -78,10 +87,10 @@ class _QuizScreenState extends State<QuizScreen> {
 
       print('Loading from path: $jsonPath');
       final jsonString = await rootBundle.loadString(jsonPath);
-      
+
       final Map<String, dynamic> jsonData = json.decode(jsonString);
       print('Decoded JSON data: $jsonData');
-      
+
       if (!jsonData.containsKey('categories')) {
         throw Exception('Invalid JSON structure - missing categories');
       }
@@ -95,13 +104,13 @@ class _QuizScreenState extends State<QuizScreen> {
         questions = (categoryData['questions'] as List)
             .map((q) => Question.fromJson(q))
             .toList();
-        
+
         if (widget.wrongQuestionIds != null) {
           questions = questions
               .where((q) => widget.wrongQuestionIds!.contains(q.id))
               .toList();
         }
-        
+
         filteredQuestions = List.from(questions);
         if (questions.isNotEmpty) {
           startTimer();
@@ -111,6 +120,28 @@ class _QuizScreenState extends State<QuizScreen> {
       print('Error loading questions: $e');
       rethrow;
     }
+  }
+
+  // Neue Hilfsmethode zum Laden der Karteikarten
+  Future<List<dynamic>> _loadFlashcards() async {
+    String jsonPath;
+    switch (widget.category) {
+      case 'Prüfungsfragen Set 1':
+        jsonPath = 'assets/pruefungsfragen_set_1.json';
+        break;
+      case 'Prüfungsfragen Set 2':
+        jsonPath = 'assets/pruefungsfragen_set_2.json';
+        break;
+      case 'Prüfungsfragen Set 3':
+        jsonPath = 'assets/pruefungsfragen_set_3.json';
+        break;
+      default:
+        throw Exception('Unknown flashcard set');
+    }
+
+    final jsonString = await rootBundle.loadString(jsonPath);
+    final jsonData = json.decode(jsonString);
+    return jsonData['categories'][widget.category]['questions'];
   }
 
   void startTimer() {
@@ -202,7 +233,8 @@ class _QuizScreenState extends State<QuizScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text( "${widget.category}          Frage ${currentQuestionIndex + 1}/${questions.length}",
+        title: Text(
+          "${widget.category}          Frage ${currentQuestionIndex + 1}/${questions.length}",
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -294,7 +326,6 @@ class _QuizScreenState extends State<QuizScreen> {
                 children: [
                   Card(
                     child: Container(
-                      
                       padding: const EdgeInsets.all(16),
                       child: Text(
                         question.question,
@@ -331,7 +362,6 @@ class _QuizScreenState extends State<QuizScreen> {
                     ),
                   ),
                 ],
-
               ),
             ),
           ),

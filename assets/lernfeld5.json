@@ -8,8 +8,10 @@
             "difficulty": "leicht",
             "question": "Was ist ein Lastenheft?",
             "options": [
-              "Ein detaillierter Anforderungskatalog, der die SOLL-Funktionen und SOLL-Prozesse des Unternehmens definiert"
-              
+              "Ein detaillierter Anforderungskatalog, der die SOLL-Funktionen und SOLL-Prozesse des Unternehmens definiert",
+              "Eine Liste aller Mitarbeiter",
+              "Ein Verzeichnis der Serverlasten",
+              "Eine Aufstellung der Hardware-Gewichte"
             ],
             "correctAnswer": 0
           },
@@ -18,8 +20,10 @@
             "difficulty": "mittel",
             "question": "Was ist der Hauptunterschied zwischen Lastenheft und Pflichtenheft?",
             "options": [
-              "Das Lastenheft wird vom Auftraggeber erstellt und beschreibt die Anforderungen, das Pflichtenheft wird vom Anbieter erstellt und beschreibt die technische Umsetzung"
-              
+              "Das Lastenheft wird vom Auftraggeber erstellt und beschreibt die Anforderungen, das Pflichtenheft wird vom Anbieter erstellt und beschreibt die technische Umsetzung",
+              "Das Lastenheft ist für schwere, das Pflichtenheft für leichte Aufgaben",
+              "Lastenhefte sind optional, Pflichtenhefte sind verpflichtend",
+              "Lastenhefte sind digital, Pflichtenhefte sind immer in Papierform"
             ],
             "correctAnswer": 0
           },
@@ -28,8 +32,10 @@
             "difficulty": "mittel",
             "question": "Welche Rolle spielt das Pflichtenheft im Projekt?",
             "options": [
-              "Es dient als elementare Arbeitsgrundlage und Vertragsgrundlage für das Projekt"
-              
+              "Es dient als elementare Arbeitsgrundlage und Vertragsgrundlage für das Projekt",
+              "Es ist nur eine formale Pflicht ohne praktischen Nutzen",
+              "Es wird nur für die Dokumentation am Projektende benötigt",
+              "Es dient ausschließlich der Kostenkalkulation"
             ],
             "correctAnswer": 0
           },
@@ -38,8 +44,10 @@
             "difficulty": "schwer",
             "question": "Wer erstellt das Pflichtenheft?",
             "options": [
-              "Primär der Software-Anbieter in Zusammenarbeit mit dem Auftraggeber"
-            
+              "Primär der Software-Anbieter in Zusammenarbeit mit dem Auftraggeber",
+              "Ausschließlich der Kunde alleine",
+              "Nur die Rechtsabteilung",
+              "Ein externes Prüfungsinstitut"
             ],
             "correctAnswer": 0
           },
@@ -48,8 +56,10 @@
             "difficulty": "mittel",
             "question": "Wozu dient das Lastenheft im Softwareprojekt?",
             "options": [
-              "Als Grundlage für das Angebot des Software-Anbieters und Basis für das Pflichtenheft"
-              
+              "Als Grundlage für das Angebot des Software-Anbieters und Basis für das Pflichtenheft",
+              "Zur Arbeitszeiterfassung der Entwickler",
+              "Als Marketinginstrument für das fertige Produkt",
+              "Zur Berechnung der Serverauslastung"
             ],
             "correctAnswer": 0
           },
@@ -58,7 +68,10 @@
             "difficulty": "leicht",
             "question": "Nenne Nichtfunktionale Qualitätsanforderungen",
             "options": [
-              "Benutzbarkeit, Zuverlässigkeit, Effizienz, Änderbarkeit, Übertagbarkeit"
+              "Benutzbarkeit, Zuverlässigkeit, Effizienz, Änderbarkeit, Übertagbarkeit",
+              "Programmiersprache, Datenbanktyp, Serverstandort",
+              "Preis, Lieferzeit, Garantie",
+              "Bildschirmgröße, Tastaturtyp, Mausform"
             ],
             "correctAnswer": 0
           },
@@ -67,7 +80,10 @@
             "difficulty": "leicht",
             "question": "Was macht ein Compiler",
             "options": [
-              "Ein Compiler übersetzt Quellcode in Maschinencode ohne jedoch die Befehle ausführen zu können"
+              "Ein Compiler übersetzt Quellcode in Maschinencode ohne jedoch die Befehle ausführen zu können",
+              "Ein Compiler ist ein Texteditor für Programmcode",
+              "Ein Compiler testet Programme auf Viren",
+              "Ein Compiler erstellt automatisch Dokumentationen"
             ],
             "correctAnswer": 0
           },
@@ -76,7 +92,10 @@
             "difficulty": "leicht",
             "question": "Was macht ein Interpreter",
             "options": [
-              "Ein Interpreter interpretiert Quellcode während der Laufzeit eines Programms, er bearbeitet ein Programm Zeilenweise, wobei jede Zeile einer Syntaxprüfung unterzogen wird"
+              "Ein Interpreter interpretiert Quellcode während der Laufzeit eines Programms, er bearbeitet ein Programm Zeilenweise, wobei jede Zeile einer Syntaxprüfung unterzogen wird",
+              "Ein Interpreter übersetzt Fremdsprachen in die Programmiersprache",
+              "Ein Interpreter erstellt Backups von Programmen",
+              "Ein Interpreter ist ein Grafikdesign-Tool"
             ],
             "correctAnswer": 0
           },
@@ -85,7 +104,10 @@
             "difficulty": "leicht",
             "question": "Wozu dient ein Debugger",
             "options": [
-              "Zur Fehleranalyse und -behebung"
+              "Zur Fehleranalyse und -behebung",
+              "Zum Erstellen von Backups",
+              "Zur Optimierung der Programmgeschwindigkeit",
+              "Zum Formatieren des Quellcodes"
             ],
             "correctAnswer": 0
           },
@@ -94,7 +116,10 @@
             "difficulty": "leicht",
             "question": "Beschreibe was ein Application Framework ist",
             "options": [
-              "Sie dienen als Programmiergerüst für eine bestimmte Klasse von Anwendungen, die ihrerseits der Bereitstellung von Funktionen und Programmstruckturen dient"
+              "Sie dienen als Programmiergerüst für eine bestimmte Klasse von Anwendungen, die ihrerseits der Bereitstellung von Funktionen und Programmstruckturen dient",
+              "Ein Rahmen für Computerbildschirme",
+              "Ein System zur Verwaltung von Arbeitszeiten",
+              "Ein Tool zum Erstellen von Benutzeroberflächen"
             ],
             "correctAnswer": 0
           },
@@ -103,7 +128,10 @@
             "difficulty": "leicht",
             "question": "Beschreibe was ein Web Framework ist",
             "options": [
-              "Ein Web Framework ist ein Programmiergerüst für die Entwicklung von Webanwendungen, sie sind in der Regel dynamisch verwendbar."
+              "Ein Web Framework ist ein Programmiergerüst für die Entwicklung von Webanwendungen, sie sind in der Regel dynamisch verwendbar",
+              "Ein Rahmen für Webseiten-Layouts",
+              "Ein Tool zum Testen von Internetverbindungen",
+              "Ein System zur Verwaltung von Webadressen"
             ],
             "correctAnswer": 0
           },
@@ -112,7 +140,10 @@
             "difficulty": "leicht",
             "question": "Was sind Bestandteile einer Programmiersprache?",
             "options": [
-              "Syntax, Semantik, Bibliotheken, Konventionen"
+              "Syntax, Semantik, Bibliotheken, Konventionen",
+              "Tastatur, Maus, Monitor, Drucker",
+              "Server, Client, Netzwerk, Browser",
+              "Design, Layout, Farben, Schriften"
             ],
             "correctAnswer": 0
           },
@@ -121,13 +152,13 @@
             "difficulty": "leicht",
             "question": "Was ist die Syntax einer Programmiersprache?",
             "options": [
-              "Die Syntax einer Programmiersprache ist deren Grammatik. Sie beschreibt die Regeln, zulässige Sprachelemente und deren Struktur nach denen ein Programm geschrieben wird."
+              "Die Syntax einer Programmiersprache ist deren Grammatik. Sie beschreibt die Regeln, zulässige Sprachelemente und deren Struktur nach denen ein Programm geschrieben wird",
+              "Die Geschwindigkeit der Programmausführung",
+              "Die Größe des kompilierten Programms",
+              "Die Anzahl der verwendeten Variablen"
             ],
             "correctAnswer": 0
           }
-          
-           
-          
         ]
       }
     }
