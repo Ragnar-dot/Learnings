@@ -1,0 +1,135 @@
+{
+  "categories": {
+    "Prüfungsfragen Set 3": {
+      "description": "Simulierte Prüfungsfragen (Karteikarten-System)",
+      "questions": [
+          {
+            "id": 1,
+            "difficulty": "leicht",
+            "frontside": "Nenne zwei Vorteile die sich durch 5G ergeben",
+            "backside": "Höhere Bandbreite, geringere Latenzzeiten, höhere Download und Upload Geschwindigkeiten",
+            "type": "flashcard"
+          },
+          {
+            "id": 2,
+            "difficulty": "leicht",
+            "frontside": "Was sind die Methoden einer Bedarfsanalyse?",
+            "backside": "Interviews, Fragebögen, Beobachtungen, Dokumentenanalysen, Expertenbefragungen, Benchmarking",
+            "type": "flashcard"
+          },
+          {
+            "id": 3,
+            "difficulty": "leicht",
+            "frontside": "Was ist die Bedeutung von EULA?",
+            "backside": "End User License Agreement - Ein Endbenutzer-Lizenzvertrag gilt in der Regel für verschiedene Arten von Software und nicht für physische Waren. Er wird für einmalig verkaufte Produkte verwendet (nicht für Abonnements). Er stellt eine Vereinbarung zwischen dem Software-Entwickler oder -Unternehmen, dem Lizenzgeber oder Verkäufer und dem Verbraucher bezüglich der Nutzung der Software her.",
+            "type": "flashcard"
+          },
+          {
+            "id": 4,
+            "difficulty": "leicht",
+            "frontside": "Was ist die Bedeutung von OEM?",
+            "backside": "Die Abkürzung OEM steht für Original Equipment Manufacturer, was so viel bedeutet wie Erstausrüster oder Originalgerätehersteller.",
+            "type": "flashcard"
+          },
+          {
+            "id": 5,
+            "difficulty": "leicht",
+            "frontside": "Was bedeutet GPL?",
+            "backside": "GPL steht für General Public License und ist eine Lizenz, die von der Free Software Foundation entwickelt wurde. Sie erlaubt es Benutzern, Software zu verwenden, zu ändern und zu verbreiten, solange sie die Lizenzbedingungen einhalten.",
+            "type": "flashcard"
+          },
+          {
+            "id": 6,
+            "difficulty": "leicht",
+            "frontside": "Was ist ein Lizenzvertrag?",
+            "backside": "Ein Lizenzvertrag ist ein Vertrag, der es einem Lizenznehmer erlaubt, die Rechte an geistigem Eigentum eines Lizenzgebers zu nutzen. Der Lizenzvertrag legt fest, wie der Lizenznehmer das geistige Eigentum nutzen darf, und enthält in der Regel Bedingungen, die die Rechte und Pflichten beider Parteien regeln.",
+            "type": "flashcard"
+          },
+          {
+            "id": 7,
+            "difficulty": "leicht",
+            "frontside": "Unterschiede zwischen Leasingvertrag und Mietvertrag?",
+            "backside": "Leasingvertrag: Der Leasingnehmer hat die Möglichkeit, das Leasingobjekt am Ende der Laufzeit zu einem vorher festgelegten Preis zu kaufen. Mietvertrag: Der Mieter hat keine Möglichkeit, das Mietobjekt zu kaufen.",
+            "type": "flashcard"
+          },
+          {
+            "id": 8,
+            "difficulty": "leicht",
+            "frontside": "Nenne Elemente des Abnahmeprozesses",
+            "backside": "Abnahmevorbereitung, Abnahmedurchführung, Abnahmeentscheidung, Abnahmeprotokoll, Bereitstellung",
+            "type": "flashcard"
+          },
+          {
+            "id": 9,
+            "difficulty": "leicht",
+            "frontside": "Nenne den Zweck des Abnahmeprotokolls",
+            "backside": "Ein Abnahmeprotokoll für ein Softwareprodukt in der IT dient dazu, den Abschluss des Softwareentwicklungsprozesses zu dokumentieren und sicherzustellen, dass das entwickelte Produkt die vereinbarten Anforderungen und Qualitätsstandards erfüllt. Es schützt sowohl den Auftraggeber als auch den Auftragnehmer, indem es alle relevanten Informationen zur Abnahme festhält und eine rechtliche Grundlage für die endgültige Übergabe der Software bietet",
+            "type": "flashcard"
+          },
+          {
+            "id": 10,
+            "difficulty": "leicht",
+            "frontside": "Nenne Inhalte eines Abnahmeprotokolls",
+            "backside": "Projektbezeichnung und -beschreibung, Abnahmekriterien und Tests, Ergebnisse der Abnahmeprüfung, Mängel und Fehler (falls vorhanden), Vereinbarte Maßnahmen zur Behebung von Mängeln, Abnahmetermin und Unterschriften der Beteiligten",
+            "type": "flashcard"
+          },
+          {
+            "id": 11,
+            "difficulty": "leicht",
+            "frontside": "Nenne IT Grundschutz-Bausteine der Kategorie APP Anwendungen",
+            "backside": "Office Pakete, Browser, E-Mail-Programme, Datenbanken, Entwicklungsumgebungen, Betriebssysteme, Anwendungssoftware, Webserver, ERP Systeme, Firewall",
+            "type": "flashcard"
+          },
+          {
+            "id": 12,
+            "difficulty": "leicht",
+            "frontside": "Nenne IT Grundschutz-Bausteine der Kategorie SYS IT Systeme",
+            "backside": "IOS, Android, Clients unter Windows, Clients unter Linux, Clients unter Mac OS",
+            "type": "flashcard"
+          },
+          {
+            "id": 13,
+            "difficulty": "leicht",
+            "frontside": "Nenne Technische Maßnahmen zur Verbesserung der IT Sicherheit sowie des Datenschutzes",
+            "backside": "Firewall, Virenschutz, Verschlüsselung, Zugriffskontrolle, Datensicherung, Sicherheitsupdates",
+            "type": "flashcard"
+          },
+          {
+            "id": 14,
+            "difficulty": "leicht",
+            "frontside": "Nenne Organisatorische Maßnahmen zur Verbesserung der IT Sicherheit sowie des Datenschutzes",
+            "backside": "Schulungen, Richtlinien, Notfallpläne, Sicherheitskonzepte, Sensibilisierung der Mitarbeiter mittels Phishing Tests",
+            "type": "flashcard"
+          },
+          {
+            "id": 15,
+            "difficulty": "leicht",
+            "frontside": "Nenne Infrastrukturelle Maßnahmen zur Verbesserung der IT Sicherheit sowie des Datenschutzes",
+            "backside": "Redundante Systeme, USV, Brandschutz, Zutrittskontrolle",
+            "type": "flashcard"
+          },
+          {
+            "id": 16,
+            "difficulty": "leicht",
+            "frontside": "Was bedeutet Security by Design?",
+            "backside": "Security by Design ist ein Konzept, bei dem Sicherheitsaspekte bereits in der Entwurfsphase eines Systems oder Produkts berücksichtigt werden. Das Ziel ist es, die Sicherheit von Anfang an zu integrieren und nicht erst im Nachhinein hinzuzufügen. Dadurch sollen Sicherheitslücken und Schwachstellen vermieden werden, die sonst erst im Betrieb entdeckt und behoben werden müssten.",
+            "type": "flashcard"
+          },
+          {
+            "id": 17,
+            "difficulty": "mittel",
+            "frontside": "Was bedeutet Security by Default?",
+            "backside": "Security by Default ist ein Konzept, bei dem die sichersten Einstellungen und Konfigurationen als Standard vorgegeben sind. Das bedeutet, dass ein System oder Produkt von Anfang an so konfiguriert ist, dass es sicher ist und keine zusätzlichen Maßnahmen erforderlich sind, um die Sicherheit zu gewährleisten. Der Benutzer muss also keine manuellen Anpassungen vornehmen, um das System sicher zu machen z.B bei Router, Windows 10/11, Google Cloud.",
+            "type": "flashcard"
+          },
+          {
+            "id": 18,
+            "difficulty": "leicht",
+            "frontside": "Was sind die Aufgaben einer Firewall?",
+            "backside": "Eine Firewall ist eine Sicherheitsvorrichtung, die dazu dient, ein Netzwerk oder einen Computer vor unerwünschten Zugriffen aus dem Internet oder anderen Netzwerken zu schützen. Sie überwacht den Datenverkehr und blockiert oder erlaubt den Zugriff basierend auf vordefinierten Regeln. Die Aufgaben einer Firewall sind die Erkennung und Blockierung von unerwünschtem Datenverkehr, die Überwachung des Datenverkehrs, die Kontrolle des Datenverkehrs und die Protokollierung von Ereignissen.",
+            "type": "flashcard"
+          }
+        ]
+      }
+    }
+}

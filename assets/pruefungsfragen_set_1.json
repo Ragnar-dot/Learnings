@@ -1,0 +1,142 @@
+{
+    "categories": {
+      "Prüfungsfragen Set 1": {
+        "description": "Simulierte Prüfungsfragen (Karteikarten-System)",
+        "questions": [
+          {
+            "id": 1,
+            "difficulty": "leicht",
+            "frontside": "Nenne vier Merkmale eines Projektes",
+            "backside": "Einmaligkeit, Zeitliche Begrenzung, Ressourcenbegrenzung, Zielvorgabe",
+            "type": "flashcard"
+          },
+          {
+            "id": 2,
+            "difficulty": "leicht", 
+            "frontside": "Nenne die fünf S.M.A.R.T Kriterien",
+            "backside": "Spezifisch, Messbar, Akzeptiert, Realistisch, Terminiert",
+            "type": "flashcard"
+          },
+          {
+            "id": 3,
+            "difficulty": "leicht",
+            "frontside": "Beschreibe die Bestandteile einer SWOT Analyse",
+            "backside": "Stärken, Schwächen, Chancen, Risiken",
+            "type": "flashcard"
+          },
+          {
+            "id": 4,
+            "difficulty": "leicht",
+            "frontside": "Beschreibe Sie die Aufgaben eines CMS",
+            "backside": "Content Management System, unterstützt Unternehmen bei der Verwaltung digitaler Inhalte. Es ermöglicht die Erstellung, Bearbeitung und Veröffentlichung von Inhalten auf einer Website oder einem Blog.",
+            "type": "flashcard"
+          },
+          {
+            "id": 5,
+            "difficulty": "leicht",
+            "frontside": "Beschreibe Sie was Usability bedeutet",
+            "backside": "Usability bezeichnet die Benutzerfreundlichkeit und die Bedienbarkeit von Software und Websites. Ein Produkt gilt als benutzerfreundlich, wenn es einfach zu bedienen ist und die Nutzer bei der Erledigung ihrer Aufgaben unterstützt.",
+            "type": "flashcard"
+          },
+          {
+            "id": 6,
+            "difficulty": "leicht",
+            "frontside": "Beschreiben Sie was UX (User Experience) bedeutet",
+            "backside": "User Experience (UX) bezeichnet die Erfahrungen, die ein Nutzer mit einem Produkt oder einer Dienstleistung macht. Dazu gehören alle Aspekte der Interaktion des Nutzers mit dem Produkt.",
+            "type": "flashcard"
+          },
+          {
+            "id": 7,
+            "difficulty": "leicht",
+            "frontside": "Nennen Sie Nachteile einer Grafischen Benutzeroberfläche",
+            "backside": "Grafische Benutzeroberflächen sind nicht immer barrierefrei, Grafische Benutzeroberflächen können die Leistung eines Systems beeinträchtigen, Sie sind Ressourcenintensiv",
+            "type": "flashcard"
+          },
+          {
+            "id": 8,
+            "difficulty": "leicht",
+            "frontside": "Nennen Sie Nachteile einer Kommandozeilensteuerung",
+            "backside": "Kommandozeilensteuerung ist für unerfahrene Benutzer schwer zu erlernen, Kommandozeilensteuerung ist fehleranfällig, Kommandozeilensteuerung ist nicht intuitiv",
+            "type": "flashcard"
+          },
+          {
+            "id": 9,
+            "difficulty": "leicht",
+            "frontside": "Nennen Sie alle Schichten des OSI Modells",
+            "backside": "7 Anwendungsschicht, 6 Darstellungsschicht, 5 Sitzungsschicht, 4 Transportschicht, 3 Vermittlungsschicht, 2 Sicherungsschicht, 1 Bitübertragungsschicht",
+            "type": "flashcard"
+          },
+          {
+            "id": 10,
+            "difficulty": "mittel",
+            "frontside": "Beschreiben Sie den Unterschied zwischen Compiler und Interpreter",
+            "backside": "Ein Compiler übersetzt den gesamten Quellcode in Maschinencode, bevor das Programm ausgeführt wird. Ein Interpreter übersetzt den Quellcode Zeile für Zeile in Maschinencode und führt das Programm gleichzeitig aus.",
+            "type": "flashcard"
+          },
+          {
+            "id": 11,
+            "difficulty": "schwer",
+            "frontside": "Beschreiben Sie die Aufgabe eines Linkers",
+            "backside": "Ein Linker verbindet die Objektdateien eines Programms zu einer ausführbaren Datei. Er löst externe Referenzen auf und ordnet den Speicherplatz für die Variablen und Funktionen im Programm.",
+            "type": "flashcard"
+          },
+          {
+            "id": 12,
+            "difficulty": "mittel",
+            "frontside": "Beschreiben Sie die Funktionale Programmierung",
+            "backside": "Die funktionale Programmierung ist ein Programmierparadigma, bei dem Programme als mathematische Funktionen betrachtet werden. Sie basiert auf der Verwendung von Funktionen als grundlegende Bausteine und der Vermeidung von Zustandsänderungen.",
+            "type": "flashcard"
+          },
+          {
+            "id": 13,
+            "difficulty": "mittel",
+            "frontside": "Beschreiben Sie die Prozedurale Programmierung",
+            "backside": "Die prozedurale Programmierung ist ein Programmierparadigma, bei dem Programme als Abfolge von Anweisungen betrachtet werden. Sie basiert auf der Verwendung von Prozeduren oder Funktionen zur Strukturierung des Codes und zur Wiederverwendung von Code.",
+            "type": "flashcard"
+          },
+          {
+            "id": 14,
+            "difficulty": "mittel",
+            "frontside": "Beschreiben Sie die Objektorientierte Programmierung",
+            "backside": "Die objektorientierte Programmierung ist ein Programmierparadigma, bei dem Programme als Sammlungen von Objekten betrachtet werden. Ein Objekt besteht aus Daten und Methoden, die auf diese Daten zugreifen und sie verarbeiten. Die Objektorientierung ermöglicht die Modellierung von realen oder abstrakten Entitäten als Objekte und die Interaktion zwischen diesen Objekten.",
+            "type": "flashcard"
+          },
+          {
+            "id": 15,
+            "difficulty": "mittel",
+            "frontside": "Was ist der Unterschied zwischen Variablen und Konstanten",
+            "backside": "Variablen sind Speicherplätze, die Werte speichern und im Laufe des Programms geändert werden können. Konstanten sind Speicherplätze, die Werte speichern und während des Programms nicht geändert werden können.",
+            "type": "flashcard"
+          },
+          {
+            "id": 16,
+            "difficulty": "leicht",
+            "frontside": "Erläutern sie was Phishing ist",
+            "backside": "Phishing ist eine Form des Internetbetrugs, bei der Betrüger versuchen, vertrauliche Informationen wie Benutzernamen, Passwörter und Kreditkartennummern durch gefälschte E-Mails, Websites oder Nachrichten zu stehlen.",
+            "type": "flashcard"
+          },
+          {
+            "id": 17,
+            "difficulty": "leicht",
+            "frontside": "Erläutern sie was Brute Force Angriffe sind",
+            "backside": "Bei sogenannten Brute-Force-Attacken oder Brute-Force-Angriffen versuchen Hacker durch das wahllose Ausprobieren von Zeichenkombinationen bei möglichst geringem Zeitaufwand ein Fremdpasswort möglichst effizient zu entschlüsseln und darüber auf ein System zuzugreifen.",
+            "type": "flashcard"
+          },
+          {
+            "id": 18,
+            "difficulty": "leicht",
+            "frontside": "Nennen Sie rechtliche Grundlagen, die die Verarbeitung personenbezogener Daten regeln",
+            "backside": "Datenschutz-Grundverordnung (DSGVO), Bundesdatenschutzgesetz (BDSG), Telemediengesetz (TMG)",
+            "type": "flashcard"
+          },
+          {
+            "id": 19,
+            "difficulty": "leicht",
+            "frontside": "Beschreiben sie weitere Standards zur Gewährleistung der Informationssicherheit neben der ISO 27001",
+            "backside": "BSI Grundschutz, IT-Grundschutz, ISO 27002",
+            "type": "flashcard"
+          }
+        ]
+      }
+    }
+}

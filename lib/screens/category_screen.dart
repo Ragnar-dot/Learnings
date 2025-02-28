@@ -81,12 +81,12 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': Icons.document_scanner_rounded,
       'description': 'Simulierte Prüfungsfragen',
     },
-        {
+    {
       'name': 'Prüfungsfragen Set 2',
       'icon': Icons.document_scanner_rounded,
       'description': 'Simulierte Prüfungsfragen',
     },
-            {
+    {
       'name': 'Prüfungsfragen Set 3',
       'icon': Icons.document_scanner_rounded,
       'description': 'Simulierte Prüfungsfragen',
@@ -192,7 +192,8 @@ class _CategoryScreenState extends State<CategoryScreen> {
                         final result = await Navigator.push<QuizStats>(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => QuizScreen(category: category),
+                            builder: (context) =>
+                                QuizScreen(category: category),
                           ),
                         );
                         if (result != null) {

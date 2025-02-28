@@ -1,0 +1,128 @@
+{
+  "categories": {
+    "Prüfungsfragen Set 2": {
+      "description": "Simulierte Prüfungsfragen (Karteikarten-System)",
+      "questions": [
+          {
+            "id": 1,
+            "difficulty": "leicht",
+            "frontside": "Bennene das UML Diagramm, das die Struktur eines Programms  und dessen Abhängigkeiten zeigt",
+            "backside": "Klassendiagramm",
+            "type": "flashcard"
+          },
+          {
+            "id": 2,
+            "difficulty": "leicht",
+            "frontside": "Was bedeutet Aggregation?",
+            "backside": "Eine Beziehung zwischen zwei Klassen, bei der eine Klasse eine andere Klasse als Teil ihrer Struktur enthält",
+            "type": "flashcard"
+          },
+          {
+            "id": 3,
+            "difficulty": "leicht",
+            "frontside": "Was bedeutet Komposition?",  
+            "backside": "Komposition ist ein Prinzip der Objektorientierten Programmierung (OOP), bei dem eine Klasse Objekte einer anderen Klasse als Attribute enthält, anstatt von ihr zu erben. Dadurch entsteht eine Hat-ein-Beziehung statt einer Ist-ein-Beziehung (wie bei Vererbung).",
+            "type": "flashcard"
+          },
+          {
+            "id": 4,
+            "difficulty": "leicht",
+            "frontside": "Was ist eine Vererbung?",
+            "backside": "Eine Beziehung zwischen zwei Klassen, bei der eine Klasse eine andere Klasse als Teil ihrer Struktur enthält",
+            "type": "flashcard"
+          },
+          {
+            "id": 5,
+            "difficulty": "leicht",
+            "frontside": "Was ist ein kooperativer Führungsstil?",
+            "backside": "Bei einem kooperativen Führungsstil arbeiten Führungskräfte und Mitarbeitende partnerschaftlich zusammen. Die Mitarbeitenden werden in Entscheidungen einbezogen, sollen sich aktiv einbringen und frei ihre Meinung sagen. Ein anderer Begriff dafür ist demokratischer Führungsstil.",
+            "type": "flashcard"
+          },
+          {
+            "id": 6,
+            "difficulty": "leicht",
+            "frontside": "Was ist ein autoritärer Führungsstil?",
+            "backside": "Bei einem autoritären Führungsstil bestimmt die Führungskraft alleine, was zu tun ist. Die Mitarbeitenden haben wenig bis gar keinen Spielraum und müssen die Anweisungen der Führungskraft befolgen. Ein anderer Begriff dafür ist autokratischer Führungsstil, diese sind herarisch.",
+            "type": "flashcard"
+          },
+          {
+            "id": 7,
+            "difficulty": "leicht",
+            "frontside": "Erläutern Sie den Begriff Pay per Use",
+            "backside": "Pay per Use ist ein Abrechnungsmodell, bei dem Kunden nur für die tatsächlich in Anspruch genommenen Leistungen zahlen. Das bedeutet, dass die Kunden nur für die Nutzungsdauer oder die Menge der genutzten Ressourcen bezahlen, nicht für die Bereitstellung oder den Besitz der Ressourcen, z.B man zahlt für die Anzahl der User die auf eine Software zugreifen.",
+            "type": "flashcard"
+          },
+          {
+            "id": 8,
+            "difficulty": "leicht",
+            "frontside": "Erläutern Sie den Begriff Pay per License",
+            "backside": "Pay per License ist ein Abrechnungsmodell, bei dem Kunden für die Nutzung von Software eine Lizenzgebühr zahlen. Die Lizenzgebühr kann einmalig oder regelmäßig anfallen, z.B. monatlich oder jährlich. Die Lizenzgebühr kann pro Nutzer, pro Gerät oder pro Installation berechnet werden.",
+            "type": "flashcard"
+          },
+          {
+            "id": 9,
+            "difficulty": "leicht",
+            "frontside": "Nenne Aspekte die bei der Bedarfsanalyse berücksichtigt werden sollten",
+            "backside": "Menge, Anforderung, Technische Abhängigkeiten, Finanzielle Möglichkeiten",
+            "type": "flashcard"
+          },
+          {
+            "id": 10,
+            "difficulty": "leicht",
+            "frontside": "Methoden die bei einer Bedarfsanalyse zum Einsatz kommen",
+            "backside": "Direkte Beobachtung, Aufgabenbeschreibung, Befragung, Indirekte Beobachtung",
+            "type": "flashcard"
+          },
+          {
+            "id": 11,
+            "difficulty": "leicht",
+            "frontside": "Welche Software ist Open Source?",
+            "backside": "Linux, Apache, MySQL, PHP, Docker",
+            "type": "flashcard"
+          },
+          {
+            "id": 12,
+            "difficulty": "leicht",
+            "frontside": "Welche Software ist proprietär?",
+            "backside": "Windows, Microsoft Office, Adobe Photoshop, Oracle Database, SAP ERP",
+            "type": "flashcard"
+          },
+          {
+            "id": 13,
+            "difficulty": "mittel",
+            "frontside": "Was bedeutet proprietäre Software?",
+            "backside": "Proprietäre Software ist Software, die von einem Unternehmen oder einer Organisation entwickelt und vertrieben wird. Der Quellcode der Software ist nicht öffentlich",
+            "type": "flashcard"
+          },
+          {
+            "id": 14,
+            "difficulty": "mittel",
+            "frontside": "Nenne Vorteile einer standardisierten Software",
+            "backside": "Geringere Kosten, schnellere Implementierung, bessere Kompatibilität, höhere Sicherheit, bessere Wartbarkeit, fester Preis, einfache Zugänglichkeit",
+            "type": "flashcard"
+          },
+          {
+            "id": 15,
+            "difficulty": "leicht",
+            "frontside": "Nennen Sie mindestens 3 mögliche Arten, eine Softwareschulung umzusetzen",
+            "backside": "Online-Schulung, Präsenzschulung mittels Fachpersonal, Webinare, Multiplikatoren-Schulung",
+            "type": "flashcard"
+          },
+          {
+            "id": 16,
+            "difficulty": "leicht",
+            "frontside": "Beschreibe die Inhalte und das Ziel eines Soll-Ist-Vergleichs",
+            "backside": "Ein Soll-Ist-Vergleich ist eine Methode zur Überprüfung, ob die tatsächlichen Ergebnisse eines Prozesses oder Projekts mit den geplanten Ergebnissen übereinstimmen. Das Ziel eines Soll-Ist-Vergleichs ist es, Abweichungen zwischen den Soll- und Ist-Werten zu identifizieren und zu analysieren, um Maßnahmen zur Korrektur oder Verbesserung zu ergreifen.",
+            "type": "flashcard"
+          },
+          {
+            "id": 17,
+            "difficulty": "leicht",
+            "frontside": "Beschreibe und Erläutere den PDCA Kreislauf",
+            "backside": "Der PDCA-Zyklus (Plan-Do-Check-Act) ist ein Konzept zur kontinuierlichen Verbesserung von Prozessen, Produkten oder Dienstleistungen. Der Zyklus besteht aus vier Phasen: Planung (Plan), Umsetzung (Do), Überprüfung (Check) und Anpassung (Act). Ziel des PDCA-Zyklus ist es, kontinuierlich Verbesserungen vorzunehmen. Beispiel: Planung: Festlegung von Zielen und Maßnahmen, Umsetzung: Durchführung der geplanten Maßnahmen, Überprüfung: Überprüfung der Ergebnisse, Anpassung: Anpassung der Maßnahmen auf Basis der Ergebnisse.",
+            "type": "flashcard"
+          }
+        ]
+      }
+    }
+}

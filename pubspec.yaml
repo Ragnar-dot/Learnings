@@ -16,6 +16,7 @@ dependencies:
   path_provider: ^2.1.2
   flutter_inset_shadow: ^2.0.3
   flutter_svg: ^2.0.17
+  flip_card: ^0.7.0
 
   
 
@@ -33,9 +34,9 @@ flutter:
     - assets/lernfeld3.json
     - assets/lernfeld4.json
     - assets/lernfeld5.json
-    - assets/prüfungsfragen_set_1.json
-    - assets/prüfungsfragen_set_2.json
-    - assets/prüfungsfragen_set_3.json
+    - assets/pruefungsfragen_set_1.json
+    - assets/pruefungsfragen_set_2.json
+    - assets/pruefungsfragen_set_3.json
     - assets/exercises/sortieralgorithmen_uebungen.pdf
     - assets/SQL/Befehlssammlung_SQL.pdf
     - assets/SQL/sql_befehle.pdf
