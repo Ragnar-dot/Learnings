@@ -234,10 +234,10 @@ class _QuizScreenState extends State<QuizScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "${widget.category}          Frage ${currentQuestionIndex + 1}/${questions.length}",
+          "${widget.category}       Frage ${currentQuestionIndex + 1}/${questions.length}",
           style: TextStyle(
             color: Colors.white,
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
