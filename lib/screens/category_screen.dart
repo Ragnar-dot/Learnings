@@ -185,7 +185,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                   margin: const EdgeInsets.all(2),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(25),
-                    side: BorderSide(color: const Color.fromARGB(68, 238, 238, 238)),
+                    side: BorderSide(color: Theme.of(context).brightness == Brightness.dark ? const Color.fromARGB(121, 184, 184, 184) : const Color.fromARGB(14, 216, 216, 216)),                  // Rahmenfarbe
                    
                   ),
                   child: InkWell(
