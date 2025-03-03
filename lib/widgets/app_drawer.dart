@@ -58,7 +58,8 @@ class AppDrawer extends StatelessWidget {
               duration: const Duration(milliseconds: 400),
             ),
           ),
-          const Divider(),
+          Divider(color: themeProvider.isDarkMode ? const Color.fromARGB(34, 243, 243, 243) : const Color.fromARGB(143, 231, 231, 231)),
+
           ListTile(
             leading: const Icon(Icons.home),
             title: const Text('Startseite'),
@@ -71,6 +72,8 @@ class AppDrawer extends StatelessWidget {
               );
             },
           ),
+         
+
           ListTile(
             leading: const Icon(Icons.category),
             title: const Text('Kategorien'),
@@ -83,6 +86,8 @@ class AppDrawer extends StatelessWidget {
               );
             },
           ),
+         
+
           ListTile(
             leading: const Icon(Icons.video_library),
             title: const Text('Lernvideos'),
@@ -95,6 +100,8 @@ class AppDrawer extends StatelessWidget {
               );
             },
           ),
+          
+
           ListTile(
             leading: const Icon(Icons.file_present),
             title: const Text('Dokumente'),
@@ -106,6 +113,18 @@ class AppDrawer extends StatelessWidget {
                 ),
               );
             },
+          ),
+         
+          Container(
+            decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: const Color.fromARGB(255, 0, 0, 0).withAlpha(77),
+                  offset: const Offset(0, 2),
+                  blurRadius: 4,
+                ),
+              ],
+            ),
           ),
         ],
       ),

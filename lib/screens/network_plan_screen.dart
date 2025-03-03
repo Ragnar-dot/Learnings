@@ -771,7 +771,7 @@ class NetworkNode extends StatelessWidget {
     final cornerType = controllerId.split('_')[1]; // FAZ, FEZ, SAZ oder SEZ
 
     return Container(
-      width: 20,  // Etwas größer
+      width: 20,  
       height: 20,
       decoration: BoxDecoration(
         color: Colors.white,
