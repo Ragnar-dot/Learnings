@@ -98,6 +98,18 @@
               "Test- und Organisations-Methodik"
             ],
             "correctAnswer": 0
+          },
+          {
+            "id": 9,
+            "difficulty": "leicht",
+            "question": "Was ist der PDCA Zyklus ?",
+            "options": [
+              "Der PDCA-Zyklus (Plan-Do-Check-Act) ist ein Regelkreis zur Sicherung und Verbesserung der Qualität von Prozessen und Produkten. Der Zyklus besteht aus den vier Phasen Planung, Durchführung, Überprüfung und Maßnahmen.",
+              "Ein Zyklus für die Datensicherung",
+              "Ein Zyklus für die Datenwiederherstellung",
+              "Ein Zyklus für die Datenverarbeitung"
+            ],
+            "correctAnswer": 0
           }
         ]
       }

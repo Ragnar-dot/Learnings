@@ -169,8 +169,9 @@ class _CategoryScreenState extends State<CategoryScreen> {
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: 0.75,
-                crossAxisSpacing: 3,
-                mainAxisSpacing: 3,
+                crossAxisSpacing: 4,
+                mainAxisSpacing: 4,
+
               ),
               itemCount: categories.length,
               itemBuilder: (context, index) {
@@ -179,6 +180,14 @@ class _CategoryScreenState extends State<CategoryScreen> {
                     categoryStats[category] ?? QuizStats(category: category);
 
                 return Card(
+                  elevation: 4,
+                  
+                  margin: const EdgeInsets.all(2),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(25),
+                    side: BorderSide(color: const Color.fromARGB(68, 238, 238, 238)),
+                   
+                  ),
                   child: InkWell(
                     onTap: () async {
                       if (category == 'Netzplan') {

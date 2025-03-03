@@ -41,7 +41,7 @@ class AppTheme {
       ),
     ),
     appBarTheme: const AppBarTheme(
-      backgroundColor: Color.fromARGB(255, 73, 142, 199),
+      backgroundColor: Color.fromARGB(255, 57, 157, 238),
       foregroundColor: Colors.white,
       elevation: 0,
     ),

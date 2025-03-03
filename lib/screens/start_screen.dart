@@ -50,12 +50,14 @@ class _StartScreenState extends State<StartScreen> {
           children: [
             Container(
               width: double.infinity,
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
-                color: theme.primaryColor,
+                color: theme.primaryColor, 
+                
+                
                 borderRadius: const BorderRadius.only(
-                  bottomLeft: Radius.circular(24),
-                  bottomRight: Radius.circular(24),
+                  bottomLeft: Radius.circular(55),
+                  bottomRight: Radius.circular(55),
                 ),
               ),
               child: Column(
@@ -80,9 +82,21 @@ class _StartScreenState extends State<StartScreen> {
             ),
             if (categoryStats.isNotEmpty) ...[
               Padding(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(18),
                 child: Card(
-                  child: Padding(
+                  shape: RoundedRectangleBorder(
+                    
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: theme.cardTheme.color,
+                      boxShadow: [
+                        
+                      ],
+                      
+                    ),
+                    child: Padding(
+
                     padding: const EdgeInsets.all(16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -100,7 +114,9 @@ class _StartScreenState extends State<StartScreen> {
                   ),
                 ),
               ),
-            ],
+              ),
+            ],  
+
             Padding(
               padding: const EdgeInsets.all(16),
               child: _AnimatedPlayButton(
