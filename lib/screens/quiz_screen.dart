@@ -45,7 +45,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
   Future<void> loadQuestions() async {
     try {
-      print('Loading category: ${widget.category}');
+      
 
       // Prüfe zuerst ob es sich um Prüfungsfragen handelt
       if (widget.category.startsWith('Prüfungsfragen Set')) {
@@ -86,12 +86,11 @@ class _QuizScreenState extends State<QuizScreen> {
           jsonPath = 'assets/questions.json';
       }
 
-      print('Loading from path: $jsonPath');
+      
       final jsonString = await rootBundle.loadString(jsonPath);
 
       final Map<String, dynamic> jsonData = json.decode(jsonString);
-      print('Decoded JSON data: $jsonData');
-
+      
       if (!jsonData.containsKey('categories')) {
         throw Exception('Invalid JSON structure - missing categories');
       }
