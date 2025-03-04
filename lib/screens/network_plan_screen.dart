@@ -165,51 +165,65 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
 
     // Rückwärtsrechnung (SAZ und SEZ)
     void calculateBackward() {
-      // Zuerst: Identifiziere alle Endknoten (Knoten ohne Nachfolger)
-      for (var node in nodes) {
-        // Prüfe, ob dieser Knoten als Vorgänger in irgendeinem anderen Knoten vorkommt
-        final hasSuccessors = nodes.any((otherNode) => 
-            (otherNode['predecessors'] as List).contains(node['id']));
+      print('--- Start Rückwärtsrechnung ---');
 
-        if (!hasSuccessors) {
-          // Für Endknoten: SEZ = FEZ
+      // Rekursive Hilfsfunktion
+      void calculateNodeBackward(Map<String, dynamic> node) {
+        print('Berechne Knoten ${node["id"]}');
+        
+        final successors = node['successors'] as List<dynamic>;
+        
+        if (successors.isEmpty) {
+          // Endknoten: SEZ = FEZ
           final fez = node['correctValues']['FEZ'];
           node['correctValues']['SEZ'] = fez;
-          // SAZ = SEZ - Dauer
-          final saz = int.parse(fez) - node['duration'];
+          final sez = int.tryParse(fez) ?? 0;
+          final duration = node['duration'] as int;
+          node['correctValues']['SAZ'] = (sez - duration).toString();
+          print('  Endknoten ${node["id"]}: SEZ = $fez, SAZ = ${sez - duration}');
+        } else {
+          // Für Knoten mit Nachfolgern
+          final successorNodes = nodes.where((n) => 
+              successors.contains(n['id'])).toList();
+          
+          // Berechne zuerst rekursiv alle Nachfolger
+          for (var successorNode in successorNodes) {
+            // Nur berechnen, wenn noch nicht berechnet (SEZ ist noch '0')
+            if (successorNode['correctValues']['SEZ'] == '0') {
+              calculateNodeBackward(successorNode);
+            }
+          }
+          
+          // Jetzt haben alle Nachfolger ihre SAZ-Werte
+          final minSAZ = successorNodes
+              .map((s) => int.tryParse(s['correctValues']['SAZ'] ?? '999') ?? 999)
+              .reduce(math.min);
+          
+          // Setze SEZ und berechne SAZ
+          node['correctValues']['SEZ'] = minSAZ.toString();
+          final duration = node['duration'] as int;
+          final saz = minSAZ - duration;
           node['correctValues']['SAZ'] = saz.toString();
+          
+          print('  Knoten ${node["id"]}:');
+          print('    Nachfolger: $successors');
+          print('    SEZ = $minSAZ');
+          print('    SAZ = $saz (SEZ - Dauer: $minSAZ - $duration)');
         }
       }
 
-      // Dann: Rückwärtsrechnung für alle anderen Knoten
-      bool changed;
-      do {
-        changed = false;
-        for (var node in nodes.reversed) {
-          // Nur für Knoten, die Nachfolger haben
-          final hasSuccessors = nodes.any((otherNode) => 
-              (otherNode['predecessors'] as List).contains(node['id']));
+      // Setze alle SEZ und SAZ zurück
+      for (var node in nodes) {
+        node['correctValues']['SEZ'] = '0';
+        node['correctValues']['SAZ'] = '0';
+      }
 
-          if (hasSuccessors) {
-            // Finde alle Nachfolger
-            final successors = nodes.where((otherNode) => 
-                (otherNode['predecessors'] as List).contains(node['id']));
-            
-            // SEZ = Minimum der SAZ aller Nachfolger
-            final minSAZ = successors
-                .map((s) => int.parse(s['correctValues']['SAZ']))
-                .reduce(math.min);
-            
-            final newSEZ = minSAZ.toString();
-            if (node['correctValues']['SEZ'] != newSEZ) {
-              node['correctValues']['SEZ'] = newSEZ;
-              node['correctValues']['SAZ'] = 
-                  (minSAZ - node['duration']).toString();
-              changed = true;
-            }
-          }
+      // Starte die rekursive Berechnung von jedem Knoten
+      for (var node in nodes) {
+        if (node['correctValues']['SEZ'] == '0') {
+          calculateNodeBackward(node);
         }
-      } while (changed);
+      }
     }
 
     // Pufferzeiten berechnen
@@ -221,7 +235,7 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
         node['correctValues']['GP'] = gp.toString();
 
         // FP berechnen
-        final successors = node['successors'] as List;
+        final successors = node['successors'] as List<dynamic>;
         if (successors.isEmpty) {
           node['correctValues']['FP'] = '0';
         } else {
