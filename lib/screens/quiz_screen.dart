@@ -34,6 +34,7 @@ class _QuizScreenState extends State<QuizScreen> {
   bool showCorrectAnswer = false;
   bool showWrongAnswer = false;
   int? selectedAnswer;
+  bool isAnswerLocked = false;
 
   @override
   void initState() {
@@ -102,7 +103,23 @@ class _QuizScreenState extends State<QuizScreen> {
 
       setState(() {
         questions = (categoryData['questions'] as List)
-            .map((q) => Question.fromJson(q))
+            .map((q) {
+              // Erstelle eine Kopie der Frage
+              final question = Question.fromJson(q);
+              
+              // Mische die Antworten und merke die neue Position der richtigen Antwort
+              final originalCorrectAnswer = question.options[question.correctAnswer];
+              final shuffledOptions = [...question.options]..shuffle();
+              final newCorrectAnswerIndex = shuffledOptions.indexOf(originalCorrectAnswer);
+              
+              return Question(
+                id: question.id,
+                question: question.question,
+                options: shuffledOptions,
+                correctAnswer: newCorrectAnswerIndex,
+                difficulty: question.difficulty,
+              );
+            })
             .toList();
 
         if (widget.wrongQuestionIds != null) {
@@ -177,7 +194,13 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   void checkAnswer(int answer) {
-    selectedAnswer = answer;
+    if (isAnswerLocked) return;
+    
+    setState(() {
+      isAnswerLocked = true;
+      selectedAnswer = answer;
+    });
+    
     timer?.cancel();
     final question = questions[currentQuestionIndex];
 
@@ -192,12 +215,12 @@ class _QuizScreenState extends State<QuizScreen> {
       }
     });
 
-    // Verzögerung auf 2 Sekunden erhöht
     Future.delayed(const Duration(seconds: 2), () {
       if (!mounted) return;
       setState(() {
         showCorrectAnswer = false;
         showWrongAnswer = false;
+        isAnswerLocked = false;
         if (currentQuestionIndex < questions.length - 1) {
           currentQuestionIndex++;
           startTimer();

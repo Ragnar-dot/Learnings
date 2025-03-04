@@ -11,166 +11,240 @@ class NetworkPlanScreen extends StatefulWidget {
 class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
   final Map<String, TextEditingController> controllers = {};
   final Map<String, bool> isCorrect = {};
+  late List<Map<String, dynamic>> networkNodes;
 
-  final networkNodes = [
-    {
-      'id': 'A',
-      'title': 'Anforderungsanalyse',
-      'duration': 2,
-      'predecessors': [],
-      'successors': ['B'],
-      'position': const Offset(50, 100),
-      'correctValues': {
-        'duration': '2',
-        'FAZ': '0',
-        'FEZ': '2',
-        'SAZ': '0',
-        'SEZ': '2',
-        'GP': '0',
-        'FP': '0',
+  // Tabellendaten
+  final List<Map<String, dynamic>> tableData = [
+    {'id': 'A', 'duration': 2, 'predecessors': []},
+    {'id': 'B', 'duration': 4, 'predecessors': ['A']},
+    {'id': 'C', 'duration': 3, 'predecessors': ['B']},
+    {'id': 'D', 'duration': 6, 'predecessors': ['C']},
+    {'id': 'E', 'duration': 10, 'predecessors': ['C']},
+    {'id': 'F', 'duration': 3, 'predecessors': ['C']},
+    {'id': 'G', 'duration': 5, 'predecessors': ['D', 'E', 'F']},
+    {'id': 'H', 'duration': 6, 'predecessors': ['G']},
+    {'id': 'I', 'duration': 2, 'predecessors': ['H']},
+  ];
+
+  // Generiere Netzplan aus Tabellendaten
+  List<Map<String, dynamic>> generateNetworkNodes() {
+    final nodes = <Map<String, dynamic>>[];
+    final levels = <int, List<String>>{};  // Level -> Knoten-IDs
+    final nodeLevel = <String, int>{};      // Knoten-ID -> Level
+    final positions = <String, Offset>{};  // Speichere Positionen temporär
+    
+    // Berechne Level für jeden Knoten
+    void calculateLevels() {
+      // Startknoten (keine Vorgänger) sind Level 0
+      final queue = tableData
+          .where((node) => (node['predecessors'] as List).isEmpty)
+          .map((n) => n['id'] as String)
+          .toList();
+      
+      for (var id in queue) {
+        nodeLevel[id] = 0;
+        levels.putIfAbsent(0, () => []).add(id);
       }
-    },
-    {
-      'id': 'B',
-      'title': 'Systemauswahl',
-      'duration': 4,
-      'predecessors': ['A'],
-      'successors': ['C'],
-      'position': const Offset(200, 100),
-      'correctValues': {
-        'duration': '4',
-        'FAZ': '2',
-        'FEZ': '6',
-        'SAZ': '2',
-        'SEZ': '6',
-        'GP': '0',
-        'FP': '0',
-      }
-    },
-    {
-      'id': 'C',
-      'title': 'Installation',
-      'duration': 3,
-      'predecessors': ['B'],
-      'successors': ['D', 'E', 'F'],
-      'position': const Offset(350, 100),
-      'correctValues': {
-        'duration': '3',
-        'FAZ': '6',
-        'FEZ': '9',
-        'SAZ': '6',
-        'SEZ': '9',
-        'GP': '0',
-        'FP': '0',
-      }
-    },
-    {
-      'id': 'D',
-      'title': 'Datenmigration',
-      'duration': 6,
-      'predecessors': ['C'],
-      'successors': ['G'],
-      'position': const Offset(500, 50),
-      'correctValues': {
-        'duration': '6',
-        'FAZ': '9',
-        'FEZ': '15',
-        'SAZ': '9',
-        'SEZ': '15',
-        'GP': '0',
-        'FP': '0',
-      }
-    },
-    {
-      'id': 'E',
-      'title': 'Fehlersuche',
-      'duration': 10,
-      'predecessors': ['C'],
-      'successors': ['G'],
-      'position': const Offset(500, 150),
-      'correctValues': {
-        'duration': '10',
-        'FAZ': '9',
-        'FEZ': '19',
-        'SAZ': '10',
-        'SEZ': '20',
-        'GP': '1',
-        'FP': '0',
-      }
-    },
-    {
-      'id': 'F',
-      'title': 'Sicherheitstests',
-      'duration': 3,
-      'predecessors': ['C'],
-      'successors': ['G'],
-      'position': const Offset(500, 250),
-      'correctValues': {
-        'duration': '3',
-        'FAZ': '9',
-        'FEZ': '12',
-        'SAZ': '17',
-        'SEZ': '20',
-        'GP': '8',
-        'FP': '0',
-      }
-    },
-    {
-      'id': 'G',
-      'title': 'Anpassung',
-      'duration': 5,
-      'predecessors': ['D', 'E', 'F'],
-      'successors': ['H'],
-      'position': const Offset(650, 100),
-      'correctValues': {
-        'duration': '5',
-        'FAZ': '15',
-        'FEZ': '20',
-        'SAZ': '15',
-        'SEZ': '20',
-        'GP': '0',
-        'FP': '0',
-      }
-    },
-    {
-      'id': 'H',
-      'title': 'Schulung',
-      'duration': 6,
-      'predecessors': ['G'],
-      'successors': ['I'],
-      'position': const Offset(800, 100),
-      'correctValues': {
-        'duration': '6',
-        'FAZ': '20',
-        'FEZ': '26',
-        'SAZ': '20',
-        'SEZ': '26',
-        'GP': '0',
-        'FP': '0',
-      }
-    },
-    {
-      'id': 'I',
-      'title': 'Go-Live',
-      'duration': 2,
-      'predecessors': ['H'],
-      'successors': [],
-      'position': const Offset(950, 100),
-      'correctValues': {
-        'duration': '2',
-        'FAZ': '26',
-        'FEZ': '28',
-        'SAZ': '26',
-        'SEZ': '28',
-        'GP': '0',
-        'FP': '0',
+
+      // Berechne Level für alle anderen Knoten
+      while (queue.isNotEmpty) {
+        final currentId = queue.removeAt(0);
+        final currentLevel = nodeLevel[currentId]!;
+        
+        // Finde alle Nachfolger
+        final successors = tableData
+            .where((n) => (n['predecessors'] as List).contains(currentId))
+            .map((n) => n['id'] as String);
+        
+        for (var successorId in successors) {
+          // Nachfolger müssen mindestens ein Level höher sein
+          final minLevel = currentLevel + 1;
+          final currentSuccessorLevel = nodeLevel[successorId] ?? -1;
+          
+          if (currentSuccessorLevel < minLevel) {
+            nodeLevel[successorId] = minLevel;
+            levels.putIfAbsent(minLevel, () => []).add(successorId);
+            queue.add(successorId);
+          }
+        }
       }
     }
-  ];
+
+    calculateLevels();
+
+    // Berechne Positionen
+    const xSpacing = 150.0;
+    const ySpacing = 100.0;
+    final maxLevel = levels.keys.reduce(math.max);
+    final maxNodesInAnyLevel = levels.values.map((list) => list.length).reduce(math.max);
+    final totalWidth = (maxLevel + 1) * xSpacing;
+    final totalHeight = maxNodesInAnyLevel * ySpacing;
+    final startX = (1200 - totalWidth) / 2;
+    final startY = (600 - totalHeight) / 2;
+
+    // Berechne alle Positionen
+    for (var level in levels.keys) {
+      final nodesInLevel = levels[level]!;
+      final levelHeight = nodesInLevel.length * ySpacing;
+      final levelStartY = startY + (totalHeight - levelHeight) / 2;
+      
+      for (var i = 0; i < nodesInLevel.length; i++) {
+        positions[nodesInLevel[i]] = Offset(
+          startX + level * xSpacing,
+          levelStartY + i * ySpacing,
+        );
+      }
+    }
+
+    // Erstelle Knoten mit den berechneten Positionen
+    for (var level in levels.keys) {
+      final nodesInLevel = levels[level]!;
+      for (var i = 0; i < nodesInLevel.length; i++) {
+        final nodeId = nodesInLevel[i];
+        final data = tableData.firstWhere((n) => n['id'] == nodeId);
+        
+        nodes.add({
+          'id': nodeId,
+          'title': nodeId,
+          'duration': data['duration'],
+          'predecessors': data['predecessors'],
+          'successors': tableData
+              .where((n) => (n['predecessors'] as List).contains(nodeId))
+              .map((n) => n['id'])
+              .toList(),
+          'position': positions[nodeId]!,  // Verwende gespeicherte Position
+          'correctValues': {
+            'duration': data['duration'].toString(),
+            'FAZ': '0',
+            'FEZ': '0',
+            'SAZ': '0',
+            'SEZ': '0',
+            'GP': '0',
+            'FP': '0',
+          },
+        });
+      }
+    }
+
+    return nodes;
+  }
+
+  void calculateCorrectValues(List<Map<String, dynamic>> nodes) {
+    // Vorwärtsrechnung (FAZ und FEZ)
+    void calculateForward() {
+      // Startknoten (ohne Vorgänger) beginnen bei 0
+      for (var node in nodes.where((n) => (n['predecessors'] as List).isEmpty)) {
+        node['correctValues']['FAZ'] = '0';
+        node['correctValues']['FEZ'] = node['duration'].toString();
+      }
+
+      // Restliche Knoten vorwärts berechnen
+      bool changed;
+      do {
+        changed = false;
+        for (var node in nodes) {
+          final predecessors = node['predecessors'] as List;
+          if (predecessors.isNotEmpty) {
+            // FAZ = Maximum der FEZ aller Vorgänger
+            final maxFEZ = predecessors
+                .map((p) => int.parse(nodes
+                    .firstWhere((n) => n['id'] == p)['correctValues']['FEZ']))
+                .reduce(math.max);
+            
+            final newFAZ = maxFEZ.toString();
+            if (node['correctValues']['FAZ'] != newFAZ) {
+              node['correctValues']['FAZ'] = newFAZ;
+              node['correctValues']['FEZ'] = 
+                  (maxFEZ + node['duration']).toString();
+              changed = true;
+            }
+          }
+        }
+      } while (changed);
+    }
+
+    // Rückwärtsrechnung (SAZ und SEZ)
+    void calculateBackward() {
+      // Zuerst: Identifiziere alle Endknoten (Knoten ohne Nachfolger)
+      for (var node in nodes) {
+        // Prüfe, ob dieser Knoten als Vorgänger in irgendeinem anderen Knoten vorkommt
+        final hasSuccessors = nodes.any((otherNode) => 
+            (otherNode['predecessors'] as List).contains(node['id']));
+
+        if (!hasSuccessors) {
+          // Für Endknoten: SEZ = FEZ
+          final fez = node['correctValues']['FEZ'];
+          node['correctValues']['SEZ'] = fez;
+          // SAZ = SEZ - Dauer
+          final saz = int.parse(fez) - node['duration'];
+          node['correctValues']['SAZ'] = saz.toString();
+        }
+      }
+
+      // Dann: Rückwärtsrechnung für alle anderen Knoten
+      bool changed;
+      do {
+        changed = false;
+        for (var node in nodes.reversed) {
+          // Nur für Knoten, die Nachfolger haben
+          final hasSuccessors = nodes.any((otherNode) => 
+              (otherNode['predecessors'] as List).contains(node['id']));
+
+          if (hasSuccessors) {
+            // Finde alle Nachfolger
+            final successors = nodes.where((otherNode) => 
+                (otherNode['predecessors'] as List).contains(node['id']));
+            
+            // SEZ = Minimum der SAZ aller Nachfolger
+            final minSAZ = successors
+                .map((s) => int.parse(s['correctValues']['SAZ']))
+                .reduce(math.min);
+            
+            final newSEZ = minSAZ.toString();
+            if (node['correctValues']['SEZ'] != newSEZ) {
+              node['correctValues']['SEZ'] = newSEZ;
+              node['correctValues']['SAZ'] = 
+                  (minSAZ - node['duration']).toString();
+              changed = true;
+            }
+          }
+        }
+      } while (changed);
+    }
+
+    // Pufferzeiten berechnen
+    void calculateBuffers() {
+      for (var node in nodes) {
+        // GP = SAZ - FAZ
+        final gp = int.parse(node['correctValues']['SAZ']) - 
+                  int.parse(node['correctValues']['FAZ']);
+        node['correctValues']['GP'] = gp.toString();
+
+        // FP berechnen
+        final successors = node['successors'] as List;
+        if (successors.isEmpty) {
+          node['correctValues']['FP'] = '0';
+        } else {
+          final minFAZ = successors
+              .map((s) => int.parse(nodes
+                  .firstWhere((n) => n['id'] == s)['correctValues']['FAZ']))
+              .reduce(math.min);
+          final fp = minFAZ - int.parse(node['correctValues']['FEZ']);
+          node['correctValues']['FP'] = fp.toString();
+        }
+      }
+    }
+
+    calculateForward();
+    calculateBackward();
+    calculateBuffers();
+  }
 
   @override
   void initState() {
     super.initState();
+    networkNodes = generateNetworkNodes();
+    calculateCorrectValues(networkNodes);
     for (var node in networkNodes) {
       // Controller für die Hauptfelder
       final values = node['correctValues'] as Map<String, String>;
@@ -551,65 +625,101 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
         children: [
           // Header
           TableRow(
-                 decoration: BoxDecoration(
-                color: Theme.of(context).brightness == Brightness.dark
-                    ? const Color.fromARGB(255, 65, 65, 65)  // Dark Mode Farbe
-                    : const Color.fromARGB(255, 107, 107, 107),  // Light Mode Farbe
-              ),
+            decoration: BoxDecoration(
+              color: Theme.of(context).brightness == Brightness.dark
+                  ? const Color.fromARGB(255, 65, 65, 65)
+                  : const Color.fromARGB(255, 107, 107, 107),
+            ),
             children: const [
               Padding(
                 padding: EdgeInsets.all(8),
-                child: Text('Vorgang',
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+                child: Text('Vorgang', style: TextStyle(fontWeight: FontWeight.bold)),
               ),
               Padding(
                 padding: EdgeInsets.all(8),
-                child: Text('Dauer',
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+                child: Text('Dauer', style: TextStyle(fontWeight: FontWeight.bold)),
               ),
               Padding(
                 padding: EdgeInsets.all(8),
-                child: Text('Vorgänger',
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+                child: Text('Vorgänger', style: TextStyle(fontWeight: FontWeight.bold)),
               ),
             ],
           ),
-          // Alle Vorgänge
-          _buildTableRow('A', '2', '-'),
-          _buildTableRow('B', '4', 'A'),
-          _buildTableRow('C', '3', 'B'),
-          _buildTableRow('D', '6', 'C'),
-          _buildTableRow('E', '10', 'C'),
-          _buildTableRow('F', '3', 'C'),
-          _buildTableRow('G', '5', 'D,E,F'),
-          _buildTableRow('H', '6', 'G'),
-          _buildTableRow('I', '2', 'H'),
+          // Editierbare Zeilen
+          ...tableData.map((data) => TableRow(
+            decoration: BoxDecoration(
+              color: Theme.of(context).brightness == Brightness.dark
+                  ? const Color.fromARGB(255, 65, 65, 65)
+                  : const Color.fromARGB(255, 158, 158, 158),
+            ),
+            children: [
+              // Vorgang
+              Padding(
+                padding: const EdgeInsets.all(8),
+                child: Text(data['id'] as String),
+              ),
+              // Dauer
+              Padding(
+                padding: const EdgeInsets.all(4),
+                child: TextField(
+                  controller: TextEditingController(text: data['duration'].toString()),
+                  textAlign: TextAlign.center,
+                  decoration: const InputDecoration(
+                    isDense: true,
+                    contentPadding: EdgeInsets.all(8),
+                  ),
+                  onChanged: (value) {
+                    setState(() {
+                      data['duration'] = int.tryParse(value) ?? data['duration'];
+                      networkNodes = generateNetworkNodes();
+                      calculateCorrectValues(networkNodes);
+                    });
+                  },
+                ),
+              ),
+              // Vorgänger
+              Padding(
+                padding: const EdgeInsets.all(4),
+                child: TextField(
+                  controller: TextEditingController(
+                      text: (data['predecessors'] as List).join(',')),
+                  textAlign: TextAlign.center,
+                  decoration: const InputDecoration(
+                    isDense: true,
+                    contentPadding: EdgeInsets.all(8),
+                  ),
+                  onChanged: (value) {
+                    setState(() {
+                      // Aktualisiere Vorgänger, erlaube Kommas und Leerzeichen
+                      data['predecessors'] = value
+                          .replaceAll(' ', '')  // Entferne Leerzeichen
+                          .split(',')  // Trenne bei Kommas
+                          .where((s) => s.isNotEmpty)  // Entferne leere Einträge
+                          .toList();
+                      
+                      // Aktualisiere Netzplan
+                      networkNodes = generateNetworkNodes();
+                      calculateCorrectValues(networkNodes);
+                      
+                      // Controller neu initialisieren
+                      controllers.clear();
+                      isCorrect.clear();
+                      for (var node in networkNodes) {
+                        final values = node['correctValues'] as Map<String, String>;
+                        values.forEach((key, _) {
+                          final controllerId = '${node['id']}_$key';
+                          controllers[controllerId] = TextEditingController();
+                          isCorrect[controllerId] = false;
+                        });
+                      }
+                    });
+                  },
+                ),
+              ),
+            ],
+          )),
         ],
       ),
-    );
-  }
-
-  TableRow _buildTableRow(String id, String duration, String predecessors) {
-    return TableRow(
-      decoration: BoxDecoration(
-        color: Theme.of(context).brightness == Brightness.dark
-            ? const Color.fromARGB(255, 241, 241, 241)  // Dark Mode Farbe
-            : const Color.fromARGB(255, 175, 175, 175),  // Light Mode Farbe
-      ),
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(9),
-          child: Text(id),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(9),
-          child: Text(duration),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(9),
-          child: Text(predecessors),
-        ),
-      ],
     );
   }
 
