@@ -110,7 +110,76 @@
               "Ein Zyklus für die Datenverarbeitung"
             ],
             "correctAnswer": 0
+          },
+          {
+            "id": 10,
+            "difficulty": "leicht",
+            "question": "Was sind Cyberangriffe ?",
+            "options": [
+              "Cyberangriffe sind Angriffe auf IT-Systeme, Netzwerke und Daten, die von Cyberkriminellen durchgeführt werden. Ziel ist es, Daten zu stehlen, Systeme zu manipulieren oder Dienste zu blockieren.",
+              "Angriffe auf die Stromversorgung",
+              "Angriffe auf die Wasserversorgung",
+              "Angriffe auf die Telefonanlagen"
+              
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 11,
+            "difficulty": "leicht",
+            "question": " Welche dieser Malware-Typen verbreitet sich selbstständig ?",
+            "options": [
+              "Würmer",
+              "Viren",
+              "Trojaner",
+              "Ransomware"
+              
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 12,
+            "difficulty": "mittel",
+            "question": " Was ist ein Rootkit ?",
+            "options": [
+              "Ein Rootkit ist eine Schadsoftware Malware, die sich tief im System versteckt und Administratorrechte erlangt. Dadurch kann sie das System manipulieren und weitere Schadsoftware installieren.",
+              "Ein Rootkit ist ein Programm zur Datenrettung",
+              "Ein Rootkit ist ein Programm zur Datenwiederherstellung",
+              "Ein Rootkit ist ein Programm zur Datenverarbeitung"
+              
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 13,
+            "difficulty": "mittel",
+            "question": " Was bedeutet Komulation in der IT im bezug auf Schutzbeadarfsfeststellung ?",
+            "options": [
+              "Kumulation bedeutet, dass sich mehrere Risiken addieren und so ein größeres Risiko entsteht.",
+              "Kumulation bedeutet, dass sich mehrere Risiken verringern und so ein kleineres Risiko entsteht.",
+              "Kumulation bedeutet, dass sich mehrere Risiken neutralisieren und so kein Risiko entsteht.",
+              "Kumulation bedeutet, dass sich mehrere Risiken vergrößern und so ein kleineres Risiko entsteht."
+
+              
+              
+            ],
+            "correctAnswer": 0
+          },
+          {
+            "id": 14,
+            "difficulty": "mittel",
+            "question": " Was bedeutet Benutzerauthentisierung ?",
+            "options": [
+              "Die Benutzerauthentisierung ist ein Sicherheitsprozess, bei dem die Identität eines Benutzers überprüft wird, um sicherzustellen, dass er tatsächlich diejenige ist, die er vorgibt zu sein",
+              "Die Benutzerauthentisierung ist ein Prozess zur Datenverschlüsselung",
+              "Die Benutzerauthentisierung ist ein Prozess zur Datenwiederherstellung",
+              "Die Benutzerauthentisierung ist ein Prozess zur Datenverarbeitung"
+                            
+              
+            ],
+            "correctAnswer": 0
           }
+          
         ]
       }
     }
