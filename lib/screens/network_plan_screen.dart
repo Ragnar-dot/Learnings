@@ -490,12 +490,12 @@ case 'SEZ':
                   child: SingleChildScrollView(
                     child: SizedBox(
                       width: isSmallScreen ? 1200 : 2000,
-                      height: isSmallScreen ? 400 : 600,
+                      height: isSmallScreen ? 450 : 600,
                       child: Stack(
                         children: [
                           // Verbindungslinien
                           CustomPaint(
-                            size: Size(isSmallScreen ? 800 : 1200, isSmallScreen ? 400 : 600),
+                            size: Size(isSmallScreen ? 800 : 1000, isSmallScreen ? 350 : 600),
                             painter: NetworkPlanPainter(nodes: networkNodes),
                           ),
                           // Knoten
@@ -573,7 +573,7 @@ case 'SEZ':
       builder: (context) => AlertDialog(
         backgroundColor: Theme.of(context).brightness == Brightness.dark
             ? const Color.fromARGB(255, 54, 54, 54)
-            : const Color.fromARGB(255, 206, 206, 206),
+            : const Color.fromARGB(255, 238, 238, 238),
         title: Text(
           'Hilfe zur Berechnung',
           style: TextStyle(
@@ -599,7 +599,7 @@ case 'SEZ':
             '• Kritischer Pfad: GP = 0',
             style: TextStyle(
               color: Theme.of(context).brightness == Brightness.dark
-                  ? const Color.fromARGB(255, 17, 17, 17)
+                  ? const Color.fromARGB(255, 156, 156, 156)
                   : const Color.fromARGB(255, 0, 0, 0),
             ),
           ),
@@ -609,15 +609,15 @@ case 'SEZ':
             onPressed: () => Navigator.pop(context),
             style: TextButton.styleFrom(
               backgroundColor: Theme.of(context).brightness == Brightness.dark
-                  ? const Color.fromARGB(255, 238, 238, 238)
-                  : const Color.fromARGB(255, 87, 87, 87),
+                  ? const Color.fromARGB(255, 238, 238, 238) // Light Mode Farbe Buttons
+                  : const Color.fromARGB(255, 92, 92, 92),
             ),
             child: Text(
               'Verstanden',
               style: TextStyle(
                 color: Theme.of(context).brightness == Brightness.dark 
-                    ? const Color.fromARGB(255, 66, 66, 66) 
-                    : const Color.fromARGB(255, 244, 244, 244),
+                    ? const Color.fromARGB(255, 224, 224, 224) 
+                    : const Color.fromARGB(255, 219, 219, 219),
               ),
             ),
           ),
@@ -637,33 +637,33 @@ case 'SEZ':
         defaultColumnWidth: const IntrinsicColumnWidth(),
         children: [
           // Header
-          TableRow(
+            TableRow(
             decoration: BoxDecoration(
               color: Theme.of(context).brightness == Brightness.dark
-                  ? const Color.fromARGB(255, 65, 65, 65)
-                  : const Color.fromARGB(255, 107, 107, 107),
+                ? const Color.fromARGB(255, 54, 54, 54) // Dark Mode Farbe Header
+                : const Color.fromARGB(255, 148, 148, 148), // Light Mode Farbe Header
             ),
             children: const [
               Padding(
-                padding: EdgeInsets.all(8),
-                child: Text('Vorgang', style: TextStyle(fontWeight: FontWeight.bold)),
+              padding: EdgeInsets.all(8),
+              child: Text('Vorgang', style: TextStyle(fontWeight: FontWeight.bold)),
               ),
               Padding(
-                padding: EdgeInsets.all(8),
-                child: Text('Dauer', style: TextStyle(fontWeight: FontWeight.bold)),
+              padding: EdgeInsets.all(8),
+              child: Text('Dauer', style: TextStyle(fontWeight: FontWeight.bold)),
               ),
               Padding(
-                padding: EdgeInsets.all(8),
-                child: Text('Vorgänger', style: TextStyle(fontWeight: FontWeight.bold)),
+              padding: EdgeInsets.all(8),
+              child: Text('Vorgänger', style: TextStyle(fontWeight: FontWeight.bold)),
               ),
             ],
-          ),
-          // Editierbare Zeilen
-          ...tableData.map((data) => TableRow(
+            ),
+            // Editierbare Zeilen
+            ...tableData.map((data) => TableRow(
             decoration: BoxDecoration(
               color: Theme.of(context).brightness == Brightness.dark
-                  ? const Color.fromARGB(255, 65, 65, 65)
-                  : const Color.fromARGB(255, 158, 158, 158),
+                ? const Color.fromARGB(255, 54, 54, 54)
+                : const Color.fromARGB(255, 163, 163, 163),
             ),
             children: [
               // Vorgang
