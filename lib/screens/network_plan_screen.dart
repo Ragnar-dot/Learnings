@@ -325,22 +325,21 @@ class _NetworkPlanScreenState extends State<NetworkPlanScreen> {
         }
         break;
 
-      case 'SEZ':
-        if (nodeId == 'I') {
-          // Endknoten I: SEZ = FEZ
-          final fez = int.tryParse(controllers['${nodeId}_FEZ']?.text ?? '') ?? -1;
-          isValid = value == fez.toString();
-        } else {
-          // SEZ = Minimum der SAZ aller Nachfolger
-          final successors = node['successors'] as List<dynamic>;
-          if (successors.isNotEmpty) {
-            final minSAZ = successors.map((s) {
-              return int.tryParse(controllers['${s}_SAZ']?.text ?? '') ?? 999;
-            }).reduce(math.min);
-            isValid = int.tryParse(value) == minSAZ;
-          }
-        }
-        break;
+case 'SEZ':
+  if (node['successors'].isEmpty) {  // Prüft, ob es sich um einen Endknoten handelt
+    final fez = int.tryParse(controllers['${nodeId}_FEZ']?.text ?? '') ?? -1;
+    isValid = value == fez.toString();
+  } else {
+    // SEZ = Minimum der SAZ aller Nachfolger
+    final successors = node['successors'] as List<dynamic>;
+    if (successors.isNotEmpty) {
+      final minSAZ = successors.map((s) {
+        return int.tryParse(controllers['${s}_SAZ']?.text ?? '') ?? 999;
+      }).reduce(math.min);
+      isValid = int.tryParse(value) == minSAZ;
+    }
+  }
+  break;
 
       case 'SAZ':
         // SAZ = SEZ - Dauer
