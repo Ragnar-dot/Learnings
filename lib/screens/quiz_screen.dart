@@ -151,6 +151,9 @@ class _QuizScreenState extends State<QuizScreen> {
       case 'Prüfungsfragen Set 3':
         jsonPath = 'assets/pruefungsfragen_set_3.json';
         break;
+      case 'Prüfungsfragen Set 4':
+        jsonPath = 'assets/pruefungsfragen_set_4.json';
+        break;
       default:
         throw Exception('Unknown flashcard set');
     }
