@@ -1,0 +1,172 @@
+{
+  "categories": {
+    "Prüfungsfragen Set 4": {
+      "description": "Simulierte Prüfungsfragen (Karteikarten-System)",
+      "questions": [
+          {
+            "id": 1,
+            "difficulty": "leicht",
+            "frontside": "Welche Risiken können sich in einem Projekt ergeben ?",
+            "backside": "Kostenüberschreitung, Zeitüberschreitung, Qualitätsmängel, Sicherheitslücken → Unzureichender Schutz gegen Cyberangriffe oder Datenverluste",
+            
+            "type": "flashcard"
+          },
+          {
+            "id": 2,
+            "difficulty": "leicht",
+            "frontside": "Beschreibe Anforderungen hinsichtlich des Datenschutzes in einem IT Projekt ?",
+            "backside": "Verschlüsselung der Daten, Zugriffskontrolle, Datensicherung, Datenschutzkonzept,",
+            
+            "type": "flashcard"
+          },
+          {
+            "id": 3,
+            "difficulty": "mittel",
+            "frontside": "Nenne zwei Faktoren die im Rahmen einer Vorkalkulation berücksichtigt werden müssen ?",
+            "backside": "Personalkosten, Materialkosten",
+            
+            
+            "type": "flashcard"
+          },
+          {
+            "id": 4,
+            "difficulty": "leicht",
+            "frontside": "Welchen Nutzen hat eine Nachkalkulation ?",
+            "backside": "Ermittlung von Abweichungen zwischen Planung und Realität, Ermittlung von Ursachen für Abweichungen, Verbesserung der Planungsgenauigkeit",
+            
+            
+            "type": "flashcard"
+          },
+          {
+            "id": 5,
+            "difficulty": "mittel",
+            "frontside": "Beschreibe den Begriff Stakeholder ?",
+            "backside": "Personen oder Gruppen, die ein Interesse am Projekt haben oder von ihm betroffen sind",
+            
+            
+            "type": "flashcard"
+          },
+          {
+            "id": 6,
+            "difficulty": "leicht",
+            "frontside": "Beschreibe den Begriff Stakeholder ?",
+            "backside": "Personen oder Gruppen, die ein Interesse am Projekt haben oder von ihm betroffen sind",
+            
+            
+            "type": "flashcard"
+          },
+          {
+            "id": 7,
+            "difficulty": "leicht",
+            "frontside": "Was sind die Rahmenbedingungen für ein Projekt ?",
+            "backside": "Dauer, Kosten, Start und Ende, Anforderungen",
+            
+            
+            "type": "flashcard"
+          },
+          {
+            "id": 8,
+            "difficulty": "leicht",
+            "frontside": "Was ist der Unterschied zwischen Publik-Cloud und Private-Cloud ?",
+            "backside": "Eine öffentliche Cloud ist eine Cloud-Umgebung, die von einem Drittanbieter (z. B. AWS, Microsoft Azure, Google Cloud) betrieben wird. Die Ressourcen (Rechenleistung, Speicher, Netzwerk) werden über das Internet mehreren Kunden zur Verfügung gestellt.\n\nEine private Cloud hingegen ist eine dedizierte Cloud-Umgebung, die nur von einem einzelnen Unternehmen genutzt wird. Sie bietet mehr Kontrolle über Sicherheit und Datenschutz, erfordert jedoch höhere Kosten und eigenen Wartungsaufwand.",
+
+
+            "type": "flashcard"
+          },
+          {
+            "id": 9,
+            "difficulty": "mittel",
+            "frontside": "Nenne weitere Cloud-Modelle",
+            "backside": "Die Hybrid-Cloud ist eine Kombination aus Public Cloud und Private Cloud. Unternehmen können flexibel entscheiden, welche Daten und Anwendungen in der öffentlichen Cloud und welche in der privaten Cloud laufen. \n\n Eine Community-Cloud wird von mehreren Unternehmen oder Organisationen gemeinsam genutzt, die ähnliche Anforderungen haben (z. B. eine Branche oder öffentliche Einrichtungen). Sie kann von einer dritten Partei gehostet oder von den beteiligten Unternehmen selbst betrieben werden.",
+            
+            "type": "flashcard"
+          },
+          {
+            "id": 10,
+            "difficulty": "mittel",
+            "frontside": "Was ist der Unterscheid zwischen Saas und Paas ?",
+            "backside": "Software as a Service (SaaS) ist eine Cloud-Computing-Dienstleistung, bei der Anwendungen über das Internet bereitgestellt und von den Nutzern genutzt werden. Die Anwendungen werden von einem Drittanbieter gehostet und gewartet. \n\n Platform as a Service (PaaS) ist eine Cloud-Computing-Dienstleistung, bei der Entwicklungsplattformen über das Internet bereitgestellt werden. Entwickler können Anwendungen erstellen, testen und bereitstellen, ohne sich um die zugrunde liegende Infrastruktur kümmern zu müssen.",
+            
+            "type": "flashcard"
+          },
+          {
+            "id": 11,
+            "difficulty": "leicht",
+            "frontside": "Inwiefern kann der Einsatz von Cloud Lösungen Kosten sparen ?",
+            "backside": "Durch den Einsatz von Cloud-Lösungen können Unternehmen Kosten für den Kauf und die Wartung von Hardware und Software sparen. Sie müssen keine teure Infrastruktur aufbauen und können die Ressourcen nach Bedarf skalieren. Die Abrechnung erfolgt in der Regel nach Verbrauch (Pay-as-you-go-Modell), was zu einer besseren Kostenkontrolle führt.",
+           
+            "type": "flashcard"
+          },
+          {
+            "id": 12,
+            "difficulty": "mittel",
+            "frontside": "Was wären Maßnahmen zur steigerung der Mitarbeiter zufriedenheit ?",
+            "backside": "Flexible Arbeitszeiten, Homeoffice, Weiterbildungsmöglichkeiten, Mitarbeiterbeteiligung, Anerkennung und Wertschätzung, Work-Life-Balance, Gesundheitsförderung,",
+        
+            "type": "flashcard"
+          },
+          {
+            "id": 13,
+            "difficulty": "leicht",
+            "frontside": "Was ist Standardsoftware ?",
+            "backside": "Standardsoftware ist Software, die von einem Softwarehersteller entwickelt und an viele Kunden verkauft wird. Sie ist in der Regel vorkonfiguriert und kann ohne oder mit geringen Anpassungen eingesetzt werden. \n\n Beispiele für Standardsoftware sind Betriebssysteme, Office-Anwendungen oder ERP-Systeme.",
+          
+            "type": "flashcard"
+          },
+          {
+            "id": 14,
+            "difficulty": "leicht",
+            "frontside": "Was ist Individualsoftware ?",
+            "backside": "Individualsoftware ist Software, die speziell für einen einzelnen Kunden oder eine bestimmte Anforderung entwickelt wird. Sie wird maßgeschneidert und an die individuellen Bedürfnisse angepasst. \n\n Beispiele für Individualsoftware sind kundenspezifische Anwendungen oder Unternehmenslösungen.",
+          
+            "type": "flashcard"
+          },
+          {
+            "id": 15,
+            "difficulty": "leicht",
+            "frontside": "Was ist Branchensoftware ?",
+            "backside": "Branchensoftware ist Software, die speziell für eine bestimmte Branche oder ein bestimmtes Anwendungsgebiet entwickelt wird. Sie berücksichtigt die spezifischen Anforderungen und Prozesse der Branche und bietet branchenspezifische Funktionen. \n\n Beispiele für Branchensoftware sind Buchhaltungsprogramme für Steuerberater oder CAD-Software für Architekten.",
+          
+            "type": "flashcard"
+          },
+          {
+            "id": 16,
+            "difficulty": "schwer",
+            "frontside": "Erläutere den Zweck und das Ziel der APQP (Advanced Product Quality Planning).",
+            "backside": "Advanced Product Quality Planning (APQP) ist ein strukturiertes Verfahren zur Qualitätsvorausplanung in der Produktentwicklung. Es wird vor allem in der Automobilindustrie eingesetzt, um sicherzustellen, dass neue Produkte den Kundenanforderungen und Qualitätsstandards entsprechen. \n\n Das Hauptziel von APQP ist es, eine systematische Planung und kontinuierliche Verbesserung der Produkt- und Prozessqualität zu gewährleisten. \n\n APQP hilft Unternehmen dabei, Fehler frühzeitig zu erkennen, Risiken zu minimieren und die Qualität von Produkten während der gesamten Entwicklung sicherzustellen.",
+          
+            "type": "flashcard"
+          },
+          {
+            "id": 17,
+            "difficulty": "schwer",
+            "frontside": "Erläutere den Zweck und das Ziel der FMEA (Failure Mode and Effects Analysis).",
+            "backside": "Die Fehlermöglichkeits- und Einflussanalyse (FMEA) ist eine systematische Risikoanalyse-Methode, mit der mögliche Fehler in Produkten oder Prozessen frühzeitig erkannt, bewertet und vermieden werden. Sie wird vor allem in der Automobilindustrie, im Maschinenbau, in der Medizintechnik und in der Softwareentwicklung eingesetzt. \n\n Das Hauptziel der FMEA ist es, potenzielle Fehlerquellen zu identifizieren, ihre Auswirkungen zu bewerten und geeignete Maßnahmen zur Risikominimierung zu ergreifen. \n\n FMEA hilft Unternehmen dabei, die Qualität von Produkten und Prozessen zu verbessern, Kosten zu reduzieren und Kundenanforderungen zu erfüllen.",
+
+
+            "type": "flashcard"
+          },
+          {
+            "id": 18,
+            "difficulty": "mittel",
+            "frontside": "Was sind die Aufgaben eines IT-Sicherheitsbeauftragten ?",
+            "backside": "Der IT-Sicherheitsbeauftragte ist für die Planung, Umsetzung und Überwachung von Sicherheitsmaßnahmen in einem Unternehmen verantwortlich. \n\n Zu seinen Aufgaben gehören die Identifizierung von Sicherheitsrisiken, die Entwicklung von Sicherheitskonzepten, die Schulung von Mitarbeitern, die Überwachung von Sicherheitsvorfällen und die Zusammenarbeit mit externen Sicherheitsdienstleistern.",
+           
+
+            "type": "flashcard"
+          },
+          {
+            "id": 18,
+            "difficulty": "mittel",
+            "frontside": "Was sind die Aufgaben eines Datenschutz ?",
+            "backside": "Der Datenschutzbeauftragte ist für die Einhaltung der Datenschutzvorschriften in einem Unternehmen verantwortlich. \n\n Zu seinen Aufgaben gehören die Beratung und Schulung von Mitarbeitern, die Überwachung der Einhaltung von Datenschutzrichtlinien, die Zusammenarbeit mit Aufsichtsbehörden und die Bearbeitung von Datenschutzanfragen von Kunden und Mitarbeitern.",
+           
+
+            "type": "flashcard"
+          }
+          
+
+        ]
+      }
+    }
+}

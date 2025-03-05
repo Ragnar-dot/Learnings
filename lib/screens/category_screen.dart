@@ -91,6 +91,11 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': Icons.document_scanner_rounded,
       'description': 'Simulierte Prüfungsfragen',
     },
+        {
+      'name': 'Prüfungsfragen Set 4',
+      'icon': Icons.document_scanner_rounded,
+      'description': 'Simulierte Prüfungsfragen',
+    },
   ];
 
   Map<String, QuizStats> categoryStats = {};

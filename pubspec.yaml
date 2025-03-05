@@ -38,6 +38,7 @@ flutter:
     - assets/pruefungsfragen_set_1.json
     - assets/pruefungsfragen_set_2.json
     - assets/pruefungsfragen_set_3.json
+    - assets/pruefungsfragen_set_4.json
     - assets/exercises/sortieralgorithmen_uebungen.pdf
     - assets/SQL/Befehlssammlung_SQL.pdf
     - assets/SQL/sql_befehle.pdf
