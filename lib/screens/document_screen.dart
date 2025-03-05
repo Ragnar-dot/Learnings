@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_pdfview/flutter_pdfview.dart';
 import 'package:path_provider/path_provider.dart' show getTemporaryDirectory;
 import 'dart:io';
 import '../widgets/app_drawer.dart';
@@ -55,7 +55,7 @@ class DocumentScreen extends StatelessWidget {
     }
   }
 
-  Future<void> _openDocument(String url) async {
+  Future<void> _openDocument(BuildContext context, String url) async {
     try {
       final ByteData data = await rootBundle.load(url);
       final List<int> bytes = data.buffer.asUint8List();
@@ -64,8 +64,27 @@ class DocumentScreen extends StatelessWidget {
       final tempFile = File('${tempDir.path}/${url.split('/').last}');
       await tempFile.writeAsBytes(bytes);
 
-      if (!await launchUrl(Uri.file(tempFile.path))) {
-        throw Exception('Could not open file $url');
+      if (context.mounted) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => Scaffold(
+              appBar: AppBar(
+                title: Text(url.split('/').last),
+              ),
+              body: PDFView(
+                filePath: tempFile.path,
+                enableSwipe: true,
+                swipeHorizontal: false,
+                autoSpacing: true,
+                pageFling: true,
+                onError: (error) {
+                  debugPrint('Error: $error');
+                },
+              ),
+            ),
+          ),
+        );
       }
     } catch (e) {
       debugPrint('Error opening document: $e');
@@ -95,7 +114,7 @@ class DocumentScreen extends StatelessWidget {
                         title: Text(doc['title']!),
                         subtitle: Text(doc['description']!),
                         trailing: const Icon(Icons.open_in_new),
-                        onTap: () => _openDocument(doc['assets']!),
+                        onTap: () => _openDocument(context, doc['assets']!),
                       ),
                     ))
                 .toList(),

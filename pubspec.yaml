@@ -17,6 +17,7 @@ dependencies:
   flutter_inset_shadow: ^2.0.3
   flutter_svg: ^2.0.17
   flip_card: ^0.7.0
+  flutter_pdfview: ^1.4.0
 
   
 
