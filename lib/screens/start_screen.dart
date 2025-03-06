@@ -41,7 +41,7 @@ class _StartScreenState extends State<StartScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Prüfungs-Quiz'),
+        title: const Text('Prüfungs-Trainer'),
         elevation: 0,
       ),
       drawer: const AppDrawer(),
@@ -62,18 +62,12 @@ class _StartScreenState extends State<StartScreen> {
               ),
               child: Column(
                 children: [
-                  Text(
-                    'Willkommen zum Prüfungs-Quiz!',
-                    style: theme.textTheme.headlineLarge?.copyWith(
-                      color: Colors.white,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
+                  
                   const SizedBox(height: 8),
                   Text(
                     'Teste dein Wissen in verschiedenen Bereichen',
                     style: theme.textTheme.bodyLarge?.copyWith(
-                      color: Colors.white70,
+                      color: const Color.fromARGB(249, 255, 255, 255),
                     ),
                     textAlign: TextAlign.center,
                   ),
