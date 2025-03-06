@@ -67,19 +67,19 @@ class _QuizScreenState extends State<QuizScreen> {
       // Normale Fragen laden
       String jsonPath;
       switch (widget.category) {
-        case 'Lernfeld1':
+        case 'Lernfeld 1':
           jsonPath = 'assets/lernfeld1.json';
           break;
-        case 'Lernfeld2':
+        case 'Lernfeld 2':
           jsonPath = 'assets/lernfeld2.json';
           break;
-        case 'Lernfeld3':
+        case 'Lernfeld 3':
           jsonPath = 'assets/lernfeld3.json';
           break;
-        case 'Lernfeld4':
+        case 'Lernfeld 4':
           jsonPath = 'assets/lernfeld4.json';
           break;
-        case 'Lernfeld5':
+        case 'Lernfeld 5':
           jsonPath = 'assets/lernfeld5.json';
           break;
         default:

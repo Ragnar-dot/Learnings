@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../models/quiz_stats.dart';
 import 'quiz_screen.dart';
@@ -48,27 +49,27 @@ class _CategoryScreenState extends State<CategoryScreen> {
     },
     
     {
-      'name': 'Lernfeld1',
+      'name': 'Lernfeld 1',
       'icon': Icons.school_outlined,
       'description': 'Das Unternehmen und die Eigene Rolle im Betrieb',
     },
     {
-      'name': 'Lernfeld2',
+      'name': 'Lernfeld 2',
       'icon': Icons.school_outlined,
       'description': 'Arbeitsplatz und Prozesse',
     },
     {
-      'name': 'Lernfeld3',
+      'name': 'Lernfeld 3',
       'icon': Icons.school_outlined,
       'description': 'Clients in Netzwerke einbinden',
     },
     {
-      'name': 'Lernfeld4',
+      'name': 'Lernfeld 4',
       'icon': Icons.school_outlined,
       'description': 'Schutzbeadarfsanalyse im eigenen Arbeitsbereich',
     },
     {
-      'name': 'Lernfeld5',
+      'name': 'Lernfeld 5',
       'icon': Icons.school_outlined,
       'description': 'Software zur Verwaltung von Daten',
     },
@@ -79,22 +80,23 @@ class _CategoryScreenState extends State<CategoryScreen> {
     },
     {
       'name': 'Prüfungsfragen Set 1',
-      'icon': Icons.document_scanner_rounded,
+      'icon': CupertinoIcons.doc_text,
       'description': 'Simulierte Prüfungsfragen',
     },
     {
       'name': 'Prüfungsfragen Set 2',
-      'icon': Icons.document_scanner_rounded,
+      'icon': CupertinoIcons.doc_text,
       'description': 'Simulierte Prüfungsfragen',
     },
     {
       'name': 'Prüfungsfragen Set 3',
-      'icon': Icons.document_scanner_rounded,
+      'icon': CupertinoIcons.doc_text,
       'description': 'Simulierte Prüfungsfragen',
     },
         {
       'name': 'Prüfungsfragen Set 4',
-      'icon': Icons.document_scanner_rounded,
+      'icon': CupertinoIcons.doc_text,
+       
       'description': 'Simulierte Prüfungsfragen',
     },
   ];
@@ -239,10 +241,10 @@ class _CategoryScreenState extends State<CategoryScreen> {
                         children: [
                           Icon(
                             categories[index]['icon'] as IconData,
-                            size: 48,
+                            size: 50,
                             color: theme.primaryColor,
                           ),
-                          const SizedBox(height: 12),
+                          const SizedBox(height: 10),
                           Text(
                             category,
                             style: theme.textTheme.titleMedium,
