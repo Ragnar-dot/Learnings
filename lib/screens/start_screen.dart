@@ -52,7 +52,16 @@ class _StartScreenState extends State<StartScreen> {
               width: double.infinity,
               padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
-                color: theme.primaryColor, 
+                color: theme.primaryColor,
+                boxShadow: theme  .brightness == Brightness.dark
+                  ? null
+                  : [
+                      BoxShadow(
+                        color: Colors.black,
+                        blurRadius: 9,
+                        offset: const Offset(0, 1),
+                      ),
+                    ],
                 
                 
                 borderRadius: const BorderRadius.only(
@@ -68,7 +77,9 @@ class _StartScreenState extends State<StartScreen> {
                     'Teste dein Wissen in verschiedenen Bereichen',
                     style: theme.textTheme.bodyLarge?.copyWith(
                       color: const Color.fromARGB(249, 255, 255, 255),
+                      
                     ),
+                    
                     textAlign: TextAlign.center,
                   ),
                 ],
