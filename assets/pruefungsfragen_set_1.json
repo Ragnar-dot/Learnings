@@ -135,6 +135,14 @@
             "frontside": "Beschreiben sie weitere Standards zur Gewährleistung der Informationssicherheit neben der ISO 27001",
             "backside": "BSI Grundschutz, IT-Grundschutz, ISO 27002",
             "type": "flashcard"
+          },
+          {
+            "id": 20,
+            "difficulty": "leicht",
+            "frontside": "Nenne Funktionen eines Ticketsystems",
+            "backside": "Ticketerstellung, Ticketbearbeitung, Ticketverfolgung, Reporting",
+            
+            "type": "flashcard"
           }
         ]
       }

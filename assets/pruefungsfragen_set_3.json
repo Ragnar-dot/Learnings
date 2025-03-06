@@ -128,6 +128,13 @@
             "frontside": "Was sind die Aufgaben einer Firewall?",
             "backside": "Eine Firewall ist eine Sicherheitsvorrichtung, die dazu dient, ein Netzwerk oder einen Computer vor unerwünschten Zugriffen aus dem Internet oder anderen Netzwerken zu schützen. Sie überwacht den Datenverkehr und blockiert oder erlaubt den Zugriff basierend auf vordefinierten Regeln. Die Aufgaben einer Firewall sind die Erkennung und Blockierung von unerwünschtem Datenverkehr, die Überwachung des Datenverkehrs, die Kontrolle des Datenverkehrs und die Protokollierung von Ereignissen.",
             "type": "flashcard"
+          },
+          {
+            "id": 19,
+            "difficulty": "leicht",
+            "frontside": "Nenne INhalte eines Störungs-Tickets",
+            "backside": "Eine Firewall ist eine Sicherheitsvorrichtung, die dazu dient, ein Netzwerk oder einen Computer vor unerwünschten Zugriffen aus dem Internet oder anderen Netzwerken zu schützen. Sie überwacht den Datenverkehr und blockiert oder erlaubt den Zugriff basierend auf vordefinierten Regeln. Die Aufgaben einer Firewall sind die Erkennung und Blockierung von unerwünschtem Datenverkehr, die Überwachung des Datenverkehrs, die Kontrolle des Datenverkehrs und die Protokollierung von Ereignissen.",
+            "type": "flashcard"
           }
         ]
       }

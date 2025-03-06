@@ -119,9 +119,9 @@ class AppDrawer extends StatelessWidget {
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                  color: const Color.fromARGB(255, 0, 0, 0).withAlpha(77),
+                  color: const Color.fromARGB(255, 0, 0, 0).withAlpha(7),
                   offset: const Offset(0, 2),
-                  blurRadius: 4,
+                  blurRadius: 1,
                 ),
               ],
             ),
