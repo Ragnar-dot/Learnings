@@ -4,6 +4,8 @@ import 'quiz_screen.dart';
 import 'network_plan_screen.dart';
 import '../services/storage_service.dart';
 import '../theme/app_theme.dart';
+import '/widgets/app_drawer.dart';
+import '/providers/theme_provider.dart';
 
 import '../widgets/app_drawer.dart';
 
@@ -156,6 +158,15 @@ class _CategoryScreenState extends State<CategoryScreen> {
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: theme.primaryColor,
+              boxShadow: theme  .brightness == Brightness.dark
+                  ? null
+                  : [
+                      BoxShadow(
+                        color: Colors.black,
+                        blurRadius: 9,
+                        offset: const Offset(0, 1),
+                      ),
+                    ],
               borderRadius: const BorderRadius.only(
                 bottomLeft: Radius.circular(24),
                 bottomRight: Radius.circular(24),
@@ -165,6 +176,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
               'Wähle einen Bereich zum Lernen',
               style: theme.textTheme.headlineMedium?.copyWith(
                 color: Colors.white,
+                
               ),
               textAlign: TextAlign.center,
             ),
@@ -185,12 +197,17 @@ class _CategoryScreenState extends State<CategoryScreen> {
                 final stats =
                     categoryStats[category] ?? QuizStats(category: category);
 
-                return Card(
-                  elevation: 4,
+                return Card(                                                                        // Karte
+                  elevation: 2,
+                  
+                  shadowColor: Theme.of(context).brightness == Brightness.dark ? const Color.fromARGB(255, 0, 0, 0) : const Color.fromARGB(255, 136, 136, 136),
+
+                  
+
                   
                   margin: const EdgeInsets.all(2),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(25),
+                    borderRadius: BorderRadius.circular(30),
                     side: BorderSide(color: Theme.of(context).brightness == Brightness.dark ? const Color.fromARGB(121, 184, 184, 184) : const Color.fromARGB(14, 216, 216, 216)),                  // Rahmenfarbe
                    
                   ),
