@@ -121,6 +121,28 @@
             "frontside": "Beschreibe und Erläutere den PDCA Kreislauf",
             "backside": "Der PDCA-Zyklus (Plan-Do-Check-Act) ist ein Konzept zur kontinuierlichen Verbesserung von Prozessen, Produkten oder Dienstleistungen. Der Zyklus besteht aus vier Phasen: Planung (Plan), Umsetzung (Do), Überprüfung (Check) und Anpassung (Act). Ziel des PDCA-Zyklus ist es, kontinuierlich Verbesserungen vorzunehmen. Beispiel: Planung: Festlegung von Zielen und Maßnahmen, Umsetzung: Durchführung der geplanten Maßnahmen, Überprüfung: Überprüfung der Ergebnisse, Anpassung: Anpassung der Maßnahmen auf Basis der Ergebnisse.",
             "type": "flashcard"
+          },
+          {
+            "id": 18,
+            "difficulty": "leicht",
+            "frontside": "Beschreibe den Begriff First Level Support",
+            "backside": "Der First Level Support ist die erste Anlaufstelle für Anwender bei IT-Problemen. Er nimmt Anfragen entgegen, analysiert und löst einfache Probleme oder leitet komplexe Probleme an den Second Level Support weiter. Der First Level Support ist oft per Telefon, E-Mail oder Ticketsystem erreichbar.",
+           
+            "type": "flashcard"
+          },
+          {
+            "id": 19,
+            "difficulty": "leicht",
+            "frontside": "Beschreibe den Begriff Second Level Support",
+            "backside": "Der Second Level Support ist die zweite Anlaufstelle für Anwender bei IT-Problemen. Er übernimmt komplexe Probleme, die vom First Level Support nicht gelöst werden konnten, und arbeitet an ihrer Lösung. Der Second Level Support ist oft per Telefon, E-Mail oder Ticketsystem erreichbar.",
+            "type": "flashcard"
+          },
+          {
+            "id": 20,
+            "difficulty": "leicht",
+            "frontside": "Beschreibe den Begriff Third Level Support",
+            "backside": "Der Third Level Support ist die dritte Anlaufstelle für Anwender bei IT-Problemen. Er übernimmt sehr komplexe Probleme, die vom First und Second Level Support nicht gelöst werden konnten, und arbeitet an ihrer Lösung. Der Third Level Support hat Experten Wissen.",
+            "type": "flashcard"
           }
         ]
       }
