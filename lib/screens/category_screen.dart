@@ -5,9 +5,7 @@ import 'network_plan_screen.dart';
 import '../services/storage_service.dart';
 import '../theme/app_theme.dart';
 import '/widgets/app_drawer.dart';
-import '/providers/theme_provider.dart';
 
-import '../widgets/app_drawer.dart';
 
 class CategoryScreen extends StatefulWidget {
   const CategoryScreen({super.key});
