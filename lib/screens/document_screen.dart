@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_pdfview/flutter_pdfview.dart';
-import 'package:path_provider/path_provider.dart' show getTemporaryDirectory;
-import 'dart:io';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import '../widgets/app_drawer.dart';
 
 class DocumentScreen extends StatelessWidget {
@@ -89,35 +87,22 @@ class DocumentScreen extends StatelessWidget {
 
   Future<void> _openDocument(BuildContext context, String url) async {
     try {
-      final ByteData data = await rootBundle.load(url);
-      final List<int> bytes = data.buffer.asUint8List();
-
-      final tempDir = await getTemporaryDirectory();
-      final tempFile = File('${tempDir.path}/${url.split('/').last}');
-      await tempFile.writeAsBytes(bytes);
-
-      if (context.mounted) {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => Scaffold(
-              appBar: AppBar(
-                title: Text(url.split('/').last),
-              ),
-              body: PDFView(
-                filePath: tempFile.path,
-                enableSwipe: true,
-                swipeHorizontal: false,
-                autoSpacing: true,
-                pageFling: true,
-                onError: (error) {
-                  debugPrint('Error: $error');
-                },
-              ),
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => Scaffold(
+            appBar: AppBar(
+              title: Text(url.split('/').last),
+            ),
+            body: SfPdfViewer.asset(
+              url,
+              canShowScrollHead: true,
+              canShowScrollStatus: true,
+              enableDoubleTapZooming: true,
             ),
           ),
-        );
-      }
+        ),
+      );
     } catch (e) {
       debugPrint('Error opening document: $e');
     }
