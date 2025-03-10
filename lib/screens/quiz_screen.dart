@@ -64,7 +64,7 @@ class _QuizScreenState extends State<QuizScreen> {
         return;
       }
 
-      // Normale Fragen laden
+      // Lernfeld Fragen laden
       String jsonPath;
       switch (widget.category) {
         case 'Lernfeld 1':
