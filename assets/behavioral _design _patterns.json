@@ -1,0 +1,96 @@
+{
+  "categories": {
+    "Behavioral Design Patterns": {
+      "description": "Simulierte Prüfungsfragen (Karteikarten-System)",
+      "questions": [
+        {
+          "id": 1,
+          "difficulty": "leicht",
+          "frontside": "Was bedeutet Chain of Responsibility ?",
+          "backside": "Das Chain of Responsibility-Muster ermöglicht es, eine Anfrage durch eine Kette von Handlern zu leiten. Jeder Handler kann die Anfrage verarbeiten oder sie an den nächsten Handler in der Kette weiterleiten. Es wird verwendet, um lose gekoppelte Systeme zu erstellen, in denen die Verantwortlichkeiten verteilt sind.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 2,
+          "difficulty": "leicht",
+          "frontside": "Was bedeutet Command ?",
+          "backside": "Das Command-Muster kapselt eine Anfrage als Objekt, wodurch Parameterisierung von Clients mit verschiedenen Anfragen und das Speichern von Anfragen in Warteschlangen ermöglicht wird. Es wird häufig für Undo/Redo-Funktionalitäten verwendet.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 3,
+          "difficulty": "mittel",
+          "frontside": "Was bedeutet Interpreter ?",
+          "backside": "Das Interpreter-Muster definiert eine Grammatik für eine Sprache und stellt einen Interpreter bereit, der Sätze dieser Sprache interpretiert. Es wird verwendet, um einfache Sprachen zu definieren und zu interpretieren.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 4,
+          "difficulty": "mittel",
+          "frontside": "Was bedeutet Iterator ?",
+          "backside": "Das Iterator-Muster bietet eine Möglichkeit, auf die Elemente einer Sammlung zuzugreifen, ohne die interne Struktur der Sammlung offenzulegen. Es ermöglicht das Durchlaufen von Sammlungen auf eine einheitliche Weise.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 5,
+          "difficulty": "schwer",
+          "frontside": "Was bedeutet Mediator ?",
+          "backside": "Das Mediator-Muster definiert ein Objekt, das die Interaktion zwischen anderen Objekten vermittelt. Es reduziert die Abhängigkeiten zwischen den Objekten und fördert lose Kopplung.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 6,
+          "difficulty": "schwer",
+          "frontside": "Was bedeutet Memento ?",
+          "backside": "Das Memento-Muster ermöglicht es, den Zustand eines Objekts zu speichern und später wiederherzustellen, ohne die interne Struktur des Objekts offenzulegen. Es wird häufig für Undo/Redo-Funktionalitäten verwendet.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 7,
+          "difficulty": "schwer",
+          "frontside": "Was bedeutet Observer ?",
+          "backside": "Das Observer-Muster definiert eine Eins-zu-viele-Abhängigkeit zwischen Objekten, sodass wenn ein Objekt seinen Zustand ändert, alle abhängigen Objekte benachrichtigt und aktualisiert werden. Es wird häufig für Ereignisbenachrichtigungen verwendet.",
+          "type": "flashcard"
+        },
+        {
+          "id": 8,
+          "difficulty": "schwer",
+          "frontside": "Was bedeutet State ?",
+          "backside": "Das State-Muster ermöglicht es einem Objekt, sein Verhalten zu ändern, wenn sich sein interner Zustand ändert. Es wird verwendet, um Objekte zu modellieren, die sich in verschiedenen Zuständen befinden können und deren Verhalten von ihrem Zustand abhängt.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 9,
+          "difficulty": "schwer",
+          "frontside": "Was bedeutet Strategy ?",
+          "backside": "Das Strategy-Muster definiert eine Familie von Algorithmen, kapselt sie und macht sie untereinander austauschbar. Es ermöglicht die Auswahl eines Algorithmus zur Laufzeit.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 10,
+          "difficulty": "schwer",
+          "frontside": "Was bedeutet Template Method ?",
+          "backside": "Das Template Method-Muster definiert das Skelett eines Algorithmus in einer Methode, während einige Schritte an Unterklassen delegiert werden. Es ermöglicht die Wiederverwendung von Code und die Anpassung bestimmter Schritte durch Unterklassen.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 11,
+          "difficulty": "schwer",
+          "frontside": "Was bedeutet Visitor ?",
+          "backside": "Das Visitor-Muster ermöglicht es, Operationen auf Objekten einer Struktur auszuführen, ohne die Struktur selbst zu ändern. Es fördert die Trennung von Daten und Verhalten.",
+
+          "type": "flashcard"
+        }
+      ]
+    }
+  }
+}

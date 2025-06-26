@@ -26,7 +26,6 @@ class _QuizScreenState extends State<QuizScreen> {
   List<Question> questions = [];
   List<Question> filteredQuestions = [];
   bool isPaused = false;
-  late Category selectedCategory;
   int currentQuestionIndex = 0;
   Timer? timer;
   int timeLeft = 60;
@@ -45,22 +44,17 @@ class _QuizScreenState extends State<QuizScreen> {
 
   Future<void> loadQuestions() async {
     try {
-      // Prüfe zuerst ob es sich um Prüfungsfragen oder Design Patterns handelt
-      String category = widget.category;
-      bool isFlashcard = false;
-      
-      if (category.startsWith('Prüfungsfragen Set')) {
-        isFlashcard = true;
-      } else if (category == 'Creational Design Patterns') {
-        isFlashcard = true;
-      } else if (category == 'Structural Design Patterns') {
-        isFlashcard = true;
-      }
+      // Check if this category should use flashcards
+      final bool isFlashcard = widget.category.startsWith('Prüfungsfragen Set') || 
+                              widget.category == 'Creational Design Patterns' ||
+                              widget.category == 'Structural Design Patterns' ||
+                              widget.category == 'Behavioral Design Patterns';
       
       if (isFlashcard) {
-        // Leite zur Karteikarten-Ansicht weiter
+        // Redirect to flashcard view
         final flashcards = await _loadFlashcards();
         if (!mounted) return;
+        
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
@@ -168,27 +162,23 @@ class _QuizScreenState extends State<QuizScreen> {
   // Neue Hilfsmethode zum Laden der Karteikarten
   Future<List<dynamic>> _loadFlashcards() async {
     String jsonPath;
-    switch (widget.category) {
-      case 'Prüfungsfragen Set 1':
-        jsonPath = 'assets/pruefungsfragen_set_1.json';
-        break;
-      case 'Prüfungsfragen Set 2':
-        jsonPath = 'assets/pruefungsfragen_set_2.json';
-        break;
-      case 'Prüfungsfragen Set 3':
-        jsonPath = 'assets/pruefungsfragen_set_3.json';
-        break;
-      case 'Prüfungsfragen Set 4':
-        jsonPath = 'assets/pruefungsfragen_set_4.json';
-        break;
-      case 'Creational Design Patterns':
-        jsonPath = 'assets/creational_design_patterns.json';
-        break;
-      case 'Structural Design Patterns':
-        jsonPath = 'assets/structural_design_patterns.json';
-        break;
-      default:
-        throw Exception('Unknown flashcard set');
+    
+    if (widget.category == 'Prüfungsfragen Set 1') {
+      jsonPath = 'assets/pruefungsfragen_set_1.json';
+    } else if (widget.category == 'Prüfungsfragen Set 2') {
+      jsonPath = 'assets/pruefungsfragen_set_2.json';
+    } else if (widget.category == 'Prüfungsfragen Set 3') {
+      jsonPath = 'assets/pruefungsfragen_set_3.json';
+    } else if (widget.category == 'Prüfungsfragen Set 4') {
+      jsonPath = 'assets/pruefungsfragen_set_4.json';
+    } else if (widget.category == 'Creational Design Patterns') {
+      jsonPath = 'assets/creational_design_patterns.json';
+    } else if (widget.category == 'Structural Design Patterns') {
+      jsonPath = 'assets/structural_design_patterns.json';
+    } else if (widget.category == 'Behavioral Design Patterns') {
+      jsonPath = 'assets/behavioral_design_patterns.json';
+    } else {
+      throw Exception('Unknown flashcard set');
     }
 
     final jsonString = await rootBundle.loadString(jsonPath);
