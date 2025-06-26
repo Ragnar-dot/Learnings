@@ -10,13 +10,13 @@ class DocumentScreen extends StatelessWidget {
     "Design Patterns": [
       {
         'title': 'Abstract Factory',
-        'assets': 'assets/design-patterns/Abstract Factory.pdf',
+        'assets': 'assets/design_patterns/Abstract Factory.pdf',
         'type': 'PDF',
         'description': 'Abstract Factory Design Pattern',
       },
       {
         'title': 'Adapter',
-        'assets': 'assets/design-patterns/Adapter.pdf',
+        'assets': 'assets/design_patterns/Adapter.pdf',
         'type': 'PDF',
         'description': 'Abstract Factory Design Pattern',
       },
