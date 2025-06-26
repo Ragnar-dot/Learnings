@@ -7,7 +7,20 @@ class DocumentScreen extends StatelessWidget {
   const DocumentScreen({super.key});
 
   final Map<String, List<Map<String, String>>> documents = const {
-
+    "Design Patterns": [
+      {
+        'title': 'Abstract Factory',
+        'assets': 'assets/design-patterns/Abstract Factory.pdf',
+        'type': 'PDF',
+        'description': 'Abstract Factory Design Pattern',
+      },
+      {
+        'title': 'Adapter',
+        'assets': 'assets/design-patterns/Adapter.pdf',
+        'type': 'PDF',
+        'description': 'Abstract Factory Design Pattern',
+      },
+    ],
     'SQL': [
       {
         'title': 'SQL Befehle',
@@ -15,7 +28,7 @@ class DocumentScreen extends StatelessWidget {
         'type': 'PDF',
         'description': 'Die wichtigsten SQL Befehle',
       },
-            {
+      {
         'title': 'SQL Befehlssammlung',
         'assets': 'assets/SQL/Befehlssammlung_SQL.pdf',
         'type': 'PDF',
@@ -30,10 +43,7 @@ class DocumentScreen extends StatelessWidget {
         'description': 'Übungsaufgaben zu Sortieralgorithmen',
       },
     ],
-
-
-
-        'Osi Schichtmodell': [
+    'Osi Schichtmodell': [
       {
         'title': 'Osi Schichtmodell',
         'assets': 'assets/Osi Schichtmodell/ISO-Modell.pdf',
@@ -41,35 +51,35 @@ class DocumentScreen extends StatelessWidget {
         'description': 'Übungsaufgaben zum Schichtmodell',
       },
     ],
-
-
-              'Prüfungen IHK': [
+    'Prüfungen IHK': [
       {
         'title': 'Prüfung 2020',
-        'assets': 'assets/Prüfungen IHK/Prüfung 2020/ZP_2020_H_FIAE_Aufgabe.pdf',
+        'assets':
+            'assets/Prüfungen IHK/Prüfung 2020/ZP_2020_H_FIAE_Aufgabe.pdf',
         'type': 'PDF',
         'description': 'Prüfung Herbst 2020',
       },
-            {
+      {
         'title': 'Prüfung 2020 Lösung',
         'assets': 'assets/Prüfungen IHK/Prüfung 2020/ZP_2020_H_FIAE_Lösung.pdf',
         'type': 'PDF',
         'description': 'Prüfung Herbst 2020 Lösung',
       },
-                  {
+      {
         'title': 'Prüfung 2021',
-        'assets': 'assets/Prüfungen IHK/Prüfung 2021/ZP_2021_H_GA1_FIAE_Aufgaben.pdf',
+        'assets':
+            'assets/Prüfungen IHK/Prüfung 2021/ZP_2021_H_GA1_FIAE_Aufgaben.pdf',
         'type': 'PDF',
         'description': 'Prüfung Herbst 2021',
       },
-                  {
+      {
         'title': 'Prüfung 2022',
-        'assets': 'assets/Prüfungen IHK/Prüfung 2022/ZP_2022_F_GA1_FIAE_Aufgaben.pdf',
+        'assets':
+            'assets/Prüfungen IHK/Prüfung 2022/ZP_2022_F_GA1_FIAE_Aufgaben.pdf',
         'type': 'PDF',
         'description': 'Prüfung Frühjahr 2022',
       },
     ],
-    
   };
 
   Icon _getFileIcon(String type) {
