@@ -45,10 +45,19 @@ class _QuizScreenState extends State<QuizScreen> {
 
   Future<void> loadQuestions() async {
     try {
+      // Prüfe zuerst ob es sich um Prüfungsfragen oder Design Patterns handelt
+      String category = widget.category;
+      bool isFlashcard = false;
       
-
-      // Prüfe zuerst ob es sich um Prüfungsfragen handelt
-      if (widget.category.startsWith('Prüfungsfragen Set')) {
+      if (category.startsWith('Prüfungsfragen Set')) {
+        isFlashcard = true;
+      } else if (category == 'Creational Design Patterns') {
+        isFlashcard = true;
+      } else if (category == 'Structural Design Patterns') {
+        isFlashcard = true;
+      }
+      
+      if (isFlashcard) {
         // Leite zur Karteikarten-Ansicht weiter
         final flashcards = await _loadFlashcards();
         if (!mounted) return;
@@ -133,8 +142,26 @@ class _QuizScreenState extends State<QuizScreen> {
         }
       });
     } catch (e) {
-      print('Error loading questions: $e');
-      rethrow;
+      // Besser als print in Produktionscode
+      debugPrint('Error loading questions: $e');
+      if (mounted) {
+        showDialog(
+          context: context,
+          builder: (ctx) => AlertDialog(
+            title: const Text('Fehler'),
+            content: Text('Fehler beim Laden der Fragen: ${e.toString()}'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(ctx).pop();
+                  Navigator.of(context).pop(); // Zurück zum vorherigen Bildschirm
+                },
+                child: const Text('OK'),
+              ),
+            ],
+          ),
+        );
+      }
     }
   }
 
@@ -154,13 +181,30 @@ class _QuizScreenState extends State<QuizScreen> {
       case 'Prüfungsfragen Set 4':
         jsonPath = 'assets/pruefungsfragen_set_4.json';
         break;
+      case 'Creational Design Patterns':
+        jsonPath = 'assets/creational_design_patterns.json';
+        break;
+      case 'Structural Design Patterns':
+        jsonPath = 'assets/structural_design_patterns.json';
+        break;
       default:
         throw Exception('Unknown flashcard set');
     }
 
     final jsonString = await rootBundle.loadString(jsonPath);
     final jsonData = json.decode(jsonString);
-    return jsonData['categories'][widget.category]['questions'];
+    
+    // Sichere Navigation durch die JSON-Struktur
+    if (!jsonData.containsKey('categories')) {
+      throw Exception('Ungültige JSON-Struktur - categories fehlt');
+    }
+    
+    final categories = jsonData['categories'];
+    if (!categories.containsKey(widget.category)) {
+      throw Exception('Kategorie ${widget.category} nicht gefunden');
+    }
+    
+    return categories[widget.category]['questions'];
   }
 
   void startTimer() {

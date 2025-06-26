@@ -101,6 +101,12 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': CupertinoIcons.doc_text,
       'description': 'Simulierte Prüfungsfragen',
     },
+
+    {
+      'name': 'Structural Design Patterns',
+      'icon': CupertinoIcons.doc_text,
+      'description': 'Simulierte Prüfungsfragen',
+    },
   ];
 
   Map<String, QuizStats> categoryStats = {};
