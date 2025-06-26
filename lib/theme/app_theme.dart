@@ -11,7 +11,7 @@ class AppTheme {
 
   static final _baseTheme = ThemeData(
     primaryColor: const Color.fromARGB(255, 33, 65, 243),
-    cardTheme: const CardTheme(
+    cardTheme: const CardThemeData(
       elevation: 4,
       margin: EdgeInsets.all(8),
     ),
@@ -119,4 +119,3 @@ class AppTheme {
         ),
       );
 }
-

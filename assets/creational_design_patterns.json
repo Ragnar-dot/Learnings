@@ -1,0 +1,49 @@
+{
+  "categories": {
+    "Creational Design Patterns": {
+      "description": "Simulierte Prüfungsfragen (Karteikarten-System)",
+      "questions": [
+        {
+          "id": 1,
+          "difficulty": "leicht",
+          "frontside": "Was bedeutet Factory Method ?",
+          "backside": "Die Factory Method ist ein Entwurfsmuster, das die Instanziierung von Objekten kapselt. Es ermöglicht die Erstellung von Objekten, ohne dass der genaue Klassentyp bekannt sein muss. Stattdessen wird eine Schnittstelle definiert, die die Erstellung von Objekten delegiert.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 2,
+          "difficulty": "leicht",
+          "frontside": "Was bedeutet Abstract Factory ?",
+          "backside": "Abstract Factory ist ein kreatives Entwurfsmuster, mit dem Sie Familien verwandter Objekte erstellen können, ohne deren konkrete Klassen anzugeben.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 3,
+          "difficulty": "mittel",
+          "frontside": "Was bedeutet Singleton ?",
+          "backside": "Das Singleton-Muster stellt sicher, dass eine Klasse nur eine Instanz hat und bietet einen globalen Zugriffspunkt auf diese Instanz. Es wird häufig verwendet, um Ressourcen zu verwalten, die nicht mehrfach instanziiert werden sollen.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 4,
+          "difficulty": "mittel",
+          "frontside": "Was bedeutet Builder ?",
+          "backside": "Das Builder-Muster trennt die Konstruktion eines komplexen Objekts von seiner Repräsentation, sodass der gleiche Konstruktionsprozess verschiedene Darstellungen erzeugen kann.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 5,
+          "difficulty": "schwer",
+          "frontside": "Was bedeutet Prototype ?",
+          "backside": "Das Prototype-Muster ermöglicht es, Objekte zu erstellen, indem sie von einem Prototypen kopiert werden. Es ist nützlich, wenn die Kosten für die Erstellung eines neuen Objekts hoch sind oder wenn die Objekte komplex sind.",
+
+          "type": "flashcard"
+        }
+      ]
+    }
+  }
+}

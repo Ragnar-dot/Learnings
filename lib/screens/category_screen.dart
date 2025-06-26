@@ -7,7 +7,6 @@ import '../services/storage_service.dart';
 import '../theme/app_theme.dart';
 import '/widgets/app_drawer.dart';
 
-
 class CategoryScreen extends StatefulWidget {
   const CategoryScreen({super.key});
 
@@ -47,7 +46,6 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': Icons.psychology,
       'description': 'MML, Neuronale Netze, Deep Learning, KI-Ethik',
     },
-    
     {
       'name': 'Lernfeld 1',
       'icon': Icons.school_outlined,
@@ -93,10 +91,14 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': CupertinoIcons.doc_text,
       'description': 'Simulierte Prüfungsfragen',
     },
-        {
+    {
       'name': 'Prüfungsfragen Set 4',
       'icon': CupertinoIcons.doc_text,
-       
+      'description': 'Simulierte Prüfungsfragen',
+    },
+    {
+      'name': 'Creational Design Patterns',
+      'icon': CupertinoIcons.doc_text,
       'description': 'Simulierte Prüfungsfragen',
     },
   ];
@@ -158,7 +160,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: theme.primaryColor,
-              boxShadow: theme  .brightness == Brightness.dark
+              boxShadow: theme.brightness == Brightness.dark
                   ? null
                   : [
                       BoxShadow(
@@ -176,7 +178,6 @@ class _CategoryScreenState extends State<CategoryScreen> {
               'Wähle einen Bereich zum Lernen',
               style: theme.textTheme.headlineMedium?.copyWith(
                 color: Colors.white,
-                
               ),
               textAlign: TextAlign.center,
             ),
@@ -189,7 +190,6 @@ class _CategoryScreenState extends State<CategoryScreen> {
                 childAspectRatio: 0.75,
                 crossAxisSpacing: 4,
                 mainAxisSpacing: 4,
-
               ),
               itemCount: categories.length,
               itemBuilder: (context, index) {
@@ -197,19 +197,22 @@ class _CategoryScreenState extends State<CategoryScreen> {
                 final stats =
                     categoryStats[category] ?? QuizStats(category: category);
 
-                return Card(                                                                        // Karte
+                return Card(
+                  // Karte
                   elevation: 2,
-                  
-                  shadowColor: Theme.of(context).brightness == Brightness.dark ? const Color.fromARGB(255, 0, 0, 0) : const Color.fromARGB(255, 136, 136, 136),
 
-                  
+                  shadowColor: Theme.of(context).brightness == Brightness.dark
+                      ? const Color.fromARGB(255, 0, 0, 0)
+                      : const Color.fromARGB(255, 136, 136, 136),
 
-                  
                   margin: const EdgeInsets.all(2),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
-                    side: BorderSide(color: Theme.of(context).brightness == Brightness.dark ? const Color.fromARGB(121, 184, 184, 184) : const Color.fromARGB(14, 216, 216, 216)),                  // Rahmenfarbe
-                   
+                    side: BorderSide(
+                        color: Theme.of(context).brightness == Brightness.dark
+                            ? const Color.fromARGB(121, 184, 184, 184)
+                            : const Color.fromARGB(
+                                14, 216, 216, 216)), // Rahmenfarbe
                   ),
                   child: InkWell(
                     onTap: () async {

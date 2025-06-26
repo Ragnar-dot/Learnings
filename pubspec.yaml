@@ -19,7 +19,7 @@ dependencies:
   flip_card: ^0.7.0
   flutter_pdfview: ^1.4.0
   cupertino_icons: ^1.0.8
-  syncfusion_flutter_pdfviewer: ^24.1.41
+  syncfusion_flutter_pdfviewer: ^30.1.37
 
   
 
@@ -41,6 +41,7 @@ flutter:
     - assets/pruefungsfragen_set_2.json
     - assets/pruefungsfragen_set_3.json
     - assets/pruefungsfragen_set_4.json
+    - assets/creational_design_patterns.json
     - assets/Exercises/sortieralgorithmen_uebungen.pdf
     - assets/SQL/Befehlssammlung_SQL.pdf
     - assets/SQL/sql_befehle.pdf

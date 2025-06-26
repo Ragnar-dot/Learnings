@@ -1,0 +1,65 @@
+{
+  "categories": {
+    "Structural Design Patterns": {
+      "description": "Simulierte Prüfungsfragen (Karteikarten-System)",
+      "questions": [
+        {
+          "id": 1,
+          "difficulty": "leicht",
+          "frontside": "Was bedeutet Adapter ?",
+          "backside": "Das Adapter-Muster ermöglicht es, die Schnittstelle einer Klasse in eine andere Schnittstelle zu übersetzen, die der Client erwartet. Es wird verwendet, um inkompatible Schnittstellen zusammenzuführen.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 2,
+          "difficulty": "leicht",
+          "frontside": "Was bedeutet Bridge ?",
+          "backside": "Das Bridge-Muster trennt die Abstraktion von der Implementierung, sodass beide unabhängig voneinander variiert werden können. Es wird verwendet, um eine flexible und erweiterbare Architektur zu schaffen.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 3,
+          "difficulty": "mittel",
+          "frontside": "Was bedeutet Composite ?",
+          "backside": "Das Composite-Muster ermöglicht es, Objekte in Baumstrukturen zu organisieren, um Teil-Ganzes-Hierarchien darzustellen. Es ermöglicht Clients, einzelne Objekte und Kompositionen von Objekten einheitlich zu behandeln.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 4,
+          "difficulty": "mittel",
+          "frontside": "Was bedeutet Decorator ?",
+          "backside": "Das Decorator-Muster ermöglicht es, einem Objekt dynamisch zusätzliche Verantwortlichkeiten hinzuzufügen. Es bietet eine flexible Alternative zur Unterklassenbildung für die Erweiterung der Funktionalität eines Objekts.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 5,
+          "difficulty": "schwer",
+          "frontside": "Was bedeutet Facade ?",
+          "backside": "Das Facade-Muster bietet eine vereinfachte Schnittstelle zu einem komplexen Subsystem. Es reduziert die Komplexität und erleichtert die Interaktion mit dem Subsystem.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 6,
+          "difficulty": "schwer",
+          "frontside": "Was bedeutet Flyweight ?",
+          "backside": "Das Flyweight-Muster ermöglicht es, eine große Anzahl von Objekten zu verwalten, indem gemeinsame Daten in einem gemeinsamen Objekt gespeichert werden. Es reduziert den Speicherbedarf und verbessert die Leistung bei der Arbeit mit vielen ähnlichen Objekten.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 7,
+          "difficulty": "schwer",
+          "frontside": "Was bedeutet Proxy ?",
+          "backside": "Das Proxy-Muster bietet einen Stellvertreter für ein anderes Objekt, um den Zugriff darauf zu kontrollieren. Es kann verwendet werden, um zusätzliche Funktionalitäten wie Caching, Protokollierung oder Sicherheitskontrollen hinzuzufügen.",
+
+          "type": "flashcard"
+        }
+      ]
+    }
+  }
+}
