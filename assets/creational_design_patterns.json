@@ -23,7 +23,7 @@
           "id": 3,
           "difficulty": "mittel",
           "frontside": "Was bedeutet Singleton ?",
-          "backside": "Das Singleton-Muster stellt sicher, dass eine Klasse nur eine Instanz hat und bietet einen globalen Zugriffspunkt auf diese Instanz. Es wird häufig verwendet, um Ressourcen zu verwalten, die nicht mehrfach instanziiert werden sollen.",
+          "backside": "Das Singleton-Pattern stellt sicher, dass eine Klasse nur eine Instanz hat und bietet einen globalen Zugriffspunkt auf diese Instanz. Es wird häufig verwendet, um Ressourcen zu verwalten, die nicht mehrfach instanziiert werden sollen.",
 
           "type": "flashcard"
         },
@@ -31,7 +31,7 @@
           "id": 4,
           "difficulty": "mittel",
           "frontside": "Was bedeutet Builder ?",
-          "backside": "Das Builder-Muster trennt die Konstruktion eines komplexen Objekts von seiner Repräsentation, sodass der gleiche Konstruktionsprozess verschiedene Darstellungen erzeugen kann.",
+          "backside": "Das Builder-Pattern trennt die Konstruktion eines komplexen Objekts von seiner Repräsentation, sodass der gleiche Konstruktionsprozess verschiedene Darstellungen erzeugen kann.",
 
           "type": "flashcard"
         },
@@ -39,7 +39,7 @@
           "id": 5,
           "difficulty": "schwer",
           "frontside": "Was bedeutet Prototype ?",
-          "backside": "Das Prototype-Muster ermöglicht es, Objekte zu erstellen, indem sie von einem Prototypen kopiert werden. Es ist nützlich, wenn die Kosten für die Erstellung eines neuen Objekts hoch sind oder wenn die Objekte komplex sind.",
+          "backside": "Das Prototype-Pattern ermöglicht es, Objekte zu erstellen, indem sie von einem Prototypen kopiert werden. Es ist nützlich, wenn die Kosten für die Erstellung eines neuen Objekts hoch sind oder wenn die Objekte komplex sind.",
 
           "type": "flashcard"
         }
