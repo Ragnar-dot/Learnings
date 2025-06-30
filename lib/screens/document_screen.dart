@@ -18,7 +18,25 @@ class DocumentScreen extends StatelessWidget {
         'title': 'Adapter',
         'assets': 'assets/design_patterns/Adapter.pdf',
         'type': 'PDF',
-        'description': 'Abstract Factory Design Pattern',
+        'description': 'Adapter Pattern',
+      },
+      {
+        'title': 'Builder',
+        'assets': 'assets/design_patterns/Builder.pdf',
+        'type': 'PDF',
+        'description': 'Builder Pattern',
+      },
+      {
+        'title': 'Factory Method',
+        'assets': 'assets/design_patterns/Factory Method.pdf',
+        'type': 'PDF',
+        'description': 'Factory Method Design Pattern',
+      },
+      {
+        'title': 'Singelton',
+        'assets': 'assets/design_patterns/Singleton.pdf',
+        'type': 'PDF',
+        'description': 'Singleton Design Pattern',
       },
     ],
     'SQL': [
