@@ -38,6 +38,46 @@ class DocumentScreen extends StatelessWidget {
         'type': 'PDF',
         'description': 'Singleton Design Pattern',
       },
+      {
+        'title': 'Flyweight',
+        'assets': 'assets/design_patterns/Flyweight.pdf',
+        'type': 'PDF',
+        'description': 'Flyweight Design Pattern',
+      },
+      {
+        'title': 'Decorator',
+        'assets': 'assets/design_patterns/Decorator.pdf',
+        'type': 'PDF',
+        'description': 'Decorator is a structural design pattern',
+      },
+      {
+        'title': 'Facade',
+        'assets': 'assets/design_patterns/Facade.pdf',
+        'type': 'PDF',
+        'description':
+            "Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.",
+      },
+      {
+        'title': 'Prototyp',
+        'assets': 'assets/design_patterns/Prototyp.pdf',
+        'type': 'PDF',
+        'description':
+            "Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.",
+      },
+      {
+        'title': 'Composite',
+        'assets': 'assets/design_patterns/Composite.pdf',
+        'type': 'PDF',
+        'description':
+            "Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.",
+      },
+      {
+        'title': 'Bridge',
+        'assets': 'assets/design_patterns/Bridge.pdf',
+        'type': 'PDF',
+        'description':
+            "Bridge is a structural design pattern that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.",
+      },
     ],
     'SQL': [
       {

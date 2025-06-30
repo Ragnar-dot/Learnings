@@ -57,3 +57,9 @@ flutter:
     - assets\design_patterns\Builder.pdf
     - assets\design_patterns\Factory Method.pdf
     - assets\design_patterns\Singleton.pdf
+    - assets\design_patterns\Flyweight.pdf
+    - assets\design_patterns\Decorator.pdf
+    - assets\design_patterns\Facade.pdf
+    - assets\design_patterns\Prototyp.pdf
+    - assets\design_patterns\Composite.pdf
+    - assets\design_patterns\Bridge.pdf
