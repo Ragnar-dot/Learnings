@@ -58,6 +58,46 @@
           "backside": "Ein Raid schütz in den folgenden Fällen nicht vor Datenverlust:\n\n• Hardwarefehler: Wenn mehrere Festplatten gleichzeitig ausfallen, kann es zu Datenverlust kommen. \n\n• Menschliches Versagen: Wenn versehentlich Daten gelöscht oder überschrieben werden, kann ein Raid diese nicht wiederherstellen. \n\n• Malware oder Ransomware: Ein Raid schützt nicht vor bösartiger Software, die Daten beschädigen oder verschlüsseln kann.\n\n• physicher Beschädigung: Wenn ein Brand oder Wasserschaden die Festplatten beschädigt, kann das Raid die Daten nicht wiederherstellen.",
 
           "type": "flashcard"
+        },
+        {
+          "id": 8,
+          "difficulty": "leicht",
+          "frontside": "Was ist der Unterschied zwischen symmetrischen und asymetrischen Verschlüsselungsverfahren ?",
+          "backside": "Symmetrische und asymmetrische Verschlüsselungsverfahren sind zwei grundlegende Ansätze zur Datenverschlüsselung:\n\n• Symmetrische Verschlüsselung: Bei der symmetrischen Verschlüsselung verwenden Sender und Empfänger denselben Schlüssel zum Ver- und Entschlüsseln von Daten. Dies erfordert, dass der Schlüssel sicher zwischen den Parteien ausgetauscht wird. Ein Beispiel für ein symmetrisches Verfahren ist AES (Advanced Encryption Standard).\n\n• Asymmetrische Verschlüsselung: Bei der asymmetrischen Verschlüsselung gibt es zwei Schlüssel: einen öffentlichen Schlüssel, der zum Verschlüsseln von Daten verwendet wird, und einen privaten Schlüssel, der zum Entschlüsseln verwendet wird (Private Key & Public Key). Der öffentliche Schlüssel kann frei verteilt werden, während der private Schlüssel geheim bleibt. Ein Beispiel für ein asymmetrisches Verfahren ist RSA (Rivest-Shamir-Adleman).",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 9,
+          "difficulty": "leicht",
+          "frontside": "Was ist die Funktionsweise von hybriden Verschlüsselungsverfahren ?",
+          "backside": "Hybride Verschlüsselungsverfahren kombinieren die Vorteile von symmetrischen und asymmetrischen Verschlüsselungsmethoden. Sie verwenden asymmetrische Verschlüsselung, um einen symmetrischen Schlüssel sicher auszutauschen, der dann für die eigentliche Datenverschlüsselung verwendet wird. Dies ermöglicht eine sichere Übertragung des Schlüssels und gleichzeitig eine effiziente Datenverschlüsselung. \n\n Die Nachricht wird mit dem symmetrischen Schlüssel verschlüsselt, der dann an den Empfänger gesendet wird. Der Empfänger kann den symmetrischen Schlüssel mit seinem privaten Schlüssel entschlüsseln und die Nachricht lesen.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 10,
+          "difficulty": "leicht",
+          "frontside": "Was ist der Unterschied zwischen den Begriffen Datenschutz und Datensicherheit ?",
+          "backside": "Datenschutz und Datensicherheit sind zwei verwandte, aber unterschiedliche Konzepte:\n\n• Datenschutz bezieht sich auf den Schutz personenbezogener Daten vor unbefugtem Zugriff, Missbrauch oder Offenlegung. Es umfasst Maßnahmen zur Einhaltung von Datenschutzgesetzen und -richtlinien, um die Privatsphäre von Individuen zu schützen.\n\n• Datensicherheit hingegen bezieht sich auf den Schutz aller Arten von Daten (nicht nur personenbezogener Daten) vor Verlust, Beschädigung oder unbefugtem Zugriff. Es umfasst technische und organisatorische Maßnahmen, um die Integrität, Vertraulichkeit und Verfügbarkeit von Daten zu gewährleisten.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 11,
+          "difficulty": "leicht",
+          "frontside": "Welche Rechte haben Betroffene gemäß der DSGVO ?",
+          "backside": "Gemäß der Datenschutz-Grundverordnung (DSGVO) haben betroffene Personen folgende Rechte:\n\n• Recht auf Auskunft: Betroffene haben das Recht zu erfahren, welche personenbezogenen Daten über sie verarbeitet werden.\n\n• Recht auf Berichtigung: Betroffene können die Berichtigung unrichtiger oder unvollständiger Daten verlangen.\n\n• Recht auf Löschung: Betroffene können die Löschung ihrer personenbezogenen Daten verlangen, wenn diese nicht mehr benötigt werden oder unrechtmäßig verarbeitet wurden.\n\n• Recht auf Einschränkung der Verarbeitung: Betroffene können die Einschränkung der Verarbeitung ihrer Daten verlangen.\n\n• Recht auf Datenübertragbarkeit: Betroffene haben das Recht, ihre personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten und an einen anderen Verantwortlichen zu übertragen.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 12,
+          "difficulty": "leicht",
+          "frontside": "Personenbezogene Daten und besondere Kategorien nach DSGVO ",
+          "backside": "Personenbezogene Daten sind Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Besondere Kategorien personenbezogener Daten sind besonders schützenswert und umfassen Daten über die \n\n• rassische oder ethnische Herkunft \n\n• politische Meinungen \n\n• religiöse oder weltanschauliche Überzeugungen, Gewerkschaftszugehörigkeit\n\n• genetische Daten\n\n• biometrische Daten zur eindeutigen Identifizierung\n\n• Gesundheitsdaten sowie Daten zum Sexualleben oder der sexuellen Orientierung. ",
+
+          "type": "flashcard"
         }
       ]
     }
