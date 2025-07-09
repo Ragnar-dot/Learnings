@@ -106,6 +106,62 @@
           "backside": "\n\n• Vertraulichkeit: Sicherstellen, dass nur autorisierte Personen Zugriff auf die Daten haben.\n\n• Integrität: Gewährleisten, dass die Daten vollständig und unverändert sind und nicht unbefugt manipuliert wurden.\n\n• Verfügbarkeit: Sicherstellen, dass die Daten bei Bedarf von autorisierten Personen zugänglich sind.\n\n• Authentizität: Bestätigen, dass die Daten von einer vertrauenswürdigen Quelle stammen und nicht gefälscht oder manipuliert wurden. Echtheit und Vertrauenswürdigkeit müssen gewährleistet sein.",
 
           "type": "flashcard"
+        },
+        {
+          "id": 14,
+          "difficulty": "leicht",
+          "frontside": "Nenne Aufgaben des IT-Sicherheitsbeauftragten.",
+          "backside": "\n\n• Erstellung von Richtlinien zur Informationssicherheit\n\n• Praktische Umsetzung von Maßnahmen in der IT-Sicherheit\n\n• Bearbeitung von Sicherheitsvorfällen\n\n• Schulung und Sensibilisierung der Mitarbeiter für IT-Sicherheit\n\n• Überwachung und Auditierung der IT-Sicherheitsmaßnahmen\n\n• Zusammenarbeit mit anderen Abteilungen und externen Partnern zur Gewährleistung der IT-Sicherheit",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 15,
+          "difficulty": "leicht",
+          "frontside": "Es gibt in der IT-Infrastruktur verschiedene Arten von Gefahren wie z.B. \n\n • Trojaner \n\n• Phishing \n\n• Ransomware \n\n• DDoS \n\n Erläutere diese Begriffe.",
+          "backside": "\n\n• Trojaner: Schadsoftware, die sich als nützliche Software tarnt, um unbefugten Zugriff auf ein System zu erlangen.\n\n• Phishing: Betrugsversuch, bei dem Angreifer versuchen, sensible Informationen wie Passwörter oder Kreditkartendaten durch gefälschte E-Mails oder Websites zu stehlen.\n\n• Ransomware: Schadsoftware, die Daten auf einem Computer verschlüsselt und ein Lösegeld verlangt, um den Zugriff wiederherzustellen.\n\n• DDoS (Distributed Denial of Service): Angriff, bei dem eine große Anzahl von Anfragen an einen Server gesendet wird, um ihn zu überlasten und unerreichbar zu machen.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 16,
+          "difficulty": "leicht",
+          "frontside": "Was ist ein Honeypot und wozu wird er eingesetzt ?",
+          "backside": "Ein Honeypot ist ein absichtlich unsicher gestaltetes System oder Netzwerk, das dazu dient, Angreifer anzulocken und deren Aktivitäten zu überwachen. Er wird eingesetzt, um Informationen über Angriffsvektoren, Taktiken und Techniken von Cyberkriminellen zu sammeln, um die Sicherheitssysteme zu verbessern und zukünftige Angriffe zu verhindern.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 17,
+          "difficulty": "leicht",
+          "frontside": "Was ist eine Sandbox und was sind die Aufgaben ?",
+          "backside": "Eine Sandbox ist eine isolierte Umgebung, in der Software oder Code sicher ausgeführt werden kann, ohne das zugrunde liegende System zu gefährden. Sie wird verwendet, um potenziell schädliche Software zu testen, ohne dass sie auf das Hauptsystem zugreifen oder es beeinträchtigen kann. Aufgaben einer Sandbox sind:\n\n• Isolierung von Prozessen\n• Überwachung von Aktivitäten\n• Analyse von Verhalten und Auswirkungen von Software\n• Schutz des Systems vor Malware und anderen Bedrohungen.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 18,
+          "difficulty": "leicht",
+          "frontside": "Erklähre den Unterschied zwischen inkrementeller und differenzieller Datensicherung.",
+          "backside": "Inkrementelle und differenzielle Datensicherungen sind zwei Ansätze zur Datensicherung:\n\n• Inkrementelle Datensicherung: Bei dieser Methode werden nur die Daten gesichert, die seit der letzten Sicherung (vollständig oder inkrementell) geändert wurden. Dies spart Speicherplatz und reduziert die Zeit für die Sicherung, da nur neue oder geänderte Daten gesichert werden.\n\n• Differenzielle Datensicherung: Hierbei werden alle Daten gesichert, die seit der letzten vollständigen Sicherung geändert wurden. Dies bedeutet, dass jede differenzielle Sicherung alle Änderungen seit der letzten vollständigen Sicherung enthält, was zu größeren Sicherungsdateien führen kann.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 19,
+          "difficulty": "leicht",
+          "frontside": "Erklähre den Unterschied zwischen inkrementeller und differenzieller Datensicherung.",
+          "backside": "Inkrementelle und differenzielle Datensicherungen sind zwei Ansätze zur Datensicherung:\n\n• Inkrementelle Datensicherung: Bei dieser Methode werden nur die Daten gesichert, die seit der letzten Sicherung (vollständig oder inkrementell) geändert wurden. Dies spart Speicherplatz und reduziert die Zeit für die Sicherung, da nur neue oder geänderte Daten gesichert werden.\n\n• Differenzielle Datensicherung: Hierbei werden alle Daten gesichert, die seit der letzten vollständigen Sicherung geändert wurden. Dies bedeutet, dass jede differenzielle Sicherung alle Änderungen seit der letzten vollständigen Sicherung enthält, was zu größeren Sicherungsdateien führen kann.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 20,
+          "difficulty": "leicht",
+          "frontside": "Erklären Sie die Bedeutung der Algorithmen AES-128, AES-256, DES und SHA-256 in der IT-Sicherheit.",
+          "backside": "\n\n• AES-128 und AES-256 Advanced Encryption Standards sind symmetrische Verschlüsselungsalgorithmen, die Daten sicher verschlüsseln. Der Unterschied liegt in der Schlüssellänge: AES-128 verwendet einen 128-Bit-Schlüssel, während AES-256 einen 256-Bit-Schlüssel verwendet, was eine höhere Sicherheit bietet.\n\n• DES (Data Encryption Standard) ist ein älterer symmetrischer Verschlüsselungsalgorithmus, der heute als unsicher gilt, da er leicht geknackt werden kann. Er verwendet einen 56-Bit-Schlüssel.\n\n• SHA-256 (Secure Hash Algorithm 256) ist ein kryptografischer Hash-Algorithmus, der Daten in einen 256-Bit-Hashwert umwandelt. Er wird häufig zur Integritätsprüfung von Daten verwendet.",
+
+          "type": "flashcard"
         }
       ]
     }
