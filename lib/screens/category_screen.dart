@@ -111,6 +111,11 @@ class _CategoryScreenState extends State<CategoryScreen> {
       'icon': CupertinoIcons.doc_text,
       'description': 'Simulierte Prüfungsfragen',
     },
+    {
+      'name': 'AP Teil 2 / Set 1',
+      'icon': CupertinoIcons.doc_text,
+      'description': 'Simulierte Prüfungsfragen',
+    },
   ];
 
   Map<String, QuizStats> categoryStats = {};

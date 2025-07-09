@@ -44,6 +44,7 @@ flutter:
     - assets/creational_design_patterns.json
     - assets/structural_design_patterns.json
     - assets/behavioral_design_patterns.json
+    - assets/ap_teil_2_set_1.json
     - assets/Exercises/sortieralgorithmen_uebungen.pdf
     - assets/SQL/Befehlssammlung_SQL.pdf
     - assets/SQL/sql_befehle.pdf

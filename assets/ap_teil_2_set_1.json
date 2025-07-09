@@ -1,0 +1,65 @@
+{
+  "categories": {
+    "AP Teil 2 / Set 1": {
+      "description": "Simulierte Prüfungsfragen (Karteikarten-System)",
+      "questions": [
+        {
+          "id": 1,
+          "difficulty": "leicht",
+          "frontside": "Welche Schutzmechanismen beinhaltet das TLS-Protokoll ?",
+          "backside": "Transport Layer Security (TLS) ist ein Protokoll, das dazu dient, eine sichere Kommunikation über ein Netzwerk zu ermöglichen. TLS funktioniert, indem es eine verschlüsselte Verbindung zwischen zwei Parteien herstellt, über die Daten sicher übertragen werden können.\n\nAufgaben von TLS sind:\n\n• Verschlüsselung: TLS verwendet das hybride Verschlüsselungsverfahren, um Verbindungen zu sichern\n\n• Authentifizierung: Überprüfung der Identität durch digitale Zertifikate der Kommunikationspartner\n\n• Integrität",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 2,
+          "difficulty": "leicht",
+          "frontside": "Was bedeutet Disaster Recovery in der Informationstechnologie und warum ist es für Unternehmen wichtig ?",
+          "backside": "Disaster Recovery (DR) in der Informationstechnologie bezieht sich auf die Strategien und Maßnahmen, die ein Unternehmen ergreift, um nach einem katastrophalen Ereignis wie Naturkatastrophen, Cyberangriffen oder Systemausfällen den Betrieb wiederherzustellen.\n\n Es ist wichtig, um Datenverlust zu minimieren, die Geschäftskontinuität zu gewährleisten und die Auswirkungen auf Kunden und Mitarbeiter zu reduzieren.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 3,
+          "difficulty": "leicht",
+          "frontside": "Erläutern Sie die Bedeutung von RTO (Recovery Time Objective) und RPO (Recovery Point Objective).",
+          "backside": "RTO (Recovery Time Objective) ist die maximale tolerierbare Zeit, die ein System nach einem Ausfall oder einer Störung ausfallen darf, bevor es zu erheblichen Schäden kommt. Es ist die Zeit die Zeit die benötigt wird, um die Funktionsfähigkeit wieder herzustellen. \n\n RPO (Recovery Point Objective) bezieht sich auf die maximale Menge an Daten, die ein Unternehmen im Falle eines Ausfalls verlieren kann, ohne dass dies zu erheblichen Auswirkungen auf den Geschäftsbetrieb führt. Es definiert den maximalen Zeitraum, in dem Datenverlust toleriert werden kann.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 4,
+          "difficulty": "leicht",
+          "frontside": "Worin liegt der Unterschied zwischen MTBF (Mean Time Between Failures) und MTTF (Mean Time to Failure) ?",
+          "backside": "MTBF (Mean Time Between Failures) und MTTF (Mean Time to Failure) sind zwei wichtige Kennzahlen im Bereich der Zuverlässigkeit von Systemen.\n\n• MTBF bezieht sich auf die durchschnittliche Zeit zwischen zwei Ausfällen eines Systems. Es wird verwendet, um die Zuverlässigkeit von Systemen zu bewerten und zu planen. Eine hohe MTBF weist auf eine höhere Zuverlässigkeit und Langlebigkeit des Systems hin.\n\n• MTTF hingegen bezieht sich auf die durchschnittliche Zeit bis zum ersten Ausfall eines Systems. Es wird verwendet, um die Lebensdauer von Komponenten oder Systemen zu bewerten.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 5,
+          "difficulty": "leicht",
+          "frontside": "Treffen Sie für die RAID-Systeme Raid 0, 1, 5, 6 und 10 jeweils eine Aussage zu: \n\n • Mindestanzahl Festplatten, \n• Ausfallsicherheit, \n• Berechnung der Nutzkapazität.",
+          "backside": "\n\n Raid 0: - mindestens 2 Festplatten \n - keine Ausfallsicherheit \n - Nutzkapazität = Summe aller Festplattenkapazitäten \n\n Raid 1: - mindestens 2 Festplatten \n - eine Festplatte darf ausfallen \n - Nutzkapazität = Kapazität einer Festplatte \n\n Raid 5: - mindestens 3 Festplatten \n - mittlere Ausfallsicherheit (Paritätsinformationen) \n - Nutzkapazität = (Anzahl der Festplatten - 1) * Kapazität einer Festplatte \n\n Raid 6: - mindestens 4 Festplatten \n - hohe Ausfallsicherheit (doppelte Parität) \n - Nutzkapazität = (Anzahl der Festplatten - 2) * Kapazität einer Festplatte \n\n Raid 10: - mindestens 4 Festplatten \n - hohe Ausfallsicherheit (Kombination aus Raid 0 und Raid 1) \n - Nutzkapazität = (Anzahl der Festplatten / 2) * Kapazität einer Festplatte",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 6,
+          "difficulty": "leicht",
+          "frontside": "Erklären Sie anhand eines Beispiels, warum ein Raid keine Datensicherung ersetzt.",
+          "backside": "Ein Raid schütz in den folgenden Fällen nicht vor Datenverlust:\n\n• Hardwarefehler: Wenn mehrere Festplatten gleichzeitig ausfallen, kann es zu Datenverlust kommen. \n\n• Menschliches Versagen: Wenn versehentlich Daten gelöscht oder überschrieben werden, kann ein Raid diese nicht wiederherstellen. \n\n• Malware oder Ransomware: Ein Raid schützt nicht vor bösartiger Software, die Daten beschädigen oder verschlüsseln kann.\n\n• physicher Beschädigung: Wenn ein Brand oder Wasserschaden die Festplatten beschädigt, kann das Raid die Daten nicht wiederherstellen.",
+
+          "type": "flashcard"
+        },
+        {
+          "id": 7,
+          "difficulty": "leicht",
+          "frontside": "Erklären Sie anhand eines Beispiels, warum ein Raid keine Datensicherung ersetzt.",
+          "backside": "Ein Raid schütz in den folgenden Fällen nicht vor Datenverlust:\n\n• Hardwarefehler: Wenn mehrere Festplatten gleichzeitig ausfallen, kann es zu Datenverlust kommen. \n\n• Menschliches Versagen: Wenn versehentlich Daten gelöscht oder überschrieben werden, kann ein Raid diese nicht wiederherstellen. \n\n• Malware oder Ransomware: Ein Raid schützt nicht vor bösartiger Software, die Daten beschädigen oder verschlüsseln kann.\n\n• physicher Beschädigung: Wenn ein Brand oder Wasserschaden die Festplatten beschädigt, kann das Raid die Daten nicht wiederherstellen.",
+
+          "type": "flashcard"
+        }
+      ]
+    }
+  }
+}

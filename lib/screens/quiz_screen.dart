@@ -45,16 +45,18 @@ class _QuizScreenState extends State<QuizScreen> {
   Future<void> loadQuestions() async {
     try {
       // Check if this category should use flashcards
-      final bool isFlashcard = widget.category.startsWith('Prüfungsfragen Set') || 
-                              widget.category == 'Creational Design Patterns' ||
-                              widget.category == 'Structural Design Patterns' ||
-                              widget.category == 'Behavioral Design Patterns';
-      
+      final bool isFlashcard =
+          widget.category.startsWith('Prüfungsfragen Set') ||
+              widget.category == 'Creational Design Patterns' ||
+              widget.category == 'Structural Design Patterns' ||
+              widget.category == 'Behavioral Design Patterns' ||
+              widget.category == 'AP Teil 2 / Set 1';
+
       if (isFlashcard) {
         // Redirect to flashcard view
         final flashcards = await _loadFlashcards();
         if (!mounted) return;
-        
+
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
@@ -89,11 +91,10 @@ class _QuizScreenState extends State<QuizScreen> {
           jsonPath = 'assets/questions.json';
       }
 
-      
       final jsonString = await rootBundle.loadString(jsonPath);
 
       final Map<String, dynamic> jsonData = json.decode(jsonString);
-      
+
       if (!jsonData.containsKey('categories')) {
         throw Exception('Invalid JSON structure - missing categories');
       }
@@ -104,25 +105,25 @@ class _QuizScreenState extends State<QuizScreen> {
       }
 
       setState(() {
-        questions = (categoryData['questions'] as List)
-            .map((q) {
-              // Erstelle eine Kopie der Frage
-              final question = Question.fromJson(q);
-              
-              // Mische die Antworten und merke die neue Position der richtigen Antwort
-              final originalCorrectAnswer = question.options[question.correctAnswer];
-              final shuffledOptions = [...question.options]..shuffle();
-              final newCorrectAnswerIndex = shuffledOptions.indexOf(originalCorrectAnswer);
-              
-              return Question(
-                id: question.id,
-                question: question.question,
-                options: shuffledOptions,
-                correctAnswer: newCorrectAnswerIndex,
-                difficulty: question.difficulty,
-              );
-            })
-            .toList();
+        questions = (categoryData['questions'] as List).map((q) {
+          // Erstelle eine Kopie der Frage
+          final question = Question.fromJson(q);
+
+          // Mische die Antworten und merke die neue Position der richtigen Antwort
+          final originalCorrectAnswer =
+              question.options[question.correctAnswer];
+          final shuffledOptions = [...question.options]..shuffle();
+          final newCorrectAnswerIndex =
+              shuffledOptions.indexOf(originalCorrectAnswer);
+
+          return Question(
+            id: question.id,
+            question: question.question,
+            options: shuffledOptions,
+            correctAnswer: newCorrectAnswerIndex,
+            difficulty: question.difficulty,
+          );
+        }).toList();
 
         if (widget.wrongQuestionIds != null) {
           questions = questions
@@ -148,7 +149,8 @@ class _QuizScreenState extends State<QuizScreen> {
               TextButton(
                 onPressed: () {
                   Navigator.of(ctx).pop();
-                  Navigator.of(context).pop(); // Zurück zum vorherigen Bildschirm
+                  Navigator.of(context)
+                      .pop(); // Zurück zum vorherigen Bildschirm
                 },
                 child: const Text('OK'),
               ),
@@ -162,7 +164,7 @@ class _QuizScreenState extends State<QuizScreen> {
   // Neue Hilfsmethode zum Laden der Karteikarten
   Future<List<dynamic>> _loadFlashcards() async {
     String jsonPath;
-    
+
     if (widget.category == 'Prüfungsfragen Set 1') {
       jsonPath = 'assets/pruefungsfragen_set_1.json';
     } else if (widget.category == 'Prüfungsfragen Set 2') {
@@ -177,23 +179,25 @@ class _QuizScreenState extends State<QuizScreen> {
       jsonPath = 'assets/structural_design_patterns.json';
     } else if (widget.category == 'Behavioral Design Patterns') {
       jsonPath = 'assets/behavioral_design_patterns.json';
+    } else if (widget.category == 'AP Teil 2 / Set 1') {
+      jsonPath = 'assets/ap_teil_2_set_1.json';
     } else {
       throw Exception('Unknown flashcard set');
     }
 
     final jsonString = await rootBundle.loadString(jsonPath);
     final jsonData = json.decode(jsonString);
-    
+
     // Sichere Navigation durch die JSON-Struktur
     if (!jsonData.containsKey('categories')) {
       throw Exception('Ungültige JSON-Struktur - categories fehlt');
     }
-    
+
     final categories = jsonData['categories'];
     if (!categories.containsKey(widget.category)) {
       throw Exception('Kategorie ${widget.category} nicht gefunden');
     }
-    
+
     return categories[widget.category]['questions'];
   }
 
@@ -231,12 +235,12 @@ class _QuizScreenState extends State<QuizScreen> {
 
   void checkAnswer(int answer) {
     if (isAnswerLocked) return;
-    
+
     setState(() {
       isAnswerLocked = true;
       selectedAnswer = answer;
     });
-    
+
     timer?.cancel();
     final question = questions[currentQuestionIndex];
 
