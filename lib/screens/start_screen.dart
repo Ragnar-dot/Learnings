@@ -217,7 +217,7 @@ class _StartScreenState extends State<StartScreen> {
               const SizedBox(height: 4),
               LinearProgressIndicator(
                 value: progress,
-                backgroundColor: Colors.grey[200],
+                backgroundColor: const Color.fromARGB(255, 226, 226, 226),
                 valueColor: AlwaysStoppedAnimation<Color>(
                   progress > 0.7 ? Colors.green : Colors.orange,
                 ),
