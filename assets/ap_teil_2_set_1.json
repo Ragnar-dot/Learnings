@@ -98,6 +98,14 @@
           "backside": "Personenbezogene Daten sind Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Besondere Kategorien personenbezogener Daten sind besonders schützenswert und umfassen Daten über die \n\n• rassische oder ethnische Herkunft \n\n• politische Meinungen \n\n• religiöse oder weltanschauliche Überzeugungen, Gewerkschaftszugehörigkeit\n\n• genetische Daten\n\n• biometrische Daten zur eindeutigen Identifizierung\n\n• Gesundheitsdaten sowie Daten zum Sexualleben oder der sexuellen Orientierung. ",
 
           "type": "flashcard"
+        },
+        {
+          "id": 13,
+          "difficulty": "leicht",
+          "frontside": "Ziele der Datensicherheit sind \n\n • Vertraulichkeit \n\n• Integrität \n\n• Verfügbarkeit \n\n• Authentizität \n\n Erläutere diese Begriffe.",
+          "backside": "\n\n• Vertraulichkeit: Sicherstellen, dass nur autorisierte Personen Zugriff auf die Daten haben.\n\n• Integrität: Gewährleisten, dass die Daten vollständig und unverändert sind und nicht unbefugt manipuliert wurden.\n\n• Verfügbarkeit: Sicherstellen, dass die Daten bei Bedarf von autorisierten Personen zugänglich sind.\n\n• Authentizität: Bestätigen, dass die Daten von einer vertrauenswürdigen Quelle stammen und nicht gefälscht oder manipuliert wurden. Echtheit und Vertrauenswürdigkeit müssen gewährleistet sein.",
+
+          "type": "flashcard"
         }
       ]
     }
