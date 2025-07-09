@@ -92,4 +92,10 @@ class StorageService {
       };
     }
   }
+
+  static Future<void> clearAllProgress() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(statsKey);
+    await prefs.remove(totalStatsKey);
+  }
 }

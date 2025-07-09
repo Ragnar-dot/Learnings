@@ -53,17 +53,15 @@ class _StartScreenState extends State<StartScreen> {
               padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                 color: theme.primaryColor,
-                boxShadow: theme  .brightness == Brightness.dark
-                  ? null
-                  : [
-                      BoxShadow(
-                        color: Colors.black,
-                        blurRadius: 9,
-                        offset: const Offset(0, 1),
-                      ),
-                    ],
-                
-                
+                boxShadow: theme.brightness == Brightness.dark
+                    ? null
+                    : [
+                        BoxShadow(
+                          color: Colors.black,
+                          blurRadius: 9,
+                          offset: const Offset(0, 1),
+                        ),
+                      ],
                 borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(55),
                   bottomRight: Radius.circular(55),
@@ -71,15 +69,12 @@ class _StartScreenState extends State<StartScreen> {
               ),
               child: Column(
                 children: [
-                  
                   const SizedBox(height: 8),
                   Text(
                     'Teste dein Wissen in verschiedenen Bereichen',
                     style: theme.textTheme.bodyLarge?.copyWith(
                       color: const Color.fromARGB(249, 255, 255, 255),
-                      
                     ),
-                    
                     textAlign: TextAlign.center,
                   ),
                 ],
@@ -89,39 +84,34 @@ class _StartScreenState extends State<StartScreen> {
               Padding(
                 padding: const EdgeInsets.all(18),
                 child: Card(
-                  shape: RoundedRectangleBorder(
-                    
-                  ),
+                  shape: RoundedRectangleBorder(),
                   child: Container(
                     decoration: BoxDecoration(
                       color: theme.cardTheme.color,
-                      boxShadow: [
-                        
-                      ],
-                      
+                      boxShadow: [],
                     ),
                     child: Padding(
-
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Dein Fortschritt',
-                          style: theme.textTheme.headlineMedium,
-                        ),
-                        const SizedBox(height: 16),
-                        _buildProgressStats(),
-                        const SizedBox(height: 16),
-                        _buildCategoryProgress(),
-                      ],
+                      padding: const EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Dein Fortschritt',
+                            style: theme.textTheme.headlineMedium,
+                          ),
+                          const SizedBox(height: 16),
+                          _buildProgressStats(),
+                          const SizedBox(height: 16),
+                          _buildCategoryProgress(),
+                          const SizedBox(height: 16),
+                          _buildClearProgressButton(),
+                        ],
+                      ),
                     ),
                   ),
                 ),
               ),
-              ),
-            ],  
-
+            ],
             Padding(
               padding: const EdgeInsets.all(16),
               child: _AnimatedPlayButton(
@@ -203,7 +193,6 @@ class _StartScreenState extends State<StartScreen> {
               ),
             ),
             Text(title),
-            
           ],
         ),
       ),
@@ -242,6 +231,80 @@ class _StartScreenState extends State<StartScreen> {
         );
       }).toList(),
     );
+  }
+
+  Widget _buildClearProgressButton() {
+    return Center(
+      child: ElevatedButton.icon(
+        onPressed: () => _showClearProgressDialog(),
+        icon: const Icon(Icons.delete_forever, color: Colors.white),
+        label: const Text(
+          'Fortschritt löschen',
+          style: TextStyle(color: Colors.white),
+        ),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.red,
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _showClearProgressDialog() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Fortschritt löschen'),
+        content: const Text(
+          'Möchten Sie wirklich den gesamten Fortschritt löschen? Diese Aktion kann nicht rückgängig gemacht werden.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Abbrechen'),
+          ),
+          ElevatedButton(
+            onPressed: () async {
+              Navigator.of(context).pop();
+              await _clearProgress();
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.red,
+            ),
+            child: const Text(
+              'Löschen',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Future<void> _clearProgress() async {
+    await StorageService.clearAllProgress();
+    setState(() {
+      categoryStats = {};
+      totalStats = {
+        'totalQuestions': 0,
+        'totalCorrect': 0,
+        'totalWrong': 0,
+      };
+    });
+
+    // Zeige Bestätigungsnachricht
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Fortschritt erfolgreich gelöscht'),
+          backgroundColor: Colors.green,
+          duration: Duration(seconds: 2),
+        ),
+      );
+    }
   }
 }
 
