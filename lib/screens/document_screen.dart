@@ -101,6 +101,14 @@ class DocumentScreen extends StatelessWidget {
         'description': 'Übungsaufgaben zu Sortieralgorithmen',
       },
     ],
+    'Lernkarten AP 1': [
+      {
+        'title': 'Lernkarten AP1',
+        'assets': 'assets/Lernkarten AP1/Lernkarten AP1.pdf',
+        'type': 'PDF',
+        'description': 'Kartei Karten zum Lernen von AP 1',
+      },
+    ],
     'Osi Schichtmodell': [
       {
         'title': 'Osi Schichtmodell',
