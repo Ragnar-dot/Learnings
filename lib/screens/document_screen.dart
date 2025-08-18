@@ -117,10 +117,10 @@ class DocumentScreen extends StatelessWidget {
         'description': 'Kartei Karten zum Lernen von AP 2',
       },
       {
-        'title': 'Lernzettel AP2',
+        'title': 'Lernzettel AP1',
         'assets': 'assets/Lernzettel/Lernzettel AP1.pdf',
         'type': 'PDF',
-        'description': 'Kartei Karten zum Lernen von AP 2',
+        'description': 'Kartei Karten zum Lernen von AP 1',
       },
     ],
     'Osi Schichtmodell': [
