@@ -111,10 +111,10 @@ class DocumentScreen extends StatelessWidget {
     ],
     'Lernzettel': [
       {
-        'title': 'Lernzettel AP1',
-        'assets': 'assets/Lernzettel/Lernzettel AP1.pdf',
+        'title': 'Lernzettel AP2',
+        'assets': 'assets/Lernzettel/Lernzettel AP2.pdf',
         'type': 'PDF',
-        'description': 'Kartei Karten zum Lernen von AP 1',
+        'description': 'Kartei Karten zum Lernen von AP 2',
       },
       {
         'title': 'Lernzettel AP2',
