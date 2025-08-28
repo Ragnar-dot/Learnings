@@ -6,6 +6,7 @@ import '../screens/category_screen.dart';
 import '../screens/video_screen.dart';
 import '../screens/document_screen.dart';
 import '../widgets/day_night_themed_switcher.dart';
+import '../../oss_licenses.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -54,12 +55,14 @@ class AppDrawer extends StatelessWidget {
               onChange: (bool value) {
                 themeProvider.toggleTheme();
               },
-              size: 35,  // Größe des Switches
+              size: 35, // Größe des Switches
               duration: const Duration(milliseconds: 400),
             ),
           ),
-          Divider(color: themeProvider.isDarkMode ? const Color.fromARGB(34, 243, 243, 243) : const Color.fromARGB(143, 231, 231, 231)),
-
+          Divider(
+              color: themeProvider.isDarkMode
+                  ? const Color.fromARGB(34, 243, 243, 243)
+                  : const Color.fromARGB(143, 231, 231, 231)),
           ListTile(
             leading: const Icon(Icons.home),
             title: const Text('Startseite'),
@@ -72,8 +75,6 @@ class AppDrawer extends StatelessWidget {
               );
             },
           ),
-         
-
           ListTile(
             leading: const Icon(Icons.category),
             title: const Text('Kategorien'),
@@ -86,8 +87,6 @@ class AppDrawer extends StatelessWidget {
               );
             },
           ),
-         
-
           ListTile(
             leading: const Icon(Icons.video_library),
             title: const Text('Lernvideos'),
@@ -100,8 +99,6 @@ class AppDrawer extends StatelessWidget {
               );
             },
           ),
-          
-
           ListTile(
             leading: const Icon(Icons.file_present),
             title: const Text('Dokumente'),
@@ -114,17 +111,29 @@ class AppDrawer extends StatelessWidget {
               );
             },
           ),
-         
-          Container(
-            decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: const Color.fromARGB(255, 0, 0, 0).withAlpha(7),
-                  offset: const Offset(0, 2),
-                  blurRadius: 1,
-                ),
-              ],
+          Divider(
+            color: themeProvider.isDarkMode
+                ? const Color.fromARGB(34, 243, 243, 243)
+                : const Color.fromARGB(143, 231, 231, 231),
+          ),
+          SizedBox(height: 650),
+          ListTile(
+            leading: const Icon(
+              Icons.info_outline,
+              size: 11,
             ),
+            title: const Text(
+              'Open Source Lizenzen',
+              style: TextStyle(fontSize: 11),
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const OssLicensesPage(),
+                ),
+              );
+            },
           ),
         ],
       ),
