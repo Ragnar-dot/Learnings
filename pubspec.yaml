@@ -56,15 +56,15 @@ flutter:
     - assets/Prüfungen IHK/Prüfung 2020/ZP_2020_H_FIAE_Aufgabe.pdf
     - assets/Prüfungen IHK/Prüfung 2020/ZP_2020_H_FIAE_Lösung.pdf
     - assets/Prüfungen IHK/Prüfung 2021/ZP_2021_H_GA1_FIAE_Aufgaben.pdf
-    - assets/Prüfungen IHK/Prüfung 2022/ZP_2022_F_GA1_FIAE_Aufgaben.pdf
-    - assets\design_patterns\Abstract Factory.pdf
-    - assets\design_patterns\Adapter.pdf
-    - assets\design_patterns\Builder.pdf
-    - assets\design_patterns\Factory Method.pdf
-    - assets\design_patterns\Singleton.pdf
-    - assets\design_patterns\Flyweight.pdf
-    - assets\design_patterns\Decorator.pdf
-    - assets\design_patterns\Facade.pdf
-    - assets\design_patterns\Prototyp.pdf
-    - assets\design_patterns\Composite.pdf
-    - assets\design_patterns\Bridge.pdf
+    - "assets/design_patterns/Abstract Factory.pdf"
+    - "assets/design_patterns/Adapter.pdf"
+    - "assets/design_patterns/Bridge.pdf"
+    - "assets/design_patterns/Builder.pdf"
+    - "assets/design_patterns/Composite.pdf"
+    - "assets/design_patterns/Decorator.pdf"
+    - "assets/design_patterns/Facade.pdf"
+    - "assets/design_patterns/Factory Method.pdf"
+    - "assets/design_patterns/Flyweight.pdf"
+    - "assets/design_patterns/Prototyp.pdf"
+    - "assets/design_patterns/Singleton.pdf"
+    - "assets/IPv4 IPv6/IPv4 Pv6.pdf"

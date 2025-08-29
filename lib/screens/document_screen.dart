@@ -131,6 +131,14 @@ class DocumentScreen extends StatelessWidget {
         'description': 'Übungsaufgaben zum Schichtmodell',
       },
     ],
+    'IPv4 IPv6': [
+      {
+        'title': 'IPv4 und IPv6',
+        'assets': "assets/IPv4 IPv6/IPv4 Pv6.pdf",
+        'type': 'PDF',
+        'description': 'Übersicht zu IPV4 und IPV6',
+      },
+    ],
     'Prüfungen IHK': [
       {
         'title': 'Prüfung 2020',
