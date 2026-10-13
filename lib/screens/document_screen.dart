@@ -96,7 +96,7 @@ class DocumentScreen extends StatelessWidget {
     'Exercises': [
       {
         'title': 'Algorithmen Übungen',
-        'assets': 'assets/Exercises/sortieralgorithmen_uebungen.pdf',
+        'assets': 'assets/exercises/sortieralgorithmen_uebungen.pdf',
         'type': 'PDF',
         'description': 'Übungsaufgaben zu Sortieralgorithmen',
       },
@@ -137,35 +137,6 @@ class DocumentScreen extends StatelessWidget {
         'assets': "assets/IPv4 IPv6/IPv4 Pv6.pdf",
         'type': 'PDF',
         'description': 'Übersicht zu IPV4 und IPV6',
-      },
-    ],
-    'Prüfungen IHK': [
-      {
-        'title': 'Prüfung 2020',
-        'assets':
-            'assets/Prüfungen IHK/Prüfung 2020/ZP_2020_H_FIAE_Aufgabe.pdf',
-        'type': 'PDF',
-        'description': 'Prüfung Herbst 2020',
-      },
-      {
-        'title': 'Prüfung 2020 Lösung',
-        'assets': 'assets/Prüfungen IHK/Prüfung 2020/ZP_2020_H_FIAE_Lösung.pdf',
-        'type': 'PDF',
-        'description': 'Prüfung Herbst 2020 Lösung',
-      },
-      {
-        'title': 'Prüfung 2021',
-        'assets':
-            'assets/Prüfungen IHK/Prüfung 2021/ZP_2021_H_GA1_FIAE_Aufgaben.pdf',
-        'type': 'PDF',
-        'description': 'Prüfung Herbst 2021',
-      },
-      {
-        'title': 'Prüfung 2022',
-        'assets':
-            'assets/Prüfungen IHK/Prüfung 2022/ZP_2022_F_GA1_FIAE_Aufgaben.pdf',
-        'type': 'PDF',
-        'description': 'Prüfung Frühjahr 2022',
       },
     ],
   };

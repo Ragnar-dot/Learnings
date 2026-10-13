@@ -46,16 +46,13 @@ flutter:
     - assets/structural_design_patterns.json
     - assets/behavioral_design_patterns.json
     - assets/ap_teil_2_set_1.json
-    - assets/Exercises/sortieralgorithmen_uebungen.pdf
+    - assets/exercises/sortieralgorithmen_uebungen.pdf
     - assets/SQL/Befehlssammlung_SQL.pdf
     - assets/SQL/sql_befehle.pdf
     - assets/Lernkarten AP1/Lernkarten AP1.pdf
     - assets/Lernzettel/Lernzettel AP1.pdf
     - assets/Lernzettel/Lernzettel AP2.pdf
     - assets/Osi Schichtmodell/ISO-Modell.pdf
-    - assets/Prüfungen IHK/Prüfung 2020/ZP_2020_H_FIAE_Aufgabe.pdf
-    - assets/Prüfungen IHK/Prüfung 2020/ZP_2020_H_FIAE_Lösung.pdf
-    - assets/Prüfungen IHK/Prüfung 2021/ZP_2021_H_GA1_FIAE_Aufgaben.pdf
     - "assets/design_patterns/Abstract Factory.pdf"
     - "assets/design_patterns/Adapter.pdf"
     - "assets/design_patterns/Bridge.pdf"
