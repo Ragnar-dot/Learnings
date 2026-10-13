@@ -3,7 +3,6 @@ import '../models/quiz_stats.dart';
 import '../screens/category_screen.dart';
 import '../services/storage_service.dart';
 import '../widgets/app_drawer.dart';
-import '../../oss_licenses.dart';
 import 'dart:math' show max;
 
 class StartScreen extends StatefulWidget {
