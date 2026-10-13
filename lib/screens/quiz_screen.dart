@@ -221,11 +221,12 @@ class _QuizScreenState extends State<QuizScreen> {
 
   void handleTimeout() {
     timer?.cancel();
+    // Count the timed-out question as wrong before moving on
+    stats.wrongAnswers++;
+    stats.wrongQuestionIds.add(questions[currentQuestionIndex].id);
     if (currentQuestionIndex < questions.length - 1) {
       setState(() {
         currentQuestionIndex++;
-        stats.wrongAnswers++;
-        stats.wrongQuestionIds.add(questions[currentQuestionIndex].id);
         startTimer();
       });
     } else {
