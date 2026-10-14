@@ -94,3 +94,9 @@ cd Learnings
 flutter pub get
 flutter run
 ```
+## 👤 Autor
+
+**Alexander Keterling**
+
+- GitHub: [@Ragnar-dot](https://github.com/Ragnar-dot)
+- Website: [loop-expression.de](https://www.loop-expression.de)
